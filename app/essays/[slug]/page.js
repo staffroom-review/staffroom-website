@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { featured, stories } from "../../../lib/stories";
+import SiteHeader from "../../../components/SiteHeader";
+import SiteFooter from "../../../components/SiteFooter";
 
 const allStories = [featured, ...stories];
 
@@ -14,22 +15,16 @@ export default async function EssayPage({ params }) {
 
   return (
     <div className="site">
-      <header style={{ padding: "42px 5vw 28px", borderBottom: "1px solid #171717" }}>
-        <Link
-          href="/"
-          style={{ fontSize: 12, textTransform: "uppercase", letterSpacing: "0.08em" }}
-        >
-          ← Back to Staffroom Review
-        </Link>
-      </header>
+      <SiteHeader />
       <main style={{ padding: "50px 5vw 80px", maxWidth: 760, margin: "0 auto" }}>
         <div className="story-category">{story.category}</div>
         <h1
           style={{
             fontFamily: "Georgia, 'Times New Roman', serif",
-            fontSize: "clamp(32px, 5vw, 52px)",
-            lineHeight: 1.1,
-            letterSpacing: "-0.03em",
+            fontSize: "clamp(32px, 5vw, 48px)",
+            lineHeight: 1.15,
+            letterSpacing: "-0.01em",
+            color: "#211d16",
             margin: "18px 0",
           }}
         >
@@ -43,9 +38,9 @@ export default async function EssayPage({ params }) {
             key={i}
             style={{
               fontFamily: "Georgia, 'Times New Roman', serif",
-              fontSize: 19,
-              lineHeight: 1.6,
-              color: "#333",
+              fontSize: 18,
+              lineHeight: 1.7,
+              color: "#4a463c",
               marginBottom: 22,
             }}
           >
@@ -53,6 +48,7 @@ export default async function EssayPage({ params }) {
           </p>
         ))}
       </main>
+      <SiteFooter />
     </div>
   );
 }
