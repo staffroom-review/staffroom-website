@@ -14,10 +14,10 @@ export default function SiteFooter() {
       </div>
       <div className="footer-links">
         <a href="#about">About</a>
-        <a href="mailto:subsmissions@staffroomreview.com?subject=Submission for Staffroom Review">
+        <a href="mailto:youremail@example.com?subject=Submission for Staffroom Review">
           Submissions
         </a>
-        <a href="mailto:editorial@staffroomreview.com?subject=Contact from Staffroom Review">
+        <a href="mailto:youremail@example.com?subject=Contact from Staffroom Review">
           Contact
         </a>
       </div>
