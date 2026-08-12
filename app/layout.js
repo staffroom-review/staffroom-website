@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "The Staff Room Review",
   description: "A journal for teachers, ideas, culture, and education.",
