@@ -1,9 +1,27 @@
-import { featured, stories } from "../../../lib/stories";
+import Link from "next/link";
+import {
+  featured,
+  stories,
+  classroomStories,
+  lifeBeyond,
+  conversations,
+  letters,
+  verse,
+  notesReviews,
+} from "../../../lib/stories";
 import SiteHeader from "../../../components/SiteHeader";
 import SiteFooter from "../../../components/SiteFooter";
-import Link from "next/link";
 
-const allStories = [featured, ...stories];
+const allStories = [
+  featured,
+  ...stories,
+  ...classroomStories,
+  ...lifeBeyond,
+  ...conversations,
+  ...letters,
+  ...verse,
+  ...notesReviews,
+];
 
 const categoryLabels = {
   essays: "Essays",
@@ -11,6 +29,7 @@ const categoryLabels = {
   ideas: "Ideas",
   culture: "Culture",
   teaching: "Teaching",
+  conversations: "Conversations",
 };
 
 export default async function CategoryPage({ params }) {
@@ -29,7 +48,7 @@ export default async function CategoryPage({ params }) {
           style={{
             fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(30px, 4vw, 44px)",
-            color: "#211d16",
+            color: "#26241f",
             letterSpacing: "-0.01em",
             marginBottom: 40,
           }}
@@ -37,19 +56,21 @@ export default async function CategoryPage({ params }) {
           {label}
         </h1>
         {matches.length === 0 ? (
-          <p style={{ fontFamily: "Georgia, serif", fontSize: 17, color: "#6b655a" }}>
+          <p style={{ fontFamily: "Georgia, serif", fontSize: 17, color: "#6b665c" }}>
             No stories in this section yet — check back soon.
           </p>
         ) : (
           <div className="stories">
             {matches.map((story) => (
               <Link className="story" href={`/essays/${story.slug}`} key={story.slug}>
-                <div
-                  className="story-image"
-                  style={{ background: story.image.color }}
-                >
-                  <i className={`ti ${story.image.icon}`} aria-hidden="true"></i>
-                </div>
+                {story.image && (
+                  <div
+                    className="story-image"
+                    style={{ background: story.image.color }}
+                  >
+                    <i className={`ti ${story.image.icon}`} aria-hidden="true"></i>
+                  </div>
+                )}
                 <div className="story-category">{story.category}</div>
                 <h4>{story.title}</h4>
                 <p>{story.excerpt}</p>
