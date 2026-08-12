@@ -1,9 +1,27 @@
 import { notFound } from "next/navigation";
-import { featured, stories } from "../../../lib/stories";
+import {
+  featured,
+  stories,
+  classroomStories,
+  lifeBeyond,
+  conversations,
+  letters,
+  verse,
+  notesReviews,
+} from "../../../lib/stories";
 import SiteHeader from "../../../components/SiteHeader";
 import SiteFooter from "../../../components/SiteFooter";
 
-const allStories = [featured, ...stories];
+const allStories = [
+  featured,
+  ...stories,
+  ...classroomStories,
+  ...lifeBeyond,
+  ...conversations,
+  ...letters,
+  ...verse,
+  ...notesReviews,
+];
 
 export default async function EssayPage({ params }) {
   const { slug } = await params;
@@ -24,7 +42,7 @@ export default async function EssayPage({ params }) {
             fontSize: "clamp(32px, 5vw, 48px)",
             lineHeight: 1.15,
             letterSpacing: "-0.01em",
-            color: "#211d16",
+            color: "#26241f",
             margin: "18px 0",
           }}
         >
@@ -40,8 +58,9 @@ export default async function EssayPage({ params }) {
               fontFamily: "Georgia, 'Times New Roman', serif",
               fontSize: 18,
               lineHeight: 1.7,
-              color: "#4a463c",
+              color: "#4f4a3f",
               marginBottom: 22,
+              whiteSpace: "pre-line",
             }}
           >
             {paragraph}
