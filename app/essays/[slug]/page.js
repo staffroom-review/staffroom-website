@@ -4,8 +4,9 @@ import { featured, stories } from "../../../lib/stories";
 
 const allStories = [featured, ...stories];
 
-export default function EssayPage({ params }) {
-  const story = allStories.find((s) => s.slug === params.slug);
+export default async function EssayPage({ params }) {
+  const { slug } = await params;
+  const story = allStories.find((s) => s.slug === slug);
 
   if (!story) {
     notFound();
