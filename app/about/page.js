@@ -34,23 +34,13 @@ export default function AboutPage() {
             <i className="ti ti-mail" aria-hidden="true"></i>
             <h3>Submissions</h3>
             <p>We read essays, reviews, interviews and poetry year-round.</p>
-            
-              className="about-card-link"
-              href="mailto:youremail@example.com?subject=Submission for Staffroom Review"
-            >
-              Send a submission →
-            </a>
+            <a className="about-card-link" href="mailto:youremail@example.com?subject=Submission for Staffroom Review">Send a submission &rarr;</a>
           </div>
           <div className="about-card">
             <i className="ti ti-message-2" aria-hidden="true"></i>
             <h3>Contact</h3>
             <p>Questions, corrections or general inquiries welcome.</p>
-            
-              className="about-card-link"
-              href="mailto:youremail@example.com?subject=Contact from Staffroom Review"
-            >
-              Get in touch →
-            </a>
+            <a className="about-card-link" href="mailto:youremail@example.com?subject=Contact from Staffroom Review">Get in touch &rarr;</a>
           </div>
         </div>
 
