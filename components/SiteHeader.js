@@ -32,7 +32,7 @@ export default function SiteHeader() {
           <Link href="/category/teaching">Teaching</Link>
           <Link href="/category/poetry">Poetry</Link>
           <Link href="/category/conversations">Conversations</Link>
-          <Link href="/#about">About</Link>
+          <Link href="/about">About</Link>
         </nav>
       </div>
     </>
