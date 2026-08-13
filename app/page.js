@@ -184,3 +184,40 @@ export default function Home() {
             </Link>
           ))}
         </section>
+
+        <section className="poetry-showcase">
+          <div className="section-heading">
+            <span>Verse from the staffroom</span>
+          </div>
+          <div className="poetry-grid">
+            {verse.map((poem) => (
+              <Link className="poetry-card" href={`/essays/${poem.slug}`} key={poem.slug}>
+                <div
+                  className="poetry-card-image"
+                  style={{ background: poem.image.color }}
+                >
+                  <i className={`ti ${poem.image.icon}`} aria-hidden="true"></i>
+                </div>
+                <div className="poetry-card-body">
+                  <div className="poetry-card-category">{poem.category}</div>
+                  <div className="poetry-card-title">{poem.title}</div>
+                  <div className="poetry-card-excerpt">{poem.body}</div>
+                  <div className="read-time">Read the full poem →</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="section-heading">
+            <span>Notes & reviews</span>
+          </div>
+          <div className="stories">
+            {notesReviews.map((note) => (
+              <Link className="story" href={`/essays/${note.slug}`} key={note.slug}>
+                <div
+                  className="story-image"
+                  style={{ background: note.image.color }}
+                >
+                  <i className={`ti ${note.image.icon}`}
