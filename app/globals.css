@@ -1,3 +1,9 @@
+/* ---- UPDATE 1: FONT PREVIEWS -------------------------------
+   Pulls in 3 professional serif options. To switch the masthead
+   font, go to the ".logo-text" rule below and change the
+   font-family line to one of the 3 commented options. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -67,9 +73,17 @@ header {
 }
 
 .logo-text {
-  font-family: Georgia, "Times New Roman", serif;
+  /* OPTION 1 (active) — Playfair Display: high-contrast, editorial */
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  /* OPTION 2 — Merriweather: sturdy, readable, slightly warmer
+  font-family: "Merriweather", Georgia, "Times New Roman", serif; */
+
+  /* OPTION 3 — Lora: softer curves, more contemporary
+  font-family: "Lora", Georgia, "Times New Roman", serif; */
+
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.01em;
   color: #26241f;
 }
@@ -131,7 +145,7 @@ main {
 }
 
 .featured h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: clamp(34px, 5vw, 52px);
   line-height: 1.1;
   font-weight: 500;
@@ -192,24 +206,34 @@ main {
   padding-bottom: 5px;
 }
 
+/* ---- UPDATE 2: SECTION HEADINGS -------------------------------
+   Bumped from an 11px uppercase label up to a bold, large heading
+   (roughly text-2xl/3xl) so each section reads as a clear header. */
+/* ---- UPDATE 3: SPACING ALIGNMENT -------------------------------
+   padding-top / margin-bottom below are now a single, consistent
+   value (48px / 28px) used everywhere — this is the same tight gap
+   that the last section ("Notes & reviews") sat at, now applied
+   uniformly so every section-to-section gap matches. */
 .section-heading {
   border-top: 1px solid #26241f;
-  padding: 60px 0 0;
-  margin-bottom: 30px;
+  padding: 48px 0 0;
+  margin-bottom: 28px;
 }
 
 .section-heading span {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #6b665c;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: #26241f;
 }
 
 .section-heading:first-of-type {
   padding-top: 24px;
 }
 
-/* Standard story grid — used for Recent Writing, Notes & Reviews, Conversations */
+/* Standard story grid — used for Recent Writing, Conversations, Notes & Reviews */
 .stories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,6 +304,19 @@ main {
   letter-spacing: 0.04em;
   color: #948e7f;
   text-transform: uppercase;
+}
+
+/* ---- UPDATE 4: DUMMY TILES ---------------------------------
+   Placeholder cards for Conversations / Notes & Reviews — visually
+   identical to a real .story tile, just slightly muted and
+   non-interactive (no hover underline) to signal "coming soon". */
+.story-dummy {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.story-dummy:hover h4 {
+  text-decoration: none;
 }
 
 /* Wide feature block — used for Classroom Stories and Life Beyond the Classroom */
@@ -361,29 +398,87 @@ main {
   margin-bottom: 18px;
 }
 
-/* Verse section — centered poem excerpt */
-.verse-block {
-  max-width: 520px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px 0 40px;
+/* ---- UPDATE 5: POETRY HIGHLIGHT ------------------------------
+   A visually distinct showcase section: soft gradient backdrop,
+   3-card grid, placeholder image block per card, elegant italic
+   excerpt — designed to be the visual highlight of the homepage. */
+.poetry-showcase {
+  margin: 20px -5vw 0;
+  padding: 70px 5vw;
+  background: linear-gradient(160deg, #5b7a8c 0%, #3f5866 100%);
 }
 
-.verse-title {
-  font-family: Georgia, "Times New Roman", serif;
+.poetry-showcase .section-heading {
+  border-top: 1px solid rgba(246, 242, 234, 0.35);
+}
+
+.poetry-showcase .section-heading span {
+  color: #f6f2ea;
+}
+
+.poetry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.poetry-card {
+  display: flex;
+  flex-direction: column;
+  background: #f6f2ea;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.poetry-card:hover {
+  transform: translateY(-6px);
+}
+
+.poetry-card-image {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poetry-card-image i {
+  font-size: 30px;
+  color: #f6f2ea;
+  opacity: 0.9;
+}
+
+.poetry-card-body {
+  padding: 26px 24px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.poetry-card-category {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5b7a8c;
+  margin-bottom: 12px;
+}
+
+.poetry-card-title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 22px;
   color: #26241f;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
-.verse-excerpt {
+.poetry-card-excerpt {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
-  font-size: 17px;
-  line-height: 1.9;
+  font-size: 15px;
+  line-height: 1.8;
   color: #4f4a3f;
   white-space: pre-line;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  flex: 1;
 }
 
 .explore {
@@ -394,9 +489,9 @@ main {
 }
 
 .explore h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 700;
   color: #26241f;
   margin: 0 0 26px;
 }
@@ -513,6 +608,14 @@ footer {
   .story:last-child {
     border-bottom: none;
     margin-bottom: 0;
+  }
+
+  .poetry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poetry-showcase {
+    padding: 50px 5vw;
   }
 
   footer {
