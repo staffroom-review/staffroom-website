@@ -628,3 +628,130 @@ footer {
     text-align: left;
   }
 }
+.category-hero {
+  padding: 60px 5vw 0;
+}
+
+.category-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 0.5px solid #ddd8cd;
+  padding-bottom: 14px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #948e7f;
+}
+
+.category-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(36px, 6vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: #26241f;
+  margin: 20px 0 10px;
+}
+
+.category-description {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4f4a3f;
+  max-width: 460px;
+  margin: 0 0 40px;
+}
+
+.category-list {
+  padding: 0 5vw 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-row {
+  display: grid;
+  grid-template-columns: 40px 110px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 28px 0;
+  border-top: 0.5px solid #ddd8cd;
+}
+
+.category-list .category-row:first-child {
+  border-top: 1px solid #26241f;
+}
+
+.category-list .category-row:last-child {
+  border-bottom: 0.5px solid #ddd8cd;
+}
+
+.category-row-index {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  color: #948e7f;
+}
+
+.category-row-image {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-row-image i {
+  font-size: 22px;
+  color: #f6f2ea;
+  opacity: 0.85;
+}
+
+.category-row-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25;
+  color: #26241f;
+  margin: 8px 0 10px;
+}
+
+.category-row:hover .category-row-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.category-row-excerpt {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b665c;
+  margin: 0 0 12px;
+  max-width: 480px;
+}
+
+.category-row-placeholder {
+  opacity: 0.6;
+}
+
+.category-row-placeholder .category-row-title {
+  color: #6b665c;
+}
+
+.category-empty-note {
+  padding: 0 5vw 60px;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  color: #948e7f;
+}
+
+@media (max-width: 800px) {
+  .category-row {
+    grid-template-columns: 30px 70px 1fr;
+    gap: 14px;
+  }
+
+  .category-row-image {
+    height: 60px;
+  }
+}
