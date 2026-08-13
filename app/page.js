@@ -13,10 +13,6 @@ import {
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 
-/* Dummy placeholder tiles — used to fill out the Conversations and
-   Notes & Reviews sections so they show a full row of 3 like
-   "Recent Writing" does. Delete these once you have real content,
-   and just let the real .map() below render normally. */
 const dummyTiles = [
   {
     id: "dummy-1",
@@ -156,7 +152,6 @@ export default function Home() {
                 <div className="read-time">{story.readTime}</div>
               </Link>
             ))}
-            {/* Dummy tiles filling out the row — remove once real content exists */}
             {dummyTiles.map((tile) => (
               <div className="story story-dummy" key={tile.id}>
                 <div className="story-image" style={{ background: tile.color }}>
@@ -220,4 +215,40 @@ export default function Home() {
                   className="story-image"
                   style={{ background: note.image.color }}
                 >
-                  <i className={`ti ${note.image.icon}`}
+                  <i className={`ti ${note.image.icon}`} aria-hidden="true"></i>
+                </div>
+                <div className="story-category">{note.category}</div>
+                <h4>{note.title}</h4>
+                <p>{note.excerpt}</p>
+                <div className="read-time">{note.readTime}</div>
+              </Link>
+            ))}
+            {dummyTiles.map((tile) => (
+              <div className="story story-dummy" key={`notes-${tile.id}`}>
+                <div className="story-image" style={{ background: tile.color }}>
+                  <i className={`ti ${tile.icon}`} aria-hidden="true"></i>
+                </div>
+                <div className="story-category">{tile.category}</div>
+                <h4>{tile.title}</h4>
+                <p>{tile.excerpt}</p>
+                <div className="read-time">Placeholder</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="explore" id="culture">
+          <h3>Explore Staffroom Review</h3>
+          <div className="section-links">
+            {sections.map((section) => (
+              <Link href={`/category/${section.toLowerCase()}`} key={section}>
+                {section}
+              </Link>
+            ))}
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
