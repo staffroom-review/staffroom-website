@@ -13,6 +13,37 @@ import {
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 
+/* Dummy placeholder tiles — used to fill out the Conversations and
+   Notes & Reviews sections so they show a full row of 3 like
+   "Recent Writing" does. Delete these once you have real content,
+   and just let the real .map() below render normally. */
+const dummyTiles = [
+  {
+    id: "dummy-1",
+    category: "COMING SOON",
+    title: "A New Conversation, Coming Soon",
+    excerpt: "This is placeholder content — swap it out once the piece is ready.",
+    icon: "ti-clock",
+    color: "#c9c2b2",
+  },
+  {
+    id: "dummy-2",
+    category: "COMING SOON",
+    title: "Another Piece in the Works",
+    excerpt: "This is placeholder content — swap it out once the piece is ready.",
+    icon: "ti-clock",
+    color: "#c9c2b2",
+  },
+  {
+    id: "dummy-3",
+    category: "COMING SOON",
+    title: "More to Come",
+    excerpt: "This is placeholder content — swap it out once the piece is ready.",
+    icon: "ti-clock",
+    color: "#c9c2b2",
+  },
+];
+
 export default function Home() {
   return (
     <div className="site">
@@ -125,6 +156,18 @@ export default function Home() {
                 <div className="read-time">{story.readTime}</div>
               </Link>
             ))}
+            {/* Dummy tiles filling out the row — remove once real content exists */}
+            {dummyTiles.map((tile) => (
+              <div className="story story-dummy" key={tile.id}>
+                <div className="story-image" style={{ background: tile.color }}>
+                  <i className={`ti ${tile.icon}`} aria-hidden="true"></i>
+                </div>
+                <div className="story-category">{tile.category}</div>
+                <h4>{tile.title}</h4>
+                <p>{tile.excerpt}</p>
+                <div className="read-time">Placeholder</div>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -141,56 +184,3 @@ export default function Home() {
             </Link>
           ))}
         </section>
-
-        <section>
-          <div className="section-heading">
-            <span>Verse from the staffroom</span>
-          </div>
-          {verse.map((poem) => (
-            <Link className="verse-block" href={`/essays/${poem.slug}`} key={poem.slug}>
-              <div className="verse-title">{poem.title}</div>
-              <div className="verse-excerpt">{poem.body}</div>
-              <div className="read-time" style={{ textAlign: "center" }}>
-                Read the full poem →
-              </div>
-            </Link>
-          ))}
-        </section>
-
-        <section>
-          <div className="section-heading">
-            <span>Notes & reviews</span>
-          </div>
-          <div className="stories">
-            {notesReviews.map((note) => (
-              <Link className="story" href={`/essays/${note.slug}`} key={note.slug}>
-                <div
-                  className="story-image"
-                  style={{ background: note.image.color }}
-                >
-                  <i className={`ti ${note.image.icon}`} aria-hidden="true"></i>
-                </div>
-                <div className="story-category">{note.category}</div>
-                <h4>{note.title}</h4>
-                <p>{note.excerpt}</p>
-                <div className="read-time">{note.readTime}</div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="explore" id="culture">
-          <h3>Explore Staffroom Review</h3>
-          <div className="section-links">
-            {sections.map((section) => (
-              <Link href={`/category/${section.toLowerCase()}`} key={section}>
-                {section}
-              </Link>
-            ))}
-          </div>
-        </section>
-      </main>
-      <SiteFooter />
-    </div>
-  );
-}
