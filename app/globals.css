@@ -974,3 +974,140 @@ footer {
   text-transform: uppercase;
   color: #6b665c;
 }
+.about-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 70px 5vw 90px;
+}
+
+.about-header {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid #ddd8cd;
+  margin-bottom: 40px;
+}
+
+.about-logo-mark {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  background: #5b7a8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-logo-mark i {
+  font-size: 24px;
+  color: #f6f2ea;
+}
+
+.about-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #26241f;
+  margin: 0 0 8px;
+}
+
+.about-title .accent {
+  font-style: italic;
+  color: #5b7a8c;
+}
+
+.about-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #948e7f;
+  margin: 0;
+}
+
+.about-statement {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #26241f;
+  margin: 0 0 24px;
+}
+
+.about-statement-muted {
+  color: #6b665c;
+  margin-bottom: 48px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.about-card {
+  border: 0.5px solid #ddd8cd;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.about-card i {
+  font-size: 20px;
+  color: #5b7a8c;
+}
+
+.about-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #26241f;
+  margin: 14px 0 8px;
+}
+
+.about-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #6b665c;
+  margin: 0 0 14px;
+}
+
+.about-card-link {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #26241f;
+  border-bottom: 1px solid #5b7a8c;
+  padding-bottom: 3px;
+}
+
+.about-team {
+  text-align: center;
+}
+
+.about-team-mark {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #ece7db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-team-mark i {
+  font-size: 22px;
+  color: #948e7f;
+}
+
+.about-team-caption {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #948e7f;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
