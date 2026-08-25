@@ -3,6 +3,14 @@ import SiteFooter from "../components/SiteFooter";
 import EditorialRule from "../components/EditorialRule";
 import SectionLabel from "../components/SectionLabel";
 
+const imagePlaceholder = (className = "") => (
+  <div className={`story-image-placeholder ${className}`} aria-hidden="true">
+    <div className="image-shape image-shape-one" />
+    <div className="image-shape image-shape-two" />
+    <span>Staffroom Review</span>
+  </div>
+);
+
 export default function HomePage() {
   return (
     <div className="site-shell">
@@ -20,8 +28,8 @@ export default function HomePage() {
             </h1>
 
             <p className="intro-deck">
-              Stories, ideas, conversations and reporting from the people who
-              teach.
+              Stories, ideas, conversations and reflections from the people
+              who teach.
             </p>
           </div>
         </section>
@@ -31,9 +39,7 @@ export default function HomePage() {
         <section className="feature-section page-width">
           <div className="feature-grid">
             <article className="feature-story">
-              <div className="story-image-placeholder" aria-hidden="true">
-                <span>Staffroom Review</span>
-              </div>
+              {imagePlaceholder("feature-image")}
 
               <div className="story-content">
                 <SectionLabel>Teacher Stories</SectionLabel>
@@ -134,7 +140,7 @@ export default function HomePage() {
               <div className="story-list-number">02</div>
 
               <div className="story-list-copy">
-                <SectionLabel>Education Journalism</SectionLabel>
+                <SectionLabel>Education &amp; Culture</SectionLabel>
 
                 <h3>
                   What happens when a school asks its teachers to do more with
@@ -147,7 +153,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <p className="byline">Journalism · Staffroom Review</p>
+              <p className="byline">Reflection · Staffroom Review</p>
             </article>
 
             <article className="story-list-item">
@@ -157,8 +163,8 @@ export default function HomePage() {
                 <SectionLabel>Profiles</SectionLabel>
 
                 <h3>
-                  A teacher's day, seen through the moments nobody puts in the
-                  timetable
+                  A teacher&apos;s day, seen through the moments nobody puts in
+                  the timetable
                 </h3>
 
                 <p>
@@ -190,9 +196,7 @@ export default function HomePage() {
 
           <div className="voices-grid">
             <article className="voice-feature">
-              <div className="story-image-placeholder" aria-hidden="true">
-                <span>Conversation</span>
-              </div>
+              {imagePlaceholder("voice-image")}
 
               <SectionLabel>Interview</SectionLabel>
 
@@ -301,10 +305,82 @@ export default function HomePage() {
 
         <EditorialRule />
 
+        <section className="featured-cards-section page-width">
+          <div className="section-heading-row">
+            <div className="section-heading">
+              <div className="section-heading-meta">
+                <span className="section-number">04</span>
+                <SectionLabel>Featured</SectionLabel>
+              </div>
+
+              <h2 className="section-title">
+                A closer look.
+              </h2>
+            </div>
+
+            <p className="section-heading-note">
+              Longer reads, considered conversations and stories worth making
+              time for.
+            </p>
+          </div>
+
+          <div className="featured-card-grid">
+            <article className="raised-card raised-card-large">
+              {imagePlaceholder("raised-image-one")}
+
+              <div className="raised-card-content">
+                <SectionLabel>Long Read</SectionLabel>
+
+                <h3>
+                  The invisible curriculum: everything teachers teach without
+                  meaning to
+                </h3>
+
+                <p>
+                  On routines, relationships, confidence and all the learning
+                  that happens between the lines.
+                </p>
+
+                <p className="byline">Staffroom Review</p>
+              </div>
+            </article>
+
+            <article className="raised-card raised-card-small">
+              {imagePlaceholder("raised-image-two")}
+
+              <div className="raised-card-content">
+                <SectionLabel>Conversation</SectionLabel>
+
+                <h3>
+                  What makes a classroom feel alive?
+                </h3>
+
+                <p className="byline">Staffroom Review</p>
+              </div>
+            </article>
+
+            <article className="raised-card raised-card-small">
+              {imagePlaceholder("raised-image-three")}
+
+              <div className="raised-card-content">
+                <SectionLabel>Reflection</SectionLabel>
+
+                <h3>
+                  The things teachers learn from their students
+                </h3>
+
+                <p className="byline">Staffroom Review</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <EditorialRule />
+
         <section className="dispatch-section page-width">
           <div className="dispatch-header section-heading">
             <div className="section-heading-meta">
-              <span className="section-number">04</span>
+              <span className="section-number">05</span>
               <SectionLabel>Dispatch</SectionLabel>
             </div>
 
@@ -317,9 +393,7 @@ export default function HomePage() {
 
           <div className="dispatch-grid">
             <article className="dispatch-main">
-              <div className="story-image-placeholder" aria-hidden="true">
-                <span>Education Dispatch</span>
-              </div>
+              {imagePlaceholder("dispatch-image")}
 
               <SectionLabel>Dispatch</SectionLabel>
 
@@ -329,8 +403,8 @@ export default function HomePage() {
               </h3>
 
               <p>
-                Reporting from schools and communities on the forces reshaping
-                how and why we teach.
+                Reflections from schools and communities on the forces
+                reshaping how and why we teach.
               </p>
             </article>
 
@@ -346,7 +420,7 @@ export default function HomePage() {
               <article>
                 <span className="dispatch-location">02 · SCHOOLS</span>
                 <h4>What happens when technology enters every classroom?</h4>
-                <p className="byline">Reporting</p>
+                <p className="byline">Reflection</p>
               </article>
 
               <EditorialRule />
@@ -381,8 +455,8 @@ export default function HomePage() {
             </p>
 
             <p>
-              We publish teacher stories, journalism, interviews, profiles,
-              essays, opinion and ideas with curiosity, intelligence and care.
+              We publish teacher stories, interviews, profiles, essays,
+              reflections and ideas with curiosity, intelligence and care.
             </p>
           </div>
         </section>
