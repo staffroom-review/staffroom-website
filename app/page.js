@@ -96,12 +96,13 @@ export default function HomePage() {
 
         <section className="journal-section page-width">
           <div className="section-heading-row">
-            <div>
-              <SectionLabel>Latest stories</SectionLabel>
+            <div className="section-heading">
+              <div className="section-heading-meta">
+                <span className="section-number">01</span>
+                <SectionLabel>Latest stories</SectionLabel>
+              </div>
 
-              <h2 className="section-title">
-                From the staffroom
-              </h2>
+              <h2 className="section-title">From the staffroom</h2>
             </div>
 
             <a className="section-link" href="#stories">
@@ -174,8 +175,11 @@ export default function HomePage() {
         <EditorialRule />
 
         <section className="voices-section page-width">
-          <div className="voices-intro">
-            <SectionLabel>Voices</SectionLabel>
+          <div className="voices-intro section-heading">
+            <div className="section-heading-meta">
+              <span className="section-number">02</span>
+              <SectionLabel>Voices</SectionLabel>
+            </div>
 
             <h2 className="section-title">
               Teachers speak
@@ -231,8 +235,11 @@ export default function HomePage() {
 
         <section className="ideas-section page-width">
           <div className="ideas-header">
-            <div>
-              <SectionLabel>Ideas &amp; Essays</SectionLabel>
+            <div className="section-heading">
+              <div className="section-heading-meta">
+                <span className="section-number">03</span>
+                <SectionLabel>Ideas &amp; Essays</SectionLabel>
+              </div>
 
               <h2 className="section-title">
                 Thinking about
@@ -267,9 +274,7 @@ export default function HomePage() {
             <article className="idea-card">
               <SectionLabel>Ideas</SectionLabel>
 
-              <h3>
-                The case for slower schools
-              </h3>
+              <h3>The case for slower schools</h3>
 
               <p>
                 Rethinking pace, attention and what a productive school day
@@ -282,9 +287,7 @@ export default function HomePage() {
             <article className="idea-card">
               <SectionLabel>Opinion</SectionLabel>
 
-              <h3>
-                Teachers need fewer initiatives, not better slogans
-              </h3>
+              <h3>Teachers need fewer initiatives, not better slogans</h3>
 
               <p>
                 A plea for space to think, teach and respond to the people in
@@ -299,8 +302,11 @@ export default function HomePage() {
         <EditorialRule />
 
         <section className="dispatch-section page-width">
-          <div className="dispatch-header">
-            <SectionLabel>Dispatch</SectionLabel>
+          <div className="dispatch-header section-heading">
+            <div className="section-heading-meta">
+              <span className="section-number">04</span>
+              <SectionLabel>Dispatch</SectionLabel>
+            </div>
 
             <h2 className="section-title">
               Around the world
