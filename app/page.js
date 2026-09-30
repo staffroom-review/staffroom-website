@@ -165,7 +165,7 @@ export default function HomePage() {
                 key={story.title}
                 {...story}
                 href={`#staffroom-${index}`}
-                imageRatio={index === 1 ? "portrait" : "standard"}
+                imageRatio="standard"
                 className={index === 1 ? "paper-lift homepage-card homepage-card--raised" : "homepage-card"}
               />
             ))}
