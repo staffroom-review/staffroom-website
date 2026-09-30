@@ -36,7 +36,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="feature-section page-width">
+        <section id="stories" className="feature-section page-width">
           <div className="feature-grid">
             <article className="feature-story">
               {imagePlaceholder("feature-image")}
@@ -100,7 +100,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="journal-section page-width">
+        <section id="teachers" className="journal-section page-width">
           <div className="section-heading-row">
             <div className="section-heading">
               <div className="section-heading-meta">
@@ -180,7 +180,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="voices-section page-width">
+        <section id="voices" className="voices-section page-width">
           <div className="voices-intro section-heading">
             <div className="section-heading-meta">
               <span className="section-number">02</span>
@@ -237,7 +237,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="ideas-section page-width">
+        <section id="ideas" className="ideas-section page-width">
           <div className="ideas-header">
             <div className="section-heading">
               <div className="section-heading-meta">
@@ -305,7 +305,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="featured-cards-section page-width">
+        <section id="classrooms" className="featured-cards-section page-width">
           <div className="section-heading-row">
             <div className="section-heading">
               <div className="section-heading-meta">
@@ -377,7 +377,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="dispatch-section page-width">
+        <section id="world" className="dispatch-section page-width">
           <div className="dispatch-header section-heading">
             <div className="section-heading-meta">
               <span className="section-number">05</span>
@@ -436,7 +436,7 @@ export default function HomePage() {
 
         <EditorialRule />
 
-        <section className="principles-section page-width">
+        <section id="schools" className="principles-section page-width">
           <div className="principles-heading">
             <SectionLabel>Editorial position</SectionLabel>
 
@@ -460,6 +460,8 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+
+        <div id="about" aria-hidden="true" />
       </main>
 
       <SiteFooter />

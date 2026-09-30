@@ -20,18 +20,18 @@ export default function SiteFooter() {
         <div className="footer-column">
           <p className="footer-heading">Explore</p>
 
-          <a href="#stories">Teacher Stories</a>
-          <a href="#journalism">Education Journalism</a>
-          <a href="#interviews">Interviews</a>
-          <a href="#profiles">Profiles</a>
+          <a href="#stories">Stories</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#classrooms">Classrooms</a>
+          <a href="#schools">Schools</a>
         </div>
 
         <div className="footer-column">
           <p className="footer-heading">Read</p>
 
-          <a href="#essays">Essays</a>
-          <a href="#opinion">Opinion</a>
           <a href="#ideas">Ideas</a>
+          <a href="#world">World</a>
+          <a href="#voices">Voices</a>
           <a href="#about">About Staffroom Review</a>
         </div>
 
