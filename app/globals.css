@@ -914,3 +914,23 @@ a:hover {
   .homepage-long-read__body{padding:var(--space-2) 0}
   .homepage-school-note .type-secondary{max-width:none}
 }
+
+
+/* Alignment refinement: keep same-row story columns on a common vertical rhythm. */
+.homepage__section .editorial-grid > .story-card,
+.homepage__closing .editorial-grid > .compact-story{
+  align-self:stretch;
+  display:flex;
+  flex-direction:column;
+}
+.homepage__section .editorial-grid > .story-card .story-card__body,
+.homepage__closing .editorial-grid > .compact-story .compact-story__body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+.homepage__section .editorial-grid > .story-card .story-meta,
+.homepage__closing .editorial-grid > .compact-story .story-meta{
+  margin-top:auto;
+  padding-top:16px;
+}
