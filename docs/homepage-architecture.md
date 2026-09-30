@@ -1,107 +1,119 @@
-# Staffroom Review Homepage Architecture
+# Staffroom Review — Homepage Architecture
 
-## 1. Principle
+## 1. Design intent
 
-The homepage should behave like an edited front page.
+The homepage should operate like a high-quality editorial front page, using The Ken as the primary architecture and layout reference.
 
-It should answer, in order:
-1. Who are we?
-2. What is the most important story?
-3. What are teachers experiencing?
-4. What is happening inside classrooms?
-5. How do schools actually work?
-6. What are educators thinking about?
-7. What subjects and perspectives are represented?
-8. What can India learn from elsewhere?
-9. What deserves a longer read?
+The composition should feel deliberate, information-rich and story-led rather than like a generic blog card grid.
 
-Avoid an endless uniform card grid.
+The priority is:
 
-## 2. Proposed sequence
+**importance → lived experience → classroom/school reality → ideas → subjects → comparison → long-form → visual explanation → reflection**
 
-### 01 — Masthead and navigation
-Conventional header. No animated logo. No expandable footer.
+## 2. Page sequence
+
+### 01 — Publication header
+Masthead, utility actions and primary editorial navigation.
 
 ### 02 — Lead story
-One dominant story with category, large image, headline, dek and author/reading time.
+One clearly dominant story with a large headline, supporting dek, category/format metadata, author/date/reading time and strong image.
 
 ### 03 — The Staffroom
-Teacher-first lived experience: one large story and two supporting stories.
+Teacher lived experience. Recommended composition: one larger story plus two supporting stories.
 
 ### 04 — The Classroom
-Analytical classroom stories: pedagogy, behaviour, assessment, AI, subject teaching and classroom culture.
+Stories about what actually happens during teaching. Use a different composition from The Staffroom.
 
 ### 05 — The School Behind the School
-Institutional realities: leadership, workload, parent relationships, administration, recruitment, retention and professional development.
+Leadership, culture, administration, staffing, parent relationships and institutional realities.
 
 ### 06 — Voices
-First-person stories and conversations using recurring franchises.
+First-person work and conversations. Use typography and quotation devices where useful.
 
 ### 07 — Subjects
-Rotating subject showcase with varied card sizes.
+A rotating editorial showcase across subjects, with varied story scales.
 
 ### 08 — Beyond the Staffroom
-International education with a learning/comparison frame useful to Indian educators.
+International/comparative education framed around questions useful to Indian educators.
 
 ### 09 — The Long Read
-One substantial story with more breathing room.
+One substantial piece with more space and breathing room.
 
-### 10 — Visual Story / editorial experiment
-A single high-value visual explanation. Do not add visualisations merely for decoration.
+### 10 — Visual Story
+One meaningful visual explanation, such as teacher workload, school-day timelines, parent-meeting anatomy, homework and AI, or assessment structures.
 
 ### 11 — Closing editorial block
-A shorter reflective piece. Potential franchise: Before the Bell or Last Period.
+A shorter reflective piece or editorial note.
 
-## 3. Layout hierarchy
+## 3. Layout model
 
-- Lead: 8–12 columns
-- Major feature: 6–8 columns
-- Supporting stories: 3–6 columns
-- Compact stories: 3–4 columns
-- Editorial notes: 1–3 columns
+Use The Ken as the principal reference for page composition:
 
-The hierarchy follows story importance.
+- strong left/right alignment
+- dominant lead package
+- irregular editorial hierarchy
+- mixed story widths
+- clear section breaks
+- compact metadata
+- generous whitespace around major stories
+- images scaled according to importance
+
+Desktop uses a 12-column grid.
+
+Typical spans:
+- lead: 8–12 columns
+- major: 6–8
+- supporting: 4–6
+- compact: 3–4
+- notes/meta: 1–3
 
 ## 4. Section rhythm
 
-Alternate image-led, typography-led, list-led, split-grid, compact-story, quote-led and visual-led treatments.
+Rotate:
+- image-led
+- type-led
+- split feature
+- list
+- compact columns
+- quote/voice
+- visual explanation
+- long-read composition
 
-Do not repeat the same 3-column card pattern throughout the page.
+Do not repeat one card structure.
 
 ## 5. Colour rhythm
 
-Use subtle tonal differences rather than rainbow blocks:
-- warm paper as default
-- warmer paper for selected features
-- pale sage/blue as occasional section fields
-- one strong accent for markers/rules
+The structure follows the The Ken reference, but the colour system is Staffroom Review's:
+- warm ivory base
+- near-black type
+- restrained grey
+- deep vermilion accent
+- occasional muted tonal fields only where they improve hierarchy
 
-## 6. Raised-card treatment
-
-Use one deliberately lifted-paper module:
-- one large card
-- two smaller cards
-
-Shadows should be soft and editorial.
-
-## 7. Image rules
+## 6. Image hierarchy
 
 No repeated placeholder image.
 
-Image dimensions and crops should reflect story importance rather than one fixed height.
+Use different subject matter and crops.
 
-## 8. Headline hierarchy
+Large stories receive large image treatment.
 
-Story headlines should dominate. Oversized manifesto statements should be subordinate to actual stories.
+Compact stories may use smaller crops or no image when typography is stronger.
 
-## 9. Mobile
+## 7. Story hierarchy
 
-Keep masthead compact, expose navigation through a functional menu, keep the lead story first, simplify complex grids intentionally, retain image variety and maintain section rhythm.
+Actual story headlines must dominate decorative statements.
 
-## 10. Editorial objective
+The publication proposition should support the homepage, not compete with the lead story.
 
-The reader should move through:
+## 8. Mobile composition
 
-**importance → lived experience → context → ideas → comparison → reflection**
-
-rather than a sequence of repetitive cards.
+On mobile:
+- compact masthead
+- functional navigation
+- lead remains first
+- story hierarchy remains visible
+- complex desktop grids simplify intentionally
+- imagery remains varied
+- metadata remains readable
+- section spacing tightens without becoming cramped

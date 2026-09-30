@@ -1,166 +1,136 @@
-# Staffroom Review Sequential Implementation Plan
+# Staffroom Review — Fresh Sequential Implementation Roadmap
 
 ## Status
 
-**Approved implementation roadmap.**
+**Documentation reset complete.**
 
-The documentation in /docs is the source of truth for the redesign. This document governs how implementation is carried out across sessions.
+The website will now be rebuilt from a clean application baseline inside the existing GitHub repository and Vercel project.
+
+The previous application structure is not to be extended.
 
 ## Non-negotiable workflow
 
-The redesign is **not implemented all at once**.
+Every phase follows:
 
-Each phase follows this cycle:
+**Plan → User approval → Implement → Verify → Live-site review → User approval → Next phase**
 
-**Plan → User approval → Implement → Verify → User checks live site → User approval → Next phase**
+Approval is for one phase only.
 
-Before each phase, state:
-- phase and step
-- objective
-- files/components expected to change
-- checkpoint/acceptance criteria
-- what is explicitly deferred
+Do not combine phases.
 
-Then wait for approval.
+## Build principles
 
-After approval:
-- implement only that phase/step
-- make the smallest appropriate change
-- do not begin later phases implicitly
-- commit the approved work as a logical increment
-
-After implementation:
-- verify the build and affected UI/interaction
-- report files changed, verification, and remaining issues
-- provide the live-site checkpoint
-- stop until the user confirms the live result
-
-User approval of one phase authorises **that phase only**, not future phases.
-
-## Session continuity
-
-A future session must resume from repository state, not conversational memory.
-
-At the start of every new session:
-1. inspect main
-2. read docs/README.md
-3. read this file
-4. read the documentation relevant to the current phase
-5. inspect recent commits
-6. determine the last completed phase and checkpoint
-7. do not repeat or re-implement completed work
-
-If the repository and documentation disagree, stop and document the discrepancy before implementation.
-
-## Phase 0 — Repository audit
-
-### Goal
-Establish the exact current architecture before changing it.
-
-### Actions
-1. Confirm current branch and working baseline.
-2. Inventory routes and components.
-3. Identify global CSS ownership.
-4. Identify current homepage structure.
-5. Identify navigation and footer destinations.
-6. Identify duplicated or obsolete patterns.
-7. Confirm package/dependency baseline.
-8. Record discrepancies.
-
-### Checkpoint
-No application files are changed.
-
-Approval means the audit is accepted and Phase 1 may be proposed.
+1. `/docs` is the only active design/editorial specification.
+2. Existing application code is replaceable.
+3. GitHub and Vercel infrastructure remain in place.
+4. Build the system before filling it with content.
+5. Prefer reusable editorial primitives over one-off markup.
+6. Use one shared visual language rather than accumulating overrides.
+7. Use The Ken as the primary architecture/layout/look-and-feel reference, with Staffroom Review's colour identity and editorial content.
+8. Do not copy The Ken's logo, proprietary assets, editorial copy or stories.
+9. Each phase must leave the repository in a coherent, deployable state.
+10. Stop after every phase for live-site review.
 
 ---
 
-## Phase 1 — Resolve structural discrepancies
+## Phase 1 — Clean application baseline
 
 ### Goal
-Make the existing structure internally coherent before visual implementation.
+Replace the inherited application layer with a minimal, clean Next.js foundation.
 
 ### Actions
-1. Resolve stale navigation/footer links.
-2. Align navigation with the approved taxonomy.
-3. Establish reliable section IDs/routes.
-4. Repurpose or remove obsolete labels where required.
-5. Make the mobile navigation functional.
-6. Preserve unrelated existing behaviour.
+- rebuild `app/layout.js`
+- rebuild `app/page.js`
+- rebuild `app/globals.css`
+- rebuild the global component directory
+- remove obsolete implementation patterns
+- establish deliberate dependency versions in `package.json`
+- create only the base primitives required by the new system
 
 ### Checkpoint
-All visible navigation controls have valid destinations or defined interactions.
+A clean application builds and renders a minimal Staffroom Review shell without legacy CSS or homepage structure.
+
+### Deferred
+Full visual system, complete header/footer, story modules, homepage content and final responsive composition.
 
 ---
 
-## Phase 2 — Establish the visual foundation
+## Phase 2 — Visual foundation
 
 ### Goal
-Apply the documented design tokens before rebuilding content modules.
+Implement the shared visual language defined in `visual-system.md`.
 
 ### Actions
-1. Rationalise colour tokens.
-2. Establish typography roles and scale.
-3. Establish spacing scale.
-4. Establish grid/container behaviour.
-5. Establish rule weights.
-6. Establish image ratios.
-7. Establish restrained shadow treatment.
-8. Establish focus/hover states.
+- colour tokens
+- typography roles
+- type scale
+- spacing scale
+- 12-column grid
+- container behaviour
+- rule weights
+- image ratios
+- restrained shadows
+- focus/hover states
 
 ### Checkpoint
-The shared visual foundation exists and later components can use it without ad-hoc duplication.
+All later components can consume one shared visual system without ad-hoc styling.
+
+### Deferred
+Detailed page composition and content modules.
 
 ---
 
-## Phase 3 — Rebuild global shell
+## Phase 3 — Global shell
 
 ### Goal
-Establish the new Staffroom Review identity through the header, navigation and footer.
+Build the Staffroom Review shell using the structural/look-and-feel reference established by The Ken.
 
 ### Actions
-1. Redesign masthead.
-2. Implement conventional header/nav.
-3. Implement working mobile navigation.
-4. Redesign footer.
-5. Ensure header/footer use the shared visual system.
-
-### Explicit non-goals
-- no animated logo
-- no expandable footer
-- no experimental navigation mechanics
+- masthead
+- publication header
+- editorial navigation
+- utility controls
+- mobile navigation
+- footer
+- responsive shell behaviour
 
 ### Checkpoint
-Global chrome is visually coherent, responsive and functional.
+Header and footer are coherent, functional and visually aligned with the reference direction.
+
+### Deferred
+Homepage story modules.
 
 ---
 
-## Phase 4 — Story presentation primitives
+## Phase 4 — Editorial presentation primitives
 
 ### Goal
-Create the controlled reusable building blocks required by the homepage.
+Create the controlled reusable vocabulary for story packaging.
 
-### Candidate components
-- StoryCard
+### Core components
 - StoryMeta
+- StoryCard
 - SectionHeader
 - FeatureStory
 - CompactStory
-- StoryGrid
 - StoryList
 - QuoteBlock
 - ImageStory
 
-Reuse existing EditorialRule and SectionLabel when appropriate.
+Reuse simple primitives such as EditorialRule and SectionLabel where useful.
 
 ### Checkpoint
-Homepage sections can be assembled from a consistent, limited component vocabulary.
+Homepage layouts can be assembled from consistent reusable modules.
+
+### Deferred
+Full homepage sequence and final content distribution.
 
 ---
 
 ## Phase 5 — Homepage architecture
 
 ### Goal
-Rebuild the homepage in the documented editorial order and hierarchy.
+Implement the documented front-page composition.
 
 ### Sequence
 1. Lead story
@@ -171,120 +141,97 @@ Rebuild the homepage in the documented editorial order and hierarchy.
 6. Subjects
 7. Beyond the Staffroom
 8. The Long Read
-9. Visual story/experiment
+9. Visual Story
 10. Closing editorial block
 
-Use different compositions across sections rather than repeating one card grid.
+Use The Ken as the primary reference for hierarchy, information density and layout behaviour.
 
 ### Checkpoint
-The homepage reads as an edited publication front page.
+The homepage reads as an edited publication front page rather than a generic blog.
+
+### Deferred
+Final editorial seed population and production-quality placeholder imagery.
 
 ---
 
-## Phase 6 — Editorial content and imagery
+## Phase 6 — Editorial seed and imagery
 
 ### Goal
-Populate the redesigned homepage with the documented story concepts and distinct placeholder imagery.
+Populate the homepage using `content-seed.md` and the documented editorial system.
 
 ### Actions
-1. Add approved headlines/deks.
-2. Assign section, subject, format and geography metadata.
-3. Maintain approximately 80% India / 20% international education.
-4. Distribute teacher lived experience across multiple sections.
-5. Use distinct placeholder imagery.
-6. Apply the constructive learning rule to difficult topics.
+- assign sections, subjects, formats and geography
+- add headline/dek pairs
+- maintain approximately 80% India / 20% international balance
+- distribute teacher lived experience across the page
+- create distinct placeholder imagery
+- apply the constructive treatment rule
 
 ### Checkpoint
-The homepage communicates the intended editorial proposition before real articles are available.
+The homepage communicates the Staffroom Review proposition before real publishing content exists.
+
+### Deferred
+Final responsive tuning and technical QA.
 
 ---
 
-## Phase 7 — Teacher lived-experience system
+## Phase 7 — Responsive refinement
 
 ### Goal
-Make lived teacher experience a recurring publication-wide property.
+Refine desktop, tablet and mobile compositions as editorial layouts.
 
 ### Actions
-Introduce recurring formats documented in the editorial system, rather than treating teacher experience as one isolated section.
+- preserve story hierarchy
+- simplify desktop grids intentionally
+- retain important imagery
+- control mobile spacing and type
+- validate navigation and interactions
 
 ### Checkpoint
-Teacher experience is visible across the information architecture and homepage.
+Mobile and tablet feel deliberately designed rather than mechanically stacked.
 
 ---
 
-## Phase 8 — Subjects and reach
+## Phase 8 — Accessibility and production QA
 
 ### Goal
-Broaden the publication's relevance across subjects, school contexts and audiences.
+Validate the built system.
 
-### Actions
-Rotate subject representation and include metro, small-town, rural and international perspectives.
-
-### Checkpoint
-The publication does not feel limited to one teacher profile, subject or geography.
-
----
-
-## Phase 9 — Visual storytelling
-
-### Goal
-Introduce Staffroom Review's own visual-story language.
-
-### Actions
-Begin with 1–2 meaningful visual stories.
-
-### Checkpoint
-Visuals explain something that text alone would not communicate as effectively.
-
----
-
-## Phase 10 — Responsive refinement
-
-### Goal
-Preserve editorial hierarchy across desktop, tablet and mobile.
-
-### Checkpoint
-Mobile is intentionally composed, not merely a stacked desktop page.
-
----
-
-## Phase 11 — Accessibility and technical QA
-
-### Actions
-- semantic heading hierarchy
+### Checks
+- semantic headings
 - keyboard navigation
 - visible focus
+- colour contrast
 - alt text
-- decorative placeholder handling
+- decorative-image handling
 - valid links
-- mobile interaction testing
-- production build validation
-- console/runtime error review
-- image loading review
-- metadata review
+- mobile menu
+- production build
+- runtime/console errors
+- image behaviour
+- metadata
 
 ### Checkpoint
-No known critical build, interaction or accessibility issue remains.
+No known critical technical, accessibility or interaction issue remains.
 
 ---
 
-## Phase 12 — Final editorial polish
+## Phase 9 — Final fidelity pass
+
+### Goal
+Bring the finished implementation to the intended editorial/design standard.
 
 ### Actions
-Tune headline scale, section spacing, rule lengths, image crops, accent usage, content density and visual repetition.
+Tune:
+- headline scale
+- margins
+- section spacing
+- rule placement
+- image crops
+- metadata density
+- colour accent usage
+- visual repetition
+- overall hierarchy
 
 ### Checkpoint
-The site feels authored rather than assembled.
-
-## Implementation constraints
-
-Throughout all phases:
-- use the smallest practical file set
-- preserve unrelated working functionality
-- reuse existing components where they fit
-- do not duplicate CSS or components unnecessarily
-- do not make incidental mobile changes
-- do not copy The Ken's identity, language or stories
-- do not introduce board-specific news as a major category
-- do not use repeated placeholder imagery
-- do not bundle unapproved phases into a single implementation
+The site feels authored, consistent and intentionally designed.

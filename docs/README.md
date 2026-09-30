@@ -1,21 +1,53 @@
-# Staffroom Review — Editorial & Design Documentation
+# Staffroom Review — Master Design & Build Specification
 
-Documentation for the approved Staffroom Review redesign. The redesign uses The Ken as a reference for editorial discipline, hierarchy, story packaging and visual storytelling, while retaining a distinct Staffroom Review identity.
+Staffroom Review is an independent publication about teaching, schooling and the human experience of education.
+
+The website will be rebuilt as a clean application implementation inside the existing GitHub repository and Vercel project.
 
 ## Source of truth
 
-- visual-system.md — visual language and UI rules
-- editorial-system.md — editorial positioning and voice
-- content-taxonomy.md — sections, subjects, formats and geography
-- homepage-architecture.md — homepage structure and hierarchy
-- content-seed.md — placeholder story concepts
-- repository-audit.md — current implementation baseline and discrepancies
-- implementation-plan.md — phased roadmap, checkpoints and session-continuity rules
+The active build specification is limited to these documents:
 
-## Status
+- `visual-system.md` — visual language, typography, colour, grid, interaction and responsive rules
+- `editorial-system.md` — editorial proposition, voice and story principles
+- `content-taxonomy.md` — primary sections, subjects, formats and geography
+- `homepage-architecture.md` — page sequence, hierarchy and composition
+- `content-seed.md` — placeholder editorial concepts
+- `build-baseline.md` — clean technical baseline and implementation boundaries
+- `implementation-plan.md` — phased build roadmap and checkpoints
 
-**Documentation phase complete.**
+These documents override any assumptions contained in previous application code.
 
-**Code/design implementation has not started.**
+## Design reference
 
-The implementation-plan.md workflow is mandatory: each phase is proposed before implementation, implemented only after user approval, verified, and then held for live-site review before the next phase begins.
+The Ken is the primary visual and structural reference.
+
+The rebuild should closely follow The Ken's editorial approach to hierarchy, page architecture, story prominence, typography contrast, information density, grid composition, navigation and utility placement, story packaging, metadata treatment, spacing and visual storytelling.
+
+The Staffroom Review implementation should use its own brand, editorial content, imagery and colour system. The intended interface-level difference is primarily the colour palette.
+
+Do not copy The Ken's logo, name treatment, editorial copy, proprietary imagery or other brand assets.
+
+## Technical direction
+
+The application implementation is being rebuilt cleanly rather than adapted from the previous homepage/CSS structure.
+
+Keep the existing GitHub repository and Vercel project.
+
+The application code, component structure and styling are replaceable and should be designed from this specification forward.
+
+## Working rule
+
+Each implementation phase follows:
+
+**Plan → User approval → Implement → Verify → Live-site review → User approval → Next phase**
+
+No phase authorises the next phase.
+
+Every phase must identify:
+- objective
+- files/components expected to change
+- acceptance checkpoint
+- explicit deferrals
+
+No unrelated work should be bundled into a phase.

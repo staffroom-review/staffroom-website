@@ -1,175 +1,82 @@
-# Staffroom Review Editorial System
+# Staffroom Review — Editorial System
 
-## 1. Editorial proposition
+## 1. Proposition
 
-Staffroom Review is an independent publication about the realities of teaching and schooling.
+Staffroom Review is an independent publication about the realities of teaching, schooling and the people inside them.
 
 It is not:
-- a school-board news site
+- a school-board bulletin
 - an exam/news alert service
 - a generic education portal
 - an edtech news feed
 - a school-rating platform
 - a collection of generic teaching tips
 
-Its editorial territory is:
+Recurring question:
 
-**Teachers + classrooms + institutions + culture + ideas + the human experience of teaching**
+> What does an idea, change, practice or problem actually look and feel like inside a school?
 
-The recurring question is:
+## 2. Editorial centre
 
-> What does this idea, change, practice or problem actually look and feel like inside a school?
+Approximately 80% of editorial attention should remain within Indian school education.
 
-## 2. Editorial mix
+Approximately 20% may be international when comparison is genuinely useful to educators in India.
 
-### 80% — Indian school education
-Focus on teachers, classrooms, school culture, leadership, assessment, pedagogy, behaviour, inclusion, technology and AI, teacher careers, workload, parents, administration, subjects, rural/small-town schooling, urban schooling, private and government-school realities, arts, sport and specialist teaching.
+## 3. Story lens
 
-School-board news is not a defining category.
+Strong stories normally contain:
 
-### 20% — International education
-International stories should be comparative and useful.
+**Situation → human reality → tension → learning**
 
-The question is:
-
-> What can Indian educators understand or question by looking at another education system?
-
-## 3. Editorial lens
-
-Strong stories should normally have four layers:
-
-1. Situation — what is happening?
-2. Human reality — who is living through it?
-3. Tension — what is difficult, contradictory or surprising?
-4. Learning — what should educators take away?
-
-The fourth layer is essential to Staffroom Review's constructive identity.
-
-## 4. Constructive treatment of difficult subjects
-
-Negative consequences should be presented honestly, without sensationalism.
-
-Preferred progression:
+Difficult subjects should be treated constructively:
 
 **Difficulty → insight → learning → agency**
 
-A story can discuss burnout, exclusion, poor management, technology misuse, excessive assessment or harmful incentives. It should then ask:
-- What caused the problem?
-- What did people learn?
-- What warning signs existed?
-- What could teachers or administrators guard against?
-- What practical lesson emerges?
+Do not manufacture optimism, but make the useful learning visible.
 
-The publication does not need to manufacture a happy ending.
+## 4. Voice
 
-## 5. Voice
+Curious, precise, intelligent, observant, humane and analytical.
 
-The writing should feel curious, precise, intelligent, observant, humane and analytical.
+Avoid:
+- PR language
+- motivational clichés
+- outrage for its own sake
+- clickbait
+- unnecessary jargon
+- moralising
 
-Avoid institutional PR language, slogans, motivational clichés, moralising, clickbait, unnecessary jargon and exaggerated outrage.
+Headlines should reveal an idea, tension or observation.
 
-Prefer headlines that expose a tension or reveal an unexpected reality.
+## 5. Teacher lived experience
 
-## 6. Headline principles
+Teacher experience is a recurring publication-wide property.
 
-Headlines should:
-- express an idea, tension or observation
-- create curiosity without clickbait
-- sound specific enough to imagine the story
-- avoid generic listicle phrasing
-- avoid policy-speak
-- remain readable internationally
+Recurring franchises include:
+- The Staffroom
+- In Practice
+- After the Bell
+- First Year
+- Twenty Years In
+- The Difficult Class
+- The Lesson I Learned
+- From the Principal's Desk
+- The Other Classroom
+- Across the Corridor
 
-Examples:
-- The teacher who learned to leave school on time
-- When the class is tired before first period
-- The homework problem AI didn't create
-- The five-year teacher
-- The school behind the timetable
+These are formats/franchises, not replacement navigation categories.
 
-These are editorial placeholders, not claims about real events.
+## 6. Subjects
 
-## 7. Story dek / blurb
+Treat subjects as editorial worlds:
 
-The dek should answer:
+Mathematics; Science; English; Languages; Social Sciences; History; Geography; Arts; Music; Physical Education; Computer Science; AI and Technology; Early Years; Assessment; Inclusion; Special Education; School Leadership; Teacher Careers; Wellbeing; Parents and Families; School Culture; Rural Education; Urban Education; Education Inequality; Professional Development.
 
-> Why should I care about this story?
+## 7. Formats
 
-Target length: 20–35 words.
+Feature; First Person; Interview; Profile; Analysis; Essay; Field Note; Case Study; Visual Story; Conversation; Long Read.
 
-It should introduce context or tension rather than restate the headline.
-
-## 8. Teacher lived experience as a publication-wide system
-
-Teacher experience must appear in several formats, not one isolated section.
-
-Potential recurring formats:
-
-### The Staffroom
-First-person teacher experiences and observations.
-
-### In Practice
-A teacher explains something they actually tried.
-
-### After the Bell
-What teaching looks like outside the official school day.
-
-### First Year
-Experiences of early-career teachers.
-
-### Twenty Years In
-Long-view reflections from experienced teachers.
-
-### The Difficult Class
-Specific classroom situations and what they reveal.
-
-### The Lesson I Learned
-A mistake, failure, correction or unexpected insight.
-
-### From the Principal's Desk
-Leadership experiences without turning the section into institutional PR.
-
-### The Other Classroom
-Perspectives from special educators, counsellors, librarians and support staff.
-
-### Across the Corridor
-Different educators responding to the same question.
-
-These formats make teacher experience the publication's recurring narrative engine.
-
-## 9. Subject coverage
-
-Subjects should be editorial worlds rather than simple filters.
-
-### Mathematics
-Anxiety, confidence, problem solving, competition culture, tutoring and mathematical thinking.
-
-### Science
-Curiosity, laboratory access, experiments, environmental education and misconceptions.
-
-### English and languages
-Multilingual classrooms, reading, writing, English anxiety and regional-language realities.
-
-### Social sciences
-History, geography, citizenship, social inequality and classroom discussion.
-
-### Arts
-Art, music, creativity and timetable pressures.
-
-### Physical education
-Participation, gender, sports inequality, fitness and competition.
-
-### Computer science and AI
-AI literacy, cheating, coding, digital inequality and teacher confidence.
-
-### Early years
-Play, foundational learning, parent expectations and teacher preparation.
-
-## 10. Story formats
-
-Feature, First Person, Interview, Profile, Analysis, Essay, Field Note, Case Study, Visual Story, Conversation and Long Read.
-
-## 11. Audience
+## 8. Audience
 
 Primary:
 - Indian teachers
@@ -182,38 +89,17 @@ Secondary:
 - parents interested in the realities of schooling
 - international educators interested in Indian school life
 
-Stories should make sense to international readers without flattening Indian specificity.
+## 9. Editorial relationship to The Ken
 
-## 12. Editorial test
+The Ken is the primary reference for:
+- tightly defined story propositions
+- analytical depth
+- strong editorial hierarchy
+- compact metadata
+- recurring editorial formats
+- visual explanation
+- disciplined page composition
 
-Before commissioning or promoting an idea, ask:
-1. What is the story?
-2. Why is it interesting?
-3. Whose experience does it reveal?
-4. What is surprising or unresolved?
-5. What is the tension?
-6. What might another teacher learn?
-7. What should a school leader notice?
-8. What warning or unintended consequence matters?
-9. Can the story stand beyond a news cycle?
-10. Does it contribute something Staffroom Review uniquely can?
+The Ken is not a source for copied language, stories or brand assets.
 
-## 13. International framing
-
-India is the editorial centre of gravity. International material is the comparative lens.
-
-Preferred:
-> What Japanese schools can teach us about who owns school life
-
-Less useful:
-> Japan announces a new education reform
-
-## 14. Editorial relationship to The Ken
-
-The Ken is a reference for sharply defined story propositions, analytical depth, strong editorial hierarchy, recurring formats, visual explanation and meaningful use of context.
-
-It is not a source for copied language, brand identity, navigation, page composition, headlines or stories.
-
-References:
-https://the-ken.com/
-https://the-ken.com/blog/telling-visual-stories-within-stories/
+The website's visual and structural fidelity should be high; Staffroom Review's editorial subject, navigation labels, content and colour identity remain its own.

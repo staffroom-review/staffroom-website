@@ -1,39 +1,28 @@
-# Staffroom Review Content Taxonomy
+# Staffroom Review — Content Taxonomy
 
-## 1. Taxonomy model
+## 1. Model
 
-Every story should have four dimensions:
+Every story is organised as:
 
 **Primary section → Subject → Format → Geography**
 
-This gives editorial flexibility while keeping navigation understandable.
-
 ## 2. Primary sections
 
-### Stories
-The broad editorial front door for significant features and reported/observational work.
+**Stories** — broad front door for major features and significant work.
 
-### Teachers
-Teacher lived experience, careers, working lives and professional identity.
+**Teachers** — lived experience, careers, working lives and professional identity.
 
-### Classrooms
-Pedagogy, student behaviour, assessment and the day-to-day act of teaching.
+**Classrooms** — pedagogy, behaviour, assessment and the act of teaching.
 
-### Schools
-Leadership, culture, administration, systems, parents, staffing and school operations.
+**Schools** — leadership, culture, administration, systems, parents, staffing and school operations.
 
-### Ideas
-Essays, arguments, interpretation and new ways of thinking about education.
+**Ideas** — essays, arguments, interpretation and new ways of thinking about education.
 
-### World
-International education viewed through questions useful to Indian educators.
+**World** — international education through questions useful to Indian educators.
 
-### Voices
-First-person and conversational work from teachers and people who work in and around schools.
+**Voices** — first-person and conversational work.
 
 ## 3. Subjects
-
-Recommended controlled vocabulary:
 
 Early Years; Primary; Secondary; Mathematics; Science; English; Languages; Social Sciences; History; Geography; Arts; Music; Physical Education; Computer Science; AI and Technology; Assessment; Inclusion; Special Education; School Leadership; Teacher Careers; Wellbeing; Parents and Families; School Culture; Rural Education; Urban Education; Education Inequality; Professional Development.
 
@@ -45,44 +34,31 @@ Feature; First Person; Interview; Profile; Analysis; Essay; Field Note; Case Stu
 
 ## 5. Geography
 
-Suggested values:
-
 India; South Asia; Asia; Europe; North America; Australia / New Zealand; Africa; Middle East; Latin America; Global.
 
-International geography should generally account for no more than the targeted 20% editorial share.
+International content should normally remain near the 20% editorial target.
 
-## 6. Teacher-experience franchises
+## 6. Teacher franchises
 
-- The Staffroom
-- In Practice
-- After the Bell
-- First Year
-- Twenty Years In
-- The Difficult Class
-- The Lesson I Learned
-- From the Principal's Desk
-- The Other Classroom
-- Across the Corridor
+The Staffroom; In Practice; After the Bell; First Year; Twenty Years In; The Difficult Class; The Lesson I Learned; From the Principal's Desk; The Other Classroom; Across the Corridor.
 
-These are editorial franchises, not replacement navigation categories.
+These do not replace the primary navigation.
 
 ## 7. Homepage balance
 
-| Editorial area | Target |
+| Editorial area | Planning target |
 |---|---:|
 | Teacher lived experience | 25% |
 | Classroom practice | 20% |
 | School leadership/culture | 15% |
-| Education ideas/analysis | 15% |
+| Ideas/analysis | 15% |
 | Subjects | 10% |
 | International | 10% |
 | Experimental/visual | 5% |
 
-This is a planning target, not a rigid mathematical requirement for every homepage.
+## 8. Metadata
 
-## 8. Metadata model
-
-Every story card should support:
+Each story package should support:
 - primary section
 - subject
 - format
@@ -93,20 +69,25 @@ Every story card should support:
 - date
 - reading time
 - image
-- image alt text
+- alt text
 
-Visible homepage metadata should remain restrained.
+Keep visible metadata restrained.
 
 ## 9. Navigation
 
 Primary navigation:
 
-Stories; Teachers; Classrooms; Schools; Ideas; World; Voices.
+**Stories · Teachers · Classrooms · Schools · Ideas · World · Voices**
 
-Search and subscription/newsletter utilities remain separate from editorial categories.
+Search, account and subscription/newsletter utilities are separate from editorial categories.
 
-## 10. Content that does not belong
+## 10. Exclusions
 
-Do not create top-level taxonomy around exam announcements, board notifications, generic school rankings, daily policy aggregation, press-release content, generic study tips or repetitive motivational content.
-
-Such items can appear only when transformed into a distinctive Staffroom Review story.
+Do not build top-level navigation around:
+- exam announcements
+- board notifications
+- generic rankings
+- daily policy aggregation
+- press releases
+- generic study tips
+- repetitive motivational content
