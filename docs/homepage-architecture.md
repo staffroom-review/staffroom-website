@@ -4,11 +4,19 @@
 
 The homepage is a **full publication front page, not a sample homepage**.
 
-The Ken is the primary architecture/layout/look-and-feel reference. The final Staffroom Review homepage must maintain a **one-to-one structural correlation** with the reviewed The Ken homepage reference.
+The Ken is the primary architecture/layout/look-and-feel reference. The Staffroom Review homepage should be **as close as practical** to the reference in overall page depth, major section count, story/card density, hierarchy, editorial rhythm and variety.
 
-This means the final page must be comparable in:
+This is a guideline, not a rigid one-to-one requirement.
+
+Staffroom Review may adapt, combine, split or add modules where that produces a stronger and more natural Staffroom editorial experience. The important constraint is that these adaptations must not accidentally turn the page into a materially shorter, sparser or more repetitive version of the reference.
+
+## 2. Comparative architecture rule
+
+The reviewed The Ken homepage should be treated as the principal compositional benchmark.
+
+Aim to preserve or closely approximate:
 - total structural length
-- number and role of major sections
+- number of major sections
 - number and role of story/card groups
 - heading and label blocks
 - supporting text/dek blocks
@@ -18,46 +26,25 @@ This means the final page must be comparable in:
 - information density
 - overall section rhythm
 
-Staffroom Review replaces the reference content with placeholder editorial stories, headlines, deks, authors, metadata, images and editorial labels relevant to teaching and schooling. It does **not** replace the reference structure with a shorter Staffroom-specific page.
+Do **not** interpret these as exact counts that must be copied.
 
-## 2. Mandatory one-to-one mapping
+A reasonable Staffroom adaptation may:
+- combine two adjacent reference modules
+- split a dense reference group
+- add a Staffroom-specific editorial block
+- vary card counts slightly
+- change image treatment where Staffroom's content needs it
+- use a different module format for the same editorial purpose
 
-The reviewed The Ken homepage must be treated as a page-level source structure.
+The final page should still read at a glance as a full publication homepage rather than a shortened sample.
 
-For every visible reference module that occupies homepage editorial space, define exactly one Staffroom Review counterpart.
+## 3. Reference guide
 
-### A mapped counterpart must preserve
-
-**1. Position**  
-The same relative sequence in the page.
-
-**2. Role**  
-Lead remains lead; supporting cards remain supporting cards; lists remain lists; quote/text blocks remain quote/text blocks; visual modules remain visual modules.
-
-**3. Cardinality**  
-Do not collapse two reference cards into one, or turn a larger reference group into a single summary.
-
-**4. Hierarchy**  
-Relative emphasis, visual weight, story prominence and approximate footprint should remain comparable.
-
-**5. Text-block role**  
-A reference headline/dek/label/quote/supporting-text role receives a Staffroom text counterpart. The wording is entirely original to Staffroom Review.
-
-**6. Image role**  
-An image-bearing reference module receives a distinct Staffroom placeholder image of the corresponding visual importance and approximate crop class.
-
-**7. Length**  
-The completed homepage should extend to the same broad structural depth as the reviewed reference. A short page that stops after the main editorial sections is not an acceptable implementation.
-
-## 3. Reference mapping document
-
-The definitive slot-by-slot map lives in:
+The working comparative map lives in:
 
 `docs/homepage-reference-mapping.md`
 
-Before Phase 5, the mapping document must be completed from the reviewed The Ken homepage reference.
-
-No homepage implementation should proceed from memory, a partial screenshot or the Staffroom section list alone.
+Implementation should use it alongside the visual reference. Do not build from the Staffroom section list alone.
 
 ## 4. Staffroom editorial content sequence
 
@@ -96,7 +83,7 @@ One meaningful visual explanation.
 ### 11 — Closing editorial block
 A shorter reflective piece or editorial note.
 
-These are Staffroom editorial areas, **not a count of final homepage modules**. The one-to-one reference map may distribute several reference modules across one editorial area or use additional Staffroom modules where required to match the reference page.
+These are Staffroom editorial areas, **not a count of final homepage modules**. Additional supporting modules are expected where needed to achieve the intended publication scale.
 
 ## 5. Layout model
 
@@ -120,11 +107,11 @@ Typical spans:
 - compact: 3–4
 - notes/meta: 1–3
 
-The spans are tools for reproducing the mapped compositions; they are not permission to simplify the page into a repeated grid.
+The spans are tools for reproducing the editorial composition; they are not a requirement to force every reference card into an identical Staffroom slot.
 
 ## 6. Section rhythm
 
-Use the rhythm observed in the reference map:
+Use a varied rhythm:
 - image-led packages
 - type-led packages
 - split features
@@ -136,11 +123,11 @@ Use the rhythm observed in the reference map:
 
 Do not repeat one card structure merely because it is convenient to code.
 
-Variation should come from the reference mapping, not from inventing a shorter alternative architecture.
+Variation should come from the reference direction and Staffroom editorial needs.
 
 ## 7. Colour rhythm
 
-The structure follows the The Ken reference, but the colour system is Staffroom Review's:
+The structure follows the reference direction, but the colour system is Staffroom Review's:
 - warm ivory base
 - near-black
 - restrained grey
@@ -151,21 +138,19 @@ The palette is the principal intentional interface-level difference.
 
 ## 8. Image hierarchy
 
-No repeated placeholder image.
-
-Every image-bearing mapped slot receives a visually distinct placeholder.
+Every image-bearing story should receive a distinct visual placeholder during the seed phase.
 
 Use different subject matter and crops.
 
 Large stories receive large image treatment.
 
-Compact stories may use smaller crops, but the image role must remain equivalent to the reference.
+Compact stories may use smaller crops, but the visual hierarchy should remain clear.
 
 ## 9. Story hierarchy
 
 Actual story headlines must dominate decorative statements.
 
-The publication proposition should support the homepage, not compete with the mapped story hierarchy.
+The publication proposition should support the homepage, not compete with the story hierarchy.
 
 ## 10. Mobile composition
 
@@ -173,11 +158,10 @@ On mobile:
 - compact masthead
 - functional navigation
 - lead remains first
-- mapped editorial modules remain present
-- complex desktop grids simplify intentionally rather than disappear
+- meaningful editorial modules remain present
+- complex desktop grids simplify intentionally
 - imagery remains varied
 - metadata remains readable
 - section spacing tightens without becoming cramped
 
-Mobile may reflow, reorder within documented responsive rules where necessary for usability, and simplify layout mechanics; it must not be used to justify deleting mapped content modules.
-
+Mobile may reflow or simplify layout mechanics; it should not be used to justify deleting substantial editorial content.
