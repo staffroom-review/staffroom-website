@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Staffroom Review",
   description:
-    "An independent publication about teachers, education and the human experience of teaching.",
+    "An independent publication about teaching, schooling and the human experience of education.",
 };
 
 export default function RootLayout({ children }) {
