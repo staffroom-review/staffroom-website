@@ -1,4 +1,5 @@
 :root {
+  /* Surfaces: warm paper first, with a small number of editorial fields. */
   --paper: #f7f5ef;
   --paper-deep: #eeece4;
   --paper-warm: #e9dfd3;
@@ -6,19 +7,23 @@
   --paper-blue: #dfe7e9;
   --paper-clay: #ead9cf;
   --paper-yellow: #eee7c9;
-  --paper-ink: #dedbd1;
 
+  /* Core ink + one recognisable editorial accent. */
   --ink: #171714;
   --muted: #706f69;
   --rule: #d2cfc5;
+  --accent: #8c302f;
+  --accent-soft: #c9a19b;
 
-  --accent: #6f5d48;
-  --accent-soft: #b4a38a;
-  --accent-clay: #99634f;
-  --accent-sage: #5e7163;
-  --accent-blue: #5b737d;
-
-  --bright: #e7a51b;
+  /* Type roles used across the shared editorial vocabulary. */
+  --type-lead: clamp(48px, 4.6vw, 68px);
+  --type-section: clamp(34px, 3.5vw, 48px);
+  --type-secondary: clamp(26px, 2.8vw, 38px);
+  --type-card: clamp(22px, 2.4vw, 32px);
+  --type-body: clamp(16px, 1.4vw, 20px);
+  --type-meta: 10px;
+  --type-nav: 12px;
+  --type-quote: clamp(28px, 2.8vw, 42px);
 
   --serif:
     "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
@@ -28,8 +33,11 @@
     Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif;
 
+  /* Editorial layout + spacing foundation. */
   --page-max: 1440px;
   --page-padding: clamp(24px, 4vw, 64px);
+  --grid-columns: 12;
+  --grid-gap: clamp(16px, 2vw, 32px);
 
   --space-1: 8px;
   --space-2: 12px;
@@ -40,6 +48,21 @@
   --space-7: 64px;
   --space-8: 96px;
   --space-9: 128px;
+
+  /* Editorial separators, image proportions and paper-lift treatment. */
+  --rule-standard: 1px;
+  --rule-major: 2px;
+  --rule-signature: 4px;
+  --image-feature: 4 / 3;
+  --image-voice: 3 / 2;
+  --image-raised-large: 5 / 4;
+  --image-raised-small: 4 / 3;
+  --shadow-paper-lift:
+    0 6px 0 rgba(23, 23, 20, 0.025),
+    0 14px 28px rgba(23, 23, 20, 0.075);
+  --shadow-paper-lift-hover:
+    0 8px 0 rgba(23, 23, 20, 0.025),
+    0 20px 34px rgba(23, 23, 20, 0.1);
 }
 
 * {
@@ -100,7 +123,7 @@ button {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: var(--space-6);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: var(--rule-standard) solid var(--rule);
 }
 
 .masthead {
@@ -134,7 +157,7 @@ button {
 .primary-nav a {
   position: relative;
   padding-block: 8px;
-  font-size: 12px;
+  font-size: var(--type-nav);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -184,14 +207,14 @@ button {
 
 .editorial-rule {
   width: 100%;
-  height: 1px;
+  height: var(--rule-standard);
   background: var(--rule);
 }
 
 .section-label {
   margin: 0 0 var(--space-3);
   color: var(--accent);
-  font-size: 10px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.13em;
   line-height: 1.2;
@@ -208,8 +231,8 @@ button {
   top: 4px;
   bottom: 4px;
   left: 0;
-  width: 3px;
-  background: var(--bright);
+  width: var(--rule-signature);
+  background: var(--accent);
   content: "";
 }
 
@@ -235,7 +258,7 @@ button {
 .section-title {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(34px, 3.5vw, 52px);
+  font-size: var(--type-section);
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -278,7 +301,7 @@ button {
   max-width: 700px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(42px, 4.6vw, 68px);
+  font-size: var(--type-lead);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.97;
@@ -289,7 +312,7 @@ button {
   margin: var(--space-5) 0 0;
   color: var(--muted);
   font-family: var(--serif);
-  font-size: clamp(19px, 1.7vw, 24px);
+  font-size: var(--type-body);
   line-height: 1.3;
 }
 
@@ -299,7 +322,8 @@ button {
 
 .story-image-placeholder {
   position: relative;
-  min-height: 520px;
+  aspect-ratio: var(--image-feature);
+  min-height: 0;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -408,7 +432,7 @@ button {
 .feature-title {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(40px, 4.2vw, 64px);
+  font-size: var(--type-lead);
   font-weight: 500;
   letter-spacing: -0.045em;
   line-height: 0.98;
@@ -419,14 +443,14 @@ button {
   margin: var(--space-5) 0 0;
   color: var(--muted);
   font-family: var(--serif);
-  font-size: 19px;
+  font-size: var(--type-body);
   line-height: 1.45;
 }
 
 .byline {
   margin: var(--space-6) 0 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.4;
@@ -448,7 +472,7 @@ button {
 .secondary-story h3 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(25px, 2.2vw, 34px);
+  font-size: var(--type-secondary);
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.08;
@@ -482,24 +506,24 @@ button {
 }
 
 .section-heading-row .section-heading::before {
-  background: var(--bright);
+  background: var(--accent);
 }
 
 .section-heading-row .section-label {
-  color: var(--accent-sage);
+  color: var(--accent);
 }
 
 .section-link {
   padding-bottom: 5px;
   border-bottom: 1px solid var(--ink);
-  font-size: 10px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .story-list {
-  border-top: 2px solid var(--ink);
+  border-top: var(--rule-major) solid var(--ink);
 }
 
 .story-list-item {
@@ -508,11 +532,11 @@ button {
   gap: 32px;
   align-items: start;
   padding-block: 32px;
-  border-bottom: 1px solid rgba(23, 23, 20, 0.18);
+  border-bottom: var(--rule-standard) solid rgba(23, 23, 20, 0.18);
 }
 
 .story-list-number {
-  color: var(--accent-sage);
+  color: var(--accent);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -522,7 +546,7 @@ button {
   max-width: 700px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: var(--type-secondary);
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 1.02;
@@ -555,11 +579,11 @@ button {
 }
 
 .voices-intro::before {
-  background: var(--accent-clay);
+  background: var(--accent);
 }
 
 .voices-intro .section-label {
-  color: var(--accent-clay);
+  color: var(--accent);
 }
 
 .voices-grid {
@@ -572,14 +596,15 @@ button {
   max-width: 760px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(34px, 4vw, 56px);
+  font-size: var(--type-secondary);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.02;
 }
 
 .voice-feature .story-image-placeholder {
-  min-height: 440px;
+  aspect-ratio: var(--image-voice);
+  min-height: 0;
   margin-bottom: var(--space-5);
 }
 
@@ -587,15 +612,15 @@ button {
   align-self: center;
   padding: 20px 28px;
   background: var(--paper-blue);
-  border-top: 1px solid #c5d0d4;
-  border-bottom: 1px solid #c5d0d4;
+  border-top: var(--rule-standard) solid #c5d0d4;
+  border-bottom: var(--rule-standard) solid #c5d0d4;
 }
 
 .voice-quotes blockquote {
   margin: 0;
   padding-block: 10px 32px;
   font-family: var(--serif);
-  font-size: clamp(24px, 2.2vw, 32px);
+  font-size: var(--type-quote);
   font-style: italic;
   line-height: 1.12;
 }
@@ -640,11 +665,11 @@ button {
 }
 
 .ideas-header .section-heading::before {
-  background: var(--accent-clay);
+  background: var(--accent);
 }
 
 .ideas-header .section-label {
-  color: var(--accent-clay);
+  color: var(--accent);
 }
 
 .ideas-header > p {
@@ -652,7 +677,7 @@ button {
   margin: 0;
   color: #625a54;
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: var(--type-body);
   line-height: 1.45;
 }
 
@@ -661,8 +686,8 @@ button {
   grid-template-columns: 1.35fr 0.825fr 0.825fr;
   gap: 1px;
   background: rgba(23, 23, 20, 0.16);
-  border-top: 2px solid var(--ink);
-  border-bottom: 1px solid rgba(23, 23, 20, 0.16);
+  border-top: var(--rule-major) solid var(--ink);
+  border-bottom: var(--rule-standard) solid rgba(23, 23, 20, 0.16);
 }
 
 .idea-card {
@@ -679,14 +704,14 @@ button {
 .idea-card h3 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: var(--type-secondary);
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 1.02;
 }
 
 .idea-card:not(.idea-card-large) h3 {
-  font-size: clamp(25px, 2.4vw, 34px);
+  font-size: var(--type-card);
 }
 
 .idea-card > p:not(.byline) {
@@ -718,28 +743,26 @@ button {
   overflow: hidden;
   background: #fffdf8;
   border: 1px solid rgba(23, 23, 20, 0.1);
-  box-shadow:
-    0 8px 0 rgba(23, 23, 20, 0.035),
-    0 18px 34px rgba(23, 23, 20, 0.09);
+  box-shadow: var(--shadow-paper-lift);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
 }
 
-.raised-card:hover {
+.raised-card:hover,
+.raised-card:focus-within {
   transform: translateY(-4px);
-  box-shadow:
-    0 10px 0 rgba(23, 23, 20, 0.035),
-    0 24px 42px rgba(23, 23, 20, 0.12);
+  box-shadow: var(--shadow-paper-lift-hover);
 }
 
 .raised-card .story-image-placeholder {
-  min-height: 250px;
+  aspect-ratio: var(--image-raised-small);
+  min-height: 0;
   border: 0;
 }
 
 .raised-card-large .story-image-placeholder {
-  min-height: 390px;
+  aspect-ratio: var(--image-raised-large);
 }
 
 .raised-image-one {
@@ -785,14 +808,14 @@ button {
 .raised-card-content h3 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(26px, 2.4vw, 36px);
+  font-size: var(--type-card);
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1.04;
 }
 
 .raised-card-small .raised-card-content h3 {
-  font-size: clamp(23px, 2vw, 29px);
+  font-size: var(--type-card);
 }
 
 .raised-card-content > p:not(.byline) {
@@ -817,11 +840,11 @@ button {
 }
 
 .dispatch-header::before {
-  background: var(--bright);
+  background: var(--accent);
 }
 
 .dispatch-header .section-label {
-  color: var(--accent-blue);
+  color: var(--accent);
 }
 
 .dispatch-grid {
@@ -834,7 +857,7 @@ button {
   max-width: 760px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(34px, 4vw, 56px);
+  font-size: var(--type-secondary);
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -850,13 +873,13 @@ button {
   margin: var(--space-4) 0 0;
   color: var(--muted);
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: var(--type-body);
   line-height: 1.45;
 }
 
 .dispatch-notes {
   align-self: start;
-  border-top: 2px solid var(--ink);
+  border-top: var(--rule-major) solid var(--ink);
 }
 
 .dispatch-notes article {
@@ -870,8 +893,8 @@ button {
 .dispatch-location {
   display: block;
   margin-bottom: 12px;
-  color: var(--accent-blue);
-  font-size: 10px;
+  color: var(--accent);
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.12em;
 }
@@ -880,7 +903,7 @@ button {
   max-width: 440px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(24px, 2.3vw, 32px);
+  font-size: var(--type-card);
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.08;
@@ -922,19 +945,19 @@ button {
   top: 4px;
   bottom: 4px;
   left: 0;
-  width: 3px;
-  background: var(--bright);
+  width: var(--rule-signature);
+  background: var(--accent);
   content: "";
 }
 
 .principles-heading .section-label {
-  color: var(--accent-sage);
+  color: var(--accent);
 }
 
 .principles-heading h2 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(42px, 5vw, 72px);
+  font-size: var(--type-section);
   font-weight: 500;
   letter-spacing: -0.045em;
   line-height: 0.98;
@@ -948,7 +971,7 @@ button {
 .principles-copy p {
   margin: 0 0 var(--space-5);
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: var(--type-body);
   line-height: 1.45;
 }
 
@@ -1005,7 +1028,7 @@ button {
 .footer-heading {
   margin: 0 0 8px;
   color: var(--accent);
-  font-size: 10px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1013,7 +1036,7 @@ button {
 
 .footer-column a {
   color: var(--ink);
-  font-size: 12px;
+  font-size: var(--type-nav);
   line-height: 1.4;
 }
 
@@ -1029,9 +1052,9 @@ button {
   gap: 24px;
   padding-top: 18px;
   padding-bottom: 24px;
-  border-top: 1px solid var(--rule);
+  border-top: var(--rule-standard) solid var(--rule);
   color: var(--muted);
-  font-size: 10px;
+  font-size: var(--type-meta);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1200,13 +1223,13 @@ button {
     gap: 0;
     padding-top: 8px;
     padding-bottom: 24px;
-    border-top: 1px solid var(--rule);
+    border-top: var(--rule-standard) solid var(--rule);
   }
 
   .mobile-nav a {
     padding: 14px 0;
-    border-bottom: 1px solid var(--rule);
-    font-size: 12px;
+    border-bottom: var(--rule-standard) solid var(--rule);
+    font-size: var(--type-nav);
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
