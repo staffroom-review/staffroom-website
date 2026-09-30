@@ -166,7 +166,7 @@ export default function HomePage() {
                 {...story}
                 href={`#staffroom-${index}`}
                 imageRatio="standard"
-                className={index === 1 ? "paper-lift homepage-card homepage-card--raised" : "homepage-card"}
+                className={index === 1 ? "paper-lift homepage-card homepage-card--raised span-4" : "homepage-card span-4"}
               />
             ))}
           </div>
@@ -421,6 +421,7 @@ export default function HomePage() {
                 date="12 Sep 2026"
                 readingTime="3 min"
                 href={`#closing-${index}`}
+                className="span-4"
               />
             ))}
           </div>
