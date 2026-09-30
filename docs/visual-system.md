@@ -4,14 +4,31 @@
 
 The website should feel like a high-quality digital publication in the visual tradition of The Ken: editorially serious, compact where information matters, generous where stories need space, and strongly typographic.
 
-The intended result is a close structural and visual study of The Ken's publication design, with Staffroom Review's own colour identity and editorial content.
+The intended result is a **close structural and visual study of The Ken's publication design**, with Staffroom Review's own colour identity and editorial content.
 
 Reference:
 https://the-ken.com/
 
-The design should not reproduce The Ken's logo, proprietary imagery, copy or brand assets.
+The design must not reproduce The Ken's logo, proprietary imagery, copy or brand assets.
 
-## 2. Core visual characteristics
+## 2. Reference-fidelity rule
+
+For homepage work, the visual system must support a one-to-one mapping of the reviewed The Ken homepage.
+
+Visual fidelity therefore covers not just colour and typography, but also:
+- page length and vertical rhythm
+- section count and section sequencing
+- card/module count
+- relative story prominence
+- heading and label roles
+- text-block roles
+- image presence and scale
+- grid composition
+- density and whitespace
+
+Do not use the visual system to create a shortened "inspired by The Ken" homepage. The target is reference-equivalent structure with Staffroom-specific content and colour.
+
+## 3. Core visual characteristics
 
 - editorial rather than portal-like
 - strong story hierarchy
@@ -24,7 +41,7 @@ The design should not reproduce The Ken's logo, proprietary imagery, copy or bra
 - deliberate use of whitespace
 - strong alignment and grid discipline
 
-## 3. Colour
+## 4. Colour
 
 Staffroom Review owns the colour system.
 
@@ -42,7 +59,7 @@ Do not use the accent as a full-page wash.
 
 Colour is the principal intentional visual difference from the The Ken reference.
 
-## 4. Typography
+## 5. Typography
 
 Use a literary display serif for headlines and a clean interface sans for utility text.
 
@@ -69,7 +86,7 @@ The system must use shared roles rather than ad-hoc sizes.
 | Quote | 28–42px |
 | Navigation | 11–13px |
 
-## 5. Grid and layout
+## 6. Grid and layout
 
 Desktop:
 - 12-column grid
@@ -85,17 +102,17 @@ Typical spans:
 - compact story: 3–4
 - metadata/editorial note: 1–3
 
-Do not force every section into the same card grid.
+Use the grid to reproduce the reference mapping. Do not default every mapped section to the same repeated card geometry.
 
-## 6. Spacing
+## 7. Spacing
 
 Shared spacing tokens:
 
 8px / 12px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
 
-Use larger intervals between editorial ideas and smaller intervals inside a story module.
+Use larger intervals between editorial ideas and smaller intervals inside a story module, following the mapped reference rhythm.
 
-## 7. Rules
+## 8. Rules
 
 - standard separator: 1px
 - major separator: 2px
@@ -103,13 +120,13 @@ Use larger intervals between editorial ideas and smaller intervals inside a stor
 
 Rules should clarify editorial structure rather than decorate every box.
 
-## 8. Story presentation
+## 9. Story presentation
 
 A typical story package may contain:
 
 image → section/format → headline → dek → author/date/reading time
 
-Not every compact story needs every field.
+Not every compact story needs every field unless the reference slot calls for that role.
 
 Avoid:
 - rounded SaaS-style cards
@@ -119,13 +136,13 @@ Avoid:
 - heavy borders around every story
 - forced uniform card heights
 
-## 9. Shadows
+## 10. Shadows
 
 Use very restrained paper-lift shadows for two deliberately selected modules.
 
 The effect should remain editorial and physical, not become a 3D interface language.
 
-## 10. Imagery
+## 11. Imagery
 
 Every placeholder must be visually distinct.
 
@@ -142,9 +159,9 @@ Preferred subjects:
 
 No repeated placeholder artwork.
 
-Image crop and scale should communicate story importance.
+Image crop and scale should communicate story importance and match the mapped reference role.
 
-## 11. Header
+## 12. Header
 
 Use a stable publication header influenced by The Ken's hierarchy:
 
@@ -159,7 +176,7 @@ Staffroom Review's approved editorial navigation is:
 
 Mobile uses a compact masthead and functional menu.
 
-## 12. Footer
+## 13. Footer
 
 Use a conventional editorial footer with:
 - exploration/navigation
@@ -169,7 +186,7 @@ Use a conventional editorial footer with:
 
 The footer should feel part of the same publication system as the header.
 
-## 13. Interaction
+## 14. Interaction
 
 All interactive elements need:
 - visible hover state where useful
@@ -179,7 +196,7 @@ All interactive elements need:
 - predictable links and controls
 - functional mobile disclosure
 
-## 14. Responsive behaviour
+## 15. Responsive behaviour
 
 The hierarchy must survive across desktop, tablet and mobile.
 
@@ -191,3 +208,5 @@ On smaller screens:
 - keep key imagery
 - convert dense layouts into readable lists where appropriate
 - tighten spacing without collapsing hierarchy
+- retain every mapped editorial content module unless a responsive-specific rule explicitly documents a reflow rather than deletion
+

@@ -99,7 +99,11 @@ The Ken is the primary reference for:
 - recurring editorial formats
 - visual explanation
 - disciplined page composition
+- homepage module hierarchy
+- information density and story packaging
+
+Staffroom Review's editorial subject matter is its own.
+
+When translating the homepage structure, **content changes but structural roles do not**: each mapped The Ken story/module slot receives an original Staffroom story, text block or publication-utility counterpart appropriate to that role.
 
 The Ken is not a source for copied language, stories or brand assets.
-
-The website's visual and structural fidelity should be high; Staffroom Review's editorial subject, navigation labels, content and colour identity remain its own.

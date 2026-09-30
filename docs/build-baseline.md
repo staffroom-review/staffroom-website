@@ -76,15 +76,31 @@ Do not create abstractions that are not reused.
 - `globals.css` owns the shared visual system.
 - component-specific CSS should not become a second competing design system.
 
-## 6. Layout baseline
+## 6. Homepage implementation contract
+
+The homepage code must be driven by `homepage-reference-mapping.md` once Phase 5 begins.
+
+The application must support a one-to-one mapped homepage in which:
+- every reference section/module has one Staffroom counterpart
+- every mapped card/story/text role is populated
+- no reference module is intentionally omitted
+- no two reference modules are silently merged
+- overall page depth remains comparable to the reviewed reference
+- Staffroom content changes the subject matter and copy, not the structural contract
+
+The Staffroom editorial sequence in `homepage-architecture.md` is a content taxonomy and organisational layer, not permission to build a shorter page.
+
+## 7. Layout baseline
 
 Use a publication-style central container and a 12-column desktop grid.
 
-Components should use explicit editorial spans based on story importance.
+Components should use explicit editorial spans based on story importance and the reference mapping.
 
 The layout must be authored for desktop, tablet and mobile rather than relying on a single desktop structure that is later stacked.
 
-## 7. Implementation constraints
+Responsive adaptation may reflow or simplify layout mechanics, but it should retain mapped editorial content unless a documented responsive rule changes presentation without removing the underlying role.
+
+## 8. Implementation constraints
 
 - start clean
 - avoid legacy overrides
@@ -95,3 +111,4 @@ The layout must be authored for desktop, tablet and mobile rather than relying o
 - preserve accessible keyboard interaction
 - do not copy The Ken's brand assets or editorial content
 - do not introduce unrelated features
+- do not reduce the homepage to a representative sample
