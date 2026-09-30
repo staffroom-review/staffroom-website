@@ -1,78 +1,72 @@
-# Staffroom Review — Homepage Reference Mapping Contract
+# Staffroom Review — Homepage Reference Mapping Guide
 
 ## Purpose
 
-This document defines the mandatory structural relationship between the reviewed The Ken homepage and the Staffroom Review homepage.
+This document defines the **comparative structural guide** for shaping the Staffroom Review homepage against The Ken.
 
-The target is **one-to-one structural correspondence**, not a loose visual inspiration.
-
-Staffroom Review may use completely different editorial subjects, stories, headlines, deks, authors, metadata, imagery and wording. The page must still preserve the reference homepage's module count, sequence, hierarchy and comparable information density.
+The goal is not literal one-to-one replication. The goal is a Staffroom homepage that is as close as practical to the reviewed reference in **overall scale, section count, story density, hierarchy, variety, rhythm and page depth**, while remaining original and editorially appropriate to Staffroom Review.
 
 ## 1. Reference snapshot
 
-A specific reviewed The Ken homepage snapshot must be used as the reference for the build.
-
-Record the review date here before Phase 5:
+A specific reviewed The Ken homepage state should be used as the primary visual reference.
 
 **Reference reviewed:** The Ken homepage  
 **Reference URL:** https://the-ken.com/  
-**Reference snapshot/review date:** To be recorded before Phase 5 implementation
+**Reference snapshot/review date:** 30 September 2026
 
-Because a live homepage can change, the mapping must be based on an explicitly reviewed state rather than memory.
+The live homepage can change, so the implementation should use the reviewed visual/reference evidence rather than assuming that any future live state is identical.
 
-## 2. One-to-one rule
+The Ken's redesign documentation describes an elastic homepage and a flexible card system with a range of card sizes used to create hierarchy and rhythm. This supports using the reference as a compositional benchmark rather than a frozen template.
 
-For **every visible homepage module that occupies editorial or publication space** in the reviewed reference, create exactly one Staffroom Review counterpart.
+## 2. Comparative rule
 
-Examples of mapped roles include, where present in the reference:
-- section headers
-- lead packages
-- secondary/tertiary story cards
-- story lists
-- compact story columns
-- quote or pull-quote blocks
-- image-led blocks
-- visual/editorial explanation blocks
-- long-form packages
-- publication/editorial promotion blocks
-- comparable subscription/newsletter or utility blocks when they materially occupy homepage composition
+Use the reference to answer:
 
-### Structural equivalence means
+- How many major sections does the page feel like it has?
+- How many stories/cards are visible within those sections?
+- How much vertical depth does the page occupy?
+- Which stories receive the greatest prominence?
+- Where does the page shift between image-led, type-led, list and feature treatments?
+- How frequently do section breaks, rules and tonal changes occur?
 
-| Reference property | Staffroom requirement |
-|---|---|
-| Module exists | A corresponding module exists |
-| Module order | Same relative order |
-| Number of cards/items | Equivalent count |
-| Heading/label role | Equivalent heading/label role |
-| Headline/dek role | Equivalent text-block roles |
-| Image role | Equivalent image-bearing treatment |
-| Visual prominence | Comparable hierarchy |
-| Approximate footprint | Comparable size/span |
-| Section rhythm | Comparable sequencing and spacing |
-| Page depth | Comparable overall homepage length |
+The Staffroom implementation should stay **close to those answers**.
 
-The wording is never copied. The Staffroom content is original.
+### Exact one-to-one cardinality is not mandatory
 
-## 3. What must not happen
+A Staffroom counterpart does not have to exist for every individual reference card or module.
 
-The following are explicit build failures:
+It is acceptable to:
+- combine adjacent reference stories into a Staffroom group
+- split a reference group when Staffroom content benefits from it
+- add a Staffroom-specific editorial module
+- vary the number of cards slightly
+- adjust module height or span for readability
+- use a different content format when it better expresses Staffroom's editorial proposition
 
-- a homepage that is shorter because only the most obvious The Ken sections were reproduced
-- omitting cards because Staffroom content has fewer placeholder stories
-- merging two or more reference modules into one
-- replacing a varied editorial layout with a repeated card grid
-- stopping after the named Staffroom sections while reference modules remain unmapped
-- using generic placeholder copy to fill missing modules without preserving the module's role and count
-- changing hierarchy so that a supporting reference group becomes a single Staffroom feature
-- treating the Staffroom content list as the complete page specification
-- treating "inspired by The Ken" as sufficient fidelity
+These decisions should be deliberate and should not cause the page to become materially shorter, sparser or more repetitive than the reference.
 
-## 4. Content substitution rule
+## 3. Reference patterns to preserve
 
-Substitution is allowed only at the **content layer**.
+The build should retain the reference's **patterns**, rather than mechanically reproducing every slot:
 
-The Staffroom side may change:
+- prominent lead package
+- strong secondary story hierarchy
+- mixed card sizes
+- irregular/asymmetric editorial composition
+- multiple section breaks
+- compact metadata
+- image-led and type-led alternation
+- list/compact-story treatments
+- occasional pull quotes or editorial voice
+- substantial long-form treatment
+- visual/editorial storytelling
+- useful closing or promotional/utility space where appropriate
+
+The Ken's redesign case study specifically describes a flexible card system intended to create hierarchy and rhythm rather than a static repeated homepage grid. citeturn0search0
+
+## 4. Staffroom translation rule
+
+Staffroom Review changes:
 - publication name
 - headlines
 - deks
@@ -86,39 +80,62 @@ The Staffroom side may change:
 - visual editorial assets
 - colour palette
 
-The Staffroom side must preserve:
-- module role
-- module order
-- card/group count
-- heading/text-block role
-- image presence and approximate importance
-- hierarchy
+Staffroom Review should preserve or closely approximate:
 - page depth
-- information density
+- major section count
+- story/card density
+- hierarchy
+- module variety
+- image importance
+- whitespace rhythm
+- overall editorial cadence
 
-## 5. Mapping table
+The final composition must feel like a complete Staffroom Review publication front page, not a reduced demonstration.
 
-Before Phase 5, complete a row for every reference module.
+## 5. Working module map
 
-| # | The Ken reference module/role | Staffroom counterpart | Staffroom content source | Layout role/span | Image role | Status |
-|---:|---|---|---|---|---|---|
-| 01 | Reference module 01 | To be defined during review | content-seed.md | To be defined | To be defined | Open |
-| 02 | Reference module 02 | To be defined during review | content-seed.md | To be defined | To be defined | Open |
-| 03 | Reference module 03 | To be defined during review | content-seed.md | To be defined | To be defined | Open |
-| … | Every subsequent reference module | One Staffroom counterpart | Expanded seed as required | Matched to reference | Distinct placeholder where applicable | Open |
+The following is a **working architecture**, not a locked slot-by-slot contract:
 
-Do not leave the mapping as a general description once Phase 5 starts. It must become a concrete slot-by-slot implementation checklist.
+| Area | Staffroom role | Approximate density | Primary treatment |
+|---|---|---:|---|
+| Lead | Main story | 1 dominant + supporting stories | Feature |
+| The Staffroom | Teacher experience | 3–4 stories | Mixed cards |
+| The Classroom | Teaching practice | 3 stories | Split feature + cards |
+| School Behind the School | Institutional life | 3–4 stories | Card/list mix |
+| Voices | First-person/conversations | 3 stories + quote | Type-led + quote |
+| Subjects | Subject-led stories | 3–4 stories | Mixed cards |
+| Beyond the Staffroom | Comparative/international | 3 stories | Image/card mix |
+| The Long Read | Deep feature | 1 major + support | Long-form |
+| Visual Story | Visual explanation | 1 visual + support | Image-led |
+| Closing | Editorial close | 2–3 items | Type-led/list |
+
+The exact counts may move during implementation if the result remains close to the reference's overall density and page depth.
 
 ## 6. Acceptance test
 
-A homepage passes the structural checkpoint only when a reviewer can move from top to bottom of the reviewed The Ken reference and identify exactly one Staffroom Review counterpart for every mapped module without encountering an intentional omission, merge or unexplained reduction.
+A homepage passes when a reviewer can compare it with the reviewed The Ken reference and conclude that it is:
 
-The final page should feel like **Staffroom Review occupying The Ken's homepage architecture**, not like a Staffroom sample page borrowing The Ken's visual language.
+- broadly comparable in page length
+- broadly comparable in number of major sections
+- broadly comparable in story/card density
+- similarly varied in module treatment
+- similarly clear in hierarchy
+- similarly paced through section breaks and whitespace
+
+It fails if it is:
+- materially shorter
+- materially sparser
+- reduced to only the ten named Staffroom areas
+- flattened into repeated identical grids
+- dominated by decorative hero text instead of stories
+- missing meaningful image-led and type-led variation
 
 ## 7. Responsive rule
 
-The desktop reference is the primary mapping contract.
+Desktop is the primary comparison.
 
-On tablet/mobile, modules may reflow, stack, resize or convert layout mechanics for usability. They should not disappear simply because the desktop arrangement is no longer practical.
+On tablet/mobile, modules may reflow, stack, resize or convert mechanics for usability. Important editorial content should remain present; responsive adaptation should not become an excuse to remove substantial sections.
 
-Responsive changes must preserve the editorial role and content presence of the mapped modules.
+## 8. Source note
+
+The Ken redesign material describes an “elastic” homepage that adapts through the day and a flexible card system with multiple sizes for hierarchy and rhythm. The current Ken product also spans stories, newsletters, visual stories and podcasts, reinforcing the broader publication ecosystem around the homepage. citeturn0search0turn0search2
