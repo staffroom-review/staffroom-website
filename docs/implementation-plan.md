@@ -2,21 +2,38 @@
 
 ## Current checkpoint
 
-Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune. The typography pass has been refined against The Ken's documented/current font direction: Frank Ruhl Libre is the free Ivar-oriented editorial serif approximation and Archivo remains the interface/supporting sans. The typography pass is now the active review checkpoint at the 1440px reference desktop size. Layout, content, colour and component architecture were intentionally left unchanged.
+The homepage build and footer treatment are approved as the current baseline. Section 1 has received the first screenshot-measured visual fine-tune. The global typography choice remains open for final visual review; the current implementation uses Frank Ruhl Libre as the Ivar-oriented editorial approximation and Archivo as the supporting sans.
 
-## Sequence
+The homepage is not yet fully closed: Sections 2–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
-1. Verify/fine-tune Section 1 at 1440px.
-2. Verify/fine-tune Section 2.
-3. Verify/fine-tune Section 3.
-4. Verify/fine-tune Section 4.
-5. Keep Section 5 reserved.
-6. Verify/fine-tune Section 6.
-7. Verify/fine-tune Section 7.
-8. Reconstruct/refine mobile from mobile evidence.
-9. Refine tablet using the shared responsive system.
-10. Replace structural placeholders with final free/licensed imagery.
-11. Production/accessibility QA.
-12. Final side-by-side fidelity pass.
+The approved next product phase is the main navbar page build. That phase is governed by `docs/navbar-architecture.md` and proceeds one page at a time with approval gates.
 
-Do not proceed from one checkpoint to the next without visual review.
+## Homepage sequence
+
+1. Final visual review of global typography.
+2. Verify/fine-tune Section 1.
+3. Verify/fine-tune Section 2.
+4. Verify/fine-tune Section 3.
+5. Verify/fine-tune Section 4.
+6. Keep Section 5 reserved.
+7. Verify/fine-tune Section 6.
+8. Verify/fine-tune Section 7.
+9. Reconstruct/refine mobile from mobile evidence.
+10. Refine tablet using the shared responsive system.
+11. Replace structural placeholders with final free/licensed imagery.
+12. Production/accessibility QA.
+13. Final side-by-side fidelity pass.
+
+## Navbar sequence
+
+1. Stories — Family 1: Editorial publication.
+2. Teachers — Family 2: Topic-led editorial hub.
+3. Classrooms — Family 2: Topic-led editorial hub, adapted to classroom content.
+4. Schools — Family 2: Topic-led editorial hub, adapted to school-life content.
+5. Ideas — Family 3: Ideas/perspective/long-form.
+6. World — Family 3: Ideas/perspective/long-form, adapted to comparative/global material.
+7. Voices — Family 3: Ideas/perspective/long-form, adapted to first-person/human stories.
+8. More — collapsible navigation for Newsletters, Visual Essays, Learning, Podcast and Events.
+9. Site-wide navigation verification.
+
+Each navbar page requires implementation, responsive verification, visual review and explicit approval before the next page begins.
