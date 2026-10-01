@@ -10,7 +10,7 @@ Shared characteristics:
 - warm paper surface
 - dark brown-black serif headlines
 - softer serif supporting text
-- bright red accent for labels and long rules
+- bright vermillion accent for labels and long rules
 - tight headline leading
 - compact uppercase micro-labels
 - thin story separators
