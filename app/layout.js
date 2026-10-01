@@ -4,6 +4,7 @@ import { Archivo, Lora } from "next/font/google";
 const lora = Lora({
   subsets: ["latin"],
   variable: "--font-lora",
+  preload: true,
   display: "swap",
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
