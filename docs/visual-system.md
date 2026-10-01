@@ -12,6 +12,10 @@ The accent is concentrated in labels, section headings, long rules and selected 
 
 ## Typography
 
+Reference audit: current independent design references identify The Ken's web typography as a three-font system using **Archivo**, **Ivar**, and **Reckless**. The 2023 redesign commentary specifically identifies **Ivar** as the serif introduced to strengthen The Ken's classic/contemporary editorial voice; Ivar itself is influenced by sturdy mid-century text faces and offers separate Text, Headline and Display optical sizes.
+
+Staffroom Review uses **Frank Ruhl Libre** as the freely available/open-source approximation for the Ivar-led editorial layer, with **Archivo** retained for the interface/supporting layer. This preserves the important serif/sans relationship without importing a paid typeface or adding unnecessary typographic complexity. Reckless is not assigned a separate global role in the Staffroom system at this stage; the homepage remains intentionally cohesive rather than reproducing The Ken's commercial three-family stack literally.
+
 Editorial display/headline type: **Newsreader** via next/font/google, used for headlines, deks, section titles, the wordmark and other literary/editorial text. Its proportions and high-contrast serif texture are closer to the supplied The Ken reference than the previous Georgia fallback while remaining freely available and self-hosted by Next.js at build time.
 
 Interface/supporting sans-serif: **Archivo** via next/font/google, used for navigation, labels, controls, metadata and other utility text. It provides the compact, neutral grotesk character needed for the reference-style editorial hierarchy.
