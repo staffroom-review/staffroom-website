@@ -1301,3 +1301,207 @@ img, svg { display: block; max-width: 100%; }
     border-top: 1px dotted var(--rule);
   }
 }
+
+
+/* Stories page — Family 1 editorial publication */
+.stories-page__hero {
+  margin-top: 42px;
+}
+
+.stories-page__hero .feature__body {
+  padding-top: 24px;
+  padding-bottom: 30px;
+}
+
+.stories-page__hero .feature__body h2 {
+  max-width: 22ch;
+  font-size: clamp(42px, 4.2vw, 58px);
+  line-height: .98;
+}
+
+.stories-page__hero .feature__body p:not(.eyebrow) {
+  max-width: 62ch;
+}
+
+.stories-page__section {
+  margin-top: 76px;
+  padding-top: 2px;
+}
+
+.stories-page__latest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.stories-page__latest-grid > .story {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.stories-page__latest-grid > .story:nth-child(even) {
+  padding-left: 30px;
+  border-left: 1px dotted var(--rule);
+}
+
+.stories-page__latest-grid .story__body h3 {
+  font-size: 28px;
+}
+
+.stories-page__editors {
+  background: var(--paper-soft);
+}
+
+.stories-page__editors-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 0;
+}
+
+.stories-page__editors-grid > .story {
+  padding-right: 34px;
+}
+
+.stories-page__editors-grid > .story + .story {
+  padding-right: 0;
+  padding-left: 34px;
+  border-left: 1px dotted var(--rule);
+}
+
+.stories-page__editors-grid .story__body h3 {
+  font-size: clamp(28px, 3vw, 42px);
+}
+
+.stories-page__stream-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 34px;
+  border-top: 1px solid var(--rule);
+}
+
+.stories-page__stream-grid .story--compact {
+  min-height: 142px;
+  padding-block: 22px;
+}
+
+.stories-page__stream-grid > .story:nth-child(even) {
+  padding-left: 34px;
+  border-left: 1px dotted var(--rule);
+}
+
+.stories-page__archive {
+  margin-top: 82px;
+  padding: 38px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+  border-top: 4px solid var(--vermillion);
+  border-bottom: 1px solid var(--rule);
+}
+
+.stories-page__archive h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1;
+}
+
+.stories-page__archive p:not(.eyebrow) {
+  max-width: 44ch;
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.stories-page__archive nav {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
+.stories-page__archive nav a {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 820px) {
+  .stories-page__latest-grid,
+  .stories-page__stream-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .stories-page__latest-grid > .story:nth-child(even),
+  .stories-page__stream-grid > .story:nth-child(even) {
+    padding-left: 24px;
+  }
+
+  .stories-page__editors-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .stories-page__editors-grid > .story,
+  .stories-page__editors-grid > .story + .story {
+    padding-inline: 0;
+    border-left: 0;
+  }
+
+  .stories-page__editors-grid > .story + .story {
+    padding-top: 32px;
+    border-top: 1px dotted var(--rule);
+  }
+
+  .stories-page__archive {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .stories-page__hero {
+    margin-top: 32px;
+  }
+
+  .stories-page__hero .feature__body h2 {
+    font-size: 38px;
+  }
+
+  .stories-page__section {
+    margin-top: 58px;
+  }
+
+  .stories-page__latest-grid,
+  .stories-page__stream-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stories-page__latest-grid > .story:nth-child(even),
+  .stories-page__stream-grid > .story:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .stories-page__latest-grid > .story + .story {
+    padding-top: 28px;
+  }
+
+  .stories-page__stream-grid .story--compact {
+    min-height: 0;
+  }
+
+  .stories-page__archive {
+    margin-top: 60px;
+    padding-block: 30px;
+  }
+
+  .stories-page__archive nav {
+    grid-template-columns: 1fr;
+  }
+}
