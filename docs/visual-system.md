@@ -14,7 +14,7 @@ The accent is concentrated in labels, section headings, long rules and selected 
 
 The Ken's documented/current web direction uses **Archivo**, **Ivar** and **Reckless**. Ivar is the principal serif direction associated with the site's classic/contemporary editorial voice.
 
-Staffroom Review currently keeps **Archivo** as the supporting/interface sans. **Lora** is now the active editorial serif under visual review across the entire homepage. This is a review implementation, not yet the final approved typography.
+Staffroom Review now uses **Lora** as the default typeface across the homepage's main editorial content. **Archivo** is explicitly reserved for interface/supporting utility text. Lora remains a review implementation and is not yet the final approved typography.
 
 ### Serif shortlist for the next visual review
 
