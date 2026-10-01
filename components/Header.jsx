@@ -2,7 +2,7 @@ const nav = [
   { label: "Stories", href: "/stories" },
   { label: "Teachers", href: "/teachers" },
   { label: "Classrooms", href: "/classrooms" },
-  { label: "Schools", href: "/" },
+  { label: "Schools", href: "/schools" },
   { label: "Ideas", href: "/" },
   { label: "World", href: "/" },
   { label: "Voices", href: "/" },
