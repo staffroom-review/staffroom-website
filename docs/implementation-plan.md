@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune. The typography pass is implemented with Newsreader for editorial/display type and Archivo for interface/supporting text; this typography pass is now the active review checkpoint at the 1440px reference desktop size. Layout, content, colour and component architecture were intentionally left unchanged.
+Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune. The typography pass has been refined against The Ken's documented/current font direction: Frank Ruhl Libre is the free Ivar-oriented editorial serif approximation and Archivo remains the interface/supporting sans. The typography pass is now the active review checkpoint at the 1440px reference desktop size. Layout, content, colour and component architecture were intentionally left unchanged.
 
 ## Sequence
 
