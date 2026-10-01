@@ -644,6 +644,13 @@ img, svg { display: block; max-width: 100%; }
   .newsletter-grid {
     grid-template-columns: 1fr;
   }
+  .recommend-column--list {
+    padding-right: 0;
+  }
+  .recommend-grid > .recommend-column + .recommend-column {
+    border-left: 0;
+    padding-left: 0;
+  }
   .opening-feature,
   .central-layout > .feature,
   .opening-side,
