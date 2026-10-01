@@ -1,193 +1,103 @@
 # Staffroom Review — Sequential Redesign & Build Roadmap
 
-## Status
+## Current status
 
-**Reset required: screenshot-first redesign.**
+**Reference analysis complete. Clean homepage reconstruction is authorised.**
 
-The current homepage implementation is not the basis for the final redesign. The visual reference must be captured and analysed before homepage reconstruction begins.
+The supplied The Ken screenshots establish the visual and structural basis for the homepage. The existing homepage implementation is no longer the design baseline.
 
 ## Non-negotiable workflow
 
-Every phase follows:
+**Plan → approval → implement → verify → live-site review → approval → next phase**
 
-**Plan → User approval → Implement → Verify → Live-site review → User approval → Next phase**
-
-Approval is for one phase only. Do not combine phases.
-
-## Build principles
-
-1. `/docs` is the active design/editorial specification.
-2. Existing application code is replaceable.
-3. GitHub and Vercel infrastructure remain in place.
-4. The Ken screenshots supplied by the user are the primary homepage visual/structural reference.
-5. **No homepage implementation begins until the supplied screenshots have been analysed and the reference documentation is complete.**
-6. The reference is used for architecture, hierarchy, proportions, rhythm and density; Staffroom supplies original content, imagery, branding and colour identity.
-7. The relationship to The Ken is a **guideline for close correspondence**, not a rigid one-to-one slot requirement.
-8. The final homepage must be publication-scale and should not become materially shorter, sparser or more repetitive than the reference.
-9. Prefer reusable editorial primitives over one-off markup.
-10. Use one shared responsive visual system across desktop, tablet and mobile.
-11. Do not copy The Ken's logo, proprietary assets, editorial copy or stories.
-12. Stop after every phase for review.
+For the current approved reconstruction, work proceeds chronologically through reference Sections 1–7.
 
 ## Phase 1 — Reference capture
-
-### Goal
-Establish a complete current reference before rebuilding the homepage.
-
-### User supplies
-- full desktop homepage screenshots
-- mobile homepage screenshots
-- additional screenshots where required to cover every relevant section
-
-### Checkpoint
-All supplied reference screenshots are in order and cover the homepage from masthead through footer.
-
-### Deferred
-Homepage implementation.
+Complete.
 
 ## Phase 2 — Reference analysis & documentation
+Complete.
 
-### Goal
-Convert the screenshots into a usable build contract.
+Updated:
+- `reference-capture-and-analysis.md`
+- `homepage-reference-mapping.md`
+- `homepage-architecture.md`
+- `visual-system.md`
+- related technical/content rules
 
-### Actions
-Analyse and document:
-- page width and margins
-- header/masthead structure
-- navigation and utilities
-- section sequence
-- approximate section heights
-- story/card counts and relative density
-- grid/column relationships
-- card/image proportions
-- typography hierarchy
-- rules, colour bands and spacing
-- image treatment
-- footer structure
-- desktop/mobile transformations
+## Phase 3 — Clean homepage foundation
+Current implementation task.
 
-Record this in:
-- `docs/reference-capture-and-analysis.md`
-- `docs/homepage-reference-mapping.md`
-- `docs/homepage-architecture.md`
+Actions:
+- remove accumulated homepage-specific layout assumptions
+- preserve SiteHeader and SiteFooter
+- preserve existing Staffroom story content
+- establish the new seven-stage structural system
+- retain reusable story primitives where they remain appropriate
+- remove obsolete page-specific overrides
 
-### Checkpoint
-A developer can reconstruct the major reference layout from the documentation without guessing the architecture.
+Checkpoint:
+The homepage has a clean structural foundation capable of implementing Sections 1–7 without legacy layout interference.
 
-### Deferred
-Detailed Staffroom content population.
+## Phase 4 — Desktop reconstruction
+Build Sections 1–7 at the supplied 1440px reference viewport.
 
-## Phase 3 — Clean application reset
+Sequence:
+1. Opening asymmetric feature
+2. Feature + support
+3. Dense discovery collection
+4. Central feature
+5. Multi-column collection
+6. Large feature chapter
+7. Closing feature chapter
 
-### Goal
-Reset the application layer to a clean foundation suitable for the measured reference.
-
-### Actions
-- replace the current homepage implementation
-- retain only required global infrastructure and primitives
-- remove obsolete homepage-specific layout/CSS
-- preserve GitHub/Vercel setup
-
-### Checkpoint
-Clean baseline renders and builds without carrying forward accidental layout decisions from the previous homepage.
-
-## Phase 4 — Reference-led homepage reconstruction
-
-### Goal
-Build the desktop homepage first from the analysed reference.
-
-### Actions
-- reproduce measured page structure and proportions
-- use Staffroom content and branding
-- use reusable components
-- match major spacing, hierarchy, image roles and section rhythm
-- avoid arbitrary compensating offsets
-
-### Checkpoint
-Desktop side-by-side review is closely aligned with the reference at the supplied viewport dimensions.
+Checkpoint:
+Desktop composition matches the reference in structure, scale, density, hierarchy and rhythm.
 
 ## Phase 5 — Mobile reconstruction
+Build the mobile state from the supplied reference behaviour.
 
-### Goal
-Build the mobile homepage from the supplied mobile reference while sharing the same underlying system.
-
-### Actions
-- reproduce mobile header/navigation behaviour
-- preserve story hierarchy
-- reproduce stacking/reflow decisions
-- control mobile spacing and typography
-- retain important imagery
-
-### Checkpoint
-Mobile side-by-side review is closely aligned with the supplied mobile reference.
+Checkpoint:
+Mobile preserves the intended editorial reading order, image prominence and density without simply shrinking desktop.
 
 ## Phase 6 — Tablet refinement
+Test intermediate widths.
 
-### Goal
-Refine the responsive system between desktop and mobile.
+Checkpoint:
+Tablet is an intentional intermediate composition using the shared responsive system.
 
-### Actions
-- test intermediate widths
-- establish breakpoint behaviour
-- resolve column transitions
-- preserve hierarchy and readability
-- refine tablet-specific behaviour discovered during testing
+## Phase 7 — Imagery pass
+Replace temporary placeholders with relevant actual free/licensed imagery.
 
-### Checkpoint
-Tablet works as an intentional intermediate editorial composition rather than a stretched desktop or oversized mobile.
+Priorities:
+- editorial illustrations
+- article-relevant visual metaphors
+- distinct imagery for each visible image slot
 
-## Phase 7 — Editorial seed and imagery
+Checkpoint:
+Imagery supports the story propositions and reference-like visual rhythm.
 
-### Goal
-Populate the complete homepage with deliberate Staffroom content and distinct placeholder imagery.
+## Phase 8 — Editorial density/content completion
+Add any additional stories required by the reference density using `content-seed.md`.
 
-### Actions
-- fill the established architecture
-- maintain approximately 80% India / 20% international balance
-- distribute teacher lived experience
-- use distinct imagery without repetition
-- preserve the reference-informed density and page depth
+Existing future-story headlines and supporting text must remain.
 
-### Checkpoint
-The homepage reads as a complete publication front page before real publishing content exists.
+Checkpoint:
+The homepage feels publication-scale and complete without deleting existing development material.
 
-## Phase 8 — Accessibility & production QA
+## Phase 9 — Production QA
+Check semantics, keyboard access, image behaviour, contrast, links, mobile menu, build/runtime errors and responsive integrity.
 
-### Goal
-Validate the finished responsive system.
+## Phase 10 — Final visual fidelity
+Final side-by-side refinement against the supplied references.
 
-### Checks
-- semantic structure
-- keyboard/focus
-- colour contrast
-- alt text
-- links
-- mobile menu
-- production build
-- runtime/console errors
-- image behaviour
-- metadata
-- desktop/mobile/tablet layout integrity
-
-### Checkpoint
-No known critical technical or layout defect remains.
-
-## Phase 9 — Final fidelity pass
-
-### Goal
-Fine-tune the finished build against the supplied reference screenshots.
-
-### Tune
-- headline scale
-- margins
-- section spacing
+Tune:
+- column proportions
+- headline wrapping
 - image crops
-- metadata density
-- rules
-- colour accents
-- typography
+- section spacing
+- rule lengths
+- metadata scale
 - responsive transitions
-- overall hierarchy
 
-### Checkpoint
-The finished Staffroom Review homepage is visually authored, structurally coherent and closely faithful to the supplied reference without becoming a copy.
+Stop for approval after each major checkpoint.
