@@ -1,6 +1,6 @@
 const nav = [
   { label: "Stories", href: "/stories" },
-  { label: "Teachers", href: "/" },
+  { label: "Teachers", href: "/teachers" },
   { label: "Classrooms", href: "/" },
   { label: "Schools", href: "/" },
   { label: "Ideas", href: "/" },
