@@ -30,7 +30,7 @@ export const imagery = {
     sourceUrl: "https://unsplash.com/photos/teacher-instructing-students-in-a-classroom-lecture-u6OsIM1ZEnk",
   },
   storyC: {
-    src: "https://images.unsplash.com/photo-1758685848147-e1e149bf2603?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
+    src: "https://images.unsplash.com/photo-1745571479595-8e198f251c95?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
     alt: "Teacher seated at a classroom desk",
     sourceUrl: "https://unsplash.com/photos/a-teacher-sits-at-his-desk-in-a-classroom-eHu1CVODgIk",
   },
@@ -65,9 +65,9 @@ export const imagery = {
     sourceUrl: "https://unsplash.com/photos/young-woman-writing-at-a-desk-with-books-7Wf684C9nwU",
   },
   voices: {
-    src: "https://images.unsplash.com/photo-1745571479595-8e198f251c95?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
-    alt: "Teacher seated at a classroom desk",
-    sourceUrl: "https://unsplash.com/photos/a-teacher-sits-at-his-desk-in-a-classroom-eHu1CVODgIk",
+    src: "https://images.unsplash.com/photo-1758685848147-e1e149bf2603?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
+    alt: "Teacher sitting at a desk in a classroom",
+    sourceUrl: "https://unsplash.com/photos/teacher-sitting-at-a-desk-with-chalkboard-formulas-nPJBma10tMU",
   },
   world: {
     src: "https://images.unsplash.com/photo-1503503330041-4cd943d2b61f?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
