@@ -3,7 +3,7 @@ const nav = ["Stories", "Teachers", "Classrooms", "Schools", "Ideas", "World", "
 export default function Header() {
   return (
     <header className="site-header">
-      <div className="page-shell site-header__shell">
+      <div className="page-shell">
         <div className="site-header__top">
           <a className="brand" href="/" aria-label="Staffroom Review home">
             <span className="brand__name">Staffroom</span>
@@ -11,21 +11,30 @@ export default function Header() {
           </a>
 
           <div className="site-header__actions">
-            <button type="button" className="header-action">
-              Explore
-            </button>
+            <details className="header-search">
+              <summary className="header-action">Explore</summary>
+              <form action="/" method="get" className="header-search__form">
+                <label htmlFor="header-search-input" className="sr-only">Search Staffroom Review</label>
+                <input id="header-search-input" name="q" type="search" placeholder="Search stories" />
+                <button type="submit">Search</button>
+              </form>
+            </details>
             <a href="#signin" className="header-action header-action--outline">Sign in</a>
             <a href="#subscribe" className="header-action header-action--solid">Subscribe</a>
           </div>
         </div>
 
         <div className="site-header__navrow">
-          <nav aria-label="Primary">
-            {nav.map((item) => (
-              <a href="/" key={item}>{item}</a>
-            ))}
+          <nav aria-label="Primary navigation">
+            {nav.map((item) => <a href="/" key={item}>{item}</a>)}
           </nav>
-          <button type="button" className="menu-button" aria-label="Open menu">Menu</button>
+
+          <details className="mobile-menu">
+            <summary className="menu-button">Menu</summary>
+            <nav aria-label="Mobile navigation">
+              {nav.map((item) => <a href="/" key={item}>{item}</a>)}
+            </nav>
+          </details>
         </div>
       </div>
     </header>
