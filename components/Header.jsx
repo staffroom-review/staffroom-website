@@ -1,4 +1,12 @@
-const nav = ["Stories", "Teachers", "Classrooms", "Schools", "Ideas", "World", "Voices"];
+const nav = [
+  { label: "Stories", href: "/stories" },
+  { label: "Teachers", href: "/" },
+  { label: "Classrooms", href: "/" },
+  { label: "Schools", href: "/" },
+  { label: "Ideas", href: "/" },
+  { label: "World", href: "/" },
+  { label: "Voices", href: "/" },
+];
 
 export default function Header() {
   return (
@@ -27,7 +35,7 @@ export default function Header() {
 
         <div className="site-header__navrow">
           <nav aria-label="Primary navigation">
-            {nav.map((item) => <a href="/" key={item}>{item}</a>)}
+            {nav.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}
           </nav>
 
           <details className="mobile-menu">
