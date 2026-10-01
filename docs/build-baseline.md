@@ -2,113 +2,99 @@
 
 ## 1. Purpose
 
-This document defines the technical starting point for the rebuild.
+The homepage is being rebuilt against the supplied The Ken screenshot architecture.
 
-The existing application implementation is not the design baseline.
+Previous homepage CSS and layout decisions are not authoritative and should not be preserved merely for convenience.
 
-The rebuild should produce a clean, intentionally structured Next.js application that implements the active documents in this folder.
-
-## 2. Project boundary
-
-Keep:
+## 2. Keep
 
 - GitHub repository: `staffroom-review/staffroom-website`
 - Vercel project: `staffroom-website`
-- Next.js as the application framework
-- only dependencies required by the final implementation
-- `/docs` as the design and editorial specification
+- Next.js / React
+- `SiteHeader.jsx`
+- `SiteFooter.jsx`
+- existing editorial story content
+- `/docs`
 
-Rebuild:
+The header and footer may be visually refined but must not be replaced.
 
-- application routes
-- global styling
-- global shell
-- editorial components
-- homepage composition
-- content data structures
-- image/placeholder system
-- responsive implementation
+## 3. Rebuild
 
-Do not treat previous application code as reusable merely because it already exists.
+Rebuild the homepage composition and its page-specific styling around the seven reference stages.
 
-## 3. Dependency policy
+The homepage must support:
+- asymmetric feature compositions
+- central feature compositions
+- dense discovery collections
+- narrow-column collections
+- image-led and text-led story packages
+- intentional desktop/mobile reflow
+- tablet interpolation
 
-`package.json` should contain deliberate, compatible versions rather than floating `latest` dependencies.
+## 4. Reusable primitives
 
-Only dependencies justified by the implementation should be retained.
+Existing primitives may be retained when they fit:
 
-No dependency should be introduced simply to reproduce a visual effect that can be implemented cleanly with existing platform capabilities.
+- `StoryCard`
+- `FeatureStory`
+- `CompactStory`
+- `ImageStory`
+- `StoryList`
+- `SectionHeader`
+- `EditorialRule`
+- `StoryMeta`
+- `QuoteBlock`
 
-## 4. Application structure
+Do not force all reference compositions into one component shape.
 
-Target structure:
+Create a new primitive only when:
+1. the composition is reused, and
+2. existing primitives cannot express it cleanly.
 
-```
-app/
-  layout.js
-  page.js
-  globals.css
+## 5. Content rule
 
-components/
-  SiteHeader.jsx
-  SiteFooter.jsx
-  EditorialRule.jsx
-  SectionLabel.jsx
-  StoryMeta.jsx
-  StoryCard.jsx
-  SectionHeader.jsx
-  FeatureStory.jsx
-  CompactStory.jsx
-  StoryList.jsx
-  QuoteBlock.jsx
-  ImageStory.jsx
-```
+Existing homepage story headlines, deks and future-story text are protected content.
 
-The exact component list may be simplified when an existing primitive already handles the required role.
+The implementation may redistribute them, add more, or pair them with new imagery, but must not reduce or rewrite them for visual convenience.
 
-Do not create abstractions that are not reused.
+## 6. Imagery rule
 
-## 5. Separation of concerns
+Temporary placeholders remain acceptable during structural reconstruction.
 
-- `app/page.js` owns homepage composition and editorial ordering.
-- reusable components own presentation patterns.
-- content data should be separated from repeated markup where this improves clarity and consistency.
-- `globals.css` owns the shared visual system.
-- component-specific CSS should not become a second competing design system.
+Actual free/licensed imagery is a later pass.
 
-## 6. Homepage implementation contract
+Do not let temporary imagery determine the architecture.
 
-The homepage code must be driven by `homepage-reference-mapping.md` once Phase 5 begins.
+## 7. CSS rule
 
-The application must support a one-to-one mapped homepage in which:
-- every reference section/module has one Staffroom counterpart
-- every mapped card/story/text role is populated
-- no reference module is intentionally omitted
-- no two reference modules are silently merged
-- overall page depth remains comparable to the reviewed reference
-- Staffroom content changes the subject matter and copy, not the structural contract
+Use one coherent design system.
 
-The Staffroom editorial sequence in `homepage-architecture.md` is a content taxonomy and organisational layer, not permission to build a shorter page.
+Remove:
+- legacy homepage overrides
+- duplicate selectors
+- phase-specific patch layers
+- arbitrary negative margins
+- absolute positioning used only to correct alignment
+- unrelated homepage-specific rules inherited from the previous design
 
-## 7. Layout baseline
+Use:
+- shared tokens
+- explicit grid spans
+- intrinsic sizing
+- aspect-ratio rules
+- responsive composition classes
 
-Use a publication-style central container and a 12-column desktop grid.
+## 8. Responsive rule
 
-Components should use explicit editorial spans based on story importance and the reference mapping.
+Desktop and mobile are primary states.
 
-The layout must be authored for desktop, tablet and mobile rather than relying on a single desktop structure that is later stacked.
+Tablet uses the same components and styles unless evidence demonstrates a fundamentally different composition.
 
-Responsive adaptation may reflow or simplify layout mechanics, but it should retain mapped editorial content unless a documented responsive rule changes presentation without removing the underlying role.
+## 9. Verification rule
 
-## 8. Implementation constraints
-
-- start clean
-- avoid legacy overrides
-- avoid duplicate selectors
-- avoid duplicated colour/type/spacing tokens
-- avoid arbitrary magic numbers where a shared token is appropriate
-- preserve semantic HTML
-- preserve accessible keyboard interaction
-- do not copy The Ken's brand assets or editorial content
-- do not introduce unrelated features
-- do not reduce the homepage to a representative sample
+Before progressing:
+- render at the supplied 1440px reference dimensions
+- compare section composition side-by-side
+- test mobile
+- test an intermediate tablet width
+- correct structural causes rather than local offsets
