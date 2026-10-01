@@ -6,11 +6,11 @@ These are placeholder story concepts for the rebuild. They are editorial develop
 
 This seed is **not a final short list**.
 
-The final homepage must contain a deliberate Staffroom placeholder for **every slot in `homepage-reference-mapping.md`**.
+The final homepage must populate the seven reference compositions documented in `homepage-reference-mapping.md`, with enough Staffroom stories to match their density.
 
-The seed may therefore be expanded, split, reformatted or supplemented during Phase 6 until the full one-to-one homepage mapping is populated.
+The seed may be expanded, redistributed, reformatted or supplemented as the seven compositions are populated.
 
-Do not reduce the homepage to the number of concepts currently listed here.
+Do not reduce the homepage to the number of concepts currently listed here, and do not delete existing homepage development material.
 
 For each mapped slot, provide the equivalent content roles required by the reference:
 - heading/label where applicable
@@ -20,7 +20,7 @@ For each mapped slot, provide the equivalent content roles required by the refer
 - image where applicable
 - quote/text block where applicable
 
-All wording is Staffroom-specific and must be original; only the structural role and approximate content density follow the reference map.
+All wording is Staffroom-specific and must remain original. Only structural role, approximate density and visual treatment follow the reference map.
 
 ## Lead
 
