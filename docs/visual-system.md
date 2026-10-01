@@ -28,6 +28,16 @@ Staffroom Review now uses **Lora** as the default typeface across the homepage's
 
 The comparison should use the same Staffroom copy, sizes, leading, tracking, palette and Archivo interface layer. Only the serif family should change between samples.
 
+### Active Lora treatment
+
+The current homepage review version mirrors Option D of the internal typography specimen:
+- editorial headings: **Lora 700**, with neutral letter-spacing and approximately 1.0 line-height
+- primary editorial body/dek: **Lora 400**, 17px, approximately 1.38 line-height
+- secondary story headings: **Lora 700**, approximately 23px, 1.03 line-height
+- small utility/interface copy: **Archivo**
+
+This is the reference treatment to judge visually before finalising the global typography.
+
 ### Roles
 
 Editorial serif:
