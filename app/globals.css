@@ -762,6 +762,15 @@ img, svg { display: block; max-width: 100%; }
   .feature-chapter-layout {
     grid-template-columns: 1fr;
   }
+  .feature-chapter-layout > .feature {
+    order: 1;
+  }
+  .feature-chapter-side:first-child {
+    order: 2;
+  }
+  .feature-chapter-side:last-child {
+    order: 3;
+  }
   .feature-chapter-side:first-child,
   .feature-chapter-side:last-child {
     padding-inline: 0;
