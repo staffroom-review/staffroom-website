@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <p className="footer-heading">Explore</p>
             <a href="/stories">Stories</a>
-            <a href="/">Teachers</a>
+            <a href="/teachers">Teachers</a>
             <a href="/">Classrooms</a>
             <a href="/">Schools</a>
           </div>
