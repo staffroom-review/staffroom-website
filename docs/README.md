@@ -11,3 +11,5 @@ Previous homepage implementations and previous design documents are not design a
 Protected Staffroom story content is kept in content-base.md and must not be deleted or shortened for layout convenience.
 
 Build workflow: Plan → approval → implement → verify → live-site review → approval.
+
+The approved navbar roadmap is maintained in `navbar-architecture.md`. It governs the post-homepage page families, navigation structure and one-page-at-a-time approval workflow.
