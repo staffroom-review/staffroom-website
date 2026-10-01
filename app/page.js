@@ -1,12 +1,10 @@
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
-import FeatureStory from "../components/FeatureStory";
 import StoryCard from "../components/StoryCard";
 import CompactStory from "../components/CompactStory";
-import StoryList from "../components/StoryList";
-import QuoteBlock from "../components/QuoteBlock";
 import ImageStory from "../components/ImageStory";
-import SectionHeader from "../components/SectionHeader";
+import StoryList from "../components/StoryList";
+import EditorialRule from "../components/EditorialRule";
 
 const placeholder = (label, background, foreground = "#f6f3eb") =>
   "data:image/svg+xml;charset=UTF-8," +
@@ -43,7 +41,7 @@ const stories = {
       title: "The five minutes before the bell",
       dek: "What teachers do before a class begins often shapes everything that follows.",
       image: images.staffroom1,
-      imageAlt: "Abstract editorial placeholder for a teacher preparing before class",
+      imageAlt: "Editorial placeholder for a teacher preparing before class",
       section: "The Staffroom",
       format: "Essay",
       author: "Staffroom Review",
@@ -54,7 +52,7 @@ const stories = {
       title: "The work nobody sees after the last child leaves",
       dek: "Planning, checking, calling home and starting again tomorrow.",
       image: images.staffroom2,
-      imageAlt: "Abstract editorial placeholder for unseen teacher work",
+      imageAlt: "Editorial placeholder for unseen teacher work",
       section: "The Staffroom",
       format: "Essay",
       author: "Staffroom Review",
@@ -65,7 +63,7 @@ const stories = {
       title: "What a good staffroom makes possible",
       dek: "The informal conversations that keep difficult days moving.",
       image: images.staffroom3,
-      imageAlt: "Abstract editorial placeholder for a staffroom",
+      imageAlt: "Editorial placeholder for a staffroom",
       section: "The Staffroom",
       format: "Conversation",
       author: "Staffroom Review",
@@ -78,7 +76,7 @@ const stories = {
       title: "When the lesson changes halfway through",
       dek: "A classroom is rarely the plan written the night before.",
       image: images.classroom1,
-      imageAlt: "Abstract editorial placeholder for a classroom",
+      imageAlt: "Editorial placeholder for a classroom",
       section: "The Classroom",
       format: "Classroom",
       author: "Staffroom Review",
@@ -89,7 +87,7 @@ const stories = {
       title: "The student who changes the question",
       dek: "Sometimes the most useful lesson begins with an interruption.",
       image: images.classroom2,
-      imageAlt: "Abstract editorial placeholder for a student question",
+      imageAlt: "Editorial placeholder for a student question",
       section: "The Classroom",
       format: "Essay",
       author: "Staffroom Review",
@@ -131,302 +129,315 @@ const listStories = [
   },
 ];
 
+const discoveryStories = [
+  ...listStories,
+  {
+    title: "The Teacher Who Learned to Leave School on Time",
+    dek: "After the Bell: what changes when a teacher stops treating exhaustion as part of the job.",
+    eyebrow: "After the Bell",
+  },
+  {
+    title: "The Five-Year Teacher",
+    dek: "What changes after the first rush of becoming a teacher has passed.",
+    eyebrow: "Teachers",
+  },
+  {
+    title: "The Homework Problem AI Didn't Create",
+    dek: "The technology changed the question, but not every problem behind it.",
+    eyebrow: "Ideas",
+  },
+  {
+    title: "The Principal Who Stopped Measuring Everything",
+    dek: "A school leader reconsiders what numbers can and cannot tell a school.",
+    eyebrow: "School Leadership",
+  },
+];
+
+function SectionTitle({ number, title, description }) {
+  return (
+    <header className="reference-section-header">
+      <div className="reference-section-header__title-row">
+        <h2>{title}</h2>
+        <EditorialRule variant="accent" />
+      </div>
+      {description ? <p>{description}</p> : null}
+    </header>
+  );
+}
+
+function StoryText({ story, className = "" }) {
+  return (
+    <article className={`story-text ${className}`.trim()}>
+      {story.eyebrow ? <p className="eyebrow">{story.eyebrow}</p> : null}
+      <h3 className="type-secondary"><a href="#story">{story.title}</a></h3>
+      {story.dek ? <p className="story-text__dek">{story.dek}</p> : null}
+      {story.author ? <p className="type-meta story-text__meta">{story.author}</p> : null}
+    </article>
+  );
+}
+
 export default function HomePage() {
   return (
     <div className="site-shell">
       <SiteHeader />
+
       <main className="homepage">
-        <section className="page-width homepage__lead" aria-labelledby="lead-title">
-          <FeatureStory
-            eyebrow="Lead story · The Staffroom"
-            title="A school day is made of hundreds of small decisions"
-            dek="Teaching is often described through lessons and outcomes. The lived reality is more granular: the judgement calls, interruptions, recoveries and quiet acts of care that make a school day work."
-            image={images.lead}
-            imageAlt="Abstract editorial placeholder representing a teacher's school day"
-            section="The Staffroom"
-            format="Cover story"
-            author="Staffroom Review"
-            date="30 Sep 2026"
-            readingTime="12 min"
-            href="#lead"
-            className="homepage__lead-story"
-          />
-        </section>
+        <section className="page-width reference-section reference-section--opening" aria-labelledby="reference-section-1">
+          <div className="opening-grid">
+            <StoryText
+              className="opening-grid__left"
+              story={{
+                eyebrow: "The Staffroom",
+                title: "A school day is made of hundreds of small decisions",
+                dek: "Teaching is often described through lessons and outcomes. The lived reality is more granular: the judgement calls, interruptions, recoveries and quiet acts of care that make a school day work.",
+                author: "Staffroom Review",
+              }}
+            />
 
-        <section className="page-width homepage__section" aria-labelledby="staffroom-heading">
-          <SectionHeader
-            eyebrow="01 · The Staffroom"
-            title="The people who make a school"
-            description="The lived experience of teaching: the routines, relationships and contradictions that rarely fit inside a lesson plan."
-          />
-          <div className="editorial-grid">
-            {stories.staffroom.map((story, index) => (
-              <StoryCard
-                key={story.title}
-                {...story}
-                href={`#staffroom-${index}`}
-                imageRatio="standard"
-                className={index === 1 ? "paper-lift homepage-card homepage-card--raised span-4" : "homepage-card span-4"}
-              />
-            ))}
+            <article className="feature-anchor opening-grid__center">
+              <a className="image-frame image-frame--feature" href="#lead">
+                <img src={images.lead} alt="Editorial placeholder representing a teacher's school day" />
+              </a>
+              <div className="feature-anchor__body">
+                <p className="eyebrow">Staffroom Review · Cover story</p>
+                <h1 className="type-lead"><a href="#lead">A school day is made of hundreds of small decisions</a></h1>
+                <p className="type-body">Teaching is often described through lessons and outcomes. The lived reality is more granular: the judgement calls, interruptions, recoveries and quiet acts of care that make a school day work.</p>
+              </div>
+            </article>
+
+            <StoryText
+              className="opening-grid__right"
+              story={{
+                eyebrow: "The School Behind the School",
+                title: "The work around the work",
+                dek: "Leadership, administration, staffing, parents and the institutional decisions that shape everyday teaching.",
+                author: "Staffroom Review",
+              }}
+            />
           </div>
         </section>
 
-        <section className="surface-muted homepage__band" aria-label="Editorial voice">
+        <section className="page-width reference-section" aria-labelledby="reference-section-2">
+          <SectionTitle number="02" title="The Classroom" description="What actually happens when teaching begins." />
+          <div className="feature-support-grid">
+            <article className="feature-anchor feature-support-grid__main paper-lift">
+              <a className="image-frame image-frame--feature" href="#classroom-feature">
+                <img src={stories.classroom[0].image} alt={stories.classroom[0].imageAlt} />
+              </a>
+              <div className="feature-anchor__body">
+                <p className="eyebrow">The Classroom · {stories.classroom[0].format}</p>
+                <h2 className="type-section"><a href="#classroom-feature">Snapdeal's IPO looks for strength in numbers</a></h2>
+                <p className="type-body">{stories.classroom[0].dek} A classroom is rarely the plan written the night before.</p>
+              </div>
+            </article>
+            <div className="feature-support-grid__side">
+              <StoryText story={stories.classroom[1]} />
+              <CompactStory {...stories.classroom[1]} href="#classroom-2" className="compact-reference-story" />
+              <CompactStory {...stories.classroom[2]} href="#classroom-3" className="compact-reference-story compact-reference-story--text-only" />
+            </div>
+          </div>
+        </section>
+
+        <section className="reference-section reference-section--dense surface-muted" aria-labelledby="reference-section-3">
           <div className="page-width">
-            <QuoteBlock
-              quote="The job is not only to teach the subject. It is to notice what the room needs next."
-              attribution="A Staffroom Review contributor"
-            />
-          </div>
-        </section>
-
-        <section className="page-width homepage__section" aria-labelledby="classroom-heading">
-          <SectionHeader
-            eyebrow="02 · The Classroom"
-            title="What actually happens when teaching begins"
-            description="The classroom as it is experienced, rather than as it is described from a distance."
-          />
-          <div className="homepage-split">
-            <StoryCard
-              {...stories.classroom[0]}
-              href="#classroom-feature"
-              imageRatio="standard"
-              className="paper-lift homepage-card homepage-card--feature"
-            />
-            <div className="homepage-stack">
-              {stories.classroom.slice(1).map((story, index) => (
-                <CompactStory key={story.title} {...story} href={`#classroom-${index + 1}`} />
+            <SectionTitle title="Recommended for teachers" description="Stories and ideas we think you might like." />
+            <div className="dense-columns">
+              {[0, 1, 2, 3, 4].map((column) => (
+                <div className="dense-column" key={column}>
+                  {column === 0 ? (
+                    <StoryCard
+                      {...stories.staffroom[0]}
+                      href="#discovery-1"
+                      imageRatio="wide"
+                      className="dense-column__lead"
+                    />
+                  ) : column === 1 ? (
+                    <StoryCard
+                      {...stories.staffroom[1]}
+                      href="#discovery-2"
+                      imageRatio="wide"
+                      className="dense-column__lead"
+                    />
+                  ) : column === 2 ? (
+                    <StoryCard
+                      {...stories.classroom[1]}
+                      href="#discovery-3"
+                      imageRatio="wide"
+                      className="dense-column__lead"
+                    />
+                  ) : column === 3 ? (
+                    <StoryCard
+                      {...stories.classroom[0]}
+                      href="#discovery-4"
+                      imageRatio="wide"
+                      className="dense-column__lead"
+                    />
+                  ) : (
+                    <StoryCard
+                      {...stories.staffroom[2]}
+                      href="#discovery-5"
+                      imageRatio="wide"
+                      className="dense-column__lead"
+                    />
+                  )}
+                  <div className="dense-column__list">
+                    {discoveryStories.slice(column % 2, column % 2 + 3).map((story, index) => (
+                      <StoryText key={`${column}-${index}`} story={story} />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="page-width homepage__section homepage__section--accent" aria-labelledby="school-heading">
-          <SectionHeader
-            eyebrow="03 · The School Behind the School"
-            title="The work around the work"
-            description="Leadership, administration, staffing, parents and the institutional decisions that shape everyday teaching."
-          />
-          <div className="editorial-grid homepage-school-grid">
-            <div className="span-7">
+        <section className="page-width reference-section" aria-labelledby="reference-section-4">
+          <SectionTitle title="The School Behind the School" description="The decisions, systems and people around the classroom." />
+          <div className="central-feature-grid">
+            <div className="central-feature-grid__side">
+              <StoryText story={{ eyebrow: "School life", title: "The invisible architecture of a good school", dek: "Policies matter. So do the habits that quietly turn them into culture.", author: "Staffroom Review" }} />
               <StoryCard
-                title="The invisible architecture of a good school"
-                dek="Policies matter. So do the habits that quietly turn them into culture."
-                image={images.school1}
-                imageAlt="Abstract editorial placeholder for school systems"
-                section="The School Behind the School"
-                format="Feature"
+                title="The administrator who remembers every child's name"
+                dek="A portrait of the small institutional acts that make a school feel human."
+                image={images.school2}
+                imageAlt="Editorial placeholder for school systems"
+                section="Schools"
+                format="Profile"
                 author="Staffroom Review"
                 date="26 Sep 2026"
-                readingTime="9 min"
-                href="#school-feature"
-                imageRatio="standard"
-                className="homepage-card paper-lift"
+                readingTime="7 min"
+                href="#school-administrator"
+                imageRatio="wide"
               />
             </div>
-            <div className="span-5 homepage-school-note">
-              <p className="eyebrow">Institutional life</p>
-              <h3 className="type-secondary">A school is also a set of decisions about time, attention and responsibility.</h3>
-              <p className="type-body">The most consequential work can happen far from the classroom: in corridors, calendars, meetings and conversations.</p>
-              <CompactStory
+
+            <article className="feature-anchor central-feature-grid__main paper-lift">
+              <a className="image-frame image-frame--feature" href="#school-feature">
+                <img src={images.school1} alt="Editorial placeholder for the systems behind school life" />
+              </a>
+              <div className="feature-anchor__body feature-anchor__body--centered">
+                <p className="eyebrow">The School Behind the School</p>
+                <h2 className="type-section"><a href="#school-feature">When marks become the only language parents understand</a></h2>
+                <p className="type-body">The most consequential work can happen far from the classroom: in corridors, calendars, meetings and conversations.</p>
+              </div>
+            </article>
+
+            <div className="central-feature-grid__side">
+              <StoryText story={{ eyebrow: "Institutional life", title: "A parent meeting is never only a parent meeting", dek: "Trust is built in small conversations long before there is a problem to solve.", author: "Staffroom Review" }} />
+              <StoryCard
                 title="When the timetable tells a different story"
                 dek="A compact look at what scheduling reveals about priorities."
                 image={images.school2}
-                imageAlt="Abstract editorial placeholder for school scheduling"
-                section="The School Behind the School"
-                format="Essay"
+                imageAlt="Editorial placeholder for school scheduling"
+                section="Schools"
+                format="Field Note"
                 author="Staffroom Review"
                 date="25 Sep 2026"
                 readingTime="5 min"
                 href="#school-timetable"
+                imageRatio="wide"
               />
             </div>
           </div>
         </section>
 
-        <section className="page-width homepage__section" aria-labelledby="voices-heading">
-          <SectionHeader eyebrow="04 · Voices" title="Teachers in their own words" />
-          <div className="editorial-grid">
-            <div className="span-6">
-              <ImageStory
-                eyebrow="First person"
-                title="I stopped trying to make every lesson look successful"
-                dek="A teacher on learning to distinguish visible activity from meaningful learning."
-                image={images.voices}
-                imageAlt="Abstract editorial placeholder for a first-person teacher story"
-                section="Voices"
-                author="Staffroom Review"
-                date="24 Sep 2026"
-                readingTime="8 min"
-                href="#voice-one"
-                className="paper-lift homepage-card"
-              />
-            </div>
-            <div className="span-6">
-              <StoryList stories={listStories.slice(0, 3)} />
-            </div>
-          </div>
-        </section>
-
-        <section className="page-width homepage__section" aria-labelledby="subjects-heading">
-          <SectionHeader
-            eyebrow="05 · Subjects"
-            title="The subjects teachers return to"
-            description="Ideas, classrooms and the particular pleasures and problems of teaching a subject well."
-          />
-          <div className="editorial-grid">
-            <div className="span-5">
-              <StoryCard
-                title="Why history classrooms need uncertainty"
-                dek="The past becomes more interesting when students can see where the evidence ends."
-                image={images.subjects}
-                imageAlt="Abstract editorial placeholder for a history classroom"
-                section="Subjects"
-                format="Subject"
-                author="Staffroom Review"
-                date="23 Sep 2026"
-                readingTime="7 min"
-                href="#history"
-                imageRatio="portrait"
-                className="homepage-card paper-lift"
-              />
-            </div>
-            <div className="span-4">
-              <StoryCard
-                title="The strange beauty of a difficult maths problem"
-                dek="What teachers notice when students stop looking for the quickest answer."
-                image={images.subjects2}
-                imageAlt="Abstract editorial placeholder for mathematics"
-                section="Subjects"
-                format="Subject"
-                author="Staffroom Review"
-                date="22 Sep 2026"
-                readingTime="6 min"
-                href="#maths"
-                imageRatio="standard"
-                className="homepage-card"
-              />
-            </div>
-            <div className="span-3">
-              <StoryList stories={listStories.slice(1)} />
-            </div>
-          </div>
-        </section>
-
-        <section className="surface-muted homepage__section homepage__section--wide" aria-labelledby="beyond-heading">
+        <section className="reference-section reference-section--dense" aria-labelledby="reference-section-5">
           <div className="page-width">
-            <SectionHeader
-              eyebrow="06 · Beyond the Staffroom"
-              title="A wider view of education"
-              description="International and comparative stories, used to ask questions that matter in Indian schools."
-            />
-            <div className="editorial-grid">
-              <div className="span-8">
-                <FeatureStory
-                  eyebrow="Comparative education"
-                  title="What changes when a school gives teachers more time?"
-                  dek="Across different systems, the same question produces very different answers."
-                  image={images.beyond}
-                  imageAlt="Abstract editorial placeholder for comparative education"
-                  section="Beyond the Staffroom"
-                  format="Feature"
-                  author="Staffroom Review"
-                  date="20 Sep 2026"
-                  readingTime="10 min"
-                  href="#beyond"
-                  className="homepage-card paper-lift"
-                />
-              </div>
-              <div className="span-4 homepage-compact-column">
-                <CompactStory
-                  title="The schools that made room for play"
-                  dek="What happens when the timetable changes its priorities."
-                  section="Beyond the Staffroom"
-                  format="International"
-                  author="Staffroom Review"
-                  date="19 Sep 2026"
-                  readingTime="5 min"
-                  href="#play"
-                />
-                <CompactStory
-                  title="A lesson from a school without bells"
-                  dek="A different rhythm can produce a different classroom."
-                  section="Beyond the Staffroom"
-                  format="International"
-                  author="Staffroom Review"
-                  date="18 Sep 2026"
-                  readingTime="4 min"
-                  href="#bells"
-                />
-              </div>
+            <SectionTitle title="Subjects" description="The subjects teachers return to, and the questions inside them." />
+            <div className="collection-columns">
+              {[
+                ["Mathematics", stories.subjects2],
+                ["Science", stories.classroom[0]],
+                ["English", { title: "What English teachers hear that parents don't", dek: "What teachers notice when language becomes a way of seeing the classroom." }],
+                ["Arts", { title: "Why music keeps moving to the margins", dek: "What changes when a subject is treated as optional." }],
+                ["Ideas", { title: "The homework problem AI didn't create", dek: "The technology changed the question, but not every problem behind it." }],
+              ].map(([heading, story]) => (
+                <div className="collection-column" key={heading}>
+                  <h3 className="collection-column__heading">{heading}</h3>
+                  {story.image ? (
+                    <StoryCard
+                      {...story}
+                      href="#subject"
+                      imageRatio="wide"
+                      section="Subjects"
+                      format="Feature"
+                      author="Staffroom Review"
+                      date="23 Sep 2026"
+                      readingTime="6 min"
+                      imageAlt={story.imageAlt}
+                    />
+                  ) : (
+                    <StoryText story={{ eyebrow: "Staffroom Review", ...story }} />
+                  )}
+                  <StoryList stories={discoveryStories.slice(0, 3)} />
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="page-width homepage__section" aria-labelledby="long-read-heading">
-          <SectionHeader eyebrow="07 · The Long Read" title="For when the question needs more room" />
-          <div className="homepage-long-read">
-            <div className="homepage-long-read__image">
-              <img src={images.long} alt="Abstract editorial placeholder for a long-form education story" />
+        <section className="page-width reference-section" aria-labelledby="reference-section-6">
+          <SectionTitle title="Voices · Beyond the Staffroom" description="Teachers in their own words, and a wider view of education." />
+          <div className="central-feature-grid">
+            <div className="central-feature-grid__side">
+              <StoryText story={{ eyebrow: "First person", title: "I stopped trying to make every lesson look successful", dek: "A teacher on learning to distinguish visible activity from meaningful learning.", author: "Staffroom Review" }} />
+              <StoryList stories={listStories.slice(0, 2)} />
             </div>
-            <div className="homepage-long-read__body">
-              <p className="eyebrow">Long read</p>
-              <h2 className="type-secondary">The school that learned to listen before it changed</h2>
-              <p className="type-body">A substantial Staffroom Review story about culture, listening and the slow work of institutional change.</p>
-              <p className="type-meta">Staffroom Review · 16 Sep 2026 · 18 min</p>
-              <a className="homepage-text-link" href="#long-read">Read the long read →</a>
-            </div>
-          </div>
-        </section>
-
-        <section className="page-width homepage__section" aria-labelledby="visual-heading">
-          <SectionHeader eyebrow="08 · Visual Story" title="See the school year differently" />
-          <div className="editorial-grid">
-            <div className="span-8">
+            <article className="feature-anchor central-feature-grid__main paper-lift">
+              <a className="image-frame image-frame--feature" href="#beyond">
+                <img src={images.beyond} alt="Editorial placeholder for comparative education" />
+              </a>
+              <div className="feature-anchor__body feature-anchor__body--centered">
+                <p className="eyebrow">Comparative education</p>
+                <h2 className="type-section"><a href="#beyond">What changes when a school gives teachers more time?</a></h2>
+                <p className="type-body">Across different systems, the same question produces very different answers.</p>
+              </div>
+            </article>
+            <div className="central-feature-grid__side">
+              <StoryText story={{ eyebrow: "World", title: "What Indian teachers can learn from the school day in Japan", dek: "A comparative look at rhythm, autonomy and the school day.", author: "Staffroom Review" }} />
               <ImageStory
                 title="A school year, measured in moments rather than months"
                 dek="A visual explanation of the recurring rhythms that organise a teacher's year."
                 image={images.visual}
-                imageAlt="Abstract editorial placeholder for a visual story"
+                imageAlt="Editorial placeholder for a visual story"
                 section="Visual Story"
                 author="Staffroom Review"
                 date="14 Sep 2026"
                 readingTime="4 min"
                 href="#visual"
-                className="homepage-card paper-lift"
               />
             </div>
-            <div className="span-4 homepage-closing-list">
-              <StoryList stories={listStories.slice(0, 2)} />
-            </div>
+          </div>
+          <div className="quote-band">
+            <blockquote className="type-quote">“The job is not only to teach the subject. It is to notice what the room needs next.”</blockquote>
+            <p className="type-meta">A Staffroom Review contributor</p>
           </div>
         </section>
 
-        <section className="page-width homepage__section homepage__closing" aria-labelledby="closing-heading">
-          <SectionHeader eyebrow="09 · Closing editorial" title="A few things worth carrying into tomorrow" />
-          <div className="editorial-grid">
-            {[
-              "The teacher who changed the seating plan",
-              "A note on ordinary school days",
-              "What we mean when we say 'good teaching'",
-            ].map((title, index) => (
-              <CompactStory
-                key={title}
-                title={title}
-                dek={index === 0 ? "A small change, a different room." : index === 1 ? "The everyday deserves attention too." : "A phrase with more weight than it first appears to carry."}
-                section="Closing editorial"
-                format="Note"
-                author="Staffroom Review"
-                date="12 Sep 2026"
-                readingTime="3 min"
-                href={`#closing-${index}`}
-                className="span-4"
-              />
-            ))}
+        <section className="page-width reference-section reference-section--closing" aria-labelledby="reference-section-7">
+          <SectionTitle title="The Long Read" description="For when the question needs more room." />
+          <div className="closing-feature">
+            <article className="feature-anchor closing-feature__main paper-lift">
+              <a className="image-frame image-frame--feature" href="#long-read">
+                <img src={images.long} alt="Editorial placeholder for a long-form education story" />
+              </a>
+              <div className="feature-anchor__body">
+                <p className="eyebrow">Long read</p>
+                <h2 className="type-lead"><a href="#long-read">The school that learned to listen before it changed</a></h2>
+                <p className="type-body">A substantial Staffroom Review story about culture, listening and the slow work of institutional change.</p>
+                <p className="type-meta">Staffroom Review · 16 Sep 2026 · 18 min</p>
+              </div>
+            </article>
+            <div className="closing-feature__side">
+              <StoryText story={{ eyebrow: "Closing editorial", title: "The teacher who changed the seating plan", dek: "A small change, a different room.", author: "Staffroom Review" }} />
+              <StoryText story={{ eyebrow: "Closing editorial", title: "A note on ordinary school days", dek: "The everyday deserves attention too.", author: "Staffroom Review" }} />
+              <StoryText story={{ eyebrow: "Closing editorial", title: "What we mean when we say 'good teaching'", dek: "A phrase with more weight than it first appears to carry.", author: "Staffroom Review" }} />
+              <StoryText story={{ eyebrow: "Visual Story", title: "A Teacher's Week, Item by Item", dek: "A visual record of the small objects and routines that make up a week.", author: "Staffroom Review" }} />
+            </div>
           </div>
         </section>
       </main>
+
       <SiteFooter />
     </div>
   );
