@@ -62,3 +62,5 @@ Flat paper is the default. Avoid rounded cards, gradients and global shadows. Re
 ## Header/footer
 
 Existing header, navbar and footer architecture remains; tune typography, spacing, colour and rules so they belong to this visual system. Do not replace the site shell with an unrelated architecture.
+
+Footer treatment: use a deep ink surface with a substantial vermillion transition band above it so the footer reads as a deliberate closing band rather than an extension of the paper sections. Keep the footer typography restrained, highly legible and structurally hierarchical, with the existing content grouped into a strong primary identity block plus compact navigation columns.
