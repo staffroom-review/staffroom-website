@@ -1,10 +1,12 @@
 import "./globals.css";
-import { Archivo, Frank_Ruhl_Libre } from "next/font/google";
+import { Archivo, Lora } from "next/font/google";
 
-const frankRuhlLibre = Frank_Ruhl_Libre({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-frank-ruhl-libre",
+  variable: "--font-lora",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const archivo = Archivo({
@@ -22,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${frankRuhlLibre.variable} ${archivo.variable}`}>{children}</body>
+      <body className={`${lora.variable} ${archivo.variable}`}>{children}</body>
     </html>
   );
 }
