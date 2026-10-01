@@ -487,6 +487,47 @@ img, svg { display: block; max-width: 100%; }
   border-bottom: 1px dotted var(--rule);
 }
 
+.feature-chapter-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+  gap: 30px;
+  align-items: start;
+}
+.feature-chapter-side {
+  display: grid;
+  gap: 28px;
+}
+.feature-chapter-side:first-child {
+  padding-right: 24px;
+  border-right: 1px dotted var(--rule);
+}
+.feature-chapter-side:last-child {
+  padding-left: 24px;
+  border-left: 1px dotted var(--rule);
+}
+.feature-chapter-side .story {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted var(--rule);
+}
+.feature-chapter-side .story:last-child {
+  padding-bottom: 0;
+}
+.feature-chapter-side .story:last-child:not(.story--compact) {
+  border-bottom: 0;
+}
+.reference-section--feature-chapter .feature {
+  background: var(--paper-light);
+}
+.reference-section--feature-chapter .feature__body {
+  padding: 22px 30px 28px;
+}
+.reference-section--feature-chapter .feature__body h1 {
+  max-width: 18ch;
+}
+.reference-section--feature-chapter .art-frame--feature {
+  aspect-ratio: 1.72;
+}
+
 .central-layout {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
@@ -717,6 +758,17 @@ img, svg { display: block; max-width: 100%; }
   .central-layout > .central-side:last-child {
     padding-inline: 0;
     border-inline: 0;
+  }
+  .feature-chapter-layout {
+    grid-template-columns: 1fr;
+  }
+  .feature-chapter-side:first-child,
+  .feature-chapter-side:last-child {
+    padding-inline: 0;
+    border-inline: 0;
+  }
+  .feature-chapter-side {
+    gap: 0;
   }
   .opening-feature { order: 1; }
   .opening-side { order: 2; }
