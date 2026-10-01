@@ -490,19 +490,49 @@ img, svg { display: block; max-width: 100%; }
 .central-layout {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
-  gap: var(--gutter);
+  gap: 30px;
   align-items: start;
 }
 .central-side {
   display: grid;
   gap: 30px;
 }
+.central-layout > .central-side:first-child {
+  padding-right: 24px;
+  border-right: 1px dotted var(--rule);
+}
+.central-layout > .central-side:last-child {
+  padding-left: 24px;
+  border-left: 1px dotted var(--rule);
+}
 .central-side .story {
   padding-bottom: 20px;
   border-bottom: 1px dotted var(--rule);
 }
+.central-layout .feature {
+  background: var(--paper-light);
+}
+.central-layout .feature__body {
+  padding: 22px 30px 28px;
+}
 .central-layout .feature__body h1 {
-  max-width: 20ch;
+  max-width: 18ch;
+}
+.reference-section--central .art-frame--feature {
+  aspect-ratio: 1.7;
+}
+.art-frame[data-art="school-architecture"] {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.15), transparent 38%),
+    linear-gradient(145deg, #5f4b43 0%, #8c6d5d 48%, #3e302c 100%);
+}
+.art-frame[data-art="school-architecture"]::after {
+  width: 50%;
+  height: 50%;
+  right: 12%;
+  top: 20%;
+  background: rgba(241, 202, 151, .78);
+  clip-path: polygon(0 76%, 22% 58%, 22% 18%, 41% 0, 58% 18%, 58% 52%, 77% 39%, 100% 52%, 100% 100%, 0 100%);
 }
 
 .reference-section--collection {
@@ -658,6 +688,11 @@ img, svg { display: block; max-width: 100%; }
   .central-side {
     grid-column: auto;
     grid-row: auto;
+  }
+  .central-layout > .central-side:first-child,
+  .central-layout > .central-side:last-child {
+    padding-inline: 0;
+    border-inline: 0;
   }
   .opening-feature { order: 1; }
   .opening-side { order: 2; }
