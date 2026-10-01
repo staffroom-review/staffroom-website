@@ -718,9 +718,10 @@ img, svg { display: block; max-width: 100%; }
   border: 0;
 }
 @media (max-width: 700px) {
-  .mobile-menu { display: block; }
+  .mobile-menu { display: block; width: 100%; }
+  .mobile-menu > summary.menu-button { display: block; width: fit-content; margin-left: auto; }
   .mobile-menu[open] { width: 100%; }
-  .mobile-menu[open] summary { margin-bottom: 14px; }
+  .mobile-menu[open] > summary { margin-bottom: 14px; }
 }
 @media (max-width: 520px) {
   .mobile-menu nav { grid-template-columns: 1fr; }
