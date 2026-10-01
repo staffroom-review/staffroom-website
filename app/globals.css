@@ -6,7 +6,7 @@
   --ink-soft: #6c605e;
   --muted: #8c817f;
   --rule: #d7cecb;
-  --vermillion: var(--vermillion);
+  --vermillion: #ef3e35;
 
   --display: Georgia, "Times New Roman", Times, serif;
   --sans: Inter, Arial, Helvetica, sans-serif;
@@ -327,7 +327,7 @@ img, svg { display: block; max-width: 100%; }
   background: linear-gradient(145deg, #6f5e54, #936d4b 55%, #4a3931);
 }
 .art-frame[data-art="school-day"] {
-  background: linear-gradient(145deg, #ef3e35, #c72f2c 50%, #7f211d);
+  background: linear-gradient(145deg, var(--vermillion), #c72f2c 50%, #7f211d);
 }
 
 .eyebrow {
