@@ -118,4 +118,4 @@ The shared Feature primitive now supports optional story metadata, while the exi
 
 **Approval gate:** Stories implementation is complete. Stop here for live visual review and approval of the Stories page before proceeding to Teachers.
 
-Deployment note: the first consolidated Stories-head deployment returned a Vercel BUILD_UTILS_SPAWN_1 build-step error; the repository content remains intact and a clean Git-triggered rebuild is being used to verify the implementation before this checkpoint is considered deployable.
+Deployment note: the first consolidated Stories-head deployment exposed a mobile-navigation data-mapping mismatch. The Header component has now been corrected so both desktop and mobile navigation render the new route objects consistently; the subsequent Git-triggered production deployment is the verified build for this checkpoint.
