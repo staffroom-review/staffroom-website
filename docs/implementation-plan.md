@@ -145,4 +145,14 @@ The visible story propositions use production-quality headlines, deks, explicit 
 
 The Classrooms primary navbar and footer links now resolve to /classrooms. Other unbuilt navbar destinations remain unchanged until their individual phases.
 
-**Approval gate:** Classrooms implementation is complete. Stop here for live visual review and approval of the Classrooms page before proceeding to Schools.
+**Approval gate:** Classrooms implementation is complete and approved. Stop here before proceeding to Schools.
+
+## Schools page — implementation checkpoint
+
+The fourth navbar page, Schools, is now implemented as the third Family 2 topic-led hub. Its composition shifts emphasis from classroom activity to school culture and institutional life: a dominant opening feature with a contextual side panel, a three-column Culture & Leadership grouping, a systems-focused two-column section, a long-read institution feature, school notebooks, and a quiet closing pathway.
+
+The visible story propositions use production-quality headlines, deks, explicit formats and representative reading-time metadata in line with docs/editorial-content-strategy.md. Full article bodies remain deferred until the approved page family reaches the Article Body Expansion stage.
+
+The Schools primary navbar and footer links now resolve to /schools. Other unbuilt navbar destinations remain unchanged until their individual phases.
+
+**Approval gate:** Schools implementation is complete. Stop here for live visual review and approval of the Schools page before proceeding to Ideas.
