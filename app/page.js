@@ -12,7 +12,8 @@ export default function HomePage() {
     <div className="site">
       <Header />
 
-      <main>
+      <main id="main-content">
+          <h1 className="sr-only">Staffroom Review</h1>
         <section className="reference-section reference-section--opening">
           <div className="page-shell">
             <div className="opening-layout">
@@ -42,6 +43,7 @@ export default function HomePage() {
                 title={content.lead.title}
                 dek={content.lead.dek}
                 centered
+                priority
               />
 
               <aside className="opening-support">

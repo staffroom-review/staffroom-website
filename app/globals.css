@@ -34,6 +34,24 @@ button, input { font: inherit; }
 img, svg { display: block; max-width: 100%; }
 :focus-visible { outline: 2px solid var(--vermillion); outline-offset: 3px; }
 
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: 10px;
+  z-index: 100;
+  transform: translateY(-150%);
+  padding: 9px 12px;
+  background: var(--ink);
+  color: var(--paper-light);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--vermillion);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .page-shell {
   width: min(100%, calc(var(--page) + (var(--gutter) * 2)));
   margin-inline: auto;
@@ -65,7 +83,7 @@ img, svg { display: block; max-width: 100%; }
   line-height: .85;
 }
 .brand__mark {
-  color: var(--brick-red);
+  color: var(--vermillion);
   font-family: var(--display);
   font-size: 17px;
   font-style: italic;

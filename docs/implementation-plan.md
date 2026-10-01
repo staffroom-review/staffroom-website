@@ -55,3 +55,11 @@ The selected sources are official Unsplash photo pages identified as free to use
 ### Imagery source correction
 
 The first production imagery deployment used Unsplash `/photos/<id>/download` endpoints. Those redirect/download endpoints did not render reliably in the deployed page, so the imagery layer has been corrected to use the corresponding `images.unsplash.com` CDN resources directly. Existing component structure, crop ratios, responsive order and story content remain unchanged; source-page URLs remain recorded for auditability.
+
+## Production/accessibility QA checkpoint
+
+The final imagery deployment has passed the production error scan with no runtime errors in the selected 24-hour window. The accessibility QA pass also corrected the homepage heading hierarchy by providing one page-level H1 and using H2 for reusable feature headings, tightened SectionHeader labelling so `aria-labelledby` targets the actual section heading, added a keyboard-accessible skip link to the main content, and marked only the above-the-fold hero image as eager/high priority while retaining lazy loading for secondary imagery.
+
+No homepage copy, visual architecture, responsive breakpoints or component layout rules were changed by this QA pass. The build is ready for the final side-by-side fidelity review.
+
+**Approval gate:** production/accessibility QA is complete. Stop here for visual approval of the final imagery + QA state; the next step is the final side-by-side fidelity pass.

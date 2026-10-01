@@ -3,6 +3,7 @@ const nav = ["Stories", "Teachers", "Classrooms", "Schools", "Ideas", "World", "
 export default function Header() {
   return (
     <header className="site-header">
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="page-shell">
         <div className="site-header__top">
           <a className="brand" href="/" aria-label="Staffroom Review home">
