@@ -2,7 +2,7 @@
 
 ## Current status
 
-**Reference analysis complete. Clean homepage reconstruction is authorised.**
+**Reference analysis complete. Seven-stage homepage reconstruction foundation implemented. Visual verification is the next checkpoint.**
 
 The supplied The Ken screenshots establish the visual and structural basis for the homepage. The existing homepage implementation is no longer the design baseline.
 
@@ -26,7 +26,7 @@ Updated:
 - related technical/content rules
 
 ## Phase 3 — Clean homepage foundation
-Current implementation task.
+Complete.
 
 Actions:
 - remove accumulated homepage-specific layout assumptions
@@ -40,7 +40,7 @@ Checkpoint:
 The homepage has a clean structural foundation capable of implementing Sections 1–7 without legacy layout interference.
 
 ## Phase 4 — Desktop reconstruction
-Build Sections 1–7 at the supplied 1440px reference viewport.
+Foundation implemented for Sections 1–7 at the supplied 1440px reference viewport. Side-by-side visual verification remains the checkpoint before further refinement.
 
 Sequence:
 1. Opening asymmetric feature
