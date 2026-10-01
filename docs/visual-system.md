@@ -1,212 +1,157 @@
 # Staffroom Review — Visual System
 
-## 1. Visual direction
+## 1. Direction
 
-The website should feel like a high-quality digital publication in the visual tradition of The Ken: editorially serious, compact where information matters, generous where stories need space, and strongly typographic.
+The Staffroom Review homepage should be a close visual study of the supplied The Ken homepage architecture while remaining recognisably Staffroom Review.
 
-The intended result is a **close structural and visual study of The Ken's publication design**, with Staffroom Review's own colour identity and editorial content.
+The reference is used for:
+- composition
+- hierarchy
+- proportions
+- information density
+- typography relationships
+- section rhythm
+- image prominence
+- responsive behaviour
 
-Reference:
-https://the-ken.com/
+Staffroom owns the brand, colour and editorial content.
 
-The design must not reproduce The Ken's logo, proprietary imagery, copy or brand assets.
-
-## 2. Reference-fidelity rule
-
-For homepage work, the visual system must support a one-to-one mapping of the reviewed The Ken homepage.
-
-Visual fidelity therefore covers not just colour and typography, but also:
-- page length and vertical rhythm
-- section count and section sequencing
-- card/module count
-- relative story prominence
-- heading and label roles
-- text-block roles
-- image presence and scale
-- grid composition
-- density and whitespace
-
-Do not use the visual system to create a shortened "inspired by The Ken" homepage. The target is reference-equivalent structure with Staffroom-specific content and colour.
-
-## 3. Core visual characteristics
-
-- editorial rather than portal-like
-- strong story hierarchy
-- typography-led
-- information-dense without feeling crowded
-- confident asymmetry
-- restrained ornament
-- clear section boundaries
-- image-led stories where images add meaning
-- deliberate use of whitespace
-- strong alignment and grid discipline
-
-## 4. Colour
-
-Staffroom Review owns the colour system.
+## 2. Palette
 
 Primary:
 - warm ivory / paper background
-- near-black text
-- restrained charcoal/grey metadata
+- near-black ink
+- restrained charcoal for secondary text
 
 Accent:
 - deep vermilion / Indian red
 
-Use the accent selectively for section markers, important rules, labels, active/focus states, selected editorial graphics and selected calls to action.
+The accent should be brighter and more visible in section labels and rules than in the current implementation, while remaining restrained overall.
 
-Do not use the accent as a full-page wash.
+Do not turn the page into a red interface.
 
-Colour is the principal intentional visual difference from the The Ken reference.
+## 3. Typography
 
-## 5. Typography
+Use:
+- literary serif for headlines
+- clean sans-serif for navigation, labels and metadata
 
-Use a literary display serif for headlines and a clean interface sans for utility text.
+Reference relationships:
+- feature headline: approximately 42–60px desktop depending on available width
+- central hero headline: approximately 42–54px
+- secondary headline: approximately 25–36px
+- compact headline: approximately 17–23px
+- dek: approximately 16–20px
+- metadata/labels: approximately 9–11px
 
-The typographic behaviour should closely follow the reference model:
-- large, high-impact lead headlines
-- controlled section headings
-- clear secondary story hierarchy
-- compact metadata
-- restrained pull quotes
-- strong contrast between headline and utility typography
+The exact size must respond to column width and line length.
 
-The system must use shared roles rather than ad-hoc sizes.
+The current very large 68px upper range should not be used indiscriminately. Scale is determined by editorial role and reference composition.
 
-### Directional scale
-
-| Role | Scale |
-|---|---:|
-| Lead headline | 48–68px |
-| Section title | 34–48px |
-| Secondary headline | 26–38px |
-| Story card headline | 22–32px |
-| Dek/body | 16–20px |
-| Metadata | 9–12px |
-| Quote | 28–42px |
-| Navigation | 11–13px |
-
-## 6. Grid and layout
+## 4. Grid
 
 Desktop:
 - 12-column grid
-- central content container
-- controlled outer margins
-- consistent gutters
-- explicit story spans
+- approximately 60px outer margin at the 1440px reference
+- approximately 20–30px gutters
+- explicit spans per composition
 
-Typical spans:
-- lead/major visual: 8–12
-- major feature: 6–8
-- supporting story: 4–6
-- compact story: 3–4
-- metadata/editorial note: 1–3
+Do not make all stories equal width.
 
-Use the grid to reproduce the reference mapping. Do not default every mapped section to the same repeated card geometry.
+## 5. Spacing
 
-## 7. Spacing
+Use a restrained editorial token system:
 
-Shared spacing tokens:
+8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80 / 96px
 
-8px / 12px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
+The key principle is rhythm:
+- tighter within story packages
+- moderate between stories
+- larger between editorial chapters
+- very large only around dominant features
 
-Use larger intervals between editorial ideas and smaller intervals inside a story module, following the mapped reference rhythm.
+## 6. Rules
 
-## 8. Rules
+- standard story separator: 1px muted rule
+- major separator: 1–2px dark rule
+- signature section rule: 3–4px accent rule
+- dotted separators may be used selectively in dense editorial modules
 
-- standard separator: 1px
-- major separator: 2px
-- signature accent marker: 4px
+Rules should define editorial structure.
 
-Rules should clarify editorial structure rather than decorate every box.
+## 7. Imagery
 
-## 9. Story presentation
+Final imagery is a later pass.
 
-A typical story package may contain:
+Preferred final source treatment:
+- actual free/licensed imagery
+- editorial illustrations where relevant
+- illustrations that visually explain the article proposition
+- restrained documentary photography where illustration is unsuitable
 
-image → section/format → headline → dek → author/date/reading time
+Do not use generic lifestyle stock photography merely to fill a slot.
 
-Not every compact story needs every field unless the reference slot calls for that role.
+Every image-bearing slot should use distinct imagery.
 
-Avoid:
-- rounded SaaS-style cards
-- gradients
-- badge overload
-- ornamental icons
-- heavy borders around every story
-- forced uniform card heights
+## 8. Cards and surfaces
 
-## 10. Shadows
+The reference is primarily flat editorial paper.
 
-Use very restrained paper-lift shadows for two deliberately selected modules.
+Do not:
+- use rounded cards
+- use gradients
+- create SaaS-style tiles
+- put borders around every story
+- apply shadows globally
 
-The effect should remain editorial and physical, not become a 3D interface language.
+Two deliberately selected Staffroom modules may use a very restrained paper-lift shadow if useful, but this is secondary to the reference architecture.
 
-## 11. Imagery
+## 9. Section rhythm
 
-Every placeholder must be visually distinct.
+The page should alternate between:
+- dominant feature compositions
+- dense discovery/collection compositions
+- image-led chapters
+- compact editorial lists
 
-Preferred subjects:
-- teachers
-- classrooms
-- school corridors
-- school architecture
-- teaching materials
-- portraits
-- documentary scenes
-- details of working life
-- restrained editorial illustration
+This variation is a core design characteristic.
 
-No repeated placeholder artwork.
+## 10. Header/footer
 
-Image crop and scale should communicate story importance and match the mapped reference role.
+Retain the existing SiteHeader and SiteFooter.
 
-## 12. Header
+They may be tuned for:
+- scale
+- spacing
+- colour
+- rule treatment
+- alignment with the new content grid
 
-Use a stable publication header influenced by The Ken's hierarchy:
+They must not be replaced by a different site-shell architecture.
 
-- prominent masthead
-- primary editorial navigation
-- utility actions such as search and subscription/newsletter
-- clear separation between editorial navigation and utility
+## 11. Mobile
 
-Staffroom Review's approved editorial navigation is:
+Mobile is a designed editorial state, not desktop reduced in size.
 
-**Stories · Teachers · Classrooms · Schools · Ideas · World · Voices**
+Priorities:
+- dominant story first
+- image remains important
+- headline remains readable
+- side stories become sequential packages
+- dense collections become stacked lists
+- section rules remain visible
+- whitespace is tightened but hierarchy is not flattened
 
-Mobile uses a compact masthead and functional menu.
+## 12. Tablet
 
-## 13. Footer
+Tablet derives from the same responsive system.
 
-Use a conventional editorial footer with:
-- exploration/navigation
-- about/publication information
-- newsletter/follow/contact
-- legal information
+Test:
+- column transitions
+- headline wrapping
+- image ratios
+- section density
+- navigation collision
+- whitespace
 
-The footer should feel part of the same publication system as the header.
-
-## 14. Interaction
-
-All interactive elements need:
-- visible hover state where useful
-- visible keyboard focus
-- clear active state
-- no colour-only state dependency
-- predictable links and controls
-- functional mobile disclosure
-
-## 15. Responsive behaviour
-
-The hierarchy must survive across desktop, tablet and mobile.
-
-Mobile is not an automatic stacked desktop page.
-
-On smaller screens:
-- preserve lead-story prominence
-- simplify multi-column compositions intentionally
-- keep key imagery
-- convert dense layouts into readable lists where appropriate
-- tighten spacing without collapsing hierarchy
-- retain every mapped editorial content module unless a responsive-specific rule explicitly documents a reflow rather than deletion
-
+Do not create a separate tablet site unless the reference demonstrates a genuinely different composition.
