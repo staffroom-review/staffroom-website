@@ -536,40 +536,64 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .reference-section--collection {
-  padding-top: 52px;
+  padding-top: 58px;
   background: var(--paper-light);
 }
 .collection-ribbon {
   display: flex;
-  justify-content: center;
-  margin-bottom: 46px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 38px;
+}
+.collection-ribbon::before,
+.collection-ribbon::after {
+  content: "";
+  flex: 1;
+  height: 4px;
+  background: var(--vermillion);
 }
 .collection-ribbon span {
   display: inline-block;
-  padding: 7px 12px;
-  color: #fff;
-  background: #8b7c78;
-  font-size: 9px;
-  letter-spacing: .08em;
-  transform: rotate(-2deg);
+  padding: 0 2px;
+  color: var(--vermillion);
+  background: var(--paper-light);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .newsletter-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: var(--gutter);
+  gap: 0;
 }
 .collection-column {
   min-width: 0;
+  padding-inline: 18px;
+}
+.collection-column:first-child {
+  padding-left: 0;
+}
+.collection-column:last-child {
+  padding-right: 0;
+}
+.collection-column + .collection-column {
+  border-left: 1px dotted var(--rule);
 }
 .collection-column > h2 {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   color: var(--vermillion);
   font-family: var(--sans);
-  font-size: 18px;
-  line-height: 1;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.05;
 }
 .collection-column .art-frame {
   margin-bottom: 12px;
+  aspect-ratio: 1.62;
 }
 .collection-column > h3 {
   margin: 0;
@@ -580,16 +604,16 @@ img, svg { display: block; max-width: 100%; }
   letter-spacing: 0;
 }
 .collection-column__stories {
-  margin-top: 15px;
+  margin-top: 14px;
 }
 .collection-column__stories a {
   display: block;
-  padding: 17px 0;
+  padding: 14px 0;
   border-top: 1px solid var(--rule);
   font-family: var(--display);
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.35;
   letter-spacing: 0;
 }
 
@@ -729,7 +753,17 @@ img, svg { display: block; max-width: 100%; }
     font-size: 24px;
   }
   .collection-ribbon {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+  }
+  .collection-ribbon::before,
+  .collection-ribbon::after {
+    height: 3px;
+  }
+  .collection-column {
+    padding-inline: 0;
+  }
+  .collection-column + .collection-column {
+    border-left: 0;
   }
 }
 
