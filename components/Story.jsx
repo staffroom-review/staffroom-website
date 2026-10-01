@@ -5,6 +5,8 @@ export default function Story({
   art,
   variant = "side",
   compact = false,
+  href = "#story",
+  meta = "Staffroom Review",
 }) {
   return (
     <article className={`story story--${variant} ${compact ? "story--compact" : ""}`.trim()}>
@@ -15,9 +17,9 @@ export default function Story({
       ) : null}
       <div className="story__body">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-        <h3><a href="#story">{title}</a></h3>
+        <h3><a href={href}>{title}</a></h3>
         {dek ? <p className="story__dek">{dek}</p> : null}
-        <p className="story__meta">Staffroom Review</p>
+        <p className="story__meta">{meta}</p>
       </div>
     </article>
   );
