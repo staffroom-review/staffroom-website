@@ -100,3 +100,21 @@ This sequencing prevents short placeholder copy from becoming the de facto edito
 The newsletter and blog landing pages are intentionally implemented now so their information architecture exists before the main navbar is expanded. Their placeholder copy remains editorially expandable and is not being presented as final published reporting.
 
 **Approval gate:** content strategy, placeholder content architecture and specialist landing pages are implemented. Stop here for live visual review of the new /newsletter and /blog pages before continuing with the main navbar page sequence.
+
+## Stories page — implementation checkpoint
+
+The first navbar page, Stories, is now implemented using the Family 1 editorial-publication architecture defined in navbar-architecture.md.
+
+The page contains:
+1. A large opening feature.
+2. A Latest Stories sequence using distinct image-led story packages.
+3. An Editor's Selection area with a more spacious two-story treatment.
+4. A denser More Stories stream.
+5. A quiet archive/closing section.
+
+The visible story propositions use the editorial content standards: stronger full-length headlines, informative deks, explicit format labels and representative reading-time metadata. Full article bodies remain deferred to the documented article-body stage after the page family is structurally approved.
+
+The shared Feature primitive now supports optional story metadata, while the existing Story primitive supports routed links and metadata. The primary Stories navigation link and footer link now resolve to /stories; other navbar links remain on their existing placeholder destinations until their individual page phases.
+
+**Approval gate:** Stories implementation is complete. Stop here for live visual review and approval of the Stories page before proceeding to Teachers.
+
