@@ -5,6 +5,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { classroomsPage } from "../../data/classrooms";
 
+// Editorial placeholder page; full story bodies remain governed by the content strategy.
+
 export const metadata = {
   title: "Classrooms — Staffroom Review",
   description: "Close looks at the places where teaching happens: the questions, silences, surprises and small decisions inside a lesson.",
