@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-Fresh application foundation and the first screenshot-led seven-stage homepage implementation exist. The next checkpoint is visual verification against the supplied screenshots.
+Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune and remains the active review checkpoint.
 
 ## Sequence
 

@@ -40,9 +40,9 @@ export default function HomePage() {
             <div className="opening-layout">
               <div className="opening-side opening-side--left">
                 <Story
-                  eyebrow="The Staffroom"
-                  title={content.lead.title}
-                  dek={content.lead.dek}
+                  eyebrow="Classrooms"
+                  title={content.classTired.title}
+                  dek={content.classTired.dek}
                   variant="side"
                 />
                 <div className="side-promotional-art" data-art={placeholderArt.storyA}>
