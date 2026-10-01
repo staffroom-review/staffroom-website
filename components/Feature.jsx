@@ -8,6 +8,7 @@ export default function Feature({
   className = "",
   priority = false,
   href = "#feature",
+  meta = "",
 }) {
   return (
     <article className={`feature ${centered ? "feature--centered" : ""} ${elevated ? "feature--elevated" : ""} ${className}`.trim()}>
@@ -18,6 +19,7 @@ export default function Feature({
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
         <h2><a href={href}>{title}</a></h2>
         {dek ? <p>{dek}</p> : null}
+        {meta ? <p className="story__meta">{meta}</p> : null}
       </div>
     </article>
   );
