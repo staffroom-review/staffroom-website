@@ -8,8 +8,8 @@
   --rule: #d7cecb;
   --vermillion: #b74336;
 
-  --display: Georgia, "Times New Roman", Times, serif;
-  --sans: Inter, Arial, Helvetica, sans-serif;
+  --display: var(--font-newsreader), Georgia, "Times New Roman", Times, serif;
+  --sans: var(--font-archivo), Arial, Helvetica, sans-serif;
 
   --page: 1320px;
   --gutter: 24px;
