@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1 and 2 have now received screenshot-led visual fine-tuning; Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail and separators only between rail stories. Sections 3–7 remain to be refined before the dedicated responsive and production passes.
+The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1–3 have now received screenshot-led visual fine-tuning. Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail and separators only between rail stories; Section 3 now uses a denser three-column editorial composition with internal separators and a clearer image-led middle column. Sections 4–7 remain to be refined before the dedicated responsive and production passes.
 
 The homepage is not yet fully closed: Sections 3–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
