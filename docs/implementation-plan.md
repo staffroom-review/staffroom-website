@@ -119,3 +119,20 @@ The shared Feature primitive now supports optional story metadata, while the exi
 **Approval gate:** Stories implementation is complete. Stop here for live visual review and approval of the Stories page before proceeding to Teachers.
 
 Deployment note: the first consolidated Stories-head deployment exposed a mobile-navigation data-mapping mismatch. The Header component has now been corrected so both desktop and mobile navigation render the new route objects consistently; the subsequent Git-triggered production deployment is the verified build for this checkpoint.
+
+## Teachers page — implementation checkpoint
+
+The second navbar page, Teachers, is now implemented as the first Family 2 topic-led editorial hub.
+
+Its composition is deliberately different from Stories while remaining within the same Staffroom visual system:
+1. Large teacher-focused opening feature.
+2. Teacher Voices rail with two lived-perspective stories.
+3. Teaching in Practice three-column story grouping.
+4. The Working Teacher series block with a denser two-column stream.
+5. A quiet closing newsletter pathway.
+
+Visible stories use the editorial content standards: production-quality headlines, informative deks, explicit format labels and representative reading-time metadata. Full article bodies remain deferred until the approved page-family reaches the Article Body Expansion stage.
+
+The Teachers primary navbar and footer links now resolve to /teachers. Other unbuilt navbar destinations remain unchanged until their individual phases.
+
+**Approval gate:** Teachers implementation is complete. Stop here for live visual review and approval of the Teachers page before proceeding to Classrooms.
