@@ -5,30 +5,7 @@ import Story from "../components/Story";
 import Feature from "../components/Feature";
 import CollectionColumn from "../components/CollectionColumn";
 import { content } from "../data/content";
-
-const placeholderArt = {
-  hero: "abstract-funnel",
-  staffroom: "staffroom-window",
-  classroom: "classroom-notes",
-  school: "school-corridor",
-  schoolFeature: "school-architecture",
-  voices: "teacher-at-desk",
-  maths: "mathematics",
-  science: "science-lab",
-  world: "school-map",
-  longread: "stacked-books",
-  visual: "school-day",
-  storyA: "classroom-grid",
-  storyB: "school-gate",
-  storyC: "teacher-notebook",
-  storyD: "parent-meeting",
-  storyE: "school-bus",
-  storyF: "chalkboard",
-  storyG: "desk-lamp",
-  storyH: "school-clock",
-  storyI: "lesson-plan",
-  storyJ: "teacher-corridor",
-};
+import { imagery } from "../data/imagery";
 
 export default function HomePage() {
   return (
@@ -46,14 +23,21 @@ export default function HomePage() {
                   dek={content.classTired.dek}
                   variant="side"
                 />
-                <div className="side-promotional-art" data-art={placeholderArt.storyA}>
+                <div className="side-promotional-art">
+                  <img
+                    className="side-promotional-art__image"
+                    src={imagery.storyA.src}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span>Stories from the room</span>
                 </div>
               </div>
 
               <Feature
                 className="opening-feature"
-                art={placeholderArt.hero}
+                art={imagery.hero}
                 eyebrow="Stories · Teachers"
                 title={content.lead.title}
                 dek={content.lead.dek}
@@ -83,7 +67,7 @@ export default function HomePage() {
             <SectionHeader title="The Staffroom" description="The lived work of teaching, before the lesson and after it." />
             <div className="feature-support">
               <Feature
-                art={placeholderArt.staffroom}
+                art={imagery.staffroom}
                 eyebrow="Teachers · First Person"
                 title={content.teacherLeave.title}
                 dek={content.teacherLeave.dek}
@@ -101,7 +85,7 @@ export default function HomePage() {
                   eyebrow="The Staffroom"
                   title={content.staffroomUnseen.title}
                   dek={content.staffroomUnseen.dek}
-                  art={placeholderArt.storyB}
+                  art={imagery.storyB}
                 />
                 <Story
                   eyebrow="The Staffroom"
@@ -134,7 +118,7 @@ export default function HomePage() {
                   eyebrow="The Classroom"
                   title={content.mathLess.title}
                   dek={content.mathLess.dek}
-                  art={placeholderArt.maths}
+                  art={imagery.maths}
                   variant="image-lead"
                 />
                 <Story eyebrow="Classrooms" title={content.childSentOut.title} dek={content.childSentOut.dek} compact />
@@ -152,7 +136,7 @@ export default function HomePage() {
                   eyebrow="Schools"
                   title={content.marksParents.title}
                   dek={content.marksParents.dek}
-                  art={placeholderArt.storyC}
+                  art={imagery.storyC}
                 />
                 <Story
                   eyebrow="Schools"
@@ -180,12 +164,12 @@ export default function HomePage() {
                   eyebrow="Profile"
                   title={content.administrator.title}
                   dek={content.administrator.dek}
-                  art={placeholderArt.school}
+                  art={imagery.school}
                 />
               </div>
 
               <Feature
-                art={placeholderArt.schoolFeature}
+                art={imagery.schoolFeature}
                 eyebrow="Schools · Feature"
                 title={content.marksParents.title}
                 dek={content.marksParents.dek}
@@ -204,7 +188,7 @@ export default function HomePage() {
                   eyebrow="Field Note"
                   title={content.timetable.title}
                   dek={content.timetable.dek}
-                  art={placeholderArt.storyD}
+                  art={imagery.storyD}
                 />
               </div>
             </div>
@@ -219,7 +203,7 @@ export default function HomePage() {
             <div className="newsletter-grid">
               <CollectionColumn
                 title="The Staffroom"
-                art={placeholderArt.storyE}
+                art={imagery.storyE}
                 leadTitle={content.staffroomBefore.title}
                 stories={[
                   content.staffroomUnseen.title,
@@ -230,7 +214,7 @@ export default function HomePage() {
               />
               <CollectionColumn
                 title="In Practice"
-                art={placeholderArt.classroom}
+                art={imagery.classroom}
                 leadTitle={content.lessonChanges.title}
                 stories={[
                   content.studentQuestion.title,
@@ -241,7 +225,7 @@ export default function HomePage() {
               />
               <CollectionColumn
                 title="Subjects"
-                art={placeholderArt.maths}
+                art={imagery.subjects}
                 leadTitle={content.historyUncertainty.title}
                 stories={[
                   content.mathsBeauty.title,
@@ -252,7 +236,7 @@ export default function HomePage() {
               />
               <CollectionColumn
                 title="Voices"
-                art={placeholderArt.voices}
+                art={imagery.voices}
                 leadTitle={content.classNeverForget.title}
                 stories={[
                   content.teacherLeave.title,
@@ -263,7 +247,7 @@ export default function HomePage() {
               />
               <CollectionColumn
                 title="Beyond the Staffroom"
-                art={placeholderArt.world}
+                art={imagery.world}
                 leadTitle={content.japan.title}
                 stories={[
                   content.finland.title,
@@ -285,7 +269,7 @@ export default function HomePage() {
                   eyebrow="Visual Story"
                   title={content.visualWeek.title}
                   dek={content.visualWeek.dek}
-                  art={placeholderArt.visual}
+                  art={imagery.visual}
                 />
                 <Story
                   eyebrow="Closing editorial"
@@ -296,7 +280,7 @@ export default function HomePage() {
               </div>
 
               <Feature
-                art={placeholderArt.longread}
+                art={imagery.longread}
                 eyebrow="Ideas · Long Read"
                 title={content.longRead.title}
                 dek={content.longRead.dek}

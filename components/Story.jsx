@@ -9,8 +9,8 @@ export default function Story({
   return (
     <article className={`story story--${variant} ${compact ? "story--compact" : ""}`.trim()}>
       {art ? (
-        <div className="art-frame" data-art={art} aria-hidden="true">
-          <span>{art.replaceAll("-", " ")}</span>
+        <div className="art-frame" aria-hidden="true">
+          <img className="art-frame__image" src={art.src} alt="" loading="lazy" decoding="async" />
         </div>
       ) : null}
       <div className="story__body">

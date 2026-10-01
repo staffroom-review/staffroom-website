@@ -190,30 +190,33 @@ img, svg { display: block; max-width: 100%; }
   font-size: 12px;
   font-weight: 700;
 }
-
 .side-promotional-art {
   position: relative;
   aspect-ratio: 1.8;
   display: flex;
   align-items: end;
   padding: 16px;
-  background: #c72f2c;
+  background: var(--paper-soft);
   color: #fff8f3;
-  box-shadow: none;
   overflow: hidden;
 }
-.side-promotional-art::before {
+.side-promotional-art::after {
   content: "";
   position: absolute;
-  width: 75%;
-  height: 75%;
-  right: -10%;
-  top: 10%;
-  background: rgba(255, 255, 255, .12);
-  border-radius: 50%;
+  inset: 0;
+  background: rgba(46, 32, 32, .22);
+}
+.side-promotional-art__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
 }
 .side-promotional-art span {
   position: relative;
+  z-index: 1;
   font-family: var(--display);
   font-size: 32px;
   font-weight: 700;
@@ -267,73 +270,23 @@ img, svg { display: block; max-width: 100%; }
 .art-frame {
   min-height: 150px;
   position: relative;
-  display: flex;
-  align-items: end;
-  justify-content: flex-start;
-  padding: 13px;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 65% 38%, rgba(255,255,255,.22), transparent 28%),
-    linear-gradient(145deg, #275c58 0%, #3f6f66 45%, #1f4643 100%);
+  background: var(--paper-soft);
 }
-.art-frame::after {
-  content: "";
+.art-frame__image {
   position: absolute;
-  width: 42%;
-  height: 52%;
-  right: 10%;
-  top: 17%;
-  background: rgba(247, 176, 71, .92);
-  clip-path: polygon(40% 0, 60% 0, 70% 24%, 63% 78%, 50% 100%, 37% 78%, 30% 24%);
-  filter: drop-shadow(0 10px 10px rgba(0,0,0,.12));
-}
-.art-frame span {
-  position: relative;
-  z-index: 1;
-  color: rgba(255,255,255,.5);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
 }
 .art-frame--feature {
   aspect-ratio: 1.78;
 }
 .art-frame--collection {
   aspect-ratio: 1.65;
-}
-.art-frame--feature::before {
-  content: "";
-  position: absolute;
-  width: 18%;
-  height: 18%;
-  left: 20%;
-  bottom: 18%;
-  border: 3px solid rgba(255,255,255,.68);
-  border-radius: 50%;
-  box-shadow: 90px -20px 0 0 rgba(255,255,255,.28);
-}
-.art-frame[data-art="maths"] {
-  background: linear-gradient(145deg, #c04b2a, #8f2e22 65%, #5e241e);
-}
-.art-frame[data-art="maths"]::after {
-  width: 46%;
-  height: 36%;
-  right: 8%;
-  top: 28%;
-  background: rgba(255, 235, 190, .8);
-  clip-path: polygon(0 80%, 38% 0, 100% 20%, 66% 100%);
-}
-.art-frame[data-art="teacher-at-desk"] {
-  background: linear-gradient(145deg, #234b6a, #467a9b 50%, #17364d);
-}
-.art-frame[data-art="school-map"] {
-  background: linear-gradient(145deg, #7960c4, #4d8cbb 55%, #2d577c);
-}
-.art-frame[data-art="stacked-books"] {
-  background: linear-gradient(145deg, #6f5e54, #936d4b 55%, #4a3931);
-}
-.art-frame[data-art="school-day"] {
-  background: linear-gradient(145deg, var(--vermillion), #c72f2c 50%, #7f211d);
 }
 
 .eyebrow {
@@ -561,19 +514,6 @@ img, svg { display: block; max-width: 100%; }
 }
 .reference-section--central .art-frame--feature {
   aspect-ratio: 1.7;
-}
-.art-frame[data-art="school-architecture"] {
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.15), transparent 38%),
-    linear-gradient(145deg, #5f4b43 0%, #8c6d5d 48%, #3e302c 100%);
-}
-.art-frame[data-art="school-architecture"]::after {
-  width: 50%;
-  height: 50%;
-  right: 12%;
-  top: 20%;
-  background: rgba(241, 202, 151, .78);
-  clip-path: polygon(0 76%, 22% 58%, 22% 18%, 41% 0, 58% 18%, 58% 52%, 77% 39%, 100% 52%, 100% 100%, 0 100%);
 }
 
 .reference-section--collection {
