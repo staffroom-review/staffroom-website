@@ -70,4 +70,33 @@ A final code-level fidelity audit against the active screenshot-led geometry was
 
 The active reference evidence confirms the approved 1440px calibration, approximately 1320px content field, documented 3/6/3 and 8/4 compositions, dense three-column recommendation section, five-column collection and feature-chapter structure. No additional structural changes were justified by the available evidence.
 
-**Approval gate:** final fidelity implementation is complete. Stop here for live visual approval; the next product phase is the navbar page build governed by `docs/navbar-architecture.md`.
+**Approval gate:** final fidelity implementation is complete. The content-strategy phase below is now implemented before navbar-page construction. Stop here for live visual approval of the homepage baseline; the next implementation phase is content-aware navbar/page work governed by the editorial and navbar documents.
+
+## Content strategy and product architecture checkpoint
+
+A comprehensive benchmark survey of established education publishers has been added to docs/editorial-content-strategy.md. The survey covers story formats, headline/dek patterns, editorial length bands, author/date/read-time treatment, evidence and sourcing, internal linking, SEO, image/editorial presentation, engagement features, newsletters and contributor/first-person models.
+
+The survey includes Edutopia, Education Week, Tes, Chalkbeat, EdSurge, The Hechinger Report and The Ken. It distinguishes benchmark evidence from Staffroom Review's own standards and does not treat SEO word count as a ranking formula. Google explicitly states that there is no preferred word count; Staffroom's word bands are editorial planning targets.
+
+The implementation now includes:
+- data/editorial.js with strong, expandable placeholder propositions for newsletters, blog posts and held editorial-team features.
+- /newsletter as a dedicated newsletter landing page for The Staffroom Letter.
+- /blog as a dedicated lightweight editorial/blog landing page for Staffroom Notes.
+- routed story/feature link support in the shared Story and Feature primitives.
+- visible footer navigation to Newsletter and Blog.
+- responsive page styles that reuse the existing Staffroom visual system without altering homepage breakpoints.
+
+### Content expansion sequence
+
+1. **Content system now:** editorial formats, headline/dek rules, length bands, SEO/author/date model, internal linking, imagery, newsletter model, blog model and held-content workflow.
+2. **During each navbar-page build:** before visual approval, use production-quality story headlines, deks, format labels and realistic metadata in that page's cards.
+3. **After page-family approval:** expand the priority stories into full article bodies using the documented format-specific length bands and complete sourcing, author metadata, links and structured data.
+4. **Before publication:** editorial, accessibility, metadata, image-rights and indexing QA.
+
+This sequencing prevents short placeholder copy from becoming the de facto editorial style while also preventing premature full-article production before the relevant page architecture exists.
+
+### Specialist-page checkpoint
+
+The newsletter and blog landing pages are intentionally implemented now so their information architecture exists before the main navbar is expanded. Their placeholder copy remains editorially expandable and is not being presented as final published reporting.
+
+**Approval gate:** content strategy, placeholder content architecture and specialist landing pages are implemented. Stop here for live visual review of the new /newsletter and /blog pages before continuing with the main navbar page sequence.
