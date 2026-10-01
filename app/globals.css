@@ -400,11 +400,18 @@ img, svg { display: block; max-width: 100%; }
 }
 .feature-support__rail {
   display: grid;
-  gap: 26px;
+  gap: 20px;
 }
 .feature-support__rail .story {
   padding-bottom: 20px;
   border-bottom: 1px dotted var(--rule);
+}
+.reference-section--feature-support:not(.reference-section--last) .feature-support {
+  gap: 30px;
+}
+.reference-section--feature-support:not(.reference-section--last) .feature-support__rail .story:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .section-header {
