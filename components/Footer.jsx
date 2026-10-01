@@ -1,0 +1,45 @@
+export default function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="page-shell">
+        <div className="site-footer__rule" />
+        <div className="site-footer__grid">
+          <div>
+            <a className="brand brand--footer" href="/">
+              <span className="brand__name">Staffroom</span>
+              <span className="brand__mark">Review</span>
+            </a>
+            <p className="site-footer__description">
+              An independent publication about teaching, schooling and the human experience of education.
+            </p>
+          </div>
+          <div>
+            <p className="footer-heading">Explore</p>
+            <a href="/">Stories</a>
+            <a href="/">Teachers</a>
+            <a href="/">Classrooms</a>
+            <a href="/">Schools</a>
+          </div>
+          <div>
+            <p className="footer-heading">Discover</p>
+            <a href="/">Ideas</a>
+            <a href="/">World</a>
+            <a href="/">Voices</a>
+            <a href="#newsletter">Newsletter</a>
+          </div>
+          <div>
+            <p className="footer-heading">Publication</p>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+            <a href="/">Privacy</a>
+            <a href="/">Terms</a>
+          </div>
+        </div>
+        <div className="site-footer__bottom">
+          <span>© 2026 Staffroom Review</span>
+          <span>Independent · Editorial · Human</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
