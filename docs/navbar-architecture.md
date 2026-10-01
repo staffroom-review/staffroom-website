@@ -20,6 +20,7 @@ The **More** item uses a collapsible menu containing:
 - Learning
 - Podcast
 - Events
+- Blog
 
 ## Design principle
 
@@ -184,3 +185,14 @@ Do not begin the next page until the current page has been visually reviewed and
 - Maintain one coherent Staffroom Review visual system.
 - No unrelated homepage redesign during page construction.
 - Desktop, tablet and mobile must derive from the same semantic content model while allowing deliberate layout changes by breakpoint.
+
+
+## Content readiness before page approval
+
+Each navbar page must use the editorial content system in docs/editorial-content-strategy.md.
+
+Before a page receives visual approval, its visible story cards should use production-quality headlines, deks, format labels and realistic metadata rather than abbreviated placeholders.
+
+After the page family is structurally approved, priority stories can move through the full article-body stage using the format-specific length bands and SEO/editorial requirements.
+
+The dedicated newsletter and blog destinations are already scaffolded at /newsletter and /blog. They sit within the specialist-content layer and should not be allowed to become accidental variants of the seven primary page families.
