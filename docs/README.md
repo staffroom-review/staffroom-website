@@ -1,96 +1,71 @@
-# Staffroom Review — Master Design & Build Specification
+# Staffroom Review — Current Homepage Specification
 
-Staffroom Review is an independent publication about teaching, schooling and the human experience of education.
+## Authority
 
-## Source of truth
+This folder is the complete active specification for the homepage rebuild.
 
-The active specification is limited to the documents in `/docs`:
+The supplied The Ken screenshots are the only visual reference for the homepage:
 
-- `visual-system.md` — visual language, typography, colour, grid, spacing, imagery and responsive rules
-- `editorial-system.md` — editorial proposition and story principles
-- `content-taxonomy.md` — navigation, subjects, formats and geography
-- `homepage-architecture.md` — reconstructed homepage architecture and responsive composition
-- `homepage-reference-mapping.md` — ordered reference-section map for The Ken screenshots 1–7
-- `reference-capture-and-analysis.md` — screenshot-derived measurements and visual analysis
-- `content-seed.md` — Staffroom story material that must be preserved and can be expanded
-- `build-baseline.md` — technical boundaries
-- `implementation-plan.md` — chronological build and approval gates
+- Screenshot 1
+- Screenshot 2
+- Screenshot 3
+- Screenshot 4
+- Screenshot 6
+- Screenshot 7
 
-These documents override assumptions inherited from earlier homepage implementations.
+Screenshot 5 is intentionally not specified at this stage and remains a reserved insertion point between Sections 4 and 6.
 
-## Reference relationship
+No prior homepage implementation, prior design document, remembered website behaviour or inferred pattern is a source of truth.
 
-The supplied The Ken screenshots are the primary visual and structural reference for the homepage.
+## Target
 
-The target is **close architectural and visual correspondence**, not a literal clone and not a generic “inspired by” page.
+Build Staffroom Review as a close visual and structural translation of the supplied reference.
 
-Translate:
-- composition
-- hierarchy
+Preserve, as closely as practical:
+
+- dimensions
 - proportions
-- story density
-- image prominence
+- symmetry/asymmetry
+- grid relationships
+- image scale
+- headline scale
+- text-block width
+- vertical alignment
+- whitespace
 - section rhythm
-- typography relationships
-- rules and separators
-- responsive reflow
+- density
+- separator treatment
+- responsive hierarchy
 
-Staffroom Review supplies:
-- its own masthead and brand
-- its own colours
-- its own navigation labels
-- its own story headlines, deks and metadata
-- its own imagery
-- its own editorial voice
+Change only what must change for Staffroom Review:
 
-Do not copy The Ken's logo, brand assets, proprietary imagery or editorial language.
+- masthead/brand
+- editorial labels
+- story headlines/deks/metadata
+- imagery
+- accent colour where required
+- content appropriate to teaching and education
 
-## Existing content preservation
+The result should look like the same design language and publishing architecture translated into Staffroom Review, not like a generic editorial website.
 
-The current Staffroom homepage contains future-story development material. Redesign work must **not delete, shorten, replace or rewrite existing story headlines and supporting text merely to fit the reference**.
+## Existing content
 
-The homepage may:
-- add additional stories where the reference architecture needs more density
-- redistribute existing stories between modules
-- repeat an existing story only where an explicit editorial treatment requires it
-- introduce additional seed stories from `content-seed.md`
+content-base.md is the protected editorial-content reference.
 
-The homepage must not become shorter by removing existing development material.
+Existing Staffroom story headings and text must not be deleted, shortened or rewritten simply to fit the reference. Stories may be redistributed between reference compositions and additional stories may be added where density requires them.
 
-## Header and footer boundary
+## Header and footer
 
-The current `SiteHeader` and `SiteFooter` are retained.
-
-They may receive proportion, spacing, typography, colour or responsive refinements required by the new visual system, but they are not to be replaced by a new site-shell concept.
+The current header, navbar and footer are not part of the seven-section reconstruction specification. They may later be recreated or refined to align with this visual system, but the homepage body architecture must not depend on their exact implementation.
 
 ## Imagery
 
-Actual free-to-use placeholder imagery is a later implementation pass.
+Imagery is a later pass.
 
-Until that pass:
-- preserve the existing story/image data
-- maintain distinct image slots
-- do not redesign the architecture around temporary artwork
-- do not repeat placeholder artwork within the same visible homepage composition
+The structural build should work with temporary distinct placeholders first. Final imagery should preferably use relevant free/licensed editorial illustrations, with photography used only where it serves the story.
 
-Preferred final imagery is editorial illustration where appropriate, sourced from free/licensed resources.
+## Build order
 
-## Responsive rule
+Plan → approval → Section 1 → Section 2 → Section 3 → Section 4 → reserved Section 5 slot → Section 6 → Section 7 → mobile reconstruction → tablet refinement → imagery → final QA
 
-Desktop and mobile are the primary reference states. Tablet is an intermediate responsive state derived from the same component and layout system.
-
-Do not create a separate tablet site unless evidence requires genuinely different behaviour.
-
-## Workflow
-
-Each phase follows:
-
-**Plan → approval → implement → verify → live-site review → approval → next phase**
-
-No later phase is silently bundled into an earlier one.
-
-For the current redesign, the approved reference sequence is:
-
-**Section 1 → Section 2 → Section 3 → Section 4 → Section 5 → Section 6 → Section 7**
-
-Additional sections may be inserted later without changing the established visual system or structural logic.
+No later stage should be silently bundled into an earlier stage.

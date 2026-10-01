@@ -1,114 +1,172 @@
 # Staffroom Review — Homepage Architecture
 
-## 1. Architectural target
+## Core rule
 
-The homepage is a **full publication front page** reconstructed from the supplied The Ken visual reference.
+The homepage body is a chronological sequence of seven reference compositions:
 
-The architecture is a sequence of distinct editorial compositions, not a collection of generic reusable card grids.
+1 Opening → 2 Feature/support → 3 Discovery → 4 Central feature → 5 reserved → 6 Five-column collection → 7 Feature chapter
 
-The seven reference stages are the primary homepage backbone:
+The implementation should reproduce the composition logic of each section rather than force all sections into one reusable card layout.
 
-**01 Opening → 02 Feature/support → 03 Discovery → 04 Central feature → 05 Collection → 06 Feature chapter → 07 Closing feature**
+## Global geometry
 
-Additional sections may be inserted later without changing the established system.
+At the 1440px reference capture:
 
-## 2. Composition vocabulary
+- content field: approximately 1320px
+- outer margins: approximately 60px
+- small editorial gutters: approximately 20–30px
+- central feature in three-column compositions: roughly 50%
+- side columns in those compositions: roughly 22–25% each
 
-The implementation must support at least these distinct composition types:
+Use grid and intrinsic sizing. Do not use absolute positioning to imitate the screenshot.
 
-### A. Three-part asymmetric feature
-Text-led side story + dominant central image/story + supporting side story.
+## Section architecture
 
-### B. Feature + stacked support
-Large image-led feature paired with a narrower column of text/image stories.
+### 01 — Opening
 
-### C. Dense discovery collection
-Several narrow columns, selective images, many compact stories and thin separators.
+3 / 6 / 3
 
-### D. Central feature chapter
-Dominant central image/story flanked by editorial side packages.
+Left:
+- text-led story
+- divider
+- secondary image/promotional tile
 
-### E. Narrow-column collection
-Repeated editorial columns with a lead image and compact story list.
+Centre:
+- large feature image
+- label
+- large headline
+- dek
 
-### F. Long-form feature chapter
-Large image-led or central feature with strong headline/dek hierarchy and supporting side stories.
+Right:
+- support/commentary utility block
 
-These compositions should be created from shared primitives rather than seven unrelated component systems.
+Vertical composition is staggered. Side columns begin below the top edge of the central image.
 
-## 3. Desktop grid
+### 02 — Feature/support
 
-Use a 12-column central editorial grid.
+8 / 4
 
-Working desktop assumptions from the supplied 1440px references:
-- approximately 60px outer margin
-- approximately 1320px usable width
-- 20–30px primary gutters
-- explicit column spans
-- dominant stories generally 6–7 columns
-- side packages generally 2–3 columns
-- dense collections use 2–3 column equivalents repeated across the width
+Left:
+- dominant landscape image
+- large centered headline/dek
 
-The exact values are implementation tokens and should be refined through visual verification.
+Right:
+- text-led story
+- divider
+- secondary image story
+- compact supporting copy
 
-## 4. Section headers
+The left feature is intentionally much more visually dominant.
 
-A reference-style section header consists primarily of:
-- compact title/label
-- long horizontal rule
-- optional short explanatory text
+### 03 — Discovery
 
-Do not turn section headings into oversized promotional blocks.
+4 / 4 / 4
 
-## 5. Story package hierarchy
+Muted section.
 
-A story may contain:
+Left:
+- dense text list
 
-**label → headline → dek → metadata**
+Centre:
+- image-led lead story
+- compact follow-up stories
 
-or, for compact stories:
+Right:
+- text-led feature
+- image-led story below
 
-**date/label → headline → author**
+The density increase is deliberate and must be preserved.
 
-Image presence is determined by the mapped slot.
+### 04 — Central feature
 
-Metadata is intentionally small and secondary.
+3 / 6 / 3
 
-## 6. Existing Staffroom content
+Left:
+- text-led story
+- compact illustrated/image story
 
-Current story headlines, deks and development text remain authoritative content assets.
+Centre:
+- dominant image
+- centered headline/dek
 
-The architecture may redistribute them but must not delete or shorten them.
+Right:
+- text-led story
+- supporting image story
 
-Additional story concepts may be added from `content-seed.md` to satisfy reference density.
+The visual axis is the central image.
 
-## 7. Header/footer boundary
+### 05 — Reserved
 
-Keep `SiteHeader` and `SiteFooter`.
+No layout is defined until the missing reference is supplied.
 
-Only visual alignment changes are permitted if required by the new system. They are not part of the homepage reconstruction sequence.
+### 06 — Five-column collection
 
-## 8. Responsive architecture
+Five equal columns.
 
-Desktop and mobile are primary states.
+Each:
+- red collection heading
+- lead image
+- compact headline
+- 3–5 compact text stories separated by thin rules
 
-Mobile should:
-- collapse columns intentionally
-- preserve editorial reading order
-- retain dominant images
-- keep section rules
-- turn dense collections into readable stacked groups
-- preserve all underlying story roles
+This is the principal dense scanning module.
 
-Tablet is an intermediate state of the same component tree.
+### 07 — Feature chapter
 
-## 9. Structural rule
+3 / 6 / 3
 
-If a layout looks wrong, fix:
-1. grid spans
-2. intrinsic content width
-3. image ratio
-4. typography role
-5. section spacing
+Left:
+- text-led lead
+- secondary illustrated/image story
 
-Do not fix structural problems with absolute positioning or arbitrary negative margins.
+Centre:
+- large feature image
+- large centered headline/dek
+
+Right:
+- text-led lead
+- secondary image story
+
+## Shared component primitives
+
+Build only after section structures are established.
+
+Likely shared primitives:
+- story text block
+- feature image/story block
+- compact story row
+- section heading/rule
+- dense collection column
+- metadata line
+- editorial support block
+
+The primitive must serve multiple sections before becoming a reusable component.
+
+## Responsive composition
+
+### Mobile
+For 3-column sections:
+1. section heading/rule
+2. central feature
+3. left-side stories
+4. right-side stories
+
+For 8/4 sections:
+1. dominant feature
+2. support stories
+
+For five-column collection:
+1. collection heading
+2. columns become sequential editorial groups
+3. keep lead image for each group
+4. compact stories remain grouped
+
+### Tablet
+Use the same DOM and component tree.
+
+Typical transitions:
+- 3-column → dominant feature + two side groups
+- 8/4 → stacked feature/support
+- 5-column → 2/3 columns depending on width
+
+No separate tablet site.

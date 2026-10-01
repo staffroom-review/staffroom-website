@@ -1,157 +1,158 @@
 # Staffroom Review — Visual System
 
-## 1. Direction
+## 1. Colour
 
-The Staffroom Review homepage should be a close visual study of the supplied The Ken homepage architecture while remaining recognisably Staffroom Review.
+### Base
+- paper/ivory: warm, slightly pink
+- raised paper: near-white
+- muted paper: light warm grey/pink
+- ink: dark brown-black
+- secondary ink: soft warm charcoal
 
-The reference is used for:
-- composition
-- hierarchy
-- proportions
-- information density
-- typography relationships
-- section rhythm
-- image prominence
-- responsive behaviour
+### Accent
+Primary accent is a bright vermilion/red.
 
-Staffroom owns the brand, colour and editorial content.
+Use it for:
+- section headings
+- author/format micro-labels
+- long section rules
+- active/focus states
+- occasional action elements
 
-## 2. Palette
+Do not use accent as a large background field except in rare editorial graphics.
 
-Primary:
-- warm ivory / paper background
-- near-black ink
-- restrained charcoal for secondary text
+## 2. Typography
 
-Accent:
-- deep vermilion / Indian red
+### Display serif
+Use a literary serif with compact proportions.
 
-The accent should be brighter and more visible in section labels and rules than in the current implementation, while remaining restrained overall.
+### Interface sans
+Use a clean sans-serif for:
+- navigation
+- dates
+- author labels
+- controls
+- small metadata
 
-Do not turn the page into a red interface.
+### Relative scale at 1440px
 
-## 3. Typography
+| Role | Working range |
+|---|---:|
+| dominant feature headline | 42–56px |
+| secondary feature | 30–42px |
+| side story headline | 22–30px |
+| compact collection headline | 16–21px |
+| supporting/dek | 16–20px |
+| micro label | 9–11px |
+| utility/control text | 10–13px |
 
-Use:
-- literary serif for headlines
-- clean sans-serif for navigation, labels and metadata
+The exact size should be determined by column width and screenshot comparison. Do not apply one headline size globally.
 
-Reference relationships:
-- feature headline: approximately 42–60px desktop depending on available width
-- central hero headline: approximately 42–54px
-- secondary headline: approximately 25–36px
-- compact headline: approximately 17–23px
-- dek: approximately 16–20px
-- metadata/labels: approximately 9–11px
+## 3. Line length
 
-The exact size must respond to column width and line length.
+Headline width is a structural control.
 
-The current very large 68px upper range should not be used indiscriminately. Scale is determined by editorial role and reference composition.
+Prefer:
+- 18–28ch for dominant central headlines
+- 18–24ch for side feature headlines
+- 16–22ch for compact collection headlines
 
-## 4. Grid
+Deks should normally stay below approximately 55–60ch.
 
-Desktop:
-- 12-column grid
-- approximately 60px outer margin at the 1440px reference
-- approximately 20–30px gutters
-- explicit spans per composition
+## 4. Weight and line height
 
-Do not make all stories equal width.
+Headlines:
+- semibold to bold visual weight
+- tight line-height
+- slight negative tracking
 
-## 5. Spacing
+Supporting text:
+- regular weight
+- more relaxed line-height
 
-Use a restrained editorial token system:
+Micro labels:
+- bold uppercase
+- moderate letter spacing
 
-8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80 / 96px
+## 5. Section heading
 
-The key principle is rhythm:
-- tighter within story packages
-- moderate between stories
-- larger between editorial chapters
-- very large only around dominant features
+The section heading is a compact accent-colour serif heading paired with a long rule.
+
+It should not become a large promotional banner.
+
+The rule must visually extend much farther than the text label.
 
 ## 6. Rules
 
-- standard story separator: 1px muted rule
-- major separator: 1–2px dark rule
-- signature section rule: 3–4px accent rule
-- dotted separators may be used selectively in dense editorial modules
+- story divider: 1px warm grey
+- major divider: 1–2px dark
+- section rule: 2–4px vermilion
+- dotted separators: allowed only in dense editorial groups
 
-Rules should define editorial structure.
+## 7. Image geometry
 
-## 7. Imagery
+Default editorial ratios:
+- dominant landscape: approximately 1.45–1.75 : 1
+- secondary landscape: approximately 1.45–1.75 : 1
+- compact collection image: approximately 1.6–1.8 : 1
 
-Final imagery is a later pass.
+Do not force one aspect ratio onto every module.
 
-Preferred final source treatment:
-- actual free/licensed imagery
-- editorial illustrations where relevant
-- illustrations that visually explain the article proposition
-- restrained documentary photography where illustration is unsuitable
+## 8. Surfaces
 
-Do not use generic lifestyle stock photography merely to fill a slot.
+Default is flat paper.
 
-Every image-bearing slot should use distinct imagery.
+Avoid:
+- rounded corners
+- gradients
+- universal shadows
+- floating SaaS tiles
+- heavy borders
 
-## 8. Cards and surfaces
+A small number of paper-lift modules can use restrained shadows after the reference structure is verified.
 
-The reference is primarily flat editorial paper.
+## 9. Spacing
 
-Do not:
-- use rounded cards
-- use gradients
-- create SaaS-style tiles
-- put borders around every story
-- apply shadows globally
+Use a measured rhythm rather than a generic spacing scale.
 
-Two deliberately selected Staffroom modules may use a very restrained paper-lift shadow if useful, but this is secondary to the reference architecture.
+Primary working intervals:
+8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80px
 
-## 9. Section rhythm
+Rules:
+- within a story: 8–20px
+- between related stories: 20–32px
+- between major story packages: 32–64px
+- between major sections: 56–96px
 
-The page should alternate between:
-- dominant feature compositions
-- dense discovery/collection compositions
-- image-led chapters
-- compact editorial lists
+## 10. Symmetry
 
-This variation is a core design characteristic.
+Use symmetry where the screenshot demonstrates it.
 
-## 10. Header/footer
+Do not balance sections that are intentionally asymmetric.
 
-Retain the existing SiteHeader and SiteFooter.
+Important examples:
+- Section 1: central visual axis, asymmetrical internal content
+- Section 4: approximately balanced 3/6/3 composition
+- Section 6: five equal columns
+- Section 7: central visual anchor with equal side-column logic
 
-They may be tuned for:
-- scale
-- spacing
-- colour
-- rule treatment
-- alignment with the new content grid
+## 11. Imagery direction
 
-They must not be replaced by a different site-shell architecture.
+Final imagery should preferably use:
+- editorial illustration
+- visual metaphors for the story
+- school/classroom diagrams
+- restrained documentary scenes only where illustration would be less useful
 
-## 11. Mobile
+Every image-bearing story should have distinct imagery.
 
-Mobile is a designed editorial state, not desktop reduced in size.
+## 12. Responsive visual rules
 
-Priorities:
-- dominant story first
-- image remains important
-- headline remains readable
-- side stories become sequential packages
-- dense collections become stacked lists
-- section rules remain visible
-- whitespace is tightened but hierarchy is not flattened
+Mobile should retain:
+- serif hierarchy
+- accent labels
+- section rule
+- distinct feature image
+- compact editorial separators
 
-## 12. Tablet
-
-Tablet derives from the same responsive system.
-
-Test:
-- column transitions
-- headline wrapping
-- image ratios
-- section density
-- navigation collision
-- whitespace
-
-Do not create a separate tablet site unless the reference demonstrates a genuinely different composition.
+Reduce dimensions and spacing proportionally, but do not flatten all stories into identical cards.

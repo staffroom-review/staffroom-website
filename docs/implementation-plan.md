@@ -1,103 +1,101 @@
-# Staffroom Review — Sequential Redesign & Build Roadmap
+# Staffroom Review — Implementation Plan
 
-## Current status
+## Stage 0 — Clean foundation
 
-**Reference analysis complete. Seven-stage homepage reconstruction foundation implemented. Visual verification is the next checkpoint.**
+Create a clean Next.js foundation using the retained dependency set.
 
-The supplied The Ken screenshots establish the visual and structural basis for the homepage. The existing homepage implementation is no longer the design baseline.
+No previous application code is part of the design baseline.
 
-## Non-negotiable workflow
+## Stage 1 — Section 1
 
-**Plan → approval → implement → verify → live-site review → approval → next phase**
+Implement the opening composition from Screenshot 1.
 
-For the current approved reconstruction, work proceeds chronologically through reference Sections 1–7.
+Acceptance:
+- three-part composition is visually recognisable
+- central image and headline have the correct dominance
+- side columns start and align at the correct vertical positions
+- support utility block occupies the correct footprint
 
-## Phase 1 — Reference capture
-Complete.
+## Stage 2 — Section 2
 
-## Phase 2 — Reference analysis & documentation
-Complete.
+Implement Screenshot 2.
 
-Updated:
-- `reference-capture-and-analysis.md`
-- `homepage-reference-mapping.md`
-- `homepage-architecture.md`
-- `visual-system.md`
-- related technical/content rules
+Acceptance:
+- dominant feature is substantially larger than support
+- feature image and headline/dek relationship matches the reference
+- right column remains compact
 
-## Phase 3 — Clean homepage foundation
-Complete.
+## Stage 3 — Section 3
 
-Actions:
-- remove accumulated homepage-specific layout assumptions
-- preserve SiteHeader and SiteFooter
-- preserve existing Staffroom story content
-- establish the new seven-stage structural system
-- retain reusable story primitives where they remain appropriate
-- remove obsolete page-specific overrides
+Implement Screenshot 3.
 
-Checkpoint:
-The homepage has a clean structural foundation capable of implementing Sections 1–7 without legacy layout interference.
+Acceptance:
+- muted background treatment
+- section title + long rule
+- three-column density
+- list-heavy first column
+- mixed image/text middle and right columns
 
-## Phase 4 — Desktop reconstruction
-Foundation implemented for Sections 1–7 at the supplied 1440px reference viewport. Side-by-side visual verification remains the checkpoint before further refinement.
+## Stage 4 — Section 4
 
-Sequence:
-1. Opening asymmetric feature
-2. Feature + support
-3. Dense discovery collection
-4. Central feature
-5. Multi-column collection
-6. Large feature chapter
-7. Closing feature chapter
+Implement Screenshot 4.
 
-Checkpoint:
-Desktop composition matches the reference in structure, scale, density, hierarchy and rhythm.
+Acceptance:
+- central feature axis is dominant
+- left and right columns contain different story packages
+- central image/headline proportions match the reference
 
-## Phase 5 — Mobile reconstruction
-Build the mobile state from the supplied reference behaviour.
+## Stage 5 — Reserved
 
-Checkpoint:
-Mobile preserves the intended editorial reading order, image prominence and density without simply shrinking desktop.
+Do not invent the missing Screenshot 5.
 
-## Phase 6 — Tablet refinement
-Test intermediate widths.
+Create only the insertion boundary required to place it later.
 
-Checkpoint:
-Tablet is an intentional intermediate composition using the shared responsive system.
+## Stage 6 — Section 6
 
-## Phase 7 — Imagery pass
-Replace temporary placeholders with relevant actual free/licensed imagery.
+Implement Screenshot 6.
 
-Priorities:
-- editorial illustrations
-- article-relevant visual metaphors
-- distinct imagery for each visible image slot
+Acceptance:
+- five equal columns
+- consistent image width/height treatment
+- compact headline scale
+- repeated separator rhythm
+- high information density
 
-Checkpoint:
-Imagery supports the story propositions and reference-like visual rhythm.
+## Stage 7 — Section 7
 
-## Phase 8 — Editorial density/content completion
-Add any additional stories required by the reference density using `content-seed.md`.
+Implement Screenshot 7.
 
-Existing future-story headlines and supporting text must remain.
+Acceptance:
+- accent section heading + long rule
+- large central feature
+- side story/image packages
+- correct vertical depth and spacing
 
-Checkpoint:
-The homepage feels publication-scale and complete without deleting existing development material.
+## Stage 8 — Mobile reconstruction
 
-## Phase 9 — Production QA
-Check semantics, keyboard access, image behaviour, contrast, links, mobile menu, build/runtime errors and responsive integrity.
+Reconstruct the mobile states from the supplied mobile references when provided.
 
-## Phase 10 — Final visual fidelity
-Final side-by-side refinement against the supplied references.
+Do not automatically stack desktop.
 
-Tune:
-- column proportions
-- headline wrapping
+## Stage 9 — Tablet
+
+Test intermediate widths using the same responsive system.
+
+## Stage 10 — Imagery
+
+Replace structural placeholders with relevant free/licensed imagery.
+
+Prefer editorial illustrations.
+
+## Stage 11 — Final QA
+
+Check:
+- visual alignment
+- headline wraps
 - image crops
-- section spacing
-- rule lengths
-- metadata scale
-- responsive transitions
-
-Stop for approval after each major checkpoint.
+- section density
+- mobile behaviour
+- accessibility
+- production build
+- runtime errors
