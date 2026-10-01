@@ -53,6 +53,13 @@ export const content = {
     title: "The invisible architecture of a good school",
     dek: "Policies matter. So do the habits that quietly turn them into culture.",
   },
+
+  schoolBeyondMetro: {
+    title: "The School Beyond the Metro Story",
+  },
+  teacherThreeClasses: {
+    title: "The Teacher Who Teaches Three Classes at Once",
+  },
   teacherDifficult: {
     title: "The Teacher Who Stopped Calling It a Difficult Child",
     dek: "What changes when a label gives way to a more useful question.",
