@@ -1,12 +1,10 @@
 import "./globals.css";
-import { Archivo, Newsreader } from "next/font/google";
+import { Archivo, Frank_Ruhl_Libre } from "next/font/google";
 
-const newsreader = Newsreader({
+const frankRuhlLibre = Frank_Ruhl_Libre({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  variable: "--font-frank-ruhl-libre",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
 });
 
 const archivo = Archivo({
@@ -24,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${newsreader.variable} ${archivo.variable}`}>{children}</body>
+      <body className={`${frankRuhlLibre.variable} ${archivo.variable}`}>{children}</body>
     </html>
   );
 }
