@@ -14,21 +14,35 @@ The accent is concentrated in labels, section headings, long rules and selected 
 
 The Ken's documented/current web direction uses **Archivo**, **Ivar** and **Reckless**. Ivar is the principal serif direction associated with the site's classic/contemporary editorial voice.
 
-Staffroom Review currently uses **Archivo** for interface/supporting text and **Frank Ruhl Libre** as the open-source Ivar-oriented editorial serif approximation. This remains a working choice pending final visual review.
+Staffroom Review currently keeps **Archivo** as the supporting/interface sans. The editorial serif remains open for visual review rather than being treated as final.
 
-Editorial serif role:
+### Serif shortlist for the next visual review
+
+**Frank Ruhl Libre** — current working implementation. Strong editorial weight and character; closest current approximation to the sturdy Ivar direction while remaining open-source.
+
+**Newsreader** — contemporary literary alternative. More fluid and screen-oriented, with variable optical sizing; retains a softer editorial personality.
+
+**Source Serif 4** — restrained editorial alternative. More neutral and text-led, with strong screen reading behaviour and less expressive display character.
+
+**Lora** — warmer humanist alternative. More familiar and approachable, with a slightly softer magazine/editorial tone.
+
+The comparison should use the same Staffroom copy, sizes, leading, tracking, palette and Archivo interface layer. Only the serif family should change between samples.
+
+### Roles
+
+Editorial serif:
 - headlines and feature titles
 - section titles
 - editorial deks
 - wordmark and other literary-facing type
 
-Supporting sans role:
+Supporting sans:
 - navigation
 - labels and metadata
 - controls
 - utility/supporting interface text
 
-The typography system should remain cohesive rather than reproduce The Ken's commercial three-family stack literally.
+The final typography should be selected for the overall Staffroom Review identity and its relationship to The Ken reference, not by font name alone. The typography remains an explicit review checkpoint before the global system is frozen.
 
 ## Spacing
 
