@@ -2,11 +2,11 @@
 
 ## Palette
 
-Paper: warm ivory with a slight pink/warm grey cast.
+Paper: warm ivory with a slight warm-grey cast.
 Raised paper: near-white.
 Ink: dark brown-black.
 Secondary ink: warm charcoal.
-Accent: bright vermilion/red.
+Accent: bright vermillion.
 
 The accent is concentrated in labels, section headings, long rules and selected controls.
 
