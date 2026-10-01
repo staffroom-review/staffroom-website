@@ -12,24 +12,23 @@ The accent is concentrated in labels, section headings, long rules and selected 
 
 ## Typography
 
-Reference audit: current independent design references identify The Ken's web typography as a three-font system using **Archivo**, **Ivar**, and **Reckless**. The 2023 redesign commentary specifically identifies **Ivar** as the serif introduced to strengthen The Ken's classic/contemporary editorial voice; Ivar itself is influenced by sturdy mid-century text faces and offers separate Text, Headline and Display optical sizes.
+The Ken's documented/current web direction uses **Archivo**, **Ivar** and **Reckless**. Ivar is the principal serif direction associated with the site's classic/contemporary editorial voice.
 
-Staffroom Review uses **Frank Ruhl Libre** as the freely available/open-source approximation for the Ivar-led editorial layer, with **Archivo** retained for the interface/supporting layer. This preserves the important serif/sans relationship without importing a paid typeface or adding unnecessary typographic complexity. Reckless is not assigned a separate global role in the Staffroom system at this stage; the homepage remains intentionally cohesive rather than reproducing The Ken's commercial three-family stack literally.
+Staffroom Review currently uses **Archivo** for interface/supporting text and **Frank Ruhl Libre** as the open-source Ivar-oriented editorial serif approximation. This remains a working choice pending final visual review.
 
-Editorial display/headline type: **Newsreader** via next/font/google, used for headlines, deks, section titles, the wordmark and other literary/editorial text. Its proportions and high-contrast serif texture are closer to the supplied The Ken reference than the previous Georgia fallback while remaining freely available and self-hosted by Next.js at build time.
+Editorial serif role:
+- headlines and feature titles
+- section titles
+- editorial deks
+- wordmark and other literary-facing type
 
-Interface/supporting sans-serif: **Archivo** via next/font/google, used for navigation, labels, controls, metadata and other utility text. It provides the compact, neutral grotesk character needed for the reference-style editorial hierarchy.
+Supporting sans role:
+- navigation
+- labels and metadata
+- controls
+- utility/supporting interface text
 
-At 1440px, working targets are:
-- dominant headline: 42–56px
-- secondary feature: 30–42px
-- side story: 22–30px
-- collection headline: 16–21px
-- dek: 16–20px
-- micro label: 9–11px
-- controls/nav: 10–13px
-
-Headline width is structural and controls wrapping.
+The typography system should remain cohesive rather than reproduce The Ken's commercial three-family stack literally.
 
 ## Spacing
 
