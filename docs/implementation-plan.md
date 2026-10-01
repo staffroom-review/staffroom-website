@@ -2,9 +2,9 @@
 
 ## Current checkpoint
 
-The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1–4 have now received screenshot-led visual fine-tuning. Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail; Section 3 uses a denser three-column editorial composition with internal separators and a clearer image-led middle column; Section 4 now uses the documented 3/6/3 central-feature composition with subtle side boundaries and a distinct feature placeholder. Sections 5–7 remain to be refined before the dedicated responsive and production passes.
+The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1–4 and 6 have now received screenshot-led visual fine-tuning. Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail; Section 3 uses a denser three-column editorial composition with internal separators and a clearer image-led middle column; Section 4 uses the documented 3/6/3 central-feature composition with subtle side boundaries and a distinct feature placeholder; Section 6 now uses a symmetric five-column collection with a strong vermillion section line, compact editorial titles, landscape imagery and thin story rules. Section 5 remains reserved and Section 7 remains to be refined before the dedicated responsive and production passes.
 
-The homepage is not yet fully closed: Sections 5–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
+The homepage is not yet fully closed: Section 5 remains reserved and Section 7 still requires screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
 The approved next product phase is the main navbar page build. That phase is governed by `docs/navbar-architecture.md` and proceeds one page at a time with approval gates.
 
