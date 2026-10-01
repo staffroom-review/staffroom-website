@@ -136,3 +136,13 @@ Visible stories use the editorial content standards: production-quality headline
 The Teachers primary navbar and footer links now resolve to /teachers. Other unbuilt navbar destinations remain unchanged until their individual phases.
 
 **Approval gate:** Teachers implementation is complete. Stop here for live visual review and approval of the Teachers page before proceeding to Classrooms.
+
+## Classrooms page — implementation checkpoint
+
+The third navbar page, Classrooms, is now implemented as the second Family 2 topic-led hub. Its hierarchy is intentionally different from Teachers: a dominant classroom observation feature, a smaller visual-story counterpoint, an Inside the Lesson scene-led grid, a denser Teacher Notebooks stream, and a quiet closing pathway.
+
+The visible story propositions use production-quality headlines, deks, explicit formats and representative reading-time metadata in line with docs/editorial-content-strategy.md. Full article bodies remain deferred until the approved page family reaches the Article Body Expansion stage.
+
+The Classrooms primary navbar and footer links now resolve to /classrooms. Other unbuilt navbar destinations remain unchanged until their individual phases.
+
+**Approval gate:** Classrooms implementation is complete. Stop here for live visual review and approval of the Classrooms page before proceeding to Schools.
