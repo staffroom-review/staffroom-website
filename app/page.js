@@ -11,6 +11,7 @@ const placeholderArt = {
   staffroom: "staffroom-window",
   classroom: "classroom-notes",
   school: "school-corridor",
+  schoolFeature: "school-architecture",
   voices: "teacher-at-desk",
   maths: "mathematics",
   science: "science-lab",
@@ -184,7 +185,7 @@ export default function HomePage() {
               </div>
 
               <Feature
-                art={placeholderArt.school}
+                art={placeholderArt.schoolFeature}
                 eyebrow="Schools · Feature"
                 title={content.marksParents.title}
                 dek={content.marksParents.dek}
