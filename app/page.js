@@ -276,19 +276,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="reference-section reference-section--feature-support reference-section--last">
+        <section className="reference-section reference-section--feature-chapter reference-section--last">
           <div className="page-shell">
             <SectionHeader title="The Long Read" description="For when the question needs more room." />
-            <div className="feature-support feature-support--last">
-              <Feature
-                art={placeholderArt.longread}
-                eyebrow="Ideas · Long Read"
-                title={content.longRead.title}
-                dek={content.longRead.dek}
-                centered
-                elevated
-              />
-              <div className="feature-support__rail">
+            <div className="feature-chapter-layout">
+              <div className="feature-chapter-side">
                 <Story
                   eyebrow="Visual Story"
                   title={content.visualWeek.title}
@@ -301,6 +293,18 @@ export default function HomePage() {
                   dek={content.closing1.dek}
                   compact
                 />
+              </div>
+
+              <Feature
+                art={placeholderArt.longread}
+                eyebrow="Ideas · Long Read"
+                title={content.longRead.title}
+                dek={content.longRead.dek}
+                centered
+                elevated
+              />
+
+              <div className="feature-chapter-side">
                 <Story
                   eyebrow="Closing editorial"
                   title={content.closing2.title}
