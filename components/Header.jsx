@@ -41,7 +41,7 @@ export default function Header() {
           <details className="mobile-menu">
             <summary className="menu-button">Menu</summary>
             <nav aria-label="Mobile navigation">
-              {nav.map((item) => <a href="/" key={item}>{item}</a>)}
+              {nav.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}
             </nav>
           </details>
         </div>
