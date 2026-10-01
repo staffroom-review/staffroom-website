@@ -8,7 +8,7 @@
   --rule: #d7cecb;
   --vermillion: #b74336;
 
-  --display: var(--font-frank-ruhl-libre), "Times New Roman", Times, Georgia, serif;
+  --display: var(--font-lora), "Times New Roman", Times, Georgia, serif;
   --sans: var(--font-archivo), Arial, Helvetica, sans-serif;
 
   --page: 1320px;
