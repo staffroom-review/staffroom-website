@@ -7,6 +7,7 @@ export default function Feature({
   elevated = false,
   className = "",
   priority = false,
+  href = "#feature",
 }) {
   return (
     <article className={`feature ${centered ? "feature--centered" : ""} ${elevated ? "feature--elevated" : ""} ${className}`.trim()}>
@@ -15,7 +16,7 @@ export default function Feature({
       </div>
       <div className="feature__body">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-        <h2><a href="#feature">{title}</a></h2>
+        <h2><a href={href}>{title}</a></h2>
         {dek ? <p>{dek}</p> : null}
       </div>
     </article>
