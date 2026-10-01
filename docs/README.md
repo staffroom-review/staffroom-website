@@ -1,6 +1,8 @@
-# Staffroom Review — Screenshot-Led Homepage Specification
+# Staffroom Review — Active Documentation Map
 
-This is the active specification for the homepage rebuild.
+## Homepage specification
+
+The active homepage specification is governed by this repository's screenshot-led process.
 
 Visual evidence consists only of the supplied The Ken screenshots 1, 2, 3, 4, 6 and 7. Screenshot 5 is intentionally reserved for later insertion.
 
@@ -10,6 +12,40 @@ Previous homepage implementations and previous design documents are not design a
 
 Protected Staffroom story content is kept in content-base.md and must not be deleted or shortened for layout convenience.
 
-Build workflow: Plan → approval → implement → verify → live-site review → approval.
+## Content and editorial authorities
 
-The approved navbar roadmap is maintained in `navbar-architecture.md`. It governs the post-homepage page families, navigation structure and one-page-at-a-time approval workflow.
+- docs/editorial-content-strategy.md — authoritative story-format, headline/dek, length-band, authorship, SEO, linking, imagery, engagement and editorial-status rules.
+- docs/newsletter-architecture.md — authoritative newsletter product and dedicated /newsletter page specification.
+- docs/blog-architecture.md — authoritative blog product and dedicated /blog page specification.
+- docs/navbar-architecture.md — authoritative main navigation/page-family roadmap.
+- docs/homepage-architecture.md — authoritative homepage body sequence and layout families.
+- docs/reference-analysis.md — authoritative reference geometry and responsive interpretation.
+- docs/content-base.md — protected Staffroom story titles/deks and content that must be preserved.
+
+## Story expansion stages
+
+Story expansion is deliberately separated from the visual placeholder phase.
+
+1. Content system stage — define format, headline/dek, length, SEO, authorship, linking and publication-status rules.
+2. Page-build stage — before each navbar page receives visual approval, replace short placeholders with production-quality headlines, deks, format labels and realistic metadata.
+3. Article-body stage — after the page family is structurally approved, expand priority stories into full article bodies using the format-specific editorial bands.
+4. Publication QA stage — complete copy editing, fact/source checks where relevant, accessibility, image rights, metadata, canonical/indexing and internal-link checks.
+
+This means realistic final headlines are introduced before page-level visual freeze, while full-length article bodies are expanded later without forcing premature copy production across the entire site.
+
+## Specialist editorial products
+
+Newsletter and Blog now have dedicated placeholder landing pages:
+
+- /newsletter — The Staffroom Letter
+- /blog — Staffroom Notes
+
+They are intentionally built as real editorial propositions, not filler. Their placeholders are stored in data/editorial.js and are designed to be expanded later by the editorial team or during the article-body stage.
+
+Held editorial-team features are also represented in the content system with status hold. Held work is not part of public navigation or indexing until scheduled/published.
+
+## Build workflow
+
+Plan → approval → implement → verify → live-site review → approval.
+
+The homepage is now complete through the documented fidelity checkpoint. The next build sequence must use the editorial content standards before individual navbar pages are visually frozen.
