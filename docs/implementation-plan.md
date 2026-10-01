@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune and remains the active review checkpoint.
+Fresh application foundation is deployed successfully. Section 1 has now received the first screenshot-measured visual fine-tune. The typography pass is implemented with Newsreader for editorial/display type and Archivo for interface/supporting text; this typography pass is now the active review checkpoint at the 1440px reference desktop size. Layout, content, colour and component architecture were intentionally left unchanged.
 
 ## Sequence
 
