@@ -37,3 +37,7 @@ The approved next product phase is the main navbar page build. That phase is gov
 9. Site-wide navigation verification.
 
 Each navbar page requires implementation, responsive verification, visual review and explicit approval before the next page begins.
+
+### Typography verification
+
+The Lora review implementation has been verified against the live production output. The rendered document now uses Lora as the main homepage editorial typeface, with Archivo explicitly retained for the header/navigation and footer utility layer. The updated build also generated a new immutable CSS asset, eliminating the previous possibility of a browser retaining an older cached typography stylesheet.
