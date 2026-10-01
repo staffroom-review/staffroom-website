@@ -30,7 +30,7 @@ export const imagery = {
     sourceUrl: "https://unsplash.com/photos/teacher-instructing-students-in-a-classroom-lecture-u6OsIM1ZEnk",
   },
   storyC: {
-    src: "https://images.unsplash.com/photo-1745571479595-8e198f251c95?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
+    src: "https://images.unsplash.com/photo-1758685848147-e1e149bf2603?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
     alt: "Teacher seated at a classroom desk",
     sourceUrl: "https://unsplash.com/photos/a-teacher-sits-at-his-desk-in-a-classroom-eHu1CVODgIk",
   },
