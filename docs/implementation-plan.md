@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-The homepage build and footer treatment are approved as the current baseline. Section 1 has received the first screenshot-measured visual fine-tune. The global typography choice remains open for final visual review; the current implementation uses Frank Ruhl Libre as the Ivar-oriented editorial approximation and Archivo as the supporting sans.
+The homepage build and footer treatment are approved as the current baseline. Section 1 has received the first screenshot-measured visual fine-tune. The global typography choice remains open for final visual review; the current implementation uses Lora as the editorial serif and Archivo as the supporting sans. Lora is currently applied across the entire homepage for visual comparison.
 
 The homepage is not yet fully closed: Sections 2–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
