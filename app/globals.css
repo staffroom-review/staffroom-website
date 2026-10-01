@@ -457,12 +457,27 @@ img, svg { display: block; max-width: 100%; }
   gap: var(--gutter);
 }
 .recommend-column--list {
-  background: rgba(255,255,255,.14);
-  padding: 0 14px;
+  padding-right: 18px;
 }
 .recommend-column--list .story--compact {
   padding-left: 0;
   padding-right: 0;
+}
+.recommend-grid > .recommend-column + .recommend-column {
+  border-left: 1px dotted var(--rule);
+  padding-left: 24px;
+}
+.reference-section--dense .section-header {
+  margin-bottom: 36px;
+}
+.reference-section--dense .recommend-column .story {
+  margin-bottom: 0;
+}
+.reference-section--dense .recommend-column .story--image-lead {
+  margin-bottom: 8px;
+}
+.reference-section--dense .recommend-column .art-frame {
+  aspect-ratio: 1.62;
 }
 .recommend-column .story--image-lead .story__body h3 {
   font-size: 22px;
