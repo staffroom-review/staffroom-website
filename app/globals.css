@@ -254,7 +254,7 @@ img, svg { display: block; max-width: 100%; }
 .feature__body {
   padding: 18px 30px 24px;
 }
-.feature__body h1 {
+.feature__body h2 {
   margin: 0;
   max-width: 18ch;
   font-family: var(--display);
@@ -263,7 +263,7 @@ img, svg { display: block; max-width: 100%; }
   line-height: 1;
   letter-spacing: 0;
 }
-.feature--centered .feature__body h1 {
+.feature--centered .feature__body h2 {
   margin-inline: auto;
 }
 .feature__body p:not(.eyebrow) {
@@ -279,10 +279,10 @@ img, svg { display: block; max-width: 100%; }
 .opening-feature .feature__body {
   padding-top: 20px;
 }
-.opening-feature .feature__body h1 {
+.opening-feature .feature__body h2 {
   max-width: 20ch;
   font-size: clamp(40px, 3.7vw, 50px);
-  color: var(--brick-red);
+  color: var(--vermillion);
 }
 
 .art-frame {
@@ -492,7 +492,7 @@ img, svg { display: block; max-width: 100%; }
 .reference-section--feature-chapter .feature__body {
   padding: 22px 30px 28px;
 }
-.reference-section--feature-chapter .feature__body h1 {
+.reference-section--feature-chapter .feature__body h2 {
   max-width: 18ch;
 }
 .reference-section--feature-chapter .art-frame--feature {
@@ -527,7 +527,7 @@ img, svg { display: block; max-width: 100%; }
 .central-layout .feature__body {
   padding: 22px 30px 28px;
 }
-.central-layout .feature__body h1 {
+.central-layout .feature__body h2 {
   max-width: 18ch;
 }
 .reference-section--central .art-frame--feature {
@@ -838,7 +838,7 @@ img, svg { display: block; max-width: 100%; }
   .feature--elevated .feature__body {
     padding: 18px;
   }
-  .feature__body h1 {
+  .feature__body h2 {
     font-size: 38px;
   }
   .feature__body p:not(.eyebrow) {
