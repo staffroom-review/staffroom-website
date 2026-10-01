@@ -2,9 +2,9 @@
 
 ## Current checkpoint
 
-The homepage build and footer treatment are approved as the current baseline. Section 1 has received the first screenshot-measured visual fine-tune. The global typography choice remains open for final visual review; the current implementation uses Lora as the editorial serif and Archivo as the supporting sans. Lora is currently applied as the homepage's main editorial typeface for visual comparison, with Archivo retained for interface/utility text.
+The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1 and 2 have now received screenshot-led visual fine-tuning; Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail and separators only between rail stories. Sections 3–7 remain to be refined before the dedicated responsive and production passes.
 
-The homepage is not yet fully closed: Sections 2–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
+The homepage is not yet fully closed: Sections 3–7 still require screenshot-led refinement, followed by dedicated mobile/tablet refinement, final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
 The approved next product phase is the main navbar page build. That phase is governed by `docs/navbar-architecture.md` and proceeds one page at a time with approval gates.
 
@@ -12,8 +12,7 @@ The approved next product phase is the main navbar page build. That phase is gov
 
 1. Final visual review of global typography.
 2. Verify/fine-tune Section 1.
-3. Verify/fine-tune Section 2.
-4. Verify/fine-tune Section 3.
+3. Verify/fine-tune Section 3.
 5. Verify/fine-tune Section 4.
 6. Keep Section 5 reserved.
 7. Verify/fine-tune Section 6.
