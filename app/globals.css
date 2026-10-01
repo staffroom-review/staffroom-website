@@ -327,7 +327,7 @@ img, svg { display: block; max-width: 100%; }
   background: linear-gradient(145deg, #6f5e54, #936d4b 55%, #4a3931);
 }
 .art-frame[data-art="school-day"] {
-  background: linear-gradient(145deg, #d15b3c, #d79154 50%, #6c4339);
+  background: linear-gradient(145deg, #ef3e35, #c72f2c 50%, #7f211d);
 }
 
 .eyebrow {
