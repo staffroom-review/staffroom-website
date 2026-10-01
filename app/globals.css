@@ -1753,3 +1753,232 @@ img, svg { display: block; max-width: 100%; }
     margin-top: 58px;
   }
 }
+
+
+/* Classrooms page — Family 2 topic-led hub, scene and observation emphasis */
+.classrooms-page__opening {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  gap: 34px;
+  align-items: stretch;
+}
+
+.classrooms-page__feature .feature__body {
+  padding: 24px 34px 30px;
+}
+
+.classrooms-page__feature .feature__body h2 {
+  max-width: 18ch;
+  font-size: clamp(42px, 4vw, 56px);
+  line-height: .98;
+}
+
+.classrooms-page__feature .feature__body p:not(.eyebrow) {
+  max-width: 60ch;
+}
+
+.classrooms-page__visual {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  border-left: 1px dotted var(--rule);
+}
+
+.classrooms-page__visual > .eyebrow {
+  margin-bottom: 12px;
+}
+
+.classrooms-page__visual .feature {
+  flex: 1;
+}
+
+.classrooms-page__visual .feature__body {
+  padding: 16px 18px 20px;
+}
+
+.classrooms-page__visual .feature__body h2 {
+  font-size: 28px;
+}
+
+.classrooms-page__visual .feature__body p:not(.eyebrow) {
+  font-size: 14px;
+}
+
+.classrooms-page__section {
+  margin-top: 78px;
+}
+
+.classrooms-page__moments {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 30px;
+}
+
+.classrooms-page__moments > .story {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.classrooms-page__moments > .story:nth-child(even) {
+  padding-left: 30px;
+  border-left: 1px dotted var(--rule);
+}
+
+.classrooms-page__moments .story__body h3 {
+  font-size: 27px;
+}
+
+.classrooms-page__notebooks {
+  display: grid;
+  grid-template-columns: 4.4fr 7.6fr;
+  gap: 50px;
+  padding: 48px 0;
+  border-top: 4px solid var(--vermillion);
+  border-bottom: 1px solid var(--rule);
+}
+
+.classrooms-page__notebooks-heading {
+  padding-right: 18px;
+}
+
+.classrooms-page__notebooks-heading h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(34px, 3.2vw, 48px);
+  line-height: .99;
+}
+
+.classrooms-page__notebooks-heading > p:last-child {
+  max-width: 38ch;
+  margin: 15px 0 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.classrooms-page__notebooks-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 30px;
+  border-top: 1px solid var(--rule);
+}
+
+.classrooms-page__notebooks-list .story--compact {
+  min-height: 136px;
+  padding-block: 19px;
+}
+
+.classrooms-page__notebooks-list .story--compact:nth-child(odd) {
+  padding-right: 20px;
+}
+
+.classrooms-page__notebooks-list .story--compact:nth-child(even) {
+  padding-left: 30px;
+  border-left: 1px dotted var(--rule);
+}
+
+.classrooms-page__closing {
+  max-width: 760px;
+  margin-top: 76px;
+  padding-top: 6px;
+}
+
+.classrooms-page__closing h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1;
+}
+
+.classrooms-page__closing p:not(.eyebrow) {
+  max-width: 50ch;
+  margin: 12px 0 20px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.classrooms-page__closing a {
+  display: inline-block;
+  padding: 11px 14px;
+  border: 1px solid var(--vermillion);
+  color: var(--vermillion);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 820px) {
+  .classrooms-page__opening {
+    grid-template-columns: 1fr;
+  }
+
+  .classrooms-page__visual {
+    padding-left: 0;
+    padding-top: 28px;
+    border-left: 0;
+    border-top: 1px dotted var(--rule);
+  }
+
+  .classrooms-page__moments {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .classrooms-page__moments > .story:nth-child(even) {
+    padding-left: 24px;
+  }
+
+  .classrooms-page__notebooks {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .classrooms-page__opening {
+    margin-top: 32px;
+  }
+
+  .classrooms-page__feature .feature__body {
+    padding: 18px;
+  }
+
+  .classrooms-page__feature .feature__body h2 {
+    font-size: 38px;
+  }
+
+  .classrooms-page__section {
+    margin-top: 58px;
+  }
+
+  .classrooms-page__moments,
+  .classrooms-page__notebooks-list {
+    grid-template-columns: 1fr;
+  }
+
+  .classrooms-page__moments > .story:nth-child(even),
+  .classrooms-page__notebooks-list .story--compact:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .classrooms-page__moments > .story + .story {
+    padding-top: 28px;
+  }
+
+  .classrooms-page__notebooks {
+    padding-block: 34px;
+  }
+
+  .classrooms-page__notebooks-list .story--compact + .story--compact {
+    border-top: 1px solid var(--rule);
+  }
+
+  .classrooms-page__closing {
+    margin-top: 58px;
+  }
+}
