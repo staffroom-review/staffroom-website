@@ -12,7 +12,9 @@ The accent is concentrated in labels, section headings, long rules and selected 
 
 ## Typography
 
-Use a literary serif for all editorial headlines and a clean sans-serif for interface text.
+Editorial display/headline type: **Newsreader** via next/font/google, used for headlines, deks, section titles, the wordmark and other literary/editorial text. Its proportions and high-contrast serif texture are closer to the supplied The Ken reference than the previous Georgia fallback while remaining freely available and self-hosted by Next.js at build time.
+
+Interface/supporting sans-serif: **Archivo** via next/font/google, used for navigation, labels, controls, metadata and other utility text. It provides the compact, neutral grotesk character needed for the reference-style editorial hierarchy.
 
 At 1440px, working targets are:
 - dominant headline: 42–56px
