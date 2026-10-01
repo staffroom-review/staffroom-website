@@ -2,71 +2,95 @@
 
 Staffroom Review is an independent publication about teaching, schooling and the human experience of education.
 
-The website will be rebuilt as a clean application implementation inside the existing GitHub repository and Vercel project.
-
 ## Source of truth
 
-The active build specification is limited to these documents:
+The active specification is limited to the documents in `/docs`:
 
-- `visual-system.md` — visual language, typography, colour, grid, interaction and responsive rules
-- `editorial-system.md` — editorial proposition, voice and story principles
-- `content-taxonomy.md` — primary sections, subjects, formats and geography
-- `homepage-architecture.md` — page sequence, reference-equivalent homepage composition and mapping rules
-- `homepage-reference-mapping.md` — mandatory one-to-one mapping contract between the reviewed The Ken homepage and Staffroom Review
-- `content-seed.md` — placeholder editorial concepts and the rule for filling every mapped homepage slot
-- `build-baseline.md` — clean technical baseline and implementation boundaries
-- `implementation-plan.md` — phased build roadmap and checkpoints
+- `visual-system.md` — visual language, typography, colour, grid, spacing, imagery and responsive rules
+- `editorial-system.md` — editorial proposition and story principles
+- `content-taxonomy.md` — navigation, subjects, formats and geography
+- `homepage-architecture.md` — reconstructed homepage architecture and responsive composition
+- `homepage-reference-mapping.md` — ordered reference-section map for The Ken screenshots 1–7
+- `reference-capture-and-analysis.md` — screenshot-derived measurements and visual analysis
+- `content-seed.md` — Staffroom story material that must be preserved and can be expanded
+- `build-baseline.md` — technical boundaries
+- `implementation-plan.md` — chronological build and approval gates
 
-These documents override any assumptions contained in previous application code.
+These documents override assumptions inherited from earlier homepage implementations.
 
-## Design reference
+## Reference relationship
 
-The Ken is the primary visual and structural reference.
+The supplied The Ken screenshots are the primary visual and structural reference for the homepage.
 
-The Staffroom Review homepage is **not a shortened, simplified, sample or merely inspired version of The Ken**. The final homepage must preserve a one-to-one structural correlation with the reviewed The Ken homepage reference: every reference section, card/group, heading block, supporting text block, story package and comparable homepage module must have a corresponding Staffroom Review counterpart in the same relative sequence and with equivalent visual prominence and information density.
+The target is **close architectural and visual correspondence**, not a literal clone and not a generic “inspired by” page.
 
-The mapping is structural and compositional, not textual copying. Staffroom Review replaces The Ken's stories, headlines, deks, authors, metadata, imagery and brand identity with its own placeholder editorial material. The number and role of content blocks must remain equivalent.
+Translate:
+- composition
+- hierarchy
+- proportions
+- story density
+- image prominence
+- section rhythm
+- typography relationships
+- rules and separators
+- responsive reflow
 
-The intended interface-level difference is primarily the colour palette.
+Staffroom Review supplies:
+- its own masthead and brand
+- its own colours
+- its own navigation labels
+- its own story headlines, deks and metadata
+- its own imagery
+- its own editorial voice
 
-Do not copy The Ken's logo, name treatment, editorial copy, proprietary imagery or other brand assets.
+Do not copy The Ken's logo, brand assets, proprietary imagery or editorial language.
 
-## Homepage fidelity rule
+## Existing content preservation
 
-When the homepage is implemented, completeness is measured against the one-to-one reference map, not against a shorter Staffroom-only section list.
+The current Staffroom homepage contains future-story development material. Redesign work must **not delete, shorten, replace or rewrite existing story headlines and supporting text merely to fit the reference**.
 
-Do not:
-- omit a reference module because it is not explicitly named in Staffroom's editorial taxonomy
-- merge multiple reference modules into one larger block
-- reduce the number of story cards
-- replace a reference composition with a generic card grid
-- create a "representative sample" of the reference homepage
-- stop after the first editorial sections simply because the page already looks complete
+The homepage may:
+- add additional stories where the reference architecture needs more density
+- redistribute existing stories between modules
+- repeat an existing story only where an explicit editorial treatment requires it
+- introduce additional seed stories from `content-seed.md`
 
-When a reference module has no exact Staffroom editorial equivalent, preserve its **structural role, footprint, hierarchy and amount of content** using the nearest relevant Staffroom editorial material or a clearly defined publication utility counterpart. Content subject matter may change; structural completeness may not.
+The homepage must not become shorter by removing existing development material.
 
-Before Phase 5 implementation, the reviewed The Ken homepage snapshot and its one-to-one Staffroom mapping must be documented in `homepage-reference-mapping.md`.
+## Header and footer boundary
 
-## Technical direction
+The current `SiteHeader` and `SiteFooter` are retained.
 
-The application implementation is being rebuilt cleanly rather than adapted from the previous homepage/CSS structure.
+They may receive proportion, spacing, typography, colour or responsive refinements required by the new visual system, but they are not to be replaced by a new site-shell concept.
 
-Keep the existing GitHub repository and Vercel project.
+## Imagery
 
-The application code, component structure and styling are replaceable and should be designed from this specification forward.
+Actual free-to-use placeholder imagery is a later implementation pass.
 
-## Working rule
+Until that pass:
+- preserve the existing story/image data
+- maintain distinct image slots
+- do not redesign the architecture around temporary artwork
+- do not repeat placeholder artwork within the same visible homepage composition
 
-Each implementation phase follows:
+Preferred final imagery is editorial illustration where appropriate, sourced from free/licensed resources.
 
-**Plan → User approval → Implement → Verify → Live-site review → User approval → Next phase**
+## Responsive rule
 
-No phase authorises the next phase.
+Desktop and mobile are the primary reference states. Tablet is an intermediate responsive state derived from the same component and layout system.
 
-Every phase must identify:
-- objective
-- files/components expected to change
-- acceptance checkpoint
-- explicit deferrals
+Do not create a separate tablet site unless evidence requires genuinely different behaviour.
 
-No unrelated work should be bundled into a phase.
+## Workflow
+
+Each phase follows:
+
+**Plan → approval → implement → verify → live-site review → approval → next phase**
+
+No later phase is silently bundled into an earlier one.
+
+For the current redesign, the approved reference sequence is:
+
+**Section 1 → Section 2 → Section 3 → Section 4 → Section 5 → Section 6 → Section 7**
+
+Additional sections may be inserted later without changing the established visual system or structural logic.
