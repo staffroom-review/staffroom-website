@@ -84,8 +84,8 @@ export default function HomePage() {
               <Feature
                 art={placeholderArt.staffroom}
                 eyebrow="Teachers · First Person"
-                title={content.teacherTime.title}
-                dek={content.teacherTime.dek}
+                title={content.teacherLeave.title}
+                dek={content.teacherLeave.dek}
                 centered
                 elevated
               />
