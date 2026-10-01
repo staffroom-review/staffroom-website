@@ -1,102 +1,114 @@
 # Staffroom Review — Homepage Architecture
 
-## 1. Design intent
+## 1. Architectural target
 
-The homepage is a **full publication front page, not a sample homepage**.
+The homepage is a **full publication front page** reconstructed from the supplied The Ken visual reference.
 
-The Ken provides the principal reference for architecture, hierarchy, proportions, rhythm and information density. The screenshot set supplied by the user is the authoritative reference for the redesign.
+The architecture is a sequence of distinct editorial compositions, not a collection of generic reusable card grids.
 
-The relationship is **comparative, not rigidly one-to-one**.
+The seven reference stages are the primary homepage backbone:
 
-## 2. Reference-first rule
+**01 Opening → 02 Feature/support → 03 Discovery → 04 Central feature → 05 Collection → 06 Feature chapter → 07 Closing feature**
 
-Do not decide the final homepage structure from the Staffroom editorial list alone.
+Additional sections may be inserted later without changing the established system.
 
-First analyse the supplied reference screenshots, then translate the observed architecture into Staffroom Review.
+## 2. Composition vocabulary
 
-The final page should be as close as practical to the reference in:
-- overall length
-- major section count
-- story/card density
-- hierarchy
-- module variety
-- image prominence
-- whitespace and vertical rhythm
+The implementation must support at least these distinct composition types:
 
-## 3. Staffroom editorial areas
+### A. Three-part asymmetric feature
+Text-led side story + dominant central image/story + supporting side story.
 
-The core content areas remain:
-- Lead story
-- The Staffroom
-- The Classroom
-- The School Behind the School
-- Voices
-- Subjects
-- Beyond the Staffroom
-- The Long Read
-- Visual Story
-- Closing editorial block
+### B. Feature + stacked support
+Large image-led feature paired with a narrower column of text/image stories.
 
-These are content areas, not a fixed module count.
+### C. Dense discovery collection
+Several narrow columns, selective images, many compact stories and thin separators.
 
-## 4. Layout translation
+### D. Central feature chapter
+Dominant central image/story flanked by editorial side packages.
 
-The measured reference should determine:
-- grid/column relationships
-- story spans
-- image ratios
-- card proportions
-- section spacing
-- rule placement
-- alignment
-- visual hierarchy
-- page depth
+### E. Narrow-column collection
+Repeated editorial columns with a lead image and compact story list.
 
-Use reusable editorial primitives, but do not force every reference layout into the same component shape.
+### F. Long-form feature chapter
+Large image-led or central feature with strong headline/dek hierarchy and supporting side stories.
 
-## 5. Responsive architecture
+These compositions should be created from shared primitives rather than seven unrelated component systems.
 
-Desktop and mobile are the primary design states.
+## 3. Desktop grid
 
-Use one shared component and CSS system with responsive breakpoints.
+Use a 12-column central editorial grid.
 
-### Tablet
+Working desktop assumptions from the supplied 1440px references:
+- approximately 60px outer margin
+- approximately 1320px usable width
+- 20–30px primary gutters
+- explicit column spans
+- dominant stories generally 6–7 columns
+- side packages generally 2–3 columns
+- dense collections use 2–3 column equivalents repeated across the width
 
-Tablet is **not normally a separate site**.
+The exact values are implementation tokens and should be refined through visual verification.
 
-The same page and components should adapt between desktop and mobile using responsive rules. Tablet-specific refinement should still be performed because intermediate widths can expose:
-- awkward column breaks
-- oversized typography
-- excessive whitespace
-- compressed cards
-- navigation collisions
+## 4. Section headers
 
-A distinct tablet layout is warranted only where the reference or usability clearly requires one.
+A reference-style section header consists primarily of:
+- compact title/label
+- long horizontal rule
+- optional short explanatory text
 
-## 6. Images
+Do not turn section headings into oversized promotional blocks.
 
-Use distinct placeholder imagery for image-bearing stories.
+## 5. Story package hierarchy
 
-No repeated placeholder image.
+A story may contain:
 
-Large editorial stories receive proportionally larger or more prominent image treatment.
+**label → headline → dek → metadata**
 
-## 7. Fidelity rule
+or, for compact stories:
 
-Do not solve visual mismatches with arbitrary offsets or accumulating overrides.
+**date/label → headline → author**
 
-When something is misaligned:
-1. identify the structural cause
-2. correct the grid/component relationship
-3. verify at the reference viewport
-4. check adjacent responsive states
+Image presence is determined by the mapped slot.
 
-## 8. Source document
+Metadata is intentionally small and secondary.
 
-The reference capture and detailed analysis live in:
+## 6. Existing Staffroom content
 
-`docs/reference-capture-and-analysis.md`
+Current story headlines, deks and development text remain authoritative content assets.
 
-The comparative working map lives in:
+The architecture may redistribute them but must not delete or shorten them.
 
-`docs/homepage-reference-mapping.md`
+Additional story concepts may be added from `content-seed.md` to satisfy reference density.
+
+## 7. Header/footer boundary
+
+Keep `SiteHeader` and `SiteFooter`.
+
+Only visual alignment changes are permitted if required by the new system. They are not part of the homepage reconstruction sequence.
+
+## 8. Responsive architecture
+
+Desktop and mobile are primary states.
+
+Mobile should:
+- collapse columns intentionally
+- preserve editorial reading order
+- retain dominant images
+- keep section rules
+- turn dense collections into readable stacked groups
+- preserve all underlying story roles
+
+Tablet is an intermediate state of the same component tree.
+
+## 9. Structural rule
+
+If a layout looks wrong, fix:
+1. grid spans
+2. intrinsic content width
+3. image ratio
+4. typography role
+5. section spacing
+
+Do not fix structural problems with absolute positioning or arbitrary negative margins.
