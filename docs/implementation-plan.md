@@ -241,3 +241,18 @@ Implemented:
 The subscriber database is provided by Resend Contacts at the free starting stage; no second database service is required.
 
 **Approval gate:** the code and documentation are implemented, but live sending remains disabled until the Resend account, verified sending domain, segment IDs and Vercel environment variables are configured. The workflow begins with `sendArmed: false` and cannot send without both approvals, both checks and explicit activation.
+
+## Events specialist destination — implementation checkpoint
+
+The next header destination after the seven primary editorial pages is now implemented as Events.
+
+Implemented:
+- `data/events.js` — proposed programme and event-format content model.
+- `app/events/page.js` — dedicated Events landing page.
+- Events-specific responsive styling in `app/globals.css`.
+- Header and footer routing to `/events`.
+- `docs/events-architecture.md` — specialist page specification.
+
+The page uses proposed event concepts marked "Coming soon"; no real dates, speakers, venues or ticket claims have been invented.
+
+**Approval gate:** Events implementation is complete. Continue only after visual approval of the Events page, then finish the remaining specialist-navigation destinations.
