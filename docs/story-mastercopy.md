@@ -17,6 +17,15 @@ The registry contains one master record per underlying story. A story can have m
 - **URL** is the real article URL when published; blank means no dedicated article URL exists yet.
 - Current page cards may be placeholders and may only point to their containing page; those presentation links are not treated as canonical article URLs.
 
+## Expansion alerts
+
+The following two Ideas records require a mandatory verification check when their placeholder headings are expanded into full articles:
+
+- **SR-2026-0025 — The Invisible Curriculum: Everything Teachers Teach Without Meaning To:** remains **hold** until the editorial-state mismatch is resolved. Before drafting, re-run retrieval/verification and confirm the final thesis against all current and archived stories.
+- **SR-2026-0027 — What Good Teaching Looks Like Up Close:** remains **hold** until the editorial-state mismatch is resolved. Before drafting, re-run retrieval/verification and confirm that the reported-feature angle is distinct from other classroom-quality/Ideas stories.
+
+These alerts are part of the story records and are not publication decisions. The editor remains the final authority.
+
 ## Current story inventory
 
 | ID | Primary | Title | Format | Status | Tags |
