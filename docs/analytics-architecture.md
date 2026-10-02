@@ -143,3 +143,55 @@ Canonical Story IDs remain an optional field in the shared Story/Feature primiti
 **Configuration required before meaningful production data appears:** add the GA4 `NEXT_PUBLIC_GA_MEASUREMENT_ID` to the Vercel Production environment. No GA API secret is required for this client-side collection layer.
 
 **Approval gate:** code implementation is complete. Production deployment/build verification and live GA4 receipt must be checked before moving to private authentication.
+
+
+## Dashboard visual system — approved design direction
+
+The analytics dashboard must be treated as a designed editorial intelligence product, not a table-based reporting page. The visual experience should feel high-tech, precise and premium while remaining recognisably connected to Staffroom Review.
+
+### Visual language
+- Primary dashboard canvas: deep graphite/near-black with warm ivory content surfaces where useful.
+- Primary accent: electric teal/cyan for positive measured signals and active states.
+- Secondary signal accents: restrained amber for attention/review states and coral/red only for warnings or negative movement.
+- Existing Staffroom serif may appear for major editorial labels; clean sans-serif typography carries metrics, controls, navigation and dense data.
+- Use thin rules, fine grid lines, subtle glow/edge treatment and restrained shadows rather than generic SaaS gradients.
+- Use compact uppercase labels, strong numerical hierarchy and generous spacing around major metrics.
+- The dashboard is visually separate from the public site's editorial presentation; it should feel like an internal intelligence console.
+
+### Required visualisations
+Tables are supporting detail only. The primary dashboard must use visual data representations including:
+- KPI metric cards with period comparison and directional indicators.
+- Ring/donut charts for audience mix, device mix and selected composition metrics.
+- Horizontal/vertical bar charts for traffic sources, sections, formats and top content.
+- Line/area trend charts for users, sessions, engagement and content movement over time.
+- Sparklines for compact story/section trend context.
+- Funnel/path visualisations for newsletter, podcast and event journeys where sufficient data exists.
+- Heatmap-style matrices for day/time or section/format patterns when data volume supports them.
+- Ranked editorial cards combining title, section, metric, trend and a small visual indicator.
+- Search-performance panels pairing impressions, CTR, clicks and position with concise visual cues.
+- Recommendation cards that visibly distinguish measured evidence from derived recommendations.
+
+### Information architecture
+The dashboard should open with an executive overview, then allow deeper views for:
+1. Audience
+2. Content
+3. Discovery/Search
+4. Engagement pathways
+5. Editorial recommendations
+
+Each view should combine charts, metric cards and concise tables rather than presenting a long table first.
+
+### Interaction and polish
+- Default reporting period should be clear and easy to change.
+- Use hover/focus states with exact values and contextual labels.
+- Charts must have accessible text equivalents and not rely on colour alone.
+- Empty, unavailable and insufficient-data states must be designed states, not blank spaces.
+- Never manufacture visual data when the underlying metric is unavailable.
+- Avoid excessive animation; use subtle transitions for filters, chart changes and status updates.
+- The interface must remain highly usable on desktop and tablet; mobile should provide a deliberate compact dashboard layout rather than a desktop table squeezed into a narrow column.
+
+### Visual hierarchy
+The first viewport should immediately communicate: current reach, engagement quality, content momentum, discovery/search visibility and the most important editorial signals. The dashboard should feel impressive because of hierarchy, composition and information density—not because of decorative effects.
+
+### Dashboard implementation rule
+The dashboard shell is not considered complete unless it includes meaningful charts/visualisations. A table-only dashboard is explicitly out of scope.
