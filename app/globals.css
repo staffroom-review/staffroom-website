@@ -933,15 +933,11 @@ img, svg { display: block; max-width: 100%; }
     border-bottom: 1px dotted var(--rule);
   }
 
-  .feature-support__rail .story:first-child,
-  .central-side .story:first-child,
-  .feature-chapter-side .story:first-child {
+  .feature-support__rail .story:first-child {
     padding-top: 0;
   }
 
-  .feature-support__rail .story:last-child,
-  .central-side .story:last-child,
-  .feature-chapter-side .story:last-child {
+  .feature-support__rail .story:last-child {
     padding-bottom: 0;
     border-bottom: 0;
   }
@@ -963,6 +959,19 @@ img, svg { display: block; max-width: 100%; }
   .central-layout > .central-side .story,
   .feature-chapter-layout > .feature-chapter-side .story {
     order: 2;
+    padding: 18px 0;
+    border-bottom: 1px dotted var(--rule);
+  }
+
+  .central-layout > .central-side:first-child .story:first-child,
+  .feature-chapter-layout > .feature-chapter-side:first-child .story:first-child {
+    padding-top: 0;
+  }
+
+  .central-layout > .central-side:last-child .story:last-child,
+  .feature-chapter-layout > .feature-chapter-side:last-child .story:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 
   .opening-feature { order: 1; }
