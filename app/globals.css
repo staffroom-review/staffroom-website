@@ -73,7 +73,7 @@ img, svg { display: block; max-width: 100%; }
 .brand {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: calc(50% + 11px);
   transform: translate(-50%, -50%);
   display: inline-flex;
   align-items: baseline;
