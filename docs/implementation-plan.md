@@ -256,3 +256,25 @@ Implemented:
 The page uses proposed event concepts marked "Coming soon"; no real dates, speakers, venues or ticket claims have been invented.
 
 **Approval gate:** Events implementation is complete. Continue only after visual approval of the Events page, then finish the remaining specialist-navigation destinations.
+
+
+## Analytics dashboard — implementation checkpoint
+
+The approved analytics phase has been inserted before the remaining specialist More destinations. The measurement framework is now documented in `docs/analytics-architecture.md`.
+
+### Step 1 — Measurement framework
+
+Implemented:
+- analytics measurement contract
+- audience, content, search and engagement metrics
+- Staffroom section/product/format taxonomy
+- rule-based editorial recommendation framework
+- measured/derived/unavailable/insufficient/recommendation truth states
+- privacy and private-dashboard boundary
+- free-tier provider strategy and future data-layer boundary
+
+**Approval gate:** measurement framework is complete. Stop here and verify the documentation checkpoint before implementing collection, authentication or dashboard UI.
+
+### Next step
+
+Add the production analytics collection foundation and event/content taxonomy. Verify that real production data is being received before building private authentication or the dashboard interface.
