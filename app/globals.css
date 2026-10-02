@@ -1160,6 +1160,10 @@ img, svg { display: block; max-width: 100%; }
   border-bottom: 1px solid rgba(247, 239, 235, .22);
 }
 .brand--footer {
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
   color: #fffaf7;
 }
 .brand--footer .brand__name {
