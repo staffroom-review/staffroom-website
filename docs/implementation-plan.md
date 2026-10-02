@@ -167,6 +167,16 @@ The Ideas primary navbar and footer links now resolve to /ideas. Other unbuilt p
 
 **Approval gate:** Ideas implementation is complete. Stop here for live visual review and approval of the Ideas page before proceeding to World.
 
+## World page — implementation checkpoint
+
+The sixth navbar page, World, is now implemented as the second Family 3 destination. Its composition keeps the literary, spacious Family 3 rhythm while shifting the content lens to comparative and international education: a signature long-read opening, three perspective-led stories, an extended Beyond the Staffroom feature, field notes and a restrained closing pathway.
+
+The visible story propositions use production-quality headlines, deks, explicit formats and representative reading-time metadata in line with docs/editorial-content-strategy.md. Full article bodies remain deferred until the approved page family reaches the Article Body Expansion stage.
+
+The World primary navbar and footer links now resolve to /world. Other unbuilt primary destinations remain unchanged until their individual phases.
+
+**Approval gate:** World implementation is complete. Stop here for live visual review and approval of the World page before proceeding to Voices.
+
 
 ### Deployment retry — October 2, 2026
 A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
