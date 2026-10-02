@@ -278,3 +278,22 @@ Implemented:
 ### Next step
 
 Add the production analytics collection foundation and event/content taxonomy. Verify that real production data is being received before building private authentication or the dashboard interface.
+
+
+## Analytics collection foundation — implementation checkpoint
+
+The first collection layer is now implemented before private authentication or dashboard UI.
+
+Implemented:
+- reusable GA4 tracker at the root layout
+- deferred third-party script loading
+- route/page grouping
+- editorial content-selection events from shared Feature and Story primitives
+- search-term capture from the existing search query pattern
+- newsletter subscription-success event
+- scroll-depth milestones
+- GA4 measurement ID configuration in `.env.example`
+
+The implementation is intentionally conditional: if `NEXT_PUBLIC_GA_MEASUREMENT_ID` is absent, no analytics script or tracking runs. This preserves the existing site behaviour until the production property is configured.
+
+**Approval gate:** stop after production build and live data verification. Do not begin private authentication until the editor confirms the collection layer is working.
