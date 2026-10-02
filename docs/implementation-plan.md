@@ -177,6 +177,16 @@ The World primary navbar and footer links now resolve to /world. Other unbuilt p
 
 **Approval gate:** World implementation is complete. Stop here for live visual review and approval of the World page before proceeding to Voices.
 
+## Voices page — implementation checkpoint
+
+The seventh navbar page, Voices, is now implemented as the final Family 3 destination. Its composition centres first-person and human perspective: a signature voice opening with contextual framing, an offset three-story collection, a quote-led profile feature, a quieter Voice Notes stream and a restrained closing pathway.
+
+The visible story propositions use production-quality headlines, deks, explicit formats and representative reading-time metadata in line with docs/editorial-content-strategy.md. Full article bodies remain deferred until the approved page family reaches the Article Body Expansion stage.
+
+The Voices primary navbar and footer links now resolve to /voices. The Family 3 primary-page sequence is complete; the next phase is specialist navigation refinement followed by site-wide navigation verification.
+
+**Approval gate:** Voices implementation is complete. Stop here for live visual review and approval of the Voices page before proceeding to the specialist-navigation phase.
+
 
 ### Deployment retry — October 2, 2026
 A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
