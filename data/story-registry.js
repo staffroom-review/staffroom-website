@@ -114,6 +114,9 @@ function makeStory({
   sourceRefs = [],
   articleUrl = null,
   plannedArticleUrl = null,
+  publishedAt = null,
+  updatedAt = null,
+  newsletterEligible = false,
   notes = "",
 }) {
   const slug = slugify(title);
@@ -140,6 +143,9 @@ function makeStory({
     publication: {
       articleUrl,
       plannedArticleUrl: plannedArticleUrl || null,
+      publishedAt,
+      updatedAt,
+      newsletterEligible,
     },
     sourceRefs,
     notes,
@@ -818,4 +824,7 @@ export const storyRegistryMeta = {
   humanReadableIndex: "docs/story-mastercopy.md",
   archive: "docs/story-archive.md",
   verificationUtility: "lib/story-verification.js",
+  newsletterSystem: "docs/newsletter-system.md",
+  newsletterWorkflow: "data/newsletter-workflow.js",
+  newsletterScheduler: "app/api/newsletter/cron/route.js",
 };
