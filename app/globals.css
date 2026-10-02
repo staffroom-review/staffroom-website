@@ -65,15 +65,17 @@ img, svg { display: block; max-width: 100%; }
 }
 .site-header__top {
   min-height: 86px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
 }
 .brand {
   display: inline-flex;
   align-items: baseline;
-  gap: 7px;
+  justify-self: center;
+  gap: 0;
+  white-space: nowrap;
 }
 .brand__name {
   font-family: var(--display);
@@ -85,10 +87,15 @@ img, svg { display: block; max-width: 100%; }
 .brand__mark {
   color: var(--vermillion);
   font-family: var(--display);
-  font-size: 17px;
+  font-size: 38px;
+  font-weight: 700;
   font-style: italic;
+  letter-spacing: -.055em;
+  line-height: .85;
 }
 .site-header__actions {
+  grid-column: 3;
+  justify-self: end;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -114,12 +121,14 @@ img, svg { display: block; max-width: 100%; }
   min-height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  border-top: 1px solid var(--rule);
 }
 .site-header nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  justify-content: center;
+  gap: 32px;
 }
 .site-header nav a,
 .menu-button {
@@ -759,7 +768,11 @@ img, svg { display: block; max-width: 100%; }
     min-height: 72px;
   }
   .brand__name { font-size: 30px; }
-  .brand__mark { font-size: 14px; }
+  .brand__mark {
+    font-size: 30px;
+    letter-spacing: -.055em;
+    line-height: .85;
+  }
   .header-action:nth-child(1),
   .header-action:nth-child(2) {
     display: none;
