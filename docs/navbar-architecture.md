@@ -226,3 +226,13 @@ The Events header link now resolves to `/events`, and the footer includes Events
 Before the remaining More destinations are implemented, the approved private analytics phase will proceed as a separate, staged product build. Its authoritative specification is `docs/analytics-architecture.md`.
 
 The analytics phase does not change the public navigation taxonomy. It adds a private `/analytics` destination and proceeds through measurement, collection, authentication, dashboard and editorial-intelligence checkpoints. The next public specialist destination may resume only after the analytics phase has reached its documented approval gate.
+
+## Shared article system
+
+The seven navbar pages and the homepage are listing/presentation surfaces. They do not own separate article bodies.
+
+Full-length stories use the shared canonical article route /stories/<story-slug> and the Story Registry + Story Article content model.
+
+The article page is shared infrastructure rather than an additional navbar page family. Its typography, reading width, imagery treatment, metadata and related-reading pattern form a common public reading surface while individual story formats can add supported content blocks as required.
+
+Full-length content production happens one page at a time, beginning with the homepage story set, then following the approved navbar sequence.
