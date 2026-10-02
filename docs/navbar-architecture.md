@@ -24,7 +24,7 @@ The **More** item uses a collapsible menu containing:
 - Visual Essays
 - Blog
 
-Blog resolves to /blog. Podcast, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
+Newsletter and Events are direct top-level navigation items. Newsletter resolves to /newsletter. Blog resolves to /blog. Events, Podcast, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
 
 ## Design principle
 
