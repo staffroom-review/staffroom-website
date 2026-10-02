@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="footer-heading">Discover</p>
-            <a href="/">Ideas</a>
+            <a href="/ideas">Ideas</a>
             <a href="/">World</a>
             <a href="/">Voices</a>
             <a href="/newsletter">Newsletter</a>
