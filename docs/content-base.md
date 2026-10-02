@@ -120,3 +120,12 @@ The Anatomy of a Parent Meeting
 How a Homework Assignment Changes With AI
 
 Do not delete or shorten these titles/texts for layout convenience.
+
+## Story registry relationship
+
+The protected content in this document remains protected. The Story Registry does not replace this file or authorise deletion/shortening of protected story propositions.
+
+When a protected story is represented in `data/story-registry.js`, the registry record must preserve its Story ID, title, excerpt/dek and source reference. Any later revision, repackaging or removal should update the existing Story ID rather than silently creating a conflicting duplicate.
+
+Before a protected story is expanded, republished or replaced, the same Story Verification process applies so that related Staffroom stories and possible contradictions are identified first.
+
