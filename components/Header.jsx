@@ -54,7 +54,6 @@ export default function Header() {
         <div className="site-header__navrow">
           <nav className="site-header__primary-nav" aria-label="Primary navigation">
             <NavLinks items={nav} />
-            <span className="site-header__nav-divider" aria-hidden="true" />
             <NavLinks items={specialistNav} />
             <details className="more-menu">
               <summary>More</summary>
