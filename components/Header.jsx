@@ -46,7 +46,7 @@ export default function Header() {
                 <button type="submit">Search</button>
               </form>
             </details>
-            <a href="#signin" className="header-action header-action--outline">Sign in</a>
+            <a href="/sign-in" className="header-action header-action--outline">Sign in</a>
             <a href="#subscribe" className="header-action header-action--solid">Subscribe</a>
           </div>
         </div>
