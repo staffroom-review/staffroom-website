@@ -27,6 +27,7 @@ export default function Footer() {
             <a href="/voices">Voices</a>
             <a href="/newsletter">Newsletter</a>
             <a href="/blog">Blog</a>
+            <a href="/events">Events</a>
           </div>
           <div>
             <p className="footer-heading">Publication</p>
