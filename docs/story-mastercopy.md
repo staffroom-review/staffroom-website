@@ -87,11 +87,7 @@ The registry contains one master record per underlying story. A story can have m
 | SR-2026-0064 | Stories | The Class I'll Never Forget | First Person | placeholder | teacher identity; classroom practice |
 | SR-2026-0065 | Homepage | A School Day Is Made of Hundreds of Small Decisions | Essay | placeholder | teacher workload; teacher identity; classroom practice; school day |
 | SR-2026-0066 | Teachers | The Work Nobody Sees After the Last Child Leaves | Observation | placeholder | teacher workload; teacher identity; school day |
-| SR-2026-0067 | Newsletter | What the Five Minutes Before the Bell Become | Newsletter Edition | placeholder | teacher workload; teacher identity; classroom practice; school day |
 | SR-2026-0068 | Newsletter | When a Good Lesson Goes Wrong | Newsletter Edition | placeholder | teacher identity; classroom practice; planning |
-| SR-2026-0069 | Newsletter | What Teachers Carry Home — Newsletter Edition | Newsletter Edition | placeholder | teacher workload; teacher identity; school day |
 | SR-2026-0070 | Newsletter | The Children a Timetable Forgets | Newsletter Edition | placeholder | teacher identity; school culture; belonging; school systems; school day |
 | SR-2026-0071 | Blog | What I Wish Someone Had Told Me About the Staffroom | Blog / Staffroom Note | placeholder | teacher identity; relationships |
-| SR-2026-0072 | Blog | The Smallest Classroom Decisions — Blog Note | Blog / Staffroom Note | placeholder | teacher identity; classroom practice; planning |
-| SR-2026-0073 | Blog | The Meeting That Ate the School Day — Blog Note | Editorial Note | placeholder | teacher workload; teacher identity; school systems; school day |
 | SR-2026-0074 | Voices | The Staffroom Conversation I Still Remember | First Person | placeholder | teacher identity; relationships |
