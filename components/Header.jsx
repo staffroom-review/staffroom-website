@@ -8,6 +8,24 @@ const nav = [
   { label: "Voices", href: "/" },
 ];
 
+const specialistNav = [
+  { label: "Newsletter", href: "/newsletter" },
+  { label: "Events", href: "/" },
+];
+
+const moreNav = [
+  { label: "Podcasts", href: "/" },
+  { label: "Learning", href: "/" },
+  { label: "Visual Essays", href: "/" },
+  { label: "Blog", href: "/blog" },
+];
+
+function NavLinks({ items }) {
+  return items.map((item) => (
+    <a href={item.href} key={item.label}>{item.label}</a>
+  ));
+}
+
 export default function Header() {
   return (
     <header className="site-header">
@@ -34,14 +52,33 @@ export default function Header() {
         </div>
 
         <div className="site-header__navrow">
-          <nav aria-label="Primary navigation">
-            {nav.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}
+          <nav className="site-header__primary-nav" aria-label="Primary navigation">
+            <NavLinks items={nav} />
+            <span className="site-header__nav-divider" aria-hidden="true" />
+            <NavLinks items={specialistNav} />
+            <details className="more-menu">
+              <summary>More</summary>
+              <nav aria-label="More navigation">
+                <NavLinks items={moreNav} />
+                <a href="/newsletter">Newsletter</a>
+                <a href="/">Events</a>
+              </nav>
+            </details>
           </nav>
 
           <details className="mobile-menu">
             <summary className="menu-button">Menu</summary>
             <nav aria-label="Mobile navigation">
-              {nav.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}
+              <NavLinks items={nav} />
+              <NavLinks items={specialistNav} />
+              <details className="more-menu">
+                <summary>More</summary>
+                <nav aria-label="More mobile navigation">
+                  <NavLinks items={moreNav} />
+                  <a href="/newsletter">Newsletter</a>
+                  <a href="/">Events</a>
+                </nav>
+              </details>
             </nav>
           </details>
         </div>
