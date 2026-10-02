@@ -9,6 +9,9 @@ export default function Feature({
   priority = false,
   href = "#feature",
   meta = "",
+  analyticsId = "",
+  analyticsSection = "",
+  analyticsFormat = "",
 }) {
   return (
     <article className={`feature ${centered ? "feature--centered" : ""} ${elevated ? "feature--elevated" : ""} ${className}`.trim()}>
@@ -17,7 +20,20 @@ export default function Feature({
       </div>
       <div className="feature__body">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-        <h2><a href={href}>{title}</a></h2>
+        <h2>
+          <a
+            href={href}
+            data-analytics-event="select_content"
+            data-content-type="feature"
+            data-content-id={analyticsId || title}
+            data-content-title={title}
+            data-content-section={analyticsSection}
+            data-content-format={analyticsFormat || eyebrow}
+            data-link-location="feature-card"
+          >
+            {title}
+          </a>
+        </h2>
         {dek ? <p>{dek}</p> : null}
         {meta ? <p className="story__meta">{meta}</p> : null}
       </div>
