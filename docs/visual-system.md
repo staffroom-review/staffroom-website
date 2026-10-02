@@ -97,3 +97,7 @@ Reference: YourStory homepage masthead/navbar, reviewed October 2026.
 ### Navbar vertical positioning
 
 The desktop/tablet navbar is vertically lowered within the masthead-to-content interval without changing the position of the first content image. A compensating bottom margin preserves the downstream page geometry; mobile navigation remains unchanged.
+
+### Non-home page heading colour
+
+All top-level page headings (H1s) on non-home pages use the Staffroom Review Brick Red 1 / vermillion token, regardless of whether the page is reached from the primary navbar, footer, direct URL or another internal link. Homepage headings remain on the existing homepage treatment.
