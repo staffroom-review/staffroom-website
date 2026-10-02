@@ -7,6 +7,9 @@ export default function Story({
   compact = false,
   href = "#story",
   meta = "Staffroom Review",
+  analyticsId = "",
+  analyticsSection = "",
+  analyticsFormat = "",
 }) {
   return (
     <article className={`story story--${variant} ${compact ? "story--compact" : ""}`.trim()}>
@@ -17,7 +20,20 @@ export default function Story({
       ) : null}
       <div className="story__body">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-        <h3><a href={href}>{title}</a></h3>
+        <h3>
+          <a
+            href={href}
+            data-analytics-event="select_content"
+            data-content-type="story"
+            data-content-id={analyticsId || title}
+            data-content-title={title}
+            data-content-section={analyticsSection}
+            data-content-format={analyticsFormat || eyebrow}
+            data-link-location="story-card"
+          >
+            {title}
+          </a>
+        </h3>
         {dek ? <p className="story__dek">{dek}</p> : null}
         <p className="story__meta">{meta}</p>
       </div>
