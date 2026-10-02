@@ -65,3 +65,9 @@ The canonical story index is `data/story-registry.js`, with the human-readable i
 Every new story—whether AI-written, human-written or collaborative—uses the same Story Intake process. Before upload or publication, related stories are retrieved and checked for duplicate concepts, substantial overlap, placement/format mismatch and possible contradictions. The result is advisory; the editor has final authority and may explicitly override it, with the override recorded.
 
 Detailed rules: `docs/story-management-system.md`. Verification utility: `lib/story-verification.js`.
+
+## Newsletter system
+
+The Staffroom Letter is now a first-class weekly product. The canonical story registry supplies eligible weekly stories; `data/newsletter-workflow.js` stores the current issue and approval state; Resend provides the subscriber/contact and Broadcast layer; Vercel Cron provides the weekly scheduler.
+
+The complete operating rules are in `docs/newsletter-system.md`, with product/content definition in `docs/newsletter-architecture.md`.
