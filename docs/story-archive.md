@@ -39,3 +39,8 @@ Future removals should preserve the Story ID and should never reuse an archived 
 ## Relationship to verification
 
 Archived stories remain searchable for overlap checks. A proposed new story may resemble a removed story, and that history can still matter when avoiding repeated angles, reintroducing disputed claims or accidentally recreating a retired concept.
+
+
+## Registry rule
+
+A removed story is not deleted from `data/story-registry.js`. Keep its original Story ID and set `editorialStatus: "archived"`; record the removal details here. This allows future story-overlap verification to include retired work.
