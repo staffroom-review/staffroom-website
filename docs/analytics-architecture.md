@@ -214,3 +214,21 @@ Clerk is currently the managed authentication provider because its current Hobby
 **Required deployment configuration:** install/connect Clerk through the Vercel Marketplace for this project, configure the authorised account in Clerk, set `ANALYTICS_ALLOWED_EMAIL` in Vercel Production to that exact account email, and verify the sign-in/allowlist flow on production. Do not commit Clerk keys or the authorised email to GitHub.
 
 **Approval gate:** do not begin dashboard UI/data visualisation until private access has been verified in production.
+
+## Dashboard shell — implementation checkpoint
+
+Private Clerk access has been verified in production and the analytics dashboard shell is implemented at /analytics.
+
+The shell includes:
+- executive overview KPI placeholders;
+- audience trend and composition panels;
+- content performance panels;
+- discovery/search panel;
+- engagement-pathway panels for newsletter, podcasts and events;
+- editorial recommendation/evidence states.
+
+Unavailable metrics are explicitly shown as unavailable. No analytics values are invented.
+
+The dashboard shell is presentation infrastructure only. The next analytics implementation step is the server-side reporting/data layer required to populate measured and derived values from the approved providers. Visual editorial-intelligence rules remain gated until the underlying data is verified.
+
+**Approval gate:** visually review the current dashboard shell before the reporting/data layer is implemented.
