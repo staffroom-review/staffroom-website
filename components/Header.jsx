@@ -10,7 +10,7 @@ const nav = [
 
 const specialistNav = [
   { label: "Newsletter", href: "/newsletter" },
-  { label: "Events", href: "/" },
+  { label: "Events", href: "/events" },
 ];
 
 const moreNav = [
