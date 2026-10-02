@@ -190,3 +190,36 @@ The Voices primary navbar and footer links now resolve to /voices. The Family 3 
 
 ### Deployment retry — October 2, 2026
 A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
+
+
+## Story Management & Verification System — implementation checkpoint
+
+The story-management phase has now been implemented as a reusable editorial system rather than a one-off document set.
+
+Implemented:
+- `data/story-registry.js` — canonical story index with permanent Story IDs, provenance, sections, formats, tags, excerpts, summaries, placement references and URL state.
+- `lib/story-verification.js` — retrieval, overlap flagging and registry integrity checks.
+- `docs/story-management-system.md` — operating procedure for AI-written, human-written and collaborative stories.
+- `docs/story-mastercopy.md` — human-readable inventory of the current story propositions.
+- `docs/story-archive.md` — separate removal/retirement register.
+
+### Mandatory future story workflow
+
+1. Create/receive the story.
+2. Create its master Story ID and metadata.
+3. Retrieve related existing and archived stories.
+4. Check duplicate concept, material overlap, placement/format mismatch and potential contradiction.
+5. Review any material matches before publication.
+6. Follow the editor's decision: revise, reposition, keep distinct or explicitly override.
+7. Record the verification result and any override.
+8. Publish/upload and then record the real canonical article URL.
+
+The verification layer is advisory. The editor is the final authority and may override a positive match.
+
+### Initial inventory
+
+The registry was seeded from the current homepage/content data, all seven implemented navbar-page data files, newsletter/blog placeholder content and held editorial features. Existing repeated concepts were consolidated into one master record where the underlying story is the same; genuinely distinct editorial packages remain separate.
+
+Two existing editorial-state mismatches were retained as explicit registry notes rather than silently changed: `The Invisible Curriculum: Everything Teachers Teach Without Meaning To` and `What Good Teaching Looks Like Up Close` are marked `hold` in editorial source data while their current Ideas presentation exposes placeholders.
+
+**Approval gate:** Story Management & Verification is implemented. New story upload/publication work must now use this workflow before the next content-expansion phase proceeds.
