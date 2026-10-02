@@ -87,3 +87,9 @@ Flat paper is the default. Avoid rounded cards, gradients and global shadows. Re
 Existing header, navbar and footer architecture remains; tune typography, spacing, colour and rules so they belong to this visual system. Do not replace the site shell with an unrelated architecture.
 
 Footer treatment: use a deep ink surface with a substantial vermillion transition band above it so the footer reads as a deliberate closing band rather than an extension of the paper sections. Keep the footer typography restrained, highly legible and structurally hierarchical, with the existing content grouped into a strong primary identity block plus compact navigation columns.
+
+### Masthead and navbar alignment
+
+The masthead now uses a centered Staffroom Review wordmark, with both wordmark components set to the same Lora display size and the existing vermillion/Brick Red 1 accent. The navigation is centered beneath the masthead with wider editorial spacing and a thin upper rule. This adopts the alignment and spacing logic of the current YourStory masthead/navbar reference while retaining Staffroom Review's own typefaces, palette and content.
+
+Reference: YourStory homepage masthead/navbar, reviewed October 2026.
