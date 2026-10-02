@@ -306,3 +306,47 @@ Private analytics access is now implemented with Clerk for Next.js 16, including
 **Required configuration before approval:** connect Clerk through Vercel Marketplace, configure the editor's Clerk account, and set `ANALYTICS_ALLOWED_EMAIL` in Vercel Production to the exact authorised account email. Verify unauthenticated, authorised and unauthorised access on production.
 
 **Approval gate:** once private access is verified, build the analytics dashboard shell and visualisation system. Do not proceed to editorial intelligence until the shell is visually approved.
+
+## Current state — October 2, 2026
+
+The public editorial page architecture is substantially implemented. The homepage plus Stories, Teachers, Classrooms, Schools, Ideas, World and Voices are built, and the current specialist destinations include Newsletter, Blog, Events and Podcasts.
+
+Clerk private analytics access has been verified in production and the analytics dashboard shell is now implemented. The shell deliberately shows unavailable states until the reporting/data layer is connected; no performance values are fabricated.
+
+Learning and Visual Essays remain the only dedicated More destinations not yet built. They remain staged rather than silently pointing to completed destinations.
+
+### Shared article-page system — implementation checkpoint
+
+The next technical dependency for full-length content is now implemented.
+
+Added:
+- data/story-articles.js — separate canonical article-body content layer keyed by permanent Story ID.
+- app/stories/[slug]/page.js — shared article route and publication surface.
+- app/stories/[slug]/story.module.css — responsive Staffroom article presentation.
+
+The article route:
+- resolves the canonical story through data/story-registry.js;
+- renders only published and updated stories;
+- requires a corresponding article-body record;
+- generates title, description, canonical URL and article Open Graph metadata from the registry;
+- supports paragraphs, subheads, pull quotes, lists, inline images, source notes and source lists;
+- provides a related-reading section using other published articles;
+- preserves the Staffroom header/footer and responsive public-site system.
+
+Placeholder, hold, draft and other non-public records intentionally return not found rather than exposing unfinished articles.
+
+**Approval gate:** article-page infrastructure is implemented. Before full-length content production begins, visually review the shared article template. After approval, content production starts one page at a time, beginning with the homepage story set.
+
+### Full-length content production sequence
+
+1. Homepage story set.
+2. Stories.
+3. Teachers.
+4. Classrooms.
+5. Schools.
+6. Ideas.
+7. World.
+8. Voices.
+9. Specialist content products and the remaining More destinations.
+
+For each page, finish its eligible stories before starting the next page. Human/editorial-designated stories remain supplied by the human editor/contributor; Staffroom-designated AI work can be drafted by the build workflow. Every story follows Story Intake and Verification before publication.
