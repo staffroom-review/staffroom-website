@@ -369,6 +369,9 @@ export const storyRegistry = [
     placements: [{ section: "Homepage", url: "/" }],
     sourceRefs: ["data/content.js", "data/editorial.js", "data/ideas.js"],
     notes: "Existing source data marks this work as hold while the Ideas page currently presents a placeholder version. Resolve this editorial-state mismatch before treating it as a publishable story.",
+    expansionReminder: "When expanding the Ideas heading into the full-length article, pause before drafting and run Story Verification against all current and archived stories. Confirm whether the planned article is still the same underlying concept, whether its thesis has changed, and whether any later Staffroom stories now overlap.",
+    verificationAlert: "Do not treat the current Ideas placeholder as evidence that the story is approved for publication. Editorial source currently records hold.",
+    expansionSection: "Ideas",
   }),
   makeStory({
     id: "SR-2026-0026",
@@ -388,6 +391,9 @@ export const storyRegistry = [
     status: "hold",
     sourceRefs: ["data/editorial.js", "data/ideas.js"],
     notes: "Existing source data marks this work as hold while the Ideas page currently presents a placeholder version. Resolve the editorial-state mismatch before treating it as a publishable story.",
+    expansionReminder: "When expanding the Ideas heading into the full-length reported feature, pause before drafting and run Story Verification against all current and archived stories. Pay particular attention to overlap with the other Ideas long-read propositions and any later classroom-quality stories.",
+    verificationAlert: "Do not treat the current Ideas placeholder as evidence that the story is approved for publication. Editorial source currently records hold.",
+    expansionSection: "Ideas",
   }),
   makeStory({
     id: "SR-2026-0028",
