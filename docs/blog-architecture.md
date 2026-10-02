@@ -118,3 +118,11 @@ That means the content system must store the underlying story independently of i
 ## Navigation
 
 Blog is a specialist destination and should initially sit under the future More navigation rather than displacing the seven primary editorial sections.
+
+
+## Story registry relationship
+
+Blog posts use the same canonical story registry as the main editorial pages. A blog post receives one Story ID even if it is later promoted into First Person, Ideas, Long Read or another format.
+
+Before a blog post is uploaded or promoted, the Story Intake and Verification process checks the existing registry for repeated concepts, arguments, examples, audience mismatch and possible contradictions.
+
