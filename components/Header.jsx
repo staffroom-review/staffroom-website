@@ -4,7 +4,7 @@ const nav = [
   { label: "Classrooms", href: "/classrooms" },
   { label: "Schools", href: "/schools" },
   { label: "Ideas", href: "/ideas" },
-  { label: "World", href: "/" },
+  { label: "World", href: "/world" },
   { label: "Voices", href: "/" },
 ];
 
