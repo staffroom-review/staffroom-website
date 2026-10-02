@@ -49,3 +49,12 @@ Held editorial-team features are also represented in the content system with sta
 Plan → approval → implement → verify → live-site review → approval.
 
 The homepage is now complete through the documented fidelity checkpoint. The next build sequence must use the editorial content standards before individual navbar pages are visually frozen.
+
+## Story management and verification
+
+The canonical story index is `data/story-registry.js`, with the human-readable inventory in `docs/story-mastercopy.md` and removed-story history in `docs/story-archive.md`.
+
+Every new story—whether written by Staffroom Review/AI, supplied by a human contributor or produced collaboratively—must enter through the same Story Intake process. Before upload or publication, retrieve and compare related stories for duplicate concepts, substantial overlap, page/format mismatch and possible contradictions. The verification result is advisory; the editor has final authority and may explicitly override it, with the override recorded.
+
+The detailed operating rules are in `docs/story-management-system.md`; the reusable overlap/retrieval utility is `lib/story-verification.js`.
+
