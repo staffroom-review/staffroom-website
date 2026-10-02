@@ -60,8 +60,6 @@ export default function Header() {
               <summary>More</summary>
               <nav aria-label="More navigation">
                 <NavLinks items={moreNav} />
-                <a href="/newsletter">Newsletter</a>
-                <a href="/">Events</a>
               </nav>
             </details>
           </nav>
@@ -75,8 +73,6 @@ export default function Header() {
                 <summary>More</summary>
                 <nav aria-label="More mobile navigation">
                   <NavLinks items={moreNav} />
-                  <a href="/newsletter">Newsletter</a>
-                  <a href="/">Events</a>
                 </nav>
               </details>
             </nav>
