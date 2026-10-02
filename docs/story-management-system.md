@@ -283,3 +283,8 @@ A positive match means “look at this before publishing,” not “do not publi
 - `docs/story-archive.md`
 
 The registry and verification utility should be updated whenever the content model changes.
+
+
+## Archived stories remain in the registry
+
+Retired stories keep their original Story ID with `editorialStatus: "archived"` in `data/story-registry.js`; `docs/story-archive.md` stores the removal details. This keeps archived work available to future verification checks without treating it as active editorial inventory.
