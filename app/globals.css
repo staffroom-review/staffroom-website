@@ -1209,36 +1209,54 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 700px) {
   .site-footer {
     margin-top: 14px;
-    padding-top: 42px;
+    padding-top: 36px;
   }
   .site-footer::before {
     top: -14px;
     height: 14px;
   }
   .site-footer__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 34px 28px;
-    padding-bottom: 34px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    padding-bottom: 28px;
   }
   .site-footer__grid > div:first-child {
     grid-column: 1 / -1;
+    padding-bottom: 2px;
   }
   .brand--footer .brand__name {
-    font-size: 34px;
+    font-size: 32px;
+  }
+  .site-footer__description {
+    max-width: 34ch;
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .footer-heading {
+    margin-bottom: 11px;
+    font-size: 9px;
+  }
+  .site-footer__grid > div:not(:first-child) > a {
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 1.25;
   }
   .site-footer__bottom {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding-top: 14px;
+    font-size: 8px;
+    line-height: 1.35;
   }
 }
 
 @media (max-width: 520px) {
   .site-footer__grid {
-    grid-template-columns: 1fr;
-  }
-  .site-footer__grid > div:first-child {
-    grid-column: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
   }
 }
 
