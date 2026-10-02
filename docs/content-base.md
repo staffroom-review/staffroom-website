@@ -129,3 +129,12 @@ When a protected story is represented in `data/story-registry.js`, the registry 
 
 Before a protected story is expanded, republished or replaced, the same Story Verification process applies so that related Staffroom stories and possible contradictions are identified first.
 
+
+## Story registry relationship
+
+Protected content in this document remains protected. The Story Registry does not replace this file or authorise deletion/shortening of protected story propositions.
+
+When protected content is represented in `data/story-registry.js`, its Story ID, title, excerpt/dek and source reference must remain linked. Any revision, repackaging or removal should update the existing Story ID rather than silently creating a conflicting duplicate.
+
+Before a protected story is expanded, republished or replaced, the Story Verification process applies so related Staffroom stories and possible contradictions are identified first.
+
