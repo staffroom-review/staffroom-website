@@ -122,3 +122,24 @@ Status: approved for the next implementation step only.
 The measurement model, taxonomy, recommendation logic, privacy boundary and provider strategy are defined.
 
 Next implementation step: add the production analytics collection foundation and event/content taxonomy, then verify real production data before building authentication or dashboard UI.
+
+
+## Collection foundation checkpoint
+
+The first production collection layer is implemented.
+
+Implemented:
+- `components/Analytics.jsx` — client-side GA4 page and interaction tracker.
+- `app/layout.js` — conditional GA4 loading using `NEXT_PUBLIC_GA_MEASUREMENT_ID` and deferred Next.js Script loading.
+- `components/Story.jsx` and `components/Feature.jsx` — reusable editorial interaction metadata for content-selection events.
+- `.env.example` — documented public GA4 measurement ID configuration.
+
+Tracked foundation signals include page views, route/content grouping, search terms from site-search URLs, newsletter subscription success, editorial card/feature selection and scroll-depth milestones. GA4 enhanced measurement remains responsible for its supported automatic signals such as standard page views, outbound clicks and 90% scroll measurement when enabled in the property. citeturn2search0turn2search4
+
+The tracker does not send subscriber email addresses, passwords or other personal form values.
+
+Canonical Story IDs remain an optional field in the shared Story/Feature primitives. Existing callers fall back to the visible content title until the later dashboard/content-registry wiring step, avoiding a broad rewrite of the existing page data in this collection checkpoint.
+
+**Configuration required before meaningful production data appears:** add the GA4 `NEXT_PUBLIC_GA_MEASUREMENT_ID` to the Vercel Production environment. No GA API secret is required for this client-side collection layer.
+
+**Approval gate:** code implementation is complete. Production deployment/build verification and live GA4 receipt must be checked before moving to private authentication.
