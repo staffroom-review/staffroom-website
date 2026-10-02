@@ -391,3 +391,47 @@ The automated utility is a retrieval/flagging aid rather than a publishing autho
 
 The registry also preserves author type and AI involvement so future verification can distinguish Staffroom-generated work from human-contributed work without treating provenance as a quality judgement.
 
+
+## Article-body production and authorship gate
+
+The article-body stage begins only after the shared article-page system is visually approved.
+
+### Page-by-page rule
+
+Full-length content is completed in this order:
+
+1. Homepage story set.
+2. Stories.
+3. Teachers.
+4. Classrooms.
+5. Schools.
+6. Ideas.
+7. World.
+8. Voices.
+9. Specialist content products and any remaining dedicated destinations.
+
+Do not start the next page's full-length content while the current page still contains unfinished priority stories.
+
+### Authorship
+
+Every story must have an explicit production path recorded in the Story Registry.
+
+- **Human/editorial-designated:** the manuscript is supplied by the human editor/contributor. The AI workflow does not invent the article body.
+- **Staffroom/AI-designated:** the article can be drafted within the documented format and length band, followed by verification and editorial QA.
+- **Collaborative:** the supplied human material and AI-assisted drafting/editing are recorded accurately.
+
+“Editorial” is an authorship/production instruction, not a quality rating.
+
+### Article readiness
+
+A story is ready for publication only after:
+- full article body is complete;
+- Story Intake and Verification has been run;
+- author/provenance metadata is accurate;
+- sourcing/attribution is complete where relevant;
+- image/caption/credit information is complete;
+- internal links are present where relevant;
+- SEO metadata and canonical URL are checked;
+- accessibility and final copy QA are complete.
+
+The shared article route is deliberately gated so placeholder and held stories cannot become public articles before these conditions are met.
