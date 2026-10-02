@@ -60,20 +60,23 @@ img, svg { display: block; max-width: 100%; }
 
 .site-header {
   background: var(--paper);
-  border-bottom: 1px solid var(--rule);
   font-family: var(--sans);
 }
 .site-header__top {
+  position: relative;
   min-height: 86px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 24px;
 }
 .brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: inline-flex;
   align-items: baseline;
-  justify-self: center;
   gap: 0;
   white-space: nowrap;
 }
@@ -94,8 +97,6 @@ img, svg { display: block; max-width: 100%; }
   line-height: .85;
 }
 .site-header__actions {
-  grid-column: 3;
-  justify-self: end;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -118,12 +119,25 @@ img, svg { display: block; max-width: 100%; }
   color: #fff;
 }
 .site-header__navrow {
-  min-height: 50px;
+  position: relative;
+  min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid var(--rule);
+  border: 0;
 }
+.site-header__navrow::before,
+.site-header__navrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: min(76%, 920px);
+  height: 1px;
+  background: var(--rule);
+  transform: translateX(-50%);
+}
+.site-header__navrow::before { top: 0; }
+.site-header__navrow::after { bottom: 0; }
 .site-header__primary-nav {
   display: flex;
   flex-wrap: wrap;
@@ -183,11 +197,6 @@ img, svg { display: block; max-width: 100%; }
 }
 .more-menu nav a:hover {
   background: var(--paper-soft);
-}
-.site-header__nav-divider {
-  width: 1px;
-  height: 16px;
-  background: var(--rule);
 }
 .menu-button {
   display: none;
