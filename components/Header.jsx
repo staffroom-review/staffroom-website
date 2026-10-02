@@ -3,7 +3,7 @@ const nav = [
   { label: "Teachers", href: "/teachers" },
   { label: "Classrooms", href: "/classrooms" },
   { label: "Schools", href: "/schools" },
-  { label: "Ideas", href: "/" },
+  { label: "Ideas", href: "/ideas" },
   { label: "World", href: "/" },
   { label: "Voices", href: "/" },
 ];
