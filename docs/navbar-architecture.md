@@ -12,15 +12,19 @@ Primary navbar:
 - Ideas
 - World
 - Voices
+- Newsletter
+- Events
 - More
 
+Newsletter is a direct top-level link to /newsletter. Events is exposed as a top-level navigation item but remains staged at / until an Events destination is built.
+
 The **More** item uses a collapsible menu containing:
-- Newsletters
-- Visual Essays
+- Podcasts
 - Learning
-- Podcast
-- Events
+- Visual Essays
 - Blog
+
+Blog resolves to /blog. Podcast, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
 
 ## Design principle
 
@@ -160,9 +164,10 @@ Homepage anchor changes should be limited to what is needed for functional navig
 
 ### Phase 8 — More
 1. Implement the collapsible More menu.
-2. Add the five specialist destinations.
-3. Verify desktop/mobile behaviour.
-4. Obtain approval.
+2. Verify Newsletter and Events top-level navigation treatment.
+3. Add specialist destinations as their pages are built.
+4. Verify desktop/mobile behaviour.
+5. Obtain approval.
 
 ### Phase 9 — Site-wide navigation pass
 1. Verify all primary navbar links.
