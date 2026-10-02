@@ -917,9 +917,10 @@ img, svg { display: block; max-width: 100%; }
     width: 100%;
     min-width: 0;
   }
-  .feature-chapter-side,
+
+  .feature-support__rail,
   .central-side,
-  .feature-support__rail {
+  .feature-chapter-side {
     gap: 0;
   }
 
@@ -951,6 +952,17 @@ img, svg { display: block; max-width: 100%; }
 
   .opening-side--left .side-promotional-art {
     width: 100%;
+  }
+
+  /* Flatten the two three-column compositions into one clean mobile sequence. */
+  .central-side,
+  .feature-chapter-side {
+    display: contents;
+  }
+
+  .central-layout > .central-side .story,
+  .feature-chapter-layout > .feature-chapter-side .story {
+    order: 2;
   }
 
   .opening-feature { order: 1; }
