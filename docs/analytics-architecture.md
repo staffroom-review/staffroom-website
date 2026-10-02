@@ -195,3 +195,22 @@ The first viewport should immediately communicate: current reach, engagement qua
 
 ### Dashboard implementation rule
 The dashboard shell is not considered complete unless it includes meaningful charts/visualisations. A table-only dashboard is explicitly out of scope.
+
+
+## Private access checkpoint
+
+Private analytics access is implemented with Clerk, using the current Next.js 16 `proxy.ts` integration pattern. The `/analytics` resource performs its own server-side authentication and checks the signed-in account against the single `ANALYTICS_ALLOWED_EMAIL` allowlist value. Unauthorised signed-in accounts receive a not-found response rather than dashboard content.
+
+Implemented:
+- `@clerk/nextjs` dependency.
+- root `proxy.ts` for Clerk session integration.
+- Clerk provider in `app/layout.js`.
+- `/sign-in` and `/sign-up` catch-all routes.
+- server-side allowlist protection in `app/analytics/page.js`.
+- environment-variable documentation in `.env.example`.
+
+Clerk is currently the managed authentication provider because its current Hobby plan is free within its published retained-user allowance and its Vercel Marketplace integration provisions the required environment variables. Recheck provider pricing/features before future plan changes. 
+
+**Required deployment configuration:** install/connect Clerk through the Vercel Marketplace for this project, configure the authorised account in Clerk, set `ANALYTICS_ALLOWED_EMAIL` in Vercel Production to that exact account email, and verify the sign-in/allowlist flow on production. Do not commit Clerk keys or the authorised email to GitHub.
+
+**Approval gate:** do not begin dashboard UI/data visualisation until private access has been verified in production.
