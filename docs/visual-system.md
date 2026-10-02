@@ -93,3 +93,7 @@ Footer treatment: use a deep ink surface with a substantial vermillion transitio
 The masthead now uses a centered Staffroom Review wordmark, with both wordmark components set to the same Lora display size and the existing vermillion/Brick Red 1 accent. The navigation is centered beneath the masthead with wider editorial spacing and a thin upper rule. This adopts the alignment and spacing logic of the current YourStory masthead/navbar reference while retaining Staffroom Review's own typefaces, palette and content.
 
 Reference: YourStory homepage masthead/navbar, reviewed October 2026.
+
+### Navbar vertical positioning
+
+The desktop/tablet navbar is vertically lowered within the masthead-to-content interval without changing the position of the first content image. A compensating bottom margin preserves the downstream page geometry; mobile navigation remains unchanged.
