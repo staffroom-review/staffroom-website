@@ -201,3 +201,14 @@ Before a page receives visual approval, its visible story cards should use produ
 After the page family is structurally approved, priority stories can move through the full article-body stage using the format-specific length bands and SEO/editorial requirements.
 
 The dedicated newsletter and blog destinations are already scaffolded at /newsletter and /blog. They sit within the specialist-content layer and should not be allowed to become accidental variants of the seven primary page families.
+
+## Story registry and page presentation
+
+The seven navbar pages are presentation surfaces, not separate story databases. The canonical underlying story record lives in `data/story-registry.js`.
+
+A story may appear on multiple navbar pages, the homepage, the newsletter or the blog without creating duplicate master records. Each story has one primary section and may have additional placements.
+
+During each page build, visible story propositions should be checked against the registry before new story concepts are introduced. This prevents accidental duplication across page families and keeps the page-specific data files as presentation layers rather than competing editorial authorities.
+
+When a new article is prepared for upload, the full Story Intake and Verification process applies before final publication placement.
+
