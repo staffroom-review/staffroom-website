@@ -129,3 +129,33 @@ When an edition is itself a standalone published editorial work, it receives its
 
 New newsletter editions pass the same retrieval and overlap check before publication, especially when an edition develops an idea already used in a Staffroom story.
 
+## Implemented weekly delivery system
+
+The newsletter is now connected to the Staffroom story system through a guarded weekly workflow.
+
+### Audience model
+
+- Free subscribers receive approximately two-thirds of the newsletter content, curated directly from stories published that week.
+- Paid subscribers receive the same free section plus approximately one-third premium content.
+- The premium piece is itself a registry story with its own Story ID.
+- Resend Contacts stores subscriber status; Resend segments separate Free and Paid recipients.
+
+### Editorial and send safeguards
+
+Every issue passes two approval stages before it can be sent:
+
+1. Editorial approval after story retrieval, overlap checks and content-balance validation.
+2. Final approval after both Free and Paid email versions are rendered and checked.
+
+The editor then explicitly activates the send. The weekly Vercel Cron can send only an approved, armed issue.
+
+### Free-first infrastructure
+
+The initial system uses the existing Vercel project plus Resend's current free marketing capabilities. No additional application database is required at launch.
+
+Current references:
+- Resend marketing: https://resend.com/products/marketing-emails
+- Resend pricing: https://resend.com/pricing/
+- Vercel Cron: https://vercel.com/docs/cron-jobs/usage-and-pricing
+
+The implementation and one-time account setup details are in `docs/newsletter-system.md`.
