@@ -39,7 +39,6 @@ export default function Footer() {
         </div>
         <div className="site-footer__bottom">
           <span>© 2026 Staffroom Review</span>
-          <span>Independent · Editorial · Human</span>
         </div>
       </div>
     </footer>
