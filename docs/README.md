@@ -71,3 +71,7 @@ Detailed rules: `docs/story-management-system.md`. Verification utility: `lib/st
 The Staffroom Letter is now a first-class weekly product. The canonical story registry supplies eligible weekly stories; `data/newsletter-workflow.js` stores the current issue and approval state; Resend provides the subscriber/contact and Broadcast layer; Vercel Cron provides the weekly scheduler.
 
 The complete operating rules are in `docs/newsletter-system.md`, with product/content definition in `docs/newsletter-architecture.md`.
+
+## Events specialist destination
+
+The Events phase is now implemented at `/events`. Its specification is governed by `docs/events-architecture.md`. Events is a specialist programme surface, not an additional editorial story family.
