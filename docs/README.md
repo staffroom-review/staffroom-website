@@ -58,3 +58,10 @@ Every new story—whether written by Staffroom Review/AI, supplied by a human co
 
 The detailed operating rules are in `docs/story-management-system.md`; the reusable overlap/retrieval utility is `lib/story-verification.js`.
 
+## Story management and verification
+
+The canonical story index is `data/story-registry.js`, with the human-readable inventory in `docs/story-mastercopy.md` and removed-story history in `docs/story-archive.md`.
+
+Every new story—whether AI-written, human-written or collaborative—uses the same Story Intake process. Before upload or publication, related stories are retrieved and checked for duplicate concepts, substantial overlap, placement/format mismatch and possible contradictions. The result is advisory; the editor has final authority and may explicitly override it, with the override recorded.
+
+Detailed rules: `docs/story-management-system.md`. Verification utility: `lib/story-verification.js`.
