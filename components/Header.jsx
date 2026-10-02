@@ -5,7 +5,7 @@ const nav = [
   { label: "Schools", href: "/schools" },
   { label: "Ideas", href: "/ideas" },
   { label: "World", href: "/world" },
-  { label: "Voices", href: "/" },
+  { label: "Voices", href: "/voices" },
 ];
 
 const specialistNav = [
