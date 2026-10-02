@@ -288,3 +288,15 @@ The registry and verification utility should be updated whenever the content mod
 ## Archived stories remain in the registry
 
 Retired stories keep their original Story ID with `editorialStatus: "archived"` in `data/story-registry.js`; `docs/story-archive.md` stores the removal details. This keeps archived work available to future verification checks without treating it as active editorial inventory.
+
+## Newsletter relationship
+
+The weekly newsletter uses the same Story Registry.
+
+Before a story is included:
+- retrieve the week's eligible stories;
+- use Story Verification for the premium piece and any newly drafted editorial material;
+- retain the Story ID of every underlying story;
+- do not create a duplicate master record merely because a story appears in an email.
+
+The two-thirds free / one-third paid balance is a newsletter presentation rule, not a new story taxonomy.
