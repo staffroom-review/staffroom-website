@@ -156,3 +156,7 @@ The visible story propositions use production-quality headlines, deks, explicit 
 The Schools primary navbar and footer links now resolve to /schools. Other unbuilt navbar destinations remain unchanged until their individual phases.
 
 **Approval gate:** Schools implementation is complete. Stop here for live visual review and approval of the Schools page before proceeding to Ideas.
+
+
+### Deployment retry — October 2, 2026
+A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
