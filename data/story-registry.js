@@ -757,6 +757,18 @@ export function getStoriesBySection(section) {
   );
 }
 
+export function getStoryBySlug(slug) {
+  return storyRegistry.find((story) => story.slug === slug) || null;
+}
+
+export function getStoriesByStatus(status) {
+  return storyRegistry.filter((story) => story.editorialStatus === status);
+}
+
+export function getActiveStories() {
+  return storyRegistry.filter((story) => !["archived", "hold"].includes(story.editorialStatus));
+}
+
 export function getStoriesByTag(tag) {
   const needle = tag.toLowerCase();
   return storyRegistry.filter((story) =>
