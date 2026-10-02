@@ -374,3 +374,20 @@ Hechinger reports 250,000+ monthly website views and 50,000+ newsletter subscrib
 ### The Ken
 
 The Ken describes its longform stories as averaging 2,500–3,000 words, with sampled education stories in the 11–16 minute range. Its article pages pair headline/dek/byline/date/read-time with summary bullets, topic metadata, author context and a newsletter/subscription pathway. Staffroom Review should borrow the discipline and reading rhythm, not The Ken's business-news voice. https://the-ken.com/blog/telling-visual-stories-within-stories/ https://the-ken.com/story/hard-selling-was-edtechs-undoing-cuemath-has-the-opposite-problem/ https://the-ken.com/story/reliance-jiofy-edtech-embibe/
+
+## Story registry, intake and verification
+
+All story formats in this document feed a single canonical story registry. Each underlying story receives one permanent Story ID and one master record, regardless of whether it is AI-written, human-written or collaborative.
+
+Before a story is uploaded or published, Staffroom Review must run the Story Intake and Verification process defined in `docs/story-management-system.md`. The check retrieves related stories and reviews:
+
+- duplicate or near-duplicate concepts
+- substantial thematic or narrative overlap
+- repeated examples or central arguments
+- placement/format mismatch
+- possible contradiction with earlier Staffroom Review claims or facts
+
+The automated utility is a retrieval/flagging aid rather than a publishing authority. A positive match means the candidate should be compared; it does not by itself prohibit publication. The editor may override the result and the override must be recorded.
+
+The registry also preserves author type and AI involvement so future verification can distinguish Staffroom-generated work from human-contributed work without treating provenance as a quality judgement.
+
