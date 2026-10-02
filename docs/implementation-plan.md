@@ -297,3 +297,12 @@ Implemented:
 The implementation is intentionally conditional: if `NEXT_PUBLIC_GA_MEASUREMENT_ID` is absent, no analytics script or tracking runs. This preserves the existing site behaviour until the production property is configured.
 
 **Dashboard presentation requirement:** before dashboard UI implementation, docs/analytics-architecture.md now defines a high-tech visual system using KPI cards, ring/donut charts, bar charts, trend/area charts, sparklines, funnels, heatmaps and editorial recommendation cards. Tables remain supporting detail only; a table-only dashboard is explicitly out of scope.\n\n**Approval gate:** stop after production build and live data verification. Do not begin private authentication until the editor confirms the collection layer is working.
+
+
+## Analytics private access — implementation checkpoint
+
+Private analytics access is now implemented with Clerk for Next.js 16, including the root `proxy.ts`, Clerk provider, sign-in/sign-up routes and a server-side single-account allowlist on `/analytics`. The dashboard remains visually specified but not yet built; its required high-tech visual system is documented in `docs/analytics-architecture.md`.
+
+**Required configuration before approval:** connect Clerk through Vercel Marketplace, configure the editor's Clerk account, and set `ANALYTICS_ALLOWED_EMAIL` in Vercel Production to the exact authorised account email. Verify unauthenticated, authorised and unauthorised access on production.
+
+**Approval gate:** once private access is verified, build the analytics dashboard shell and visualisation system. Do not proceed to editorial intelligence until the shell is visually approved.
