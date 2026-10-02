@@ -907,9 +907,52 @@ img, svg { display: block; max-width: 100%; }
     padding-inline: 0;
     border-inline: 0;
   }
-  .feature-chapter-side {
+  .feature-chapter-side,
+  .central-side,
+  .feature-support__rail,
+  .recommend-column,
+  .opening-side,
+  .opening-support,
+  .collection-column {
+    width: 100%;
+    min-width: 0;
+  }
+  .feature-chapter-side,
+  .central-side,
+  .feature-support__rail {
     gap: 0;
   }
+
+  .feature-support__rail .story,
+  .central-side .story,
+  .feature-chapter-side .story {
+    width: 100%;
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px dotted var(--rule);
+  }
+
+  .feature-support__rail .story:first-child,
+  .central-side .story:first-child,
+  .feature-chapter-side .story:first-child {
+    padding-top: 0;
+  }
+
+  .feature-support__rail .story:last-child,
+  .central-side .story:last-child,
+  .feature-chapter-side .story:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .opening-side--left .story {
+    margin-bottom: 24px;
+  }
+
+  .opening-side--left .side-promotional-art {
+    width: 100%;
+  }
+
   .opening-feature { order: 1; }
   .opening-side { order: 2; }
   .opening-support { order: 3; }
