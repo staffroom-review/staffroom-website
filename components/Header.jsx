@@ -14,7 +14,7 @@ const specialistNav = [
 ];
 
 const moreNav = [
-  { label: "Podcasts", href: "/" },
+  { label: "Podcasts", href: "/podcasts" },
   { label: "Learning", href: "/" },
   { label: "Visual Essays", href: "/" },
   { label: "Blog", href: "/blog" },
