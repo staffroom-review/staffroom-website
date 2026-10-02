@@ -1,5 +1,5 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export const metadata = {
   title: "Analytics | Staffroom Review",
@@ -10,7 +10,7 @@ export default async function AnalyticsPage() {
   const { userId } = await auth();
 
   if (!userId) {
-    return null;
+    redirect("/sign-in?redirect_url=/analytics");
   }
 
   const user = await currentUser();
