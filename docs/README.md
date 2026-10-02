@@ -75,3 +75,8 @@ The complete operating rules are in `docs/newsletter-system.md`, with product/co
 ## Events specialist destination
 
 The Events phase is now implemented at `/events`. Its specification is governed by `docs/events-architecture.md`. Events is a specialist programme surface, not an additional editorial story family.
+
+
+## Analytics system
+
+`docs/analytics-architecture.md` is the authoritative analytics measurement framework. The analytics build is intentionally staged before the remaining specialist destinations: measurement contract → collection foundation → private access → dashboard shell → editorial intelligence → verification/approval. The dashboard is private and uses real measured data only; recommendations are explicitly distinguished from measured facts. The initial provider strategy is GA4 + Search Console, with Vercel Web Analytics as an optional reference and a future server-side normalization layer.
