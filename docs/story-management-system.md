@@ -300,3 +300,48 @@ Before a story is included:
 - do not create a duplicate master record merely because a story appears in an email.
 
 The two-thirds free / one-third paid balance is a newsletter presentation rule, not a new story taxonomy.
+
+## Article page and body content model
+
+Full-length article bodies are stored separately from the canonical story registry.
+
+### Canonical separation
+
+data/story-registry.js remains the source of truth for story identity, metadata, authorship/provenance, status, placement and publication state.
+
+data/story-articles.js stores the full article body for each Story ID. This separation prevents article copy from becoming mixed with page-placement metadata and makes the same article reusable across homepage, navbar pages, search, newsletter and related-story surfaces.
+
+### Public publication gate
+
+A story becomes publicly readable at /stories/[slug] only when:
+- its editorialStatus is published or updated; and
+- a corresponding data/story-articles.js entry exists with article body blocks.
+
+Placeholder, hold, drafting, editing, approved and scheduled records are not rendered as public article pages.
+
+### Supported article blocks
+
+The initial article renderer supports:
+- paragraphs;
+- section headings;
+- pull quotes with optional attribution;
+- lists;
+- inline images with alt text, captions and credits;
+- source notes;
+- source lists.
+
+The model can be extended later for format-specific modules without changing the Story ID or the page registry.
+
+### Article URL rule
+
+The canonical public article path is /stories/<story-slug>.
+
+The Story ID remains permanent even if the title or slug changes. publication.articleUrl records the real public URL once the article is live.
+
+### Content production rule
+
+Full-length content is produced one page at a time. All eligible homepage stories are completed and QA-checked before work begins on the Stories page, then the same sequence continues through the remaining navbar pages.
+
+Human/editorial-designated stories are supplied by the human editor/contributor. Staffroom-designated stories may be drafted by the AI workflow. Authorship and AI involvement must remain accurately recorded in the registry.
+
+The article-page implementation is a presentation system, not permission to publish placeholder copy as if it were finished work.
