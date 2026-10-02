@@ -2,6 +2,7 @@ import "./globals.css";
 import { Archivo, Lora } from "next/font/google";
 import Script from "next/script";
 import Analytics from "../components/Analytics";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const lora = Lora({ subsets: ["latin"], variable: "--font-lora", preload: true, display: "swap", weight: ["400", "500", "600", "700"], style: ["normal", "italic"] });
 const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap", weight: ["400", "500", "600", "700"] });
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${lora.variable} ${archivo.variable}`}>
+        <ClerkProvider>
         {measurementId ? (
           <>
             <Script src={"https://www.googletagmanager.com/gtag/js?id=" + measurementId} strategy="afterInteractive" />
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
           </>
         ) : null}
         {children}
+        </ClerkProvider>
       </body>
     </html>
   );
