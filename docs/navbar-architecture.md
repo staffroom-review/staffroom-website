@@ -219,3 +219,10 @@ Events is now implemented at `/events` as a specialist programme hub. It is inte
 The Events header link now resolves to `/events`, and the footer includes Events. The remaining More destinations stay staged until their dedicated phases.
 
 **Approval gate:** Events implementation is complete. Stop here for visual review and approval before continuing with the remaining specialist destinations.
+
+
+## Analytics prerequisite before remaining specialist destinations
+
+Before the remaining More destinations are implemented, the approved private analytics phase will proceed as a separate, staged product build. Its authoritative specification is `docs/analytics-architecture.md`.
+
+The analytics phase does not change the public navigation taxonomy. It adds a private `/analytics` destination and proceeds through measurement, collection, authentication, dashboard and editorial-intelligence checkpoints. The next public specialist destination may resume only after the analytics phase has reached its documented approval gate.
