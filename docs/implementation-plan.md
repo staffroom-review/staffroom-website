@@ -157,6 +157,16 @@ The Schools primary navbar and footer links now resolve to /schools. Other unbui
 
 **Approval gate:** Schools implementation is complete. Stop here for live visual review and approval of the Schools page before proceeding to Ideas.
 
+## Ideas page — implementation checkpoint
+
+The fifth navbar page, Ideas, is now implemented as the first Family 3 destination. Its composition shifts from topic-led discovery toward ideas, interpretation and long-form reading: a signature essay opening with a contextual note, a three-column set of arguments, a long-read feature package, a quieter small-ideas stream and a restrained closing pathway.
+
+The visible story propositions use production-quality headlines, deks, explicit formats and representative reading-time metadata in line with docs/editorial-content-strategy.md. Full article bodies remain deferred until the approved page family reaches the Article Body Expansion stage.
+
+The Ideas primary navbar and footer links now resolve to /ideas. Other unbuilt primary destinations remain unchanged until their individual phases.
+
+**Approval gate:** Ideas implementation is complete. Stop here for live visual review and approval of the Ideas page before proceeding to World.
+
 
 ### Deployment retry — October 2, 2026
 A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
