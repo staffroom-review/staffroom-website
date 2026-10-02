@@ -296,4 +296,4 @@ Implemented:
 
 The implementation is intentionally conditional: if `NEXT_PUBLIC_GA_MEASUREMENT_ID` is absent, no analytics script or tracking runs. This preserves the existing site behaviour until the production property is configured.
 
-**Approval gate:** stop after production build and live data verification. Do not begin private authentication until the editor confirms the collection layer is working.
+**Dashboard presentation requirement:** before dashboard UI implementation, docs/analytics-architecture.md now defines a high-tech visual system using KPI cards, ring/donut charts, bar charts, trend/area charts, sparklines, funnels, heatmaps and editorial recommendation cards. Tables remain supporting detail only; a table-only dashboard is explicitly out of scope.\n\n**Approval gate:** stop after production build and live data verification. Do not begin private authentication until the editor confirms the collection layer is working.
