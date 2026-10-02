@@ -126,6 +126,13 @@ img, svg { display: block; max-width: 100%; }
   justify-content: center;
   border: 0;
 }
+@media (min-width: 701px) {
+  .site-header__navrow {
+    margin-top: 22px;
+    margin-bottom: -22px;
+  }
+}
+
 .site-header__navrow::before,
 .site-header__navrow::after {
   content: "";
