@@ -223,3 +223,21 @@ The registry was seeded from the current homepage/content data, all seven implem
 Two existing editorial-state mismatches were retained as explicit registry notes rather than silently changed: `The Invisible Curriculum: Everything Teachers Teach Without Meaning To` and `What Good Teaching Looks Like Up Close` are marked `hold` in editorial source data while their current Ideas presentation exposes placeholders.
 
 **Approval gate:** Story Management & Verification is implemented. New story upload/publication work must now use this workflow before the next content-expansion phase proceeds.
+
+## Newsletter delivery system — implementation checkpoint
+
+The weekly Staffroom Letter delivery system is implemented.
+
+Implemented:
+- `data/newsletter-config.js` — cadence, audience split, threshold and approval policy.
+- `data/newsletter-workflow.js` — weekly issue state with two approvals and a manual send-armed switch.
+- `lib/newsletter-system.js` — weekly story curation, balance validation, premium overlap checking and Free/Paid email rendering.
+- `app/api/newsletter/subscribe/route.js` — free subscriber capture into Resend Contacts.
+- `app/api/newsletter/cron/route.js` — guarded weekly Resend Broadcast delivery.
+- `vercel.json` — Sunday 09:00 IST weekly Cron.
+- `.env.example` — required deployment configuration.
+- `docs/newsletter-system.md` — operational documentation and one-time setup.
+
+The subscriber database is provided by Resend Contacts at the free starting stage; no second database service is required.
+
+**Approval gate:** the code and documentation are implemented, but live sending remains disabled until the Resend account, verified sending domain, segment IDs and Vercel environment variables are configured. The workflow begins with `sendArmed: false` and cannot send without both approvals, both checks and explicit activation.
