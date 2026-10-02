@@ -119,3 +119,13 @@ No archive technology is required in the first placeholder implementation.
 - keyboard focus must be visible
 - page must remain usable without JavaScript
 - email capture provider can be integrated later without redesigning the editorial page
+
+
+## Story registry relationship
+
+Newsletter editions use the same editorial content system. A newsletter can point to an existing story record without creating a duplicate underlying story.
+
+When an edition is itself a standalone published editorial work, it receives its own Story ID. When it packages an existing story, it retains the relationship to the underlying Story ID.
+
+New newsletter editions pass the same retrieval and overlap check before publication, especially when an edition develops an idea already used in a Staffroom story.
+
