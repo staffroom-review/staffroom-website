@@ -16,7 +16,7 @@ Primary navbar:
 - Events
 - More
 
-Newsletter is a direct top-level link to /newsletter. Events is exposed as a top-level navigation item but remains staged at / until an Events destination is built.
+Newsletter is a direct top-level link to /newsletter. Events is a direct top-level link to /events and is now implemented as the first specialist destination.
 
 The **More** item uses a collapsible menu containing:
 - Podcasts
@@ -24,7 +24,7 @@ The **More** item uses a collapsible menu containing:
 - Visual Essays
 - Blog
 
-Newsletter and Events are direct top-level navigation items. Newsletter resolves to /newsletter. Blog resolves to /blog. Events, Podcast, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
+Newsletter and Events are direct top-level navigation items. Newsletter resolves to /newsletter. Events resolves to /events. Blog resolves to /blog. Podcasts, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
 
 ## Design principle
 
@@ -212,3 +212,10 @@ During each page build, visible story propositions should be checked against the
 
 When a new article is prepared for upload, the full Story Intake and Verification process applies before final publication placement.
 
+### Phase 8 — Events specialist destination checkpoint
+
+Events is now implemented at `/events` as a specialist programme hub. It is intentionally distinct from the seven editorial page families: the page presents a lead event series, proposed upcoming programme, programme principles and event formats rather than another story grid.
+
+The Events header link now resolves to `/events`, and the footer includes Events. The remaining More destinations stay staged until their dedicated phases.
+
+**Approval gate:** Events implementation is complete. Stop here for visual review and approval before continuing with the remaining specialist destinations.
