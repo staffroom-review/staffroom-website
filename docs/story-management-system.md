@@ -345,3 +345,16 @@ Full-length content is produced one page at a time. All eligible homepage storie
 Human/editorial-designated stories are supplied by the human editor/contributor. Staffroom-designated stories may be drafted by the AI workflow. Authorship and AI involvement must remain accurately recorded in the registry.
 
 The article-page implementation is a presentation system, not permission to publish placeholder copy as if it were finished work.
+
+
+## Authorship/byline production gate — October 3, 2026
+
+For implementation purposes, visible byline state determines who supplies the manuscript:
+- **Staffroom Review** byline or **no visible byline** → Staffroom/AI-assisted article-body production is permitted, subject to verification and editorial QA.
+- **Editorial** byline on a **Long Read** → human-written manuscript; AI must not invent, expand or replace the body. The Editorial Team supplies the copy.
+
+The registry must preserve the provenance state and the article page must not imply human authorship where the Staffroom/AI workflow produced the body.
+
+### Section-by-section live approval workflow
+
+For the Homepage, production proceeds one section at a time. Each section is independently intake-verified, expanded, routed, deployed and presented for live editorial verification. No subsequent section may be implemented until the preceding section is explicitly approved.
