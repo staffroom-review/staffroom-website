@@ -435,3 +435,18 @@ A story is ready for publication only after:
 - accessibility and final copy QA are complete.
 
 The shared article route is deliberately gated so placeholder and held stories cannot become public articles before these conditions are met.
+
+
+## Authorship and AI-use clarification — October 3, 2026
+
+The visible byline is the production gate for article-body authorship:
+- **Staffroom Review** byline or **no visible byline**: the piece may be written by the AI-assisted Staffroom workflow, with human/editorial review, verification and publication approval.
+- **Editorial** byline on a **Long Read**: the manuscript is human-written and must be supplied by the Editorial Team. AI must not invent, extend or substitute for the manuscript.
+
+This is a provenance rule, not a quality judgement. The publication must accurately preserve the intended authorship state in the registry and article presentation.
+
+### Staged homepage article expansion
+
+Full-length homepage production must be performed **section by section**, not as a single batch. Each section is completed to the applicable format-specific length band, style and article model; then the live site is reviewed before the next section begins. The editor's approval is the gate between sections.
+
+A story is not considered complete merely because it has a plausible body. It must meet the applicable length band, headline/dek rules, opening and body-structure standards, sourcing/attribution requirements, image/credit requirements, SEO metadata, author/byline requirements, accessibility requirements and Story Intake & Verification workflow.
