@@ -358,3 +358,34 @@ The registry must preserve the provenance state and the article page must not im
 ### Section-by-section live approval workflow
 
 For the Homepage, production proceeds one section at a time. Each section is independently intake-verified, expanded, routed, deployed and presented for live editorial verification. No subsequent section may be implemented until the preceding section is explicitly approved.
+
+## Authorial voice as a registry field — October 3, 2026
+
+Authorial voice is part of story production metadata. It is not an author identity and must not be used to imply that a named human wrote a Staffroom-generated article.
+
+Use one of the six standard voices defined in `docs/editorial-content-strategy.md`:
+1. Quiet Observer
+2. Systems Mapper
+3. Human Portraitist
+4. Evidence Interpreter
+5. Working Practitioner
+6. Productive Contrarian
+
+For each full-length story, record:
+- `authorialVoice`
+- two story-specific variation choices
+- the key verified sources/case studies used
+- geography of evidence where relevant (India, international or comparative)
+
+The voice is a drafting constraint, not a formula. The verification system must still prevent invented scenes, quotes, studies, statistics or composite case studies being presented as real.
+
+### Byline and voice gate
+
+- Staffroom Review/no visible byline: assign a voice and allow AI-assisted drafting within the documented format.
+- Long Read with an Editorial byline: do not invent or expand the manuscript; the Editorial Team supplies the human-written text. The voice field may describe the intended editorial treatment but does not authorise AI generation.
+- Human contributor byline: preserve the contributor's voice unless the editor commissions a substantive edit; do not rewrite into a Staffroom voice without editorial instruction.
+
+### Evidence integration gate
+
+Before publication, verify material factual claims and use authentic case studies wherever available. India-centric sections should preferentially use Indian primary/official sources, documented Indian schools/programmes and Indian research. International sections should use relevant international sources and cases. Source material should be integrated into the narrative and attributed where necessary rather than appended as a defensive disclaimer.
+
