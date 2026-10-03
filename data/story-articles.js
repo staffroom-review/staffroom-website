@@ -44,6 +44,42 @@ const imageBlock = (image, caption) => ({
 });
 
 export const storyArticles = {
+
+  "SR-2026-0003": {
+    readingTime: "8 min read",
+    metaDescription: "The first lesson of the day can reveal more about a school than a timetable can: tiredness, attention and the conditions teachers inherit before teaching begins.",
+    hero: imageBlock(images.hero, "The first lesson begins with conditions the teacher did not create."),
+    blocks: [
+      { type: "paragraph", text: "The first lesson of the day has a particular kind of quiet. It is not necessarily silence. Chairs move. Bags open. Someone asks what page the class is on. A few students are already talking. Others are looking at the clock as though the day has begun too early for them to be ready for it." },
+      { type: "paragraph", text: "Teachers learn to read these small signs quickly. The class is not simply tired or awake. It has a temperature. Some students are alert. Some are slow to start. Some have arrived carrying yesterday into today. Before the lesson has properly begun, the teacher is already deciding how much of the plan the room can carry." },
+      { type: "heading", level: 2, text: "The timetable does not tell the whole story" },
+      { type: "paragraph", text: "A timetable describes where a class should be and when. It cannot describe what happened before the bell. A student may have travelled a long way. Another may have had a difficult morning. A class may have come straight from an assembly, a test, a crowded corridor or a lesson that demanded sustained concentration." },
+      { type: "paragraph", text: "None of this means a teacher should lower expectations whenever a class looks tired. It means that expectations and conditions are not separate things. The same task can require different amounts of explanation, time or encouragement depending on the state of the room." },
+      { type: "heading", level: 2, text: "Tiredness is not always visible" },
+      { type: "paragraph", text: "The most obvious sign is restlessness. Students talk, move, look away or take longer to begin. But tiredness can also look like compliance. A class can sit quietly and complete very little thinking. Students may copy an answer without processing it, avoid asking questions or simply wait for the teacher to carry the lesson." },
+      { type: "paragraph", text: "This is why the first few minutes matter. They give the teacher information. Are students able to retrieve what they learned previously? Do they understand the first instruction? Are they making the kind of mistakes that suggest confusion, or the kind that suggest they have not fully engaged? The answers can change what happens next." },
+      { type: "heading", level: 2, text: "The first decision is often about pace" },
+      { type: "paragraph", text: "A tired class does not necessarily need an easier lesson. It may need a clearer beginning. A short retrieval task can create a route into the subject. A worked example can reduce the number of decisions students have to make at once. A question that requires everyone to think before anyone answers can bring a scattered room back together." },
+      { type: "paragraph", text: "Sometimes the right response is simply to slow down. The teacher explains one idea rather than three. The class spends longer with an example. Students are given enough time to formulate an answer before the next question arrives." },
+      { type: "quote", text: "The first few minutes of a lesson tell a teacher what the plan cannot.", attribution: "Staffroom Review" },
+      { type: "heading", level: 2, text: "But tiredness is not a classroom problem to solve alone" },
+      { type: "paragraph", text: "It is tempting to treat every difficulty visible in a classroom as a teaching technique problem. If students are tired, perhaps the starter needs to be better. If attention drifts, perhaps the teacher needs a stronger routine. Those things can help. They do not explain everything." },
+      { type: "paragraph", text: "School days are designed by systems as well as teachers. Start times, travel, breaks, lesson sequencing, homework expectations, assessment schedules and the number of transitions students make all shape the conditions in which learning takes place. A teacher can respond skilfully to those conditions without being able to change them." },
+      { type: "heading", level: 2, text: "What teachers notice before anyone measures it" },
+      { type: "paragraph", text: "Some of the most useful information arrives before a formal measure does. A teacher sees that a normally confident student is unusually quiet. A class takes longer to settle after a particular transition. The same group becomes more engaged after discussion than after silent work. None of these observations is a diagnosis. They are clues." },
+      { type: "paragraph", text: "Good teaching makes room for those clues without turning them into stories about children that the evidence cannot support. A tired student is not necessarily lazy. A quiet student is not necessarily disengaged. A restless class is not necessarily badly behaved." },
+      { type: "heading", level: 2, text: "The lesson can still begin" },
+      { type: "paragraph", text: "There is a practical comfort in remembering that a lesson does not need perfect conditions to be worthwhile. The teacher can begin with what is available: a question, a text, a problem, an example. The work can become more precise as the room becomes more settled." },
+      { type: "paragraph", text: "The skill is not to diagnose the whole school day from the first five minutes. It is to notice enough to make the next decision intelligently." },
+      { type: "paragraph", text: "That may mean changing the order of activities, giving an extra minute, pairing students differently, revisiting something assumed to be secure, or deciding that the original plan is still the right one. Professional judgement is often less dramatic than a new teaching strategy. It is the ability to notice what is happening and respond without losing sight of what the class came to learn." },
+      { type: "heading", level: 2, text: "A school reveals itself in the first period" },
+      { type: "paragraph", text: "The first lesson is therefore more than an opening slot on a timetable. It is a small window into how a school has organised time, attention and expectations. It shows what teachers have to work around and what students are being asked to carry." },
+      { type: "paragraph", text: "A tired class is not a failure of teaching. It is information. The useful question is what the adults responsible for the day do with that information: whether they notice it, whether they respond proportionately, and whether they recognise the difference between a problem in the room and a condition created outside it." },
+      { type: "sourceNote", text: "This is an original Staffroom Review classroom observation piece. It does not present invented interviews, survey findings, student case studies or institutional statistics as reported evidence." },
+    ],
+    sources: [],
+  },
+
   "SR-2026-0004": {
     readingTime: "8 min read",
     metaDescription: "Meetings are meant to make school work easier. When coordination becomes the work itself, teachers lose the time that good coordination was supposed to protect.",
