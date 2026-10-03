@@ -141,6 +141,7 @@ function makeStory({
       aiInvolvement,
       editor: null,
     },
+    authorialVoice,
     editorialStatus: status,
     publication: {
       articleUrl,
