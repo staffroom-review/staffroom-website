@@ -118,6 +118,7 @@ function makeStory({
   updatedAt = null,
   newsletterEligible = false,
   notes = "",
+  verification = null,
 }) {
   const slug = slugify(title);
   const sections = [primarySection, ...placements.map((p) => p.section || p).filter(Boolean)];
@@ -149,7 +150,7 @@ function makeStory({
     },
     sourceRefs,
     notes,
-    verification: {
+    verification: verification || {
       lastChecked: null,
       outcome: "not-yet-checked",
       override: false,
@@ -196,6 +197,12 @@ export const storyRegistry = [
     articleUrl: "/stories/the-meeting-that-ate-the-school-day",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js", "data/stories.js", "data/ideas.js", "data/editorial.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0005",
@@ -666,6 +673,12 @@ export const storyRegistry = [
     articleUrl: "/stories/a-teachers-week-item-by-item",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0059",
@@ -678,6 +691,12 @@ export const storyRegistry = [
     articleUrl: "/stories/the-teacher-who-changed-the-seating-plan",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0060",
@@ -690,6 +709,12 @@ export const storyRegistry = [
     articleUrl: "/stories/a-note-on-ordinary-school-days",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0061",
@@ -702,6 +727,12 @@ export const storyRegistry = [
     articleUrl: "/stories/what-we-mean-when-we-say-good-teaching",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0062",
@@ -738,6 +769,12 @@ export const storyRegistry = [
     articleUrl: "/stories/a-school-day-is-made-of-hundreds-of-small-decisions",
     publishedAt: "2026-10-03",
     sourceRefs: ["data/content.js"],
+    verification: {
+      lastChecked: "2026-10-03",
+      outcome: "no-close-match-found",
+      override: false,
+      overrideNote: "",
+    },
   }),
   makeStory({
     id: "SR-2026-0066",
