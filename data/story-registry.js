@@ -110,6 +110,7 @@ function makeStory({
   author = "Staffroom Review",
   authorType = "Staffroom",
   aiInvolvement = "AI-drafted",
+  authorialVoice = null,
   aliases = [],
   sourceRefs = [],
   articleUrl = null,
@@ -182,6 +183,7 @@ export const storyRegistry = [
     title: "When the Class Is Tired Before First Period",
     dek: "The first lesson of the day can reveal more about a school than any timetable document. Teachers notice the signs long before a problem has a name.",
     format: "Observation",
+    authorialVoice: "Quiet Observer",
     primarySection: "Stories",
     placements: [{ section: "Homepage", url: "/" }],
     status: "published",
@@ -774,6 +776,7 @@ export const storyRegistry = [
     title: "A School Day Is Made of Hundreds of Small Decisions",
     dek: "Teaching is often described through lessons and outcomes. The lived reality is more granular: the judgement calls, interruptions, recoveries and quiet acts of care that make a school day work.",
     format: "Essay",
+    authorialVoice: "Systems Mapper",
     status: "published",
     primarySection: "Homepage",
     plannedArticleUrl: "/stories/a-school-day-is-made-of-hundreds-of-small-decisions",
@@ -891,7 +894,7 @@ export function searchStories(query) {
 
 export const storyRegistryMeta = {
   version: "1.0",
-  generated: "2026-10-02",
+  generated: "2026-10-03",
   canonicalSource: "data/story-registry.js",
   humanReadableIndex: "docs/story-mastercopy.md",
   archive: "docs/story-archive.md",
