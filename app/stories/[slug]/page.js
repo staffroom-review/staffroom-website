@@ -47,8 +47,6 @@ function ArticleBlocks({ blocks = [] }) {
             ) : null}
           </figure>
         );
-      case "sourceNote":
-        return <aside className={styles.sourceNote} key={index}>{block.text}</aside>;
       case "paragraph":
       default:
         return <p className={styles.paragraph} key={index}>{block.text}</p>;
