@@ -350,3 +350,26 @@ Placeholder, hold, draft and other non-public records intentionally return not f
 9. Specialist content products and the remaining More destinations.
 
 For each page, finish its eligible stories before starting the next page. Human/editorial-designated stories remain supplied by the human editor/contributor; Staffroom-designated AI work can be drafted by the build workflow. Every story follows Story Intake and Verification before publication.
+
+
+### Authorship clarification & staged Homepage content production — October 3, 2026
+
+For full-length article production, the Story Registry's byline/provenance state is authoritative:
+- Stories carrying a **Staffroom Review** byline, or stories with **no visible byline**, are Staffroom-generated production pieces and their full-length bodies may be written by the AI-assisted build workflow, subject to Story Intake & Verification and editorial QA.
+- **Long Read** stories carrying an **Editorial** byline are human/editorial-authored. The build workflow must not invent or expand their manuscript; supplied copy must come from the Editorial Team.
+- This distinction applies to article-body production regardless of page placement.
+
+### Homepage full-length production gate
+
+Homepage article expansion is now a staged editorial process rather than a batch implementation. Complete **one homepage section at a time**, then stop for live visual/content verification and explicit editorial approval before moving to the next section. Do not populate the entire homepage article set in one implementation pass.
+
+For each section:
+1. Inspect the canonical Story Registry record and visible byline/provenance.
+2. Run Story Intake & Verification.
+3. Expand only eligible Staffroom/AI-designated stories to the documented format-specific length band and article model.
+4. Do not invent manuscripts for Editorial/Long Read or other human-designated stories.
+5. Wire completed stories to their canonical article routes and complete metadata, imagery, source notes and internal links.
+6. Deploy and pause for live verification/approval.
+7. Only after approval proceed to the next homepage section.
+
+After all homepage sections are approved, proceed to the next implementation step: create the reader-facing AI & Editorial Policy page, followed by the contributor Honour Code, before beginning the next page's full-length content sequence.
