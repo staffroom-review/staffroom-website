@@ -137,6 +137,76 @@ Avoid:
 
 EdSurge explicitly describes its editorial approach as human-centred, narrative and designed to move beyond "what happened" toward why it matters. https://www.edsurge.com/about-edsurge
 
+## Six-Voice Authorial System — October 3, 2026
+
+Staffroom Review stories must not default to one recognisable house cadence. The publication uses six distinct authorial voices. A voice is a controlled set of stylistic attributes, not a template: every story must still make fresh choices about scene, evidence, rhythm, structure and ending.
+
+### Voice 1 — The Quiet Observer
+- **Best for:** classroom observations, school-life pieces, small human moments.
+- **Texture:** close observation, physical detail, restrained interpretation, precise verbs.
+- **Rhythm:** varied sentence length; occasional short sentence for emphasis, never as a repeated device.
+- **Point of view:** close third person or impersonal observational distance; never invented access to a person's thoughts.
+- **Evidence:** documented scenes and verified context; research enters after the scene rather than replacing it.
+- **Ending instinct:** leave the reader with a changed way of seeing an ordinary moment.
+- **Avoid:** repeated “first few minutes” openings, generic classroom atmosphere, sentimental conclusions.
+
+### Voice 2 — The Systems Mapper
+- **Best for:** school systems, workload, timetables, institutional decisions, policy consequences.
+- **Texture:** moves between one concrete detail and the larger system it reveals.
+- **Rhythm:** clean, architectural paragraphs; transitions should change scale rather than announce the next section.
+- **Point of view:** analytical but human; institutions are described through their effects on people.
+- **Evidence:** Indian administrative data, policy documents and documented cases should carry the argument.
+- **Ending instinct:** return to the human consequence rather than restating the thesis.
+- **Avoid:** “the system is broken” shorthand, generic problem/solution structures, excessive abstractions.
+
+### Voice 3 — The Human Portraitist
+- **Best for:** profiles, first-person-adjacent reported stories, contributor-led human stories.
+- **Texture:** character revealed through choices, habits, language and specific actions rather than praise.
+- **Rhythm:** narrative momentum with dialogue or attributed detail where genuinely reported.
+- **Point of view:** intimate but disciplined; no invented dialogue, motives or interiority.
+- **Evidence:** named people, places and documented events; context should complicate the portrait.
+- **Ending instinct:** an image, decision or unresolved tension that belongs to the person.
+- **Avoid:** inspirational-profile clichés, résumé-style biographies, manufactured quotes.
+
+### Voice 4 — The Evidence Interpreter
+- **Best for:** research, data, education trends, comparative analysis and evidence-led features.
+- **Texture:** starts with a real question, then lets evidence alter or complicate the reader's initial assumption.
+- **Rhythm:** data is embedded in prose and examples; tables/lists appear only when they clarify.
+- **Point of view:** curious, sceptical and fair; distinguishes finding, inference and opinion.
+- **Evidence:** primary research, official Indian data and named studies first; international evidence only where it adds explanatory value.
+- **Ending instinct:** identify what the evidence changes—and what it cannot establish.
+- **Avoid:** statistic dumps, false certainty, treating correlation as causation, using a study as decoration.
+
+### Voice 5 — The Working Practitioner
+- **Best for:** practical teaching, classroom craft, school routines and useful professional guidance.
+- **Texture:** concrete, generous and experience-aware without pretending to have personal classroom experience.
+- **Rhythm:** action, example, complication, adjustment; advice emerges from the situation rather than appearing as a checklist.
+- **Point of view:** reader-facing when useful, but not instructional in every paragraph.
+- **Evidence:** documented practice, teacher voices and verified examples; distinguish an example from a general recommendation.
+- **Ending instinct:** a practical question or choice the reader can carry into their own setting.
+- **Avoid:** “five easy tips” formula, universal claims, productivity language, false first-person experience.
+
+### Voice 6 — The Productive Contrarian
+- **Best for:** Ideas, essays, op-eds and arguments that challenge a familiar education assumption.
+- **Texture:** starts from a plausible belief, tests it, concedes what is true, then makes a narrower and more defensible claim.
+- **Rhythm:** argumentative turns, controlled provocation, occasional dry wit; no manufactured controversy.
+- **Point of view:** unmistakably authored; claims are owned and evidence is clearly distinguished from interpretation.
+- **Evidence:** verified facts and examples are used to pressure-test the argument, not to decorate it.
+- **Ending instinct:** leave the reader with a sharper question rather than a slogan.
+- **Avoid:** contrarianism for its own sake, false binaries, rhetorical repetition, “what if everything we know is wrong?” openings.
+
+### Voice selection and variation rules
+1. Assign one primary voice before drafting and record it in the Story Registry.
+2. Two adjacent stories in the same homepage section should normally use different voices.
+3. The same voice may recur elsewhere, but not with the same opening device, paragraph rhythm, subhead pattern, evidence placement or closing move.
+4. Every article must contain at least two **variation choices** selected for that story: opening mode, narrative distance, evidence placement, sentence rhythm, use of subheads, scene-to-analysis ratio, ending mode or use of a recurring motif.
+5. Never begin every story with a classroom scene, a timetable, a question, a statistic or a declarative thesis merely because a voice often permits it.
+6. A voice is successful only if a reader can sense a different writerly intelligence without being able to predict the next paragraph.
+7. If two drafts feel structurally interchangeable after removing their names, rewrite one before publication.
+8. Authenticity takes priority over voice: never invent a scene, quote, case study, statistic, study result or first-hand experience to make a voice feel more distinctive.
+9. India-centric stories should preferentially use verified Indian cases, datasets, studies and institutional evidence. World/International stories should use relevant international evidence and cases. Comparative stories should make the geography explicit.
+10. Evidence should disappear into the prose naturally: identify the source and what it actually establishes, then return to the story. Do not bolt a research paragraph onto an otherwise unrelated narrative.
+
 ## Body structure
 
 Default long-form structure:
@@ -290,6 +360,13 @@ idea → pitched → commissioned → drafting → editing → approved → sche
 hold can sit alongside this as a controlled publication state.
 
 ## Content expansion workflow
+
+### Required writing pass for every full-length story
+
+Before drafting, record the story's authorial voice and two variation choices. Then run the Story Intake & Verification check and gather the strongest available primary sources. Draft from verified material outward, allowing the voice to shape selection, sequence and emphasis rather than inventing material. After drafting, perform a voice-collision check against the two nearest published stories: compare opening, rhythm, evidence placement, subheads and ending. Rewrite if the stories feel formulaically related.
+
+Case-study rule: use authentic, attributable case studies wherever a story benefits from one. A case study may be a documented school, teacher, programme, research project, classroom observation or institutional decision. Never create composite or illustrative cases and present them as real. If no suitable verified case exists, write around the verified evidence rather than fabricating one.
+
 
 The current homepage placeholders are not the final article copy.
 
