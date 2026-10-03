@@ -6,6 +6,14 @@ import Feature from "../components/Feature";
 import CollectionColumn from "../components/CollectionColumn";
 import { content } from "../data/content";
 import { imagery } from "../data/imagery";
+import { getStoryBySlug, storyRegistry } from "../data/story-registry";
+
+const storyHref = (title) => {
+  const story = storyRegistry.find((item) => item.title.toLowerCase() === title.toLowerCase() || item.aliases.some((alias) => alias.toLowerCase() === title.toLowerCase()));
+  return story ? `/stories/${story.slug}` : "#story";
+};
+
+const storyMeta = (title) => storyRegistry.find((item) => item.title.toLowerCase() === title.toLowerCase() || item.aliases.some((alias) => alias.toLowerCase() === title.toLowerCase()));
 
 export default function HomePage() {
   return (
@@ -20,7 +28,7 @@ export default function HomePage() {
               <div className="opening-side opening-side--left">
                 <Story
                   eyebrow="Classrooms"
-                  title={content.classTired.title}
+                  title={content.classTired.title} href={storyHref(content.classTired.title)} analyticsId={storyMeta(content.classTired.title)?.id}
                   dek={content.classTired.dek}
                   variant="side"
                 />
@@ -40,7 +48,7 @@ export default function HomePage() {
                 className="opening-feature"
                 art={imagery.hero}
                 eyebrow="Stories · Teachers"
-                title={content.lead.title}
+                title={content.lead.title} href={storyHref(content.lead.title)} analyticsId={storyMeta(content.lead.title)?.id} href={storyHref(content.lead.title)} analyticsId={storyMeta(content.lead.title)?.id}
                 dek={content.lead.dek}
                 centered
                 priority
@@ -71,7 +79,7 @@ export default function HomePage() {
               <Feature
                 art={imagery.staffroom}
                 eyebrow="Teachers · First Person"
-                title={content.teacherLeave.title}
+                title={content.teacherLeave.title} href={storyHref(content.teacherLeave.title)} analyticsId={storyMeta(content.teacherLeave.title)?.id}
                 dek={content.teacherLeave.dek}
                 centered
                 elevated
@@ -79,19 +87,19 @@ export default function HomePage() {
               <div className="feature-support__rail">
                 <Story
                   eyebrow="Voices"
-                  title={content.classNeverForget.title}
+                  title={content.classNeverForget.title} href={storyHref(content.classNeverForget.title)} analyticsId={storyMeta(content.classNeverForget.title)?.id}
                   dek="A teacher remembers the class that changed the way she understood attention, patience and time."
                   variant="side"
                 />
                 <Story
                   eyebrow="The Staffroom"
-                  title={content.staffroomUnseen.title}
+                  title={content.staffroomUnseen.title} href={storyHref(content.staffroomUnseen.title)} analyticsId={storyMeta(content.staffroomUnseen.title)?.id}
                   dek={content.staffroomUnseen.dek}
                   art={imagery.storyB}
                 />
                 <Story
                   eyebrow="The Staffroom"
-                  title={content.staffroomMakes.title}
+                  title={content.staffroomMakes.title} href={storyHref(content.staffroomMakes.title)} analyticsId={storyMeta(content.staffroomMakes.title)?.id}
                   dek={content.staffroomMakes.dek}
                 />
               </div>
@@ -108,11 +116,11 @@ export default function HomePage() {
             />
             <div className="recommend-grid">
               <div className="recommend-column recommend-column--list">
-                <Story eyebrow="Teachers" title={content.teacherLeave.title} dek={content.teacherLeave.dek} compact />
+                <Story eyebrow="Teachers" title={content.teacherLeave.title} href={storyHref(content.teacherLeave.title)} analyticsId={storyMeta(content.teacherLeave.title)?.id} dek={content.teacherLeave.dek} compact />
                 <Story eyebrow="Teachers" title={content.fiveYear.title} compact />
-                <Story eyebrow="Classrooms" title={content.classTired.title} compact />
+                <Story eyebrow="Classrooms" title={content.classTired.title} href={storyHref(content.classTired.title)} analyticsId={storyMeta(content.classTired.title)?.id} compact />
                 <Story eyebrow="Ideas" title={content.homeworkAI.title} compact />
-                <Story eyebrow="Schools" title={content.meetingAte.title} compact />
+                <Story eyebrow="Schools" title={content.meetingAte.title} href={storyHref(content.meetingAte.title)} analyticsId={storyMeta(content.meetingAte.title)?.id} compact />
               </div>
 
               <div className="recommend-column">
@@ -269,13 +277,13 @@ export default function HomePage() {
               <div className="feature-chapter-side">
                 <Story
                   eyebrow="Visual Story"
-                  title={content.visualWeek.title}
+                  title={content.visualWeek.title} href={storyHref(content.visualWeek.title)} analyticsId={storyMeta(content.visualWeek.title)?.id}
                   dek={content.visualWeek.dek}
                   art={imagery.visual}
                 />
                 <Story
                   eyebrow="Closing editorial"
-                  title={content.closing1.title}
+                  title={content.closing1.title} href={storyHref(content.closing1.title)} analyticsId={storyMeta(content.closing1.title)?.id}
                   dek={content.closing1.dek}
                   compact
                 />
@@ -284,7 +292,7 @@ export default function HomePage() {
               <Feature
                 art={imagery.longread}
                 eyebrow="Ideas · Long Read"
-                title={content.longRead.title}
+                title={content.longRead.title} href={storyHref(content.longRead.title)} analyticsId={storyMeta(content.longRead.title)?.id}
                 dek={content.longRead.dek}
                 centered
                 elevated
@@ -293,13 +301,13 @@ export default function HomePage() {
               <div className="feature-chapter-side">
                 <Story
                   eyebrow="Closing editorial"
-                  title={content.closing2.title}
+                  title={content.closing2.title} href={storyHref(content.closing2.title)} analyticsId={storyMeta(content.closing2.title)?.id}
                   dek={content.closing2.dek}
                   compact
                 />
                 <Story
                   eyebrow="Closing editorial"
-                  title={content.closing3.title}
+                  title={content.closing3.title} href={storyHref(content.closing3.title)} analyticsId={storyMeta(content.closing3.title)?.id}
                   dek={content.closing3.dek}
                   compact
                 />
