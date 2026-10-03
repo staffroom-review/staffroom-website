@@ -383,3 +383,16 @@ For each section:
 7. Only after approval proceed to the next homepage section.
 
 After all homepage sections are approved, proceed to the next implementation step: create the reader-facing AI & Editorial Policy page, followed by the contributor Honour Code, before beginning the next page's full-length content sequence.
+
+## Weekly editorial QA and live-card integrity — October 3, 2026
+
+The staged writing process is page-section based, but QA is also **page-wide and week-wide**. Before approving each section, run:
+- six-voice assignment and variation check;
+- weekly source-ledger check: no underlying source reused within the same editorial week;
+- opening-collision check across stories in the section and against other stories updated that week on the same page;
+- authentic case-study/evidence check;
+- registry → canonical URL → article-body → live-route check for every live card;
+- mobile/tablet/desktop link verification.
+
+Chronological production permits other stories to remain placeholders. It does **not** permit a story already presented as live to resolve to a 404 or incomplete article. Each released story must therefore be independently complete and accessible.
+
