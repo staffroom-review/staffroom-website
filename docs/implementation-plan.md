@@ -192,6 +192,16 @@ The Voices primary navbar and footer links now resolve to /voices. The Family 3 
 A fresh Git commit has been pushed to re-trigger the connected Vercel production deployment after the previous deployment window appeared exhausted. Verify the resulting production deployment before treating Schools as live.
 
 
+## Authorial voice + evidence integration checkpoint — October 3, 2026
+
+The article-production workflow now uses six distinct authorial voices defined in `docs/editorial-content-strategy.md`. Each story receives one voice plus story-specific variation choices before drafting. Voices are deliberately non-formulaic: repeated openings, rhythms, subhead patterns and endings are prohibited.
+
+Full-length homepage production also now requires authentic, attributable evidence and case studies wherever suitable. India-centric sections should preferentially use verified Indian studies, official data, documented schools/programmes and reported cases. International sections should use relevant international evidence and cases. Research and case material must be integrated into the narrative rather than added as generic evidence paragraphs.
+
+The previous bottom-of-article provenance/disclaimer blocks are removed from the reader-facing article experience. Transparency and verification are handled through accurate bylines, sourcing, editorial metadata and the publication's future AI & Editorial Policy page.
+
+**Current live checkpoint:** Homepage Section 1 is being rewritten under the new voice/evidence system and must be live-verified before Section 2 begins.
+
 ## Story Management & Verification System — implementation checkpoint
 
 The story-management phase has now been implemented as a reusable editorial system rather than a one-off document set.
