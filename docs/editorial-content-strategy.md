@@ -527,3 +527,37 @@ This is a provenance rule, not a quality judgement. The publication must accurat
 Full-length homepage production must be performed **section by section**, not as a single batch. Each section is completed to the applicable format-specific length band, style and article model; then the live site is reviewed before the next section begins. The editor's approval is the gate between sections.
 
 A story is not considered complete merely because it has a plausible body. It must meet the applicable length band, headline/dek rules, opening and body-structure standards, sourcing/attribution requirements, image/credit requirements, SEO metadata, author/byline requirements, accessibility requirements and Story Intake & Verification workflow.
+
+## Weekly source and page-level opening controls — October 3, 2026
+
+These controls apply to **every published or updated story in the same editorial week**, across the Homepage and every destination page.
+
+### Source rotation
+- The same underlying source may not be used for more than one story in the same editorial week.
+- “Source” includes a named study, dataset, report, institutional publication, interview, case-study record or other primary evidence source. A different URL for the same underlying source still counts as the same source.
+- Before drafting, check the weekly source ledger and reserve sources for the story.
+- If a strong source has already been used that week, find another independently relevant source or write the story without that source.
+- A source may be reused in a later week only after the weekly ledger rolls over.
+- Source rotation must never force weaker evidence: if a material claim cannot be supported without reusing a source, flag the conflict for editorial review rather than silently weakening or duplicating evidence.
+
+### Opening collision control
+- No two stories in the same section may use the same opening mechanism.
+- This applies to the first paragraph **and its first two sentences**, not merely the first sentence.
+- The opening must be checked against other stories on the same page and against updated stories already published during the same week.
+- Vary the opening device, narrative distance, sentence construction, temporal framing, scene selection and evidence entry point.
+- In particular, do not place a time-of-day marker in one story and then reproduce the same temporal/scheduling construction in the next story.
+- If two openings feel interchangeable after removing the headlines, rewrite one.
+- This is a page-level and weekly quality-control rule, not just a six-voice rule.
+
+### Story-link completeness gate
+Every story card that is presented as a live/published story must resolve to its own canonical article URL and that article must contain a complete body. A page may contain other placeholders during chronological production, but that must never make an already-linked story inaccessible.
+
+Before a section is released:
+1. enumerate every story card in the section;
+2. resolve every card to its registry record and canonical article URL;
+3. confirm the article body exists and meets its format length band;
+4. verify the route returns successfully;
+5. only then mark the card as live.
+
+A placeholder elsewhere on the page does not excuse a broken link for a story that has been presented as live.
+
