@@ -389,3 +389,25 @@ The voice is a drafting constraint, not a formula. The verification system must 
 
 Before publication, verify material factual claims and use authentic case studies wherever available. India-centric sections should preferentially use Indian primary/official sources, documented Indian schools/programmes and Indian research. International sections should use relevant international sources and cases. Source material should be integrated into the narrative and attributed where necessary rather than appended as a defensive disclaimer.
 
+
+## Weekly evidence ledger, opening collision and route-completeness gates — October 3, 2026
+
+The Story Management System now treats three checks as mandatory publication metadata:
+
+### 1. Weekly source ledger
+Maintain a week-scoped record of the underlying evidence sources used by published/updated stories. Do not use the same underlying source twice within the same editorial week, even if the source is linked through different URLs. Record the source identity, story ID, date used and geography.
+
+### 2. Page-level opening ledger
+For every page section, record the opening mechanism of each live story (for example: observed scene, historical moment, direct proposition, data point, dialogue, object, consequence, reported action). The first paragraph and first two sentences must be compared with other stories in that section. Adjacent stories must not share the same opening construction.
+
+### 3. Route completeness
+A story is not a live card merely because it exists in the registry. A live story card requires:
+- canonical article URL;
+- published/updated status;
+- complete article body;
+- successful route;
+- correct registry-to-article mapping.
+
+Other stories may remain placeholders while content is produced chronologically, but every story exposed as live must be independently accessible. Never allow a registry slug mismatch, missing article entry or placeholder body to produce a 404 from a live card.
+
+
