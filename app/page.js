@@ -48,7 +48,7 @@ export default function HomePage() {
                 className="opening-feature"
                 art={imagery.hero}
                 eyebrow="Stories · Teachers"
-                title={content.lead.title} href={storyHref(content.lead.title)} analyticsId={storyMeta(content.lead.title)?.id} href={storyHref(content.lead.title)} analyticsId={storyMeta(content.lead.title)?.id}
+                title={content.lead.title} href={storyHref(content.lead.title)} analyticsId={storyMeta(content.lead.title)?.id}
                 dek={content.lead.dek}
                 centered
                 priority
