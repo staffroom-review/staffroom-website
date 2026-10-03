@@ -528,6 +528,18 @@ Full-length homepage production must be performed **section by section**, not as
 
 A story is not considered complete merely because it has a plausible body. It must meet the applicable length band, headline/dek rules, opening and body-structure standards, sourcing/attribution requirements, image/credit requirements, SEO metadata, author/byline requirements, accessibility requirements and Story Intake & Verification workflow.
 
+## Homepage Section 2 article-production checkpoint — October 3, 2026
+
+Section 2 (“The Staffroom”) has now been expanded as the next chronological homepage content set. Its four live stories are:
+- The Teacher Who Learned to Leave School on Time — Human Portraitist
+- The Class I'll Never Forget — Evidence Interpreter
+- The Work Nobody Sees After the Last Child Leaves — Working Practitioner
+- What a Good Staffroom Makes Possible — Productive Contrarian
+
+Each story has a distinct opening mechanism and reserved weekly evidence source. The four source families are not reused within this editorial-week set. Every live card resolves to its canonical article route and contains a complete article body.
+
+**Approval gate:** stop after live verification of Section 2. Do not begin Section 3 until the Editorial Team approves Section 2.
+
 ## Weekly source and page-level opening controls — October 3, 2026
 
 These controls apply to **every published or updated story in the same editorial week**, across the Homepage and every destination page.
