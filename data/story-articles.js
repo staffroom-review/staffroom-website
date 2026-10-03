@@ -83,7 +83,6 @@ export const storyArticles = {
     ],
     sources: [
       { label: "Singh et al., “Impact of school start time and sleep pattern of adolescents on their mood and sleep quality” — Journal of Family Medicine and Primary Care / AIIMS Bhopal", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10706506/" },
-      { label: "ASER 2024, Annexure 11: Key findings from the classroom observations", url: "https://asercentre.org/wp-content/uploads/2022/12/Annexure_11.pdf" },
     ],
   },
 
@@ -228,7 +227,7 @@ export const storyArticles = {
     hero: imageBlock(images.hero, "The school day is built from decisions too small to appear on most timetables."),
     blocks: [
       { type: "paragraph", text: "A school timetable is a useful fiction. It says mathematics begins at 9:10, English at 10:00, lunch at 12:30. It gives an institution a shape that can fit on one sheet of paper." },
-      { type: "paragraph", text: "The actual day is messier. A student has misunderstood yesterday's idea. A parent message arrives just before class. The projector refuses to cooperate. A child who usually answers everything has gone quiet. The exercise that looked right on Tuesday is wrong for this group on Wednesday. Someone has five minutes between lessons and needs to decide what those five minutes are for." },
+      { type: "paragraph", text: "The actual day refuses the neatness of the grid. A student has misunderstood yesterday's idea. A parent message arrives just before class. The projector refuses to cooperate. A child who usually answers everything has gone quiet. The exercise that looked right on Tuesday is wrong for this group on Wednesday. Someone has five minutes between lessons and needs to decide what those five minutes are for." },
       { type: "paragraph", text: "Teaching is not only the delivery of planned work. It is the management of these deviations from the plan." },
       { type: "heading", level: 2, text: "Scale makes the small decisions easy to miss" },
       { type: "paragraph", text: "India's school system is large enough to make individual judgement disappear inside the numbers. UDISE+ recorded about 1.01 crore teachers, 14.71 lakh schools and 24.69 crore students in 2024–25. At that scale, a 'teacher decision' sounds almost too small to matter." },
@@ -236,7 +235,6 @@ export const storyArticles = {
       { type: "paragraph", text: "The interesting question is not whether teachers make hundreds of decisions. They obviously do. It is what information those decisions are allowed to use." },
       { type: "heading", level: 2, text: "A classroom is an information problem" },
       { type: "paragraph", text: "Teachers rarely have complete information. They have partial signals: an answer, a pause, a raised hand, a notebook, a facial expression, a pattern repeated across three students. Good judgement is partly the ability to decide how much weight to give each signal." },
-      { type: "paragraph", text: "ASER's 2024 classroom-observation deep dive offers a useful picture of why this matters. Researchers observed 45 lessons in 24 Std II classrooms across eight states and recorded a snapshot every eight minutes. The point was not to produce a single score for each lesson. It was to see how teaching and learning activities changed over time." },
       { type: "paragraph", text: "That method resembles the work teachers do informally. The classroom is not a still photograph. It is a sequence. What was true at 9:15 may not be true at 9:23." },
       { type: "heading", level: 2, text: "The decision can change when the evidence changes" },
       { type: "paragraph", text: "Consider a more formal example. At Salma Public School in Baghpat, Uttar Pradesh, ASER Centre assessed almost all 371 students in Grades 1 to 5 in April 2024, working with ten teachers. The assessment identified gaps in foundational learning. The response was not simply to ask teachers to work harder. Teachers in Grades 1 and 2 were trained in play-based pedagogy, while teachers in Grades 3 to 5 were trained in Teaching at the Right Level for remedial instruction. An endline assessment followed in April 2025." },
