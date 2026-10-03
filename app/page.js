@@ -55,18 +55,15 @@ export default function HomePage() {
               />
 
               <aside className="opening-support">
-                <div className="support-card">
-                  <div className="support-card__icon" aria-hidden="true">▰</div>
-                  <p className="support-card__label">Most-read conversations</p>
-                  <h2>
-                    A school works because someone notices what the room needs next
-                  </h2>
-                  <p>
-                    A compact Staffroom counterpart to the reference support module:
-                    a fast entry point into the stories readers are returning to.
-                  </p>
-                  <a href="#stories">View stories</a>
-                </div>
+                <Story
+                  eyebrow="Visual Story"
+                  title={content.visualWeek.title}
+                  href={storyHref(content.visualWeek.title)}
+                  analyticsId={storyMeta(content.visualWeek.title)?.id}
+                  dek={content.visualWeek.dek}
+                  art={imagery.visual}
+                  variant="side"
+                />
               </aside>
             </div>
           </div>
