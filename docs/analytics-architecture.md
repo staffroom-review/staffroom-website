@@ -215,6 +215,27 @@ Clerk is currently the managed authentication provider because its current Hobby
 
 **Approval gate:** do not begin dashboard UI/data visualisation until private access has been verified in production.
 
+## Reporting/data layer — implementation checkpoint
+
+The server-side reporting foundation is now implemented.
+
+Implemented:
+- lib/analytics/reporting.js as the provider-agnostic reporting adapter.
+- Google Analytics 4 Data API access remains server-side and uses a short-lived OAuth service-account token generated from Vercel environment variables.
+- Normalized overview and content reports expose measured values only when the GA4 property is configured and reachable.
+- Story-level reporting is mapped back to the canonical Story Registry by URL/title rather than creating a second content database.
+- Missing provider configuration, unavailable metrics and insufficient data remain explicit states; no placeholder numbers are generated.
+- The dashboard page now consumes the reporting layer and can distinguish measured data from unavailable data.
+
+Required Vercel Production configuration for measured GA4 reporting:
+- GA4_PROPERTY_ID
+- GOOGLE_ANALYTICS_CLIENT_EMAIL
+- GOOGLE_ANALYTICS_PRIVATE_KEY
+
+The existing NEXT_PUBLIC_GA_MEASUREMENT_ID remains the browser collection identifier. Provider credentials are server-only and must never be exposed to client components.
+
+**Approval gate:** the reporting/data layer is implemented. Verify production configuration and measured GA4 receipt before adding the rule-based editorial intelligence layer.
+
 ## Dashboard shell — implementation checkpoint
 
 Private Clerk access has been verified in production and the analytics dashboard shell is implemented at /analytics.
