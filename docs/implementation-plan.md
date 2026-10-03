@@ -200,7 +200,7 @@ Full-length homepage production also now requires authentic, attributable eviden
 
 The previous bottom-of-article provenance/disclaimer blocks are removed from the reader-facing article experience. Transparency and verification are handled through accurate bylines, sourcing, editorial metadata and the publication's future AI & Editorial Policy page.
 
-**Current live checkpoint:** Homepage Section 1 is being rewritten under the new voice/evidence system and must be live-verified before Section 2 begins.
+**Current live checkpoint:** Homepage Section 2 has been expanded to full-length article bodies under the new voice/evidence/source-rotation/opening-collision system. The four Section 2 stories are live and route-verified. Stop here for live editorial approval of Section 2 before Section 3 begins.
 
 ## Story Management & Verification System — implementation checkpoint
 
