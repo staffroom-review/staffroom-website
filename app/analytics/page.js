@@ -1,5 +1,6 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { notFound, redirect } from "next/navigation";
+import { getAnalyticsReport } from "../../lib/analytics/reporting";
 
 export const metadata = {
   title: "Analytics | Staffroom Review",
@@ -82,7 +83,7 @@ function EmptyState({ label, children }) {
   );
 }
 
-function MetricCard({ label, tone = teal }) {
+function MetricCard({ label, value = "—", status = "unavailable", tone = teal }) {
   return (
     <article
       style={{
@@ -137,7 +138,7 @@ function MetricCard({ label, tone = teal }) {
             color: ivory,
           }}
         >
-          —
+          {value}
         </div>
         <p
           style={{
@@ -147,7 +148,7 @@ function MetricCard({ label, tone = teal }) {
             color: subtle,
           }}
         >
-          Data unavailable
+          {status === "measured" ? "Measured" : "Data unavailable"}
         </p>
       </div>
     </article>
@@ -222,6 +223,10 @@ export default async function AnalyticsPage() {
   if (!allowedEmail || !primaryEmail || primaryEmail !== allowedEmail) {
     notFound();
   }
+
+  const report = await getAnalyticsReport();
+  const measured = report.status === "measured";
+  const overview = report.overview || {};
 
   return (
     <main
@@ -323,7 +328,7 @@ export default async function AnalyticsPage() {
                   boxShadow: "0 0 10px " + amber,
                 }}
               />
-              Connection pending
+              {measured ? "Live GA4 reporting" : "Connection unavailable"}
             </div>
           </div>
         </header>
@@ -341,11 +346,11 @@ export default async function AnalyticsPage() {
               gap: "10px",
             }}
           >
-            <MetricCard label="Reach" />
-            <MetricCard label="Engagement" />
-            <MetricCard label="Content momentum" />
-            <MetricCard label="Search visibility" />
-            <MetricCard label="Returning readers" />
+            <MetricCard label="Reach" value={overview.users !== null && overview.users !== undefined ? overview.users.toLocaleString() : "—"} status={report.status} />
+            <MetricCard label="Engagement" value={overview.engagementRate !== null && overview.engagementRate !== undefined ? (overview.engagementRate * 100).toFixed(1) + "%" : "—"} status={report.status} />
+            <MetricCard label="Content momentum" value={overview.sessions !== null && overview.sessions !== undefined ? overview.sessions.toLocaleString() : "—"} status={report.status} />
+            <MetricCard label="Search visibility" value="—" status="unavailable" tone={amber} />
+            <MetricCard label="Returning readers" value="—" status="unavailable" tone={amber} />
           </div>
         </section>
 
@@ -384,9 +389,26 @@ export default async function AnalyticsPage() {
               gap: "10px",
             }}
           >
-            <EmptyState label="Top content">
-              Ranked editorial cards will show measured reach, engagement and trend.
-            </EmptyState>
+            {report.topContent.length ? (
+              <div style={{ border: "1px solid " + line, background: surface, padding: "24px" }}>
+                <div style={{ fontFamily: "var(--font-archivo)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: teal }}>
+                  Top content · measured
+                </div>
+                <ol style={{ margin: "18px 0 0", padding: 0, listStyle: "none" }}>
+                  {report.topContent.slice(0, 6).map((item, index) => (
+                    <li key={item.path + item.title} style={{ display: "grid", gridTemplateColumns: "28px 1fr auto", gap: "12px", alignItems: "baseline", padding: "12px 0", borderTop: index ? "1px solid " + line : "none" }}>
+                      <span style={{ fontFamily: "var(--font-archivo)", fontSize: "10px", color: subtle }}>{String(index + 1).padStart(2, "0")}</span>
+                      <span style={{ fontFamily: "var(--font-lora)", fontSize: "15px", lineHeight: 1.35 }}>{item.title || item.path}</span>
+                      <span style={{ fontFamily: "var(--font-archivo)", fontSize: "11px", color: muted }}>{item.views?.toLocaleString() ?? "—"} views</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ) : (
+              <EmptyState label={report.status === "unavailable" ? "Unavailable" : "Insufficient data"}>
+                Top-content reporting will appear when the GA4 reporting source returns usable data.
+              </EmptyState>
+            )}
             <EmptyState label="Section / format">
               Bars and comparison views will show which sections and formats receive attention.
             </EmptyState>
