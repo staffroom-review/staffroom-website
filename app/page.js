@@ -114,9 +114,9 @@ export default function HomePage() {
             <div className="recommend-grid">
               <div className="recommend-column recommend-column--list">
                 <Story eyebrow="Teachers" title={content.teacherLeave.title} href={storyHref(content.teacherLeave.title)} analyticsId={storyMeta(content.teacherLeave.title)?.id} dek={content.teacherLeave.dek} compact />
-                <Story eyebrow="Teachers" title={content.fiveYear.title} compact />
+                <Story eyebrow="Teachers" title={content.fiveYear.title} compact href={storyHref(content.fiveYear.title)} analyticsId={storyMeta(content.fiveYear.title)?.id} />
                 <Story eyebrow="Classrooms" title={content.classTired.title} href={storyHref(content.classTired.title)} analyticsId={storyMeta(content.classTired.title)?.id} compact />
-                <Story eyebrow="Ideas" title={content.homeworkAI.title} compact />
+                <Story eyebrow="Ideas" title={content.homeworkAI.title} compact href={storyHref(content.homeworkAI.title)} analyticsId={storyMeta(content.homeworkAI.title)?.id} />
                 <Story eyebrow="Schools" title={content.meetingAte.title} href={storyHref(content.meetingAte.title)} analyticsId={storyMeta(content.meetingAte.title)?.id} compact />
               </div>
 
@@ -126,10 +126,9 @@ export default function HomePage() {
                   title={content.mathLess.title}
                   dek={content.mathLess.dek}
                   art={imagery.maths}
-                  variant="image-lead"
-                />
-                <Story eyebrow="Classrooms" title={content.childSentOut.title} dek={content.childSentOut.dek} compact />
-                <Story eyebrow="Voices" title={content.teacherDifficult.title} dek={content.teacherDifficult.dek} compact />
+                  variant="image-lead" href={storyHref(content.mathLess.title)} analyticsId={storyMeta(content.mathLess.title)?.id} />
+                <Story eyebrow="Classrooms" title={content.childSentOut.title} dek={content.childSentOut.dek} compact href={storyHref(content.childSentOut.title)} analyticsId={storyMeta(content.childSentOut.title)?.id} />
+                <Story eyebrow="Voices" title={content.teacherDifficult.title} dek={content.teacherDifficult.dek} compact href={storyHref(content.teacherDifficult.title)} analyticsId={storyMeta(content.teacherDifficult.title)?.id} />
               </div>
 
               <div className="recommend-column">
@@ -137,20 +136,17 @@ export default function HomePage() {
                   eyebrow="School Leadership"
                   title={content.principalMeasures.title}
                   dek={content.principalMeasures.dek}
-                  variant="side"
-                />
+                  variant="side" href={storyHref(content.principalMeasures.title)} analyticsId={storyMeta(content.principalMeasures.title)?.id} />
                 <Story
                   eyebrow="Schools"
                   title={content.marksParents.title}
                   dek={content.marksParents.dek}
-                  art={imagery.storyC}
-                />
+                  art={imagery.storyC} href={storyHref(content.marksParents.title)} analyticsId={storyMeta(content.marksParents.title)?.id} />
                 <Story
                   eyebrow="Schools"
                   title={content.timetable.title}
                   dek={content.timetable.dek}
-                  compact
-                />
+                  compact href={storyHref(content.timetable.title)} analyticsId={storyMeta(content.timetable.title)?.id} />
               </div>
             </div>
           </div>
