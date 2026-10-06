@@ -647,7 +647,7 @@ export const storyRegistry = [
     publishedAt: "2026-10-06",
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     variationChoices: ["consequence-led opening","practice before prescription"],
-    placements: [{ section: "Classrooms", url: "/classrooms#less-maths" }],
+    placements: [{ section: "Homepage", url: "/" }, { section: "Classrooms", url: "/classrooms#less-maths" }],
     sourceRefs: ["data/content.js", "data/teachers.js", "data/classrooms.js"],
   }),
   makeStory({
