@@ -396,11 +396,14 @@ This must happen before that page's visual freeze, because real editorial copy a
 
 ### Stage C — Article-body expansion
 
-After a page family is structurally approved:
-- expand its priority stories to full article bodies using the format-specific length bands
-- add sourcing, internal links, author metadata and structured data
-- complete image credits/captions
-- run editorial and SEO QA
+After a page or homepage section is structurally approved, the target is **closed atomically**:
+- enumerate every visible story card in the target page/section, regardless of its primary section or other placements;
+- expand every eligible Staffroom/AI-designated story to a complete body using the format-specific length band;
+- obtain separately supplied manuscripts for explicitly human/editorial-designated stories rather than inventing them;
+- add sourcing, internal links, author metadata and structured data;
+- complete image credits/captions;
+- run editorial, source-rotation, opening-collision, authorship and route-completeness QA;
+- do not approve or move past the target page/section while an eligible visible story remains unwritten, incomplete or unroutable.
 
 ### Stage D — Publication pass
 
@@ -573,3 +576,18 @@ Before a section is released:
 
 A placeholder elsewhere on the page does not excuse a broken link for a story that has been presented as live.
 
+
+
+## Atomic section/page closure rule — October 6, 2026
+
+The unit of content implementation is the **entire visible section/page being closed**, not an arbitrary batch of stories. A target section/page is complete only when every visible story card in that target closure unit is simultaneously:
+
+- assigned a canonical Story ID and correct provenance;
+- written to the appropriate format band, unless an explicitly human-written story is awaiting separate editor supply;
+- assigned a voice and two story-specific variation choices;
+- checked for duplicate concept/material overlap and opening collision;
+- supported by the reserved weekly source set without silent source reuse;
+- linked to its canonical article route with complete metadata, imagery and required internal/related links;
+- verified live at desktop, tablet and mobile breakpoints.
+
+Stories that also appear elsewhere are still completed as part of the current closure unit when they are visible there. Primary section ownership does not defer completion. A section/page receives live approval only after the complete closure-unit checklist passes. This rule supersedes any earlier wording that referred to “priority stories” or partial story batches.
