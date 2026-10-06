@@ -7,13 +7,15 @@ The analytics system is a private editorial intelligence layer for the editor. I
 ## Step sequence
 
 1. Measurement contract — metrics, dimensions, taxonomy and recommendation rules.
-2. Collection foundation — analytics collection and event taxonomy; verify production data.
+2. Collection foundation — analytics collection and event taxonomy.
 3. Private access — protect /analytics and restrict it to the editor's authorised account.
 4. Dashboard shell — build the Staffroom analytics interface without an application database.
-5. Editorial intelligence — calculate performance, trends and rule-based recommendations.
-6. Verification and approval — test access, accuracy, responsiveness and production behaviour.
+5. Reporting/data layer — normalize measured provider data for the dashboard.
+6. Editorial intelligence — calculate derived signals and rule-based recommendations from available normalized data.
+7. Live-provider verification — connect/verify GA4 and other providers when required for measured production operation.
+8. Verification and approval — test access, accuracy, responsiveness and production behaviour.
 
-Only one analytics step is actively under construction at a time.
+Analytics implementation is a separate product track from the public webpage/content build. A missing live provider connection must not block webpage implementation or the construction/testing of rule-based editorial intelligence. Only one analytics implementation step is actively under construction at a time.
 
 ## Initial data strategy
 
@@ -234,7 +236,7 @@ Required Vercel Production configuration for measured GA4 reporting:
 
 The existing NEXT_PUBLIC_GA_MEASUREMENT_ID remains the browser collection identifier. Provider credentials are server-only and must never be exposed to client components.
 
-**Approval gate:** the reporting/data layer is implemented. Verify production configuration and measured GA4 receipt before adding the rule-based editorial intelligence layer.
+**Approval gate:** the reporting/data layer is implemented. Live GA4 configuration/receipt is deferred and is **not a prerequisite** for building the rule-based editorial intelligence layer or continuing the public website/page build. The intelligence layer may be implemented and tested against normalized test/fixture data and later consume measured GA4 data when the provider is activated. Do not claim live GA4 measurement until production credentials are configured and receipt is verified.
 
 ## Dashboard shell — implementation checkpoint
 
@@ -253,3 +255,26 @@ Unavailable metrics are explicitly shown as unavailable. No analytics values are
 The dashboard shell is presentation infrastructure only. The next analytics implementation step is the server-side reporting/data layer required to populate measured and derived values from the approved providers. Visual editorial-intelligence rules remain gated until the underlying data is verified.
 
 **Approval gate:** visually review the current dashboard shell before the reporting/data layer is implemented.
+
+
+## Roadmap separation — October 6, 2026
+
+The analytics track and the public website/content track are related but independently deployable concerns.
+
+### Current priority
+Public webpage and editorial-content completion takes priority. GA4 server-side reporting activation is deferred until the editor chooses to complete the provider configuration.
+
+### What can proceed without GA4 activation
+- Continue building and deploying public pages, destinations, article routes and responsive layouts.
+- Continue section-by-section editorial production and live-card/route QA.
+- Build the rule-based Editorial Intelligence layer and test its rules against normalized test/fixture data or any already-available measured data.
+- Refine the analytics dashboard presentation and derived-rule logic without inventing live metrics.
+
+### What remains blocked by GA4 activation
+Only features that specifically require **live GA4 server-side measurements** are blocked from being verified as live measurements. The absence of GA4 credentials must remain an explicit unavailable/configuration state, never a build failure.
+
+### Later activation path
+When the editor is ready, configure GA4_PROPERTY_ID, GOOGLE_ANALYTICS_CLIENT_EMAIL and GOOGLE_ANALYTICS_PRIVATE_KEY in Vercel Production, redeploy, and verify measured receipt. No public-page rebuild or analytics-architecture rewrite should be required.
+
+### Dependency rule
+Do not interpret the chronological order of analytics tasks as a hard technical dependency. The reporting adapter supplies data to Editorial Intelligence when available; Editorial Intelligence can be built before or after live GA4 activation. Public webpage work is independent of both.
