@@ -310,12 +310,12 @@ export const storyArticles = {
       { type: "paragraph", text: "I still have evenings when the school day follows me home. A difficult conversation can stay in my mind. A student can need more support than a timetable allows. There are weeks when the work expands. The difference is that those moments now have names. They are particular demands, not proof that I should be permanently available." },
       { type: "paragraph", text: "The more sustainable habit is modest: decide what must be finished, decide what can wait, and be willing to let tomorrow contain some of today's unfinished work. The classroom does not become less important when the teacher goes home. Sometimes the teacher is better able to return to it because they did." },
 
-    ],
-    sources: [
-      { label: "Enhancing psychological well-being of school teachers in India: role of energy management, thriving, and stress — study of 356 teachers in Rajasthan", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10623443/" },
       { type: "paragraph", text: "One of the reasons the boundary matters is that teachers can easily confuse responsiveness with omnipresence. A student may need a response, but not necessarily at 8 p.m. A colleague may need advice, but not necessarily the moment a message arrives. A parent may have a legitimate concern, but the existence of the concern does not create an obligation to answer instantly." },
       { type: "paragraph", text: "The more useful test is whether the system has a predictable place for urgent and non-urgent work. When every request arrives through the same channel and every message looks equally immediate, the teacher has to perform triage after hours. That is not efficiency. It is hidden administrative labour." },
       { type: "paragraph", text: "Going home also gave me a clearer sense of what could be improved in the school itself. Some tasks that had felt like private time-management problems were actually coordination problems: information arriving late, decisions being revisited, responsibilities not being assigned clearly. A boundary did not solve those problems, but it made them visible." },
+    ],
+    sources: [
+      { label: "Enhancing psychological well-being of school teachers in India: role of energy management, thriving, and stress — study of 356 teachers in Rajasthan", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10623443/" },
     ],
   },
 
@@ -451,14 +451,14 @@ export const storyArticles = {
       { type: "paragraph", text: "Schools sometimes answer this tension with wellbeing initiatives that sit outside the structure of the work. Those may be useful, but they do not substitute for manageable expectations, useful professional feedback and time that allows teachers to exercise expertise. A teacher who is trusted to diagnose a learning problem but given no time to discuss it is being trusted in theory rather than in practice." },
       { type: "paragraph", text: "The fifth year can therefore be less about becoming an expert and more about becoming selective. Some tasks deserve depth. Some deserve delegation. Some deserve a boundary. Some deserve another attempt because the underlying purpose is important. That selectivity is one way a profession becomes sustainable." },
       { type: "paragraph", text: "The question after five years is not whether the teacher has finally figured teaching out. It is whether the teacher can tell the difference between work that should be carried forward and work that should be put down." },
-    ],
-    sources: [
-      { label: "When ‘quality’ collides: why do committed early career teachers leave? (Taylor & Francis, 2026)", url: "https://www.tandfonline.com/doi/full/10.1080/14681366.2026.2639575" },
       { type: "paragraph", text: "The most important part of becoming experienced may therefore be learning what kind of evidence you trust. A teacher cannot observe everything. But they can become better at choosing a small number of signals that matter: what students can explain without prompting, where errors cluster, which routines consume time and which professional tasks repeatedly push teaching to the margins." },
       { type: "paragraph", text: "That selectivity can protect curiosity too. When every outcome is treated as a performance review, teachers have an incentive to make lessons look smooth. When evidence is used for learning, an awkward result can become useful. A class that gets an answer wrong can reveal the misconception the next lesson should address. A routine that fails can become a design problem rather than a personal embarrassment." },
       { type: "paragraph", text: "Experience is also social. Teachers learn partly through colleagues who can name what they are seeing. A school that gives experienced teachers time to mentor others turns individual knowledge into institutional memory. A school that simply asks the most experienced people to handle the hardest problems may be using expertise without developing it." },
       { type: "paragraph", text: "By the fifth year, then, the question is not 'Have I become good enough?' It is 'Where does my judgement now make a difference?' That might be in the classroom, in curriculum planning, in mentoring, in a conversation with a parent or in a decision to stop doing a task that no longer serves a purpose." },
       { type: "paragraph", text: "The career becomes more sustainable when those choices are respected. A teacher should not have to demonstrate exhaustion in order to prove commitment, and should not have to surrender professional judgement in order to demonstrate consistency." },
+    ],
+    sources: [
+      { label: "When ‘quality’ collides: why do committed early career teachers leave? (Taylor & Francis, 2026)", url: "https://www.tandfonline.com/doi/full/10.1080/14681366.2026.2639575" },
     ],
   },
 
@@ -494,10 +494,6 @@ export const storyArticles = {
       { type: "paragraph", text: "The fairness question matters too. A student who has quiet space, broadband, an adult tutor and multiple devices has a different homework environment from a student sharing one phone with siblings. The technology may magnify that difference. So can a rule that assumes every student can produce the same amount of independent work in the same conditions." },
       { type: "paragraph", text: "That is why homework reform should not begin with a detector. It should begin with the sentence: this task is asking students to practise ____. The blank forces a teacher to name the learning. Once that is clear, it becomes easier to decide what assistance is legitimate and what would simply bypass the point." },
       { type: "paragraph", text: "The result may be smaller homework, more purposeful homework or sometimes no homework at all. The point is not to defend the assignment as a tradition. It is to make the learning worth the student's time." },
-    ],
-    sources: [
-      { label: "Turós, Nagy & Szűts — What percentage of secondary school students do their homework with the help of artificial intelligence? (Computers and Education: Artificial Intelligence, 2025)", url: "https://www.sciencedirect.com/science/article/pii/S2666920X25000347" },
-      { label: "UNESCO — Guidance for generative AI in education and research", url: "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_d4cbd94e-e183-448f-90a9-ea9bb3b74db2?_=386693eng&from=1&to=48" },
       { type: "paragraph", text: "Another weakness of the detection-first response is that it focuses attention on the wrong object. A teacher may spend time asking whether the phrasing sounds machine-generated when the more important question is whether the student can explain the answer. A short oral follow-up can sometimes reveal more about understanding than a software score, while also reminding students that the work belongs to them." },
       { type: "paragraph", text: "That does not mean every assignment needs an oral defence. The principle is simply to match the evidence to the learning. If the goal is to practise recall, a quick low-stakes check in the next lesson may be enough. If the goal is to build an argument, the student can be asked to identify the strongest evidence and explain why it matters. If the goal is mathematical reasoning, a teacher can inspect the method, not only the final number." },
       { type: "paragraph", text: "Schools also need a shared language for acceptable assistance. Students should not have to guess whether brainstorming counts as cheating, whether translation is allowed, or whether using an AI system to generate questions is different from asking it to write answers. A policy that names the purpose of the task makes those distinctions easier." },
@@ -510,6 +506,10 @@ export const storyArticles = {
       { type: "paragraph", text: "Some subjects make this easier than others. A mathematics teacher can ask for a method, a diagram or a comparison of two solutions. A science teacher can ask why an explanation fits the evidence. A language teacher can ask why one sentence is more precise than another. The disciplinary form changes, but the underlying principle is the same: the student's reasoning should leave a trace." },
       { type: "paragraph", text: "This also suggests a useful rule for schools: the more easily the final product can be outsourced, the more important it becomes to collect a small amount of process evidence. That evidence does not have to mean surveillance. It can be the normal work of learning made visible." },
       { type: "paragraph", text: "Teachers can also ask students to annotate their own use of tools. A short disclosure—what was used, for which part of the task and what the student changed—can turn hidden assistance into an opportunity for reflection. It should not become a bureaucratic form for every assignment; it is most useful when the relationship between tool use and learning is itself worth examining." },
+    ],
+    sources: [
+      { label: "Turós, Nagy & Szűts — What percentage of secondary school students do their homework with the help of artificial intelligence? (Computers and Education: Artificial Intelligence, 2025)", url: "https://www.sciencedirect.com/science/article/pii/S2666920X25000347" },
+      { label: "UNESCO — Guidance for generative AI in education and research", url: "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_d4cbd94e-e183-448f-90a9-ea9bb3b74db2?_=386693eng&from=1&to=48" },
     ],
   },
 
@@ -584,10 +584,6 @@ export const storyArticles = {
       { type: "paragraph", text: "The school should therefore collect small amounts of useful information. When does the behaviour happen? What task comes before it? Which adults respond? What happens after the student returns? Does the same pattern appear in mathematics, language, physical education and unstructured time? A week of disciplined observation can tell a school more than a year of reputation." },
       { type: "paragraph", text: "The aim is not to explain away behaviour. It is to make the next response more accurate. A firm boundary is easier to defend when adults can also explain what the boundary is protecting and what they will do to help the student succeed within it." },
       { type: "paragraph", text: "Belonging is not a reward for perfect behaviour. It is part of the condition under which behaviour can change. A student who knows there is a path back to the room has a different incentive from a student who has learned that one incident can become a permanent identity." },
-    ],
-    sources: [
-      { label: "Education Endowment Foundation — Behaviour interventions", url: "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/behaviour-interventions" },
-      { label: "UNICEF India — Quality education", url: "https://www.unicef.org/india/what-we-do/quality-education" },
       { type: "paragraph", text: "The distinction between the immediate incident and the longer pattern is important because a school often has two different tasks. The first is to keep people safe and preserve the lesson. The second is to understand why the same student keeps reaching the point where removal seems necessary. Confusing the two produces either unsafe permissiveness or endless punishment." },
       { type: "paragraph", text: "One useful way to review a pattern is to map the sequence rather than the label. What happened in the five minutes before the incident? What demand was placed on the student? What did peers do? What did the adult do? What happened immediately after the student left? What happened on return? This kind of sequence is more actionable than a description such as 'bad attitude'." },
       { type: "paragraph", text: "The Education Endowment Foundation's behaviour evidence is useful precisely because it does not promise one intervention that works everywhere. Behaviour approaches depend on implementation, consistency and context. A school should therefore be wary of treating a single technique as the answer to a pattern it has not yet described accurately." },
@@ -605,6 +601,10 @@ export const storyArticles = {
       { type: "paragraph", text: "Re-entry is also a form of instruction. The student needs to know what the next lesson will look like, what boundary remains in place and what successful participation will require. The teacher needs to know whether additional support is needed. The rest of the class needs to see that consequences are real without turning the returning student into a public example." },
       { type: "paragraph", text: "A repeated removal pattern therefore deserves the seriousness of a school-improvement problem. It affects safety, teaching time, relationships and access to the curriculum. The most responsible response is neither to ignore it nor to explain it entirely through the child's character." },
       { type: "paragraph", text: "Once the school has a clearer pattern, the response can become smaller and more targeted. One transition may need redesign. One task may need clearer modelling. One adult relationship may need strengthening. One support plan may need coordination. The goal is not an elaborate intervention for every difficult moment. It is enough information to change the part of the system that is producing the same outcome." },
+    ],
+    sources: [
+      { label: "Education Endowment Foundation — Behaviour interventions", url: "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/behaviour-interventions" },
+      { label: "UNICEF India — Quality education", url: "https://www.unicef.org/india/what-we-do/quality-education" },
     ],
   },
 
@@ -642,15 +642,15 @@ export const storyArticles = {
       { type: "paragraph", text: "The purpose of curiosity is not endless delay. Schools still have timetables, safety obligations and other students. The point is to stop treating certainty as a prerequisite for action. A school can act firmly while keeping the explanation provisional." },
       { type: "paragraph", text: "A label becomes especially powerful when it travels. It moves from one teacher to another, from a classroom note to a meeting, from a meeting to a parent conversation. Each repetition makes the original interpretation feel more like fact. A better system keeps returning to observable behaviour and current evidence." },
       { type: "paragraph", text: "The adult's question can therefore change from 'Why is this child like this?' to 'What keeps happening, under what conditions, and what response changes the pattern?' That question is harder. It is also more useful." },
-    ],
-    sources: [
-      { label: "Education Endowment Foundation — Understanding how school policies and practices shape school behaviour", url: "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/understanding-the-use-of-school-behavioural-policies-that-aim-to-enable-an-authoritative-school-climate" },
       { type: "paragraph", text: "A useful team can make this change quite concrete. Instead of beginning a meeting with the student's reputation, begin with three recent observations. What was the task? What happened? What did adults do? The discussion then has something observable to work with before opinions rush in." },
       { type: "paragraph", text: "This also protects teachers from the exhaustion that produces labels. When adults have to carry every difficult incident in memory, the most emotionally vivid events can dominate the story. A shared record can show a more complicated pattern and make it easier to recognise progress." },
       { type: "paragraph", text: "The student's perspective should be one source among several, not an automatic verdict. A child may misremember an event or describe it differently from an adult. That does not make the account useless. It is evidence that can be compared with what others observed." },
       { type: "paragraph", text: "The aim is not to eliminate judgement. Teaching requires judgement. The aim is to make the judgement revisable when new evidence arrives. That is what keeps a difficult pattern from becoming a permanent identity." },
       { type: "paragraph", text: "When the label changes, the adult's expectations can change with it. A teacher who expects difficulty may notice disruption first. A teacher who expects a learner to be capable of improvement may start noticing the conditions in which the learner succeeds. That shift can alter what happens next without pretending the original problem never existed." },
       { type: "paragraph", text: "A school that keeps this question open can still make quick decisions. The difference is that the decision is attached to evidence that can be revisited. That makes behaviour support less dependent on reputation and more dependent on what the student and adults actually observe." },
+    ],
+    sources: [
+      { label: "Education Endowment Foundation — Understanding how school policies and practices shape school behaviour", url: "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/understanding-the-use-of-school-behavioural-policies-that-aim-to-enable-an-authoritative-school-climate" },
     ],
   },
 
@@ -685,9 +685,6 @@ export const storyArticles = {
       { type: "paragraph", text: "Stopping a measure can feel risky because absence is often mistaken for lack of accountability. But accountability is stronger when a school can explain what it is accountable for. A school that collects everything may have difficulty showing what it actually learned." },
       { type: "paragraph", text: "The principal who stops measuring everything is therefore not anti-data. They are making the opposite claim: evidence deserves attention only when it can improve a decision. That requires leaders to tolerate smaller dashboards, fewer reports and more questions about meaning." },
       { type: "paragraph", text: "A good measurement culture leaves room for uncertainty. Sometimes the evidence is too small. Sometimes the indicator is noisy. Sometimes two signals point in different directions. A mature school can say so without immediately inventing a third metric to make the discomfort disappear." },
-    ],
-    sources: [
-      { label: "OECD — Empowering schools’ improvement: Insights from PISA for Schools case studies (2026)", url: "https://www.oecd.org/en/publications/empowering-schools-improvement_50f6b0e5-en.html" },
       { type: "paragraph", text: "A number becomes especially dangerous when it is detached from the decision it was meant to support. If attendance is being monitored because leaders want to know whether a transport change is helping, then the measure should sit alongside the relevant group, timing and intervention. A single percentage without that context can create false confidence." },
       { type: "paragraph", text: "The same applies to classroom observation. A school can count how many lessons were observed and still know very little about whether observation improved teaching. The useful question is whether the feedback led to a change, whether the teacher had support to make that change and what evidence showed whether it helped." },
       { type: "paragraph", text: "Measurement also has a distribution problem. A school average can hide concentrated difficulty. A behaviour total can hide the students who experience repeated incidents. An overall assessment score can hide the particular concept that is blocking progress. Leaders need enough granularity to see important differences without creating a new requirement to report every detail." },
@@ -706,6 +703,9 @@ export const storyArticles = {
       { type: "paragraph", text: "That is why the phrase 'stopped measuring everything' should not be read as an act of withdrawal. It is an act of selection. The leader is choosing which signals deserve scarce attention and accepting that some uncertainty will remain." },
       { type: "paragraph", text: "When uncertainty remains, the school can say so. A result may be suggestive rather than conclusive. A change may be associated with an intervention without proving that the intervention caused it. A subgroup may move in one direction while the overall average does something else. These are not failures of measurement. They are the reality that measurement is supposed to help people reason about." },
       { type: "paragraph", text: "The discipline also protects the principal from confusing activity with improvement. A school can be extremely busy collecting evidence, attending meetings and producing reports. None of that guarantees that students or teachers are experiencing better conditions. The useful measure is the one that helps the institution notice a meaningful change." },
+    ],
+    sources: [
+      { label: "OECD — Empowering schools’ improvement: Insights from PISA for Schools case studies (2026)", url: "https://www.oecd.org/en/publications/empowering-schools-improvement_50f6b0e5-en.html" },
     ],
   },
 
@@ -741,9 +741,6 @@ export const storyArticles = {
       { type: "paragraph", text: "A wider assessment conversation does not mean withholding marks. It means placing them where they are useful. A school can still communicate a result clearly while explaining what the result does and does not establish." },
       { type: "paragraph", text: "The PARAKH example of learners demonstrating different kinds of understanding is useful because it shows why process matters. A correct answer is one form of evidence. Recognising and correcting an error is another. Explaining why two solutions differ is another. A school that records only the final answer throws away information it already has." },
       { type: "paragraph", text: "The family deserves that richer information because the purpose of the report is not simply to produce a ranking. It is to help adults decide what to do next. The number starts the conversation. It should not end it." },
-    ],
-    sources: [
-      { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
       { type: "paragraph", text: "Assessment has another communication problem: schools often mix evidence for the learner with evidence for the institution. A score can be useful for reporting across a cohort, while the learner needs a much more specific description of what to practise next. One piece of evidence can therefore serve two purposes badly unless the distinction is made explicit." },
       { type: "paragraph", text: "That is why a report card can feel simultaneously detailed and unhelpful. There may be many marks, grades and comments, yet a parent can still leave the meeting without knowing what the child should do differently on Monday. More information is not automatically better information." },
       { type: "paragraph", text: "The practical test is whether the assessment changes the next action. A teacher who notices that a student can perform a procedure but cannot explain it may choose a different kind of task. A family that learns that reading accuracy is strong but inference is weak can support the right kind of practice. The number has done its job when it improves the next decision." },
@@ -762,6 +759,9 @@ export const storyArticles = {
       { type: "paragraph", text: "The school's responsibility is therefore not to make marks disappear. It is to prevent the convenience of marks from shrinking the conversation. A number can travel quickly through a school. Meaning takes longer, but meaning is what turns assessment into action." },
       { type: "paragraph", text: "This is particularly important when assessment is used to compare groups. Aggregated results can reveal inequity and should not be dismissed. But the aggregate is the beginning of an investigation, not the explanation. A school still needs to ask which learners are affected, which tasks create the difference and what response is justified." },
       { type: "paragraph", text: "That is the larger lesson of moving beyond marks. Better assessment is not assessment without numbers. It is assessment in which numbers, observations and professional judgement are allowed to do different jobs—and in which the learner remains more important than the summary." },
+    ],
+    sources: [
+      { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
     ],
   },
 
@@ -798,15 +798,15 @@ export const storyArticles = {
       { type: "paragraph", text: "This is why timetable review should include teachers and not only administrators. The grid shows allocation. Teachers can describe what the allocation actually produces. A period that looks generous on paper may disappear into setup; a short period may work beautifully because the routine is stable." },
       { type: "paragraph", text: "A revisable timetable is therefore a form of school learning. It allows leaders to ask whether the current arrangement still serves the current students, curriculum and staff. The answer may be no even when the timetable was once perfectly sensible." },
       { type: "paragraph", text: "The grid is never only a grid. It is a record of the educational choices a school has decided to make visible through time." },
-    ],
-    sources: [
-      { label: "OECD — Curriculum and instruction time", url: "https://www.oecd.org/en/topics/curriculum-and-instruction-time.html" },
       { type: "paragraph", text: "A timetable can also be read through omissions. What never finds a protected slot is often as revealing as what does. A school may want outdoor learning, mentoring, collaborative planning or student clubs, but if those activities survive only when the calendar happens to have spare capacity, they are being treated as optional regardless of the language used to describe them." },
       { type: "paragraph", text: "The timetable also distributes inconvenience. A late activity may be manageable for one family and impossible for another. A long gap between related lessons may be harmless in one subject and damaging in another. A planning period placed where teachers are repeatedly needed for cover may technically exist while practically disappearing." },
       { type: "paragraph", text: "That is why timetable review should include actual experience. Ask teachers what is repeatedly lost. Ask students where transitions eat time. Look at rooms, travel between buildings and the way specialist equipment changes the meaning of a nominal lesson length. The grid is only the starting point." },
       { type: "paragraph", text: "Revising the timetable can be politically difficult because every gain has a trade-off. Protecting collaboration may require moving a lesson. Giving a subject a longer block may reduce flexibility elsewhere. The answer is not to avoid the trade-offs but to make the educational reason for them explicit." },
       { type: "paragraph", text: "A timetable is therefore a form of school memory. It records what a school has repeatedly chosen to make possible. When leaders revisit it with evidence rather than habit, the schedule becomes capable of learning too." },
       { type: "paragraph", text: "A review can therefore begin with three questions: what does the current timetable protect, what does it repeatedly make difficult, and what evidence would justify changing it? Those questions are simple enough to ask each term and concrete enough to prevent the schedule becoming invisible simply because everyone is used to it." },
+    ],
+    sources: [
+      { label: "OECD — Curriculum and instruction time", url: "https://www.oecd.org/en/topics/curriculum-and-instruction-time.html" },
     ],
   },
 };
