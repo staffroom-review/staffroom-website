@@ -732,8 +732,5 @@ export const storyArticles = {
 };
 
 export function getStoryArticle(storyId) {
-  return {
-    ...storyArticles[storyId],
-    ...section3Articles[storyId],
-  } || null;
+  return storyArticles[storyId] || null;
 }
