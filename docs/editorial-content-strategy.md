@@ -490,7 +490,7 @@ Full-length content is completed in this order:
 8. Voices.
 9. Specialist content products and any remaining dedicated destinations.
 
-Do not start the next page's full-length content while the current page still contains unfinished priority stories.
+Do not start the next page's full-length content while the current target page/section still contains unfinished eligible stories.
 
 ### Authorship
 
