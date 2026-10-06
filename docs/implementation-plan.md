@@ -110,7 +110,7 @@ The implementation now includes:
 
 1. **Content system now:** editorial formats, headline/dek rules, length bands, SEO/author/date model, internal linking, imagery, newsletter model, blog model and held-content workflow.
 2. **During each navbar-page build:** before visual approval, use production-quality story headlines, deks, format labels and realistic metadata in that page's cards.
-3. **After page-family approval:** expand the priority stories into full article bodies using the documented format-specific length bands and complete sourcing, author metadata, links and structured data.
+3. **After page-family approval:** expand **every visible eligible story in the target page/section** into full article bodies using the documented format-specific length bands and complete sourcing, author metadata, links and structured data. Do not release a partial “priority-story” subset.
 4. **Before publication:** editorial, accessibility, metadata, image-rights and indexing QA.
 
 This sequencing prevents short placeholder copy from becoming the de facto editorial style while also preventing premature full-article production before the relevant page architecture exists.
@@ -379,7 +379,7 @@ Placeholder, hold, draft and other non-public records intentionally return not f
 8. Voices.
 9. Specialist content products and the remaining More destinations.
 
-For each page, finish its eligible stories before starting the next page. Human/editorial-designated stories remain supplied by the human editor/contributor; Staffroom-designated AI work can be drafted by the build workflow. Every story follows Story Intake and Verification before publication.
+For each target page/section, finish **every visible eligible story card** before starting the next target. Stories whose primary section is elsewhere are still included when visible in the current closure unit. Human/editorial-designated stories remain separately supplied by the human editor/contributor; Staffroom-designated AI work can be drafted by the build workflow. Every story follows Story Intake and Verification before publication.
 
 
 ### Authorship clarification & staged Homepage content production — October 3, 2026
