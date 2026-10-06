@@ -365,7 +365,7 @@ The article route:
 
 Placeholder, hold, draft and other non-public records intentionally return not found rather than exposing unfinished articles.
 
-**Approval gate:** article-page infrastructure is implemented. Before full-length content production begins, visually review the shared article template. After approval, content production starts one page at a time, beginning with the homepage story set.
+**Approval gate:** article-page infrastructure is implemented. Before full-length content production begins, visually review the shared article template. After approval, content production starts one complete target page/section at a time, beginning with the homepage section sequence.
 
 ### Full-length content production sequence
 
