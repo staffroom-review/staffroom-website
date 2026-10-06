@@ -705,6 +705,7 @@ export const storyArticles = {
       { type: "paragraph", text: "When uncertainty remains, the school can say so. A result may be suggestive rather than conclusive. A change may be associated with an intervention without proving that the intervention caused it. A subgroup may move in one direction while the overall average does something else. These are not failures of measurement. They are the reality that measurement is supposed to help people reason about." },
       { type: "paragraph", text: "The discipline also protects the principal from confusing activity with improvement. A school can be extremely busy collecting evidence, attending meetings and producing reports. None of that guarantees that students or teachers are experiencing better conditions. The useful measure is the one that helps the institution notice a meaningful change." },
       { type: "paragraph", text: "The measure earns its place when the school can explain what decision it helps people make." },
+      { type: "paragraph", text: "The discipline of measurement is therefore also the discipline of attention. Every number asks someone to look, compare, discuss and decide. A principal who reduces the number of measures can sometimes create more room for those actions—the part of evidence use that actually belongs to leadership." },
     ],
     sources: [
       { label: "OECD — Empowering schools’ improvement: Insights from PISA for Schools case studies (2026)", url: "https://www.oecd.org/en/publications/empowering-schools-improvement_50f6b0e5-en.html" },
@@ -762,6 +763,7 @@ export const storyArticles = {
       { type: "paragraph", text: "This is particularly important when assessment is used to compare groups. Aggregated results can reveal inequity and should not be dismissed. But the aggregate is the beginning of an investigation, not the explanation. A school still needs to ask which learners are affected, which tasks create the difference and what response is justified." },
       { type: "paragraph", text: "That is the larger lesson of moving beyond marks. Better assessment is not assessment without numbers. It is assessment in which numbers, observations and professional judgement are allowed to do different jobs—and in which the learner remains more important than the summary." },
       { type: "paragraph", text: "The point is not to replace the number but to put the number back inside the learning it was meant to describe." },
+      { type: "paragraph", text: "That wider language can also help schools resist the pressure to make every assessment a competition. A result can identify need without turning need into shame, and it can identify strength without turning strength into a rank. The number remains visible; the learner remains visible too." },
     ],
     sources: [
       { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
