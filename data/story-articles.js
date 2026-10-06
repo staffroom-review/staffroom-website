@@ -641,7 +641,7 @@ export const storyArticles = {
     ],
   },
 
-  "SR-2026-0054": {
+  "SR-2026-0075": {
     readingTime: "9 min read",
     metaDescription: "Parents often ask for marks because marks are legible. The harder task for schools is explaining the learning, uncertainty and next steps behind them.",
     hero: imageBlock(images.storyC, "A number travels easily between school and home. Learning is harder to compress."),
