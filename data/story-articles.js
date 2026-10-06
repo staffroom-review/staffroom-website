@@ -108,7 +108,9 @@ export const storyArticles = {
       { type: "paragraph", text: "The deepest question is not whether a school has too many meetings. It is whether its coordination system remembers what the meetings are there to protect. The point of organising a school is not to create a beautifully organised calendar. It is to make teaching, learning, care and professional judgement possible." },
       { type: "paragraph", text: "A meeting culture that protects those things can be demanding and still be humane. It asks people to decide, to communicate clearly and to take responsibility for what happens next. It does not confuse more conversation with better coordination." },
       { type: "paragraph", text: "The test is simple enough to use after the next meeting. What became clearer? What decision was made? What work became easier? If the answers are difficult to find, the problem may not be that the school needs another meeting. It may be that the meeting has quietly become the work." },
-    ],
+    ],      { type: "paragraph", text: "That test also makes meetings easier to shorten. If the purpose is a decision, put the decision near the beginning. If people need information before they can decide, circulate it first. If only one person can act, do not make the entire staff sit through the handover." },
+      { type: "paragraph", text: "None of this is an argument for fewer conversations at any cost. Some of the hardest work in a school is conversational because relationships, competing needs and professional disagreement cannot be reduced to a form. The point is to protect the distinction between a conversation that changes the work and a meeting that merely records that the work is difficult." },
+
     sources: [],
   },
 
@@ -301,7 +303,12 @@ export const storyArticles = {
       { type: "paragraph", text: "I still stay late sometimes. The difference is that staying late is now a decision, not a moral default." },
       { type: "paragraph", text: "There is a useful distinction between responsibility and availability. Responsibility means noticing what needs doing and making sure it is done. Availability means being reachable whenever something might need doing. Schools need the first. They cannot build a sustainable working life around the second." },
       { type: "paragraph", text: "The desk will never be empty. That may be the most freeing thing to learn. The aim is not to finish every possible piece of work. It is to finish the work that matters, leave the rest where it can be picked up again, and remember that a teacher is allowed to have a tomorrow that is not already exhausted by today." },
-    ],
+    ],      { type: "paragraph", text: "Leaving on time did not happen because the work suddenly became smaller. It happened because I started noticing the difference between a task being unfinished and a task being urgent. Those are not the same category, although school days are very good at making them feel like one." },
+      { type: "paragraph", text: "There were papers that could be checked the next morning, messages that could be answered during the working day and planning decisions that became clearer after I had slept. The discipline was not to abandon those tasks. It was to stop using the length of my evening as the measure of whether I had done enough." },
+      { type: "paragraph", text: "This also changed how I thought about colleagues. When one teacher is always available, the school begins to route problems towards that person. The behaviour can look generous from the outside while quietly teaching everyone else that someone will absorb the overflow. Boundaries are partly individual, but they are also signals about what an organisation considers reasonable." },
+      { type: "paragraph", text: "I still have evenings when the school day follows me home. A difficult conversation can stay in my mind. A student can need more support than a timetable allows. There are weeks when the work expands. The difference is that those moments now have names. They are particular demands, not proof that I should be permanently available." },
+      { type: "paragraph", text: "The more sustainable habit is modest: decide what must be finished, decide what can wait, and be willing to let tomorrow contain some of today's unfinished work. The classroom does not become less important when the teacher goes home. Sometimes the teacher is better able to return to it because they did." },
+
     sources: [
       { label: "Enhancing psychological well-being of school teachers in India: role of energy management, thriving, and stress — study of 356 teachers in Rajasthan", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10623443/" },
     ],
