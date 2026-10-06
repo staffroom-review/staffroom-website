@@ -410,8 +410,6 @@ export const storyArticles = {
     ],
   },
 
-
-{
   "SR-2026-0009": {
     readingTime: "9 min read",
     metaDescription: "The fifth year can change how a teacher sees the job: less about surviving each week, more about deciding what kind of professional life is sustainable.",
