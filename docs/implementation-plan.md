@@ -421,3 +421,8 @@ The staged writing process is page-section based, and QA is also **page-wide and
 
 Chronological production permits placeholders **outside the target closure unit**. Within the target section/page, every visible story is either fully released or explicitly identified as awaiting separate human-written content. A story presented as live must never resolve to a 404, placeholder body or incomplete route.
 
+
+
+### Canonical article-body store rule — October 6, 2026
+
+All publishable article bodies must live in the single canonical `data/story-articles.js` store keyed by permanent Story ID. Temporary or section-local article files must not be used by production routes or left as competing sources of truth. A staged content change is not considered released until its records are merged into the canonical store and the shared article loader resolves them directly.
