@@ -164,7 +164,7 @@ function makeStory({
 
 export const storyRegistry = [
   makeStory({
-    id: "SR-2026-0054",
+    id: "SR-2026-0075",
     title: "When Marks Become the Only Language Parents Understand",
     dek: "The most consequential work can happen far from the classroom: in corridors, calendars, meetings and conversations.",
     format: "Analysis",
@@ -176,7 +176,7 @@ export const storyRegistry = [
     plannedArticleUrl: "/stories/when-marks-become-the-only-language-parents-understand",
     articleUrl: "/stories/when-marks-become-the-only-language-parents-understand",
     publishedAt: "2026-10-06",
-    sourceRefs: ["data/content.js", "data/story-articles-section3.js"],
+    sourceRefs: ["data/content.js", "data/story-articles.js"],
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
   }),
 
