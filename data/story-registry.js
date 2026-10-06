@@ -262,7 +262,7 @@ export const storyRegistry = [
     publishedAt: "2026-10-06",
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     variationChoices: ["diagnostic proposition opening","policy context after concrete scheduling choices"],
-    placements: [{ section: "Stories", url: "/stories" }, { section: "Schools", url: "/schools" }],
+    placements: [{ section: "Homepage", url: "/" }, { section: "Stories", url: "/stories" }, { section: "Schools", url: "/schools" }],
     sourceRefs: ["data/content.js", "data/stories.js", "data/schools.js", "data/ideas.js"],
   }),
   makeStory({
