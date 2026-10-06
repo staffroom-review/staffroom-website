@@ -11,6 +11,21 @@ import styles from "./story.module.css";
 
 const PUBLIC_STATUSES = new Set(["published", "updated"]);
 
+const SECTION_HREFS = {
+  Homepage: "/",
+  Stories: "/stories",
+  Teachers: "/teachers",
+  Classrooms: "/classrooms",
+  Schools: "/schools",
+  Ideas: "/ideas",
+  World: "/world",
+  Voices: "/voices",
+  Newsletter: "/newsletter",
+  Blog: "/blog",
+  Events: "/events",
+  More: "/",
+};
+
 function getHero(article) {
   if (article?.hero) return article.hero;
   const firstImage = article?.blocks?.find((block) => block.type === "image");
@@ -157,6 +172,9 @@ export default async function StoryArticlePage({ params }) {
             <aside className={styles.articleRail}>
               <p className={styles.railLabel}>Staffroom Review</p>
               <p>One story, read at the pace it deserves.</p>
+              <a className={styles.sectionLink} href={SECTION_HREFS[story.primarySection] || "/"}>
+                Back to {story.primarySection}
+              </a>
             </aside>
 
             <div className={styles.articleBody}>
