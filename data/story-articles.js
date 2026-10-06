@@ -509,6 +509,7 @@ export const storyArticles = {
       { type: "paragraph", text: "That distinction can also change the teacher's response when AI use is suspected. Instead of beginning with accusation, the teacher can ask the student to explain a choice in the work, reconstruct one part, or identify the evidence that supports a claim. The point is not to create a perfect detection system. It is to gather evidence that belongs to the learning objective." },
       { type: "paragraph", text: "Some subjects make this easier than others. A mathematics teacher can ask for a method, a diagram or a comparison of two solutions. A science teacher can ask why an explanation fits the evidence. A language teacher can ask why one sentence is more precise than another. The disciplinary form changes, but the underlying principle is the same: the student's reasoning should leave a trace." },
       { type: "paragraph", text: "This also suggests a useful rule for schools: the more easily the final product can be outsourced, the more important it becomes to collect a small amount of process evidence. That evidence does not have to mean surveillance. It can be the normal work of learning made visible." },
+      { type: "paragraph", text: "Teachers can also ask students to annotate their own use of tools. A short disclosure—what was used, for which part of the task and what the student changed—can turn hidden assistance into an opportunity for reflection. It should not become a bureaucratic form for every assignment; it is most useful when the relationship between tool use and learning is itself worth examining." },
     ],
   },
 
@@ -649,6 +650,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The student's perspective should be one source among several, not an automatic verdict. A child may misremember an event or describe it differently from an adult. That does not make the account useless. It is evidence that can be compared with what others observed." },
       { type: "paragraph", text: "The aim is not to eliminate judgement. Teaching requires judgement. The aim is to make the judgement revisable when new evidence arrives. That is what keeps a difficult pattern from becoming a permanent identity." },
       { type: "paragraph", text: "When the label changes, the adult's expectations can change with it. A teacher who expects difficulty may notice disruption first. A teacher who expects a learner to be capable of improvement may start noticing the conditions in which the learner succeeds. That shift can alter what happens next without pretending the original problem never existed." },
+      { type: "paragraph", text: "A school that keeps this question open can still make quick decisions. The difference is that the decision is attached to evidence that can be revisited. That makes behaviour support less dependent on reputation and more dependent on what the student and adults actually observe." },
     ],
   },
 
@@ -703,6 +705,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The result is not a measurement system that knows less. It is one that claims less and learns more. A principal who can explain why a number is present, why another was removed and what decision each one informs is exercising a form of professional judgement that is easy to overlook because it happens before the dashboard is built." },
       { type: "paragraph", text: "That is why the phrase 'stopped measuring everything' should not be read as an act of withdrawal. It is an act of selection. The leader is choosing which signals deserve scarce attention and accepting that some uncertainty will remain." },
       { type: "paragraph", text: "When uncertainty remains, the school can say so. A result may be suggestive rather than conclusive. A change may be associated with an intervention without proving that the intervention caused it. A subgroup may move in one direction while the overall average does something else. These are not failures of measurement. They are the reality that measurement is supposed to help people reason about." },
+      { type: "paragraph", text: "The discipline also protects the principal from confusing activity with improvement. A school can be extremely busy collecting evidence, attending meetings and producing reports. None of that guarantees that students or teachers are experiencing better conditions. The useful measure is the one that helps the institution notice a meaningful change." },
     ],
   },
 
@@ -757,6 +760,8 @@ export const storyArticles = {
       { type: "paragraph", text: "For students, the language matters. A mark communicates a position. Feedback communicates a route. The best assessment systems do both: they provide a clear result while making the next learning move easier to see." },
       { type: "paragraph", text: "For parents, that route can reduce the urge to convert every difficulty into pressure. A student who needs practice in inference does not necessarily need more hours of generic homework. A student who can solve routine equations but struggles when the representation changes may need a different kind of task. Specific evidence produces more useful support." },
       { type: "paragraph", text: "The school's responsibility is therefore not to make marks disappear. It is to prevent the convenience of marks from shrinking the conversation. A number can travel quickly through a school. Meaning takes longer, but meaning is what turns assessment into action." },
+      { type: "paragraph", text: "This is particularly important when assessment is used to compare groups. Aggregated results can reveal inequity and should not be dismissed. But the aggregate is the beginning of an investigation, not the explanation. A school still needs to ask which learners are affected, which tasks create the difference and what response is justified." },
+      { type: "paragraph", text: "That is the larger lesson of moving beyond marks. Better assessment is not assessment without numbers. It is assessment in which numbers, observations and professional judgement are allowed to do different jobs—and in which the learner remains more important than the summary." },
     ],
   },
 
@@ -801,6 +806,7 @@ export const storyArticles = {
       { type: "paragraph", text: "That is why timetable review should include actual experience. Ask teachers what is repeatedly lost. Ask students where transitions eat time. Look at rooms, travel between buildings and the way specialist equipment changes the meaning of a nominal lesson length. The grid is only the starting point." },
       { type: "paragraph", text: "Revising the timetable can be politically difficult because every gain has a trade-off. Protecting collaboration may require moving a lesson. Giving a subject a longer block may reduce flexibility elsewhere. The answer is not to avoid the trade-offs but to make the educational reason for them explicit." },
       { type: "paragraph", text: "A timetable is therefore a form of school memory. It records what a school has repeatedly chosen to make possible. When leaders revisit it with evidence rather than habit, the schedule becomes capable of learning too." },
+      { type: "paragraph", text: "A review can therefore begin with three questions: what does the current timetable protect, what does it repeatedly make difficult, and what evidence would justify changing it? Those questions are simple enough to ask each term and concrete enough to prevent the schedule becoming invisible simply because everyone is used to it." },
     ],
   },
 };
