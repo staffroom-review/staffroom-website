@@ -202,13 +202,9 @@ export const storyRegistry = [
     plannedArticleUrl: "/stories/the-teacher-who-learned-to-leave-school-on-time",
     articleUrl: "/stories/the-teacher-who-learned-to-leave-school-on-time",
     publishedAt: "2026-10-03",
+    updatedAt: "2026-10-06",
     sourceRefs: ["data/content.js", "data/teachers.js", "data/voices.js"],
-    verification: {
-      lastChecked: "2026-10-03",
-      outcome: "no-close-match-found",
-      override: false,
-      overrideNote: "",
-    },
+    verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
   }),
   makeStory({
     id: "SR-2026-0003",
@@ -223,12 +219,7 @@ export const storyRegistry = [
     articleUrl: "/stories/when-the-class-is-tired-before-first-period",
     plannedArticleUrl: "/stories/when-the-class-is-tired-before-first-period",
     publishedAt: "2026-10-03",
-    verification: {
-      lastChecked: "2026-10-03",
-      outcome: "no-close-match-found",
-      override: false,
-      overrideNote: "",
-    },
+    verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     sourceRefs: ["data/content.js", "data/stories.js"],
   }),
   makeStory({
@@ -244,13 +235,9 @@ export const storyRegistry = [
     plannedArticleUrl: "/stories/the-meeting-that-ate-the-school-day",
     articleUrl: "/stories/the-meeting-that-ate-the-school-day",
     publishedAt: "2026-10-03",
+    updatedAt: "2026-10-06",
     sourceRefs: ["data/content.js", "data/stories.js", "data/ideas.js", "data/editorial.js"],
-    verification: {
-      lastChecked: "2026-10-03",
-      outcome: "no-close-match-found",
-      override: false,
-      overrideNote: "",
-    },
+    verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
   }),
   makeStory({
     id: "SR-2026-0005",
