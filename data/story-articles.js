@@ -764,6 +764,7 @@ export const storyArticles = {
       { type: "paragraph", text: "That is the larger lesson of moving beyond marks. Better assessment is not assessment without numbers. It is assessment in which numbers, observations and professional judgement are allowed to do different jobs—and in which the learner remains more important than the summary." },
       { type: "paragraph", text: "The point is not to replace the number but to put the number back inside the learning it was meant to describe." },
       { type: "paragraph", text: "That wider language can also help schools resist the pressure to make every assessment a competition. A result can identify need without turning need into shame, and it can identify strength without turning strength into a rank. The number remains visible; the learner remains visible too." },
+      { type: "paragraph", text: "The clearest report is the one that helps the learner, the family and the teacher see the next move without confusing that move with a judgement of the learner's worth.", }
     ],
     sources: [
       { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
