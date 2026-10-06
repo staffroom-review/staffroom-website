@@ -278,7 +278,7 @@ export const storyRegistry = [
     publishedAt: "2026-10-06",
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     variationChoices: ["scene-led opening","research enters after the immediate consequence"],
-    placements: [{ section: "Stories", url: "/stories#sent-out" }],
+    placements: [{ section: "Homepage", url: "/" }, { section: "Stories", url: "/stories#sent-out" }],
     sourceRefs: ["data/content.js", "data/stories.js", "data/classrooms.js"],
   }),
   makeStory({
