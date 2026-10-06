@@ -6,9 +6,18 @@ The homepage build, footer treatment and current Lora/Archivo typography are app
 
 The homepage is not yet fully closed: Section 5 remains reserved. Mobile and tablet refinement are complete. Tablet now uses the shared intermediate responsive system: reduced gutters, two-column side-group layouts around full-width features, a single-column feature/support section, two-column collection groups and matching feature-first Section 7 ordering. The next work is final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
 
-The approved next product phase is the main navbar page build. That phase is governed by `docs/navbar-architecture.md` and proceeds one page at a time with approval gates.
+Homepage content production is now the immediate product priority. Sections are completed one at a time under the editorial and story-management gates. After the homepage is fully completed, live-verified and explicitly approved section-by-section, proceed to the navbar/destination page build governed by `docs/navbar-architecture.md`. Analytics work remains a separate track and must not displace webpage completion.
 
 ## Homepage sequence
+
+1. Complete and live-verify the current approved section checkpoint, then obtain explicit editorial approval.
+2. Implement the next homepage section in sequence, one section at a time.
+3. Repeat content intake, source/opening/voice QA, canonical routing, responsive verification and live approval for each section.
+4. Keep Section 5 reserved unless and until the documented reference evidence authorises its implementation.
+5. After all homepage sections are complete, perform final imagery, production/accessibility QA and side-by-side fidelity review.
+6. Only after explicit full-homepage approval, begin navbar/destination pages.
+
+### Legacy homepage visual sequence (completed work record)
 
 1. Final visual review of global typography.
 2. Verify/fine-tune Section 1.
@@ -23,6 +32,17 @@ The approved next product phase is the main navbar page build. That phase is gov
 11. Replace structural placeholders with final free/licensed imagery.
 12. Production/accessibility QA.
 13. Final side-by-side fidelity pass.
+
+## Analytics roadmap relationship
+
+Analytics is a parallel product track, not a gate on public webpage completion.
+
+- The server-side reporting adapter is implemented and safely returns explicit unavailable/insufficient-data states when GA4 is not configured.
+- Live GA4 activation is deferred until the editor is ready to complete the external provider setup.
+- The rule-based Editorial Intelligence layer may be built and tested independently using normalized test/fixture data and later connected to measured GA4 data.
+- Do not block a page, section, article route or responsive implementation because GA4 credentials are missing.
+- Do not present test/derived values as live measurements.
+- When GA4 is later activated, verify production receipt and then enable live-data-driven editorial signals without redesigning the public site.
 
 ## Navbar sequence
 
