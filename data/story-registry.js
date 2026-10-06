@@ -143,6 +143,7 @@ function makeStory({
       editor: null,
     },
     authorialVoice,
+    variationChoices,
     editorialStatus: status,
     publication: {
       articleUrl,
