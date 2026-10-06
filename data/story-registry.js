@@ -343,7 +343,7 @@ export const storyRegistry = [
     publishedAt: "2026-10-06",
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     variationChoices: ["object-led opening","evidence used to complicate rather than conclude"],
-    placements: [{ section: "Stories", url: "/stories" }],
+    placements: [{ section: "Homepage", url: "/" }, { section: "Stories", url: "/stories" }],
     sourceRefs: ["data/content.js", "data/stories.js"],
   }),
   makeStory({
