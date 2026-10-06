@@ -13,6 +13,7 @@
 // - { type: "sourceNote", text }
 
 const unsplashCredit = "Unsplash";
+import { section3Articles } from "./story-articles-section3";
 const images = {
   hero: {
     src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=3000",
@@ -413,5 +414,8 @@ export const storyArticles = {
 };
 
 export function getStoryArticle(storyId) {
-  return storyArticles[storyId] || null;
+  return {
+    ...storyArticles[storyId],
+    ...section3Articles[storyId],
+  } || null;
 }
