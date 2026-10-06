@@ -428,3 +428,8 @@ The approval unit is the complete **visible content closure unit** currently bei
 8. Production route checks succeed at desktop, tablet and mobile.
 
 Do not treat a three-story subset, “priority stories” subset, or primary-section subset as the closure unit. The entire visible target page/section is the unit of implementation and approval.
+
+
+## Canonical article-body store rule — October 6, 2026
+
+The Story Registry is authoritative for story metadata and `data/story-articles.js` is authoritative for publishable article bodies. Do not create section-specific production article stores, alternate article loaders or duplicate Story ID content files. Before deployment, merge staged work into the canonical store and verify the shared route resolves that canonical record.
