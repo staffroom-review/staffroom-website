@@ -340,9 +340,9 @@ The Story ID remains permanent even if the title or slug changes. publication.ar
 
 ### Content production rule
 
-Full-length content is produced one page at a time. All eligible homepage stories are completed and QA-checked before work begins on the Stories page, then the same sequence continues through the remaining navbar pages.
+Full-length content is produced one **complete target page/section at a time**. Every visible story card in the target closure unit must be completed, routed and QA-checked in the same implementation release. This applies even when a story's primary section is elsewhere.
 
-Human/editorial-designated stories are supplied by the human editor/contributor. Staffroom-designated stories may be drafted by the AI workflow. Authorship and AI involvement must remain accurately recorded in the registry.
+Human/editorial-designated stories are supplied separately by the human editor/contributor. Staffroom-designated stories may be drafted by the AI workflow. The only allowed partial closure is an explicitly identified human-content dependency requested by the editor; the build must never invent that manuscript.
 
 The article-page implementation is a presentation system, not permission to publish placeholder copy as if it were finished work.
 
@@ -355,9 +355,11 @@ For implementation purposes, visible byline state determines who supplies the ma
 
 The registry must preserve the provenance state and the article page must not imply human authorship where the Staffroom/AI workflow produced the body.
 
+Each Staffroom-generated full-length story must also record two story-specific variation choices in variationChoices so voice selection does not collapse into a reusable template.
+
 ### Section-by-section live approval workflow
 
-For the Homepage, production proceeds one section at a time. Each section is independently intake-verified, expanded, routed, deployed and presented for live editorial verification. No subsequent section may be implemented until the preceding section is explicitly approved.
+For the Homepage and all later page-family builds, production proceeds one **complete target section/page** at a time. The complete visible story set in the target closure unit is enumerated, intake-verified, expanded, routed, deployed and presented for live editorial verification as one release. No subsequent section/page may be implemented until the preceding target closure unit is explicitly approved. A story appearing in the target section is included even when its primary section or another placement belongs elsewhere.
 
 ## Authorial voice as a registry field — October 3, 2026
 
@@ -411,3 +413,18 @@ A story is not a live card merely because it exists in the registry. A live stor
 Other stories may remain placeholders while content is produced chronologically, but every story exposed as live must be independently accessible. Never allow a registry slug mismatch, missing article entry or placeholder body to produce a 404 from a live card.
 
 
+
+## Atomic page/section closure and live-card completeness — October 6, 2026
+
+The approval unit is the complete **visible content closure unit** currently being implemented. Before release, enumerate the cards in that page/section and confirm for every card:
+
+1. Story Registry record and provenance are authoritative.
+2. Story Intake & Verification has been completed.
+3. The correct controlled format, author/byline state, voice and two variation choices are recorded.
+4. The weekly source ledger and page-level opening ledger contain no unresolved collision.
+5. The body is complete for the format band, unless the story is explicitly waiting for separately supplied human copy.
+6. The canonical article URL, article body and registry status agree.
+7. Required internal/related links, metadata and image information are complete.
+8. Production route checks succeed at desktop, tablet and mobile.
+
+Do not treat a three-story subset, “priority stories” subset, or primary-section subset as the closure unit. The entire visible target page/section is the unit of implementation and approval.
