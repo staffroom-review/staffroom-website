@@ -4,7 +4,7 @@
 
 The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1–4, 6 and 7 have received screenshot-led visual fine-tuning. Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail; Section 3 uses a denser three-column editorial composition with internal separators and a clearer image-led middle column; Section 4 uses the documented 3/6/3 central-feature composition with subtle side boundaries and a distinct feature placeholder; Section 6 uses a symmetric five-column collection with a strong vermillion section line, compact editorial titles, landscape imagery and thin story rules; Section 7 uses the documented 3/6/3 feature-chapter composition with a dominant centre feature, side story packages and mobile feature-first ordering. Section 5 remains reserved. The mobile pass is now implemented using the documented responsive rules: feature-first sequencing, single-column story flow, sequential collections, preserved image prominence, simplified section dividers and compact section headers.
 
-The homepage is not yet fully closed: Section 5 remains reserved. Mobile and tablet refinement are complete. Tablet now uses the shared intermediate responsive system: reduced gutters, two-column side-group layouts around full-width features, a single-column feature/support section, two-column collection groups and matching feature-first Section 7 ordering. The next work is final imagery, production/accessibility QA and final side-by-side fidelity review. These homepage tasks remain sequenced below and must not be silently skipped.
+The homepage structural baseline is approved through the documented visual pass, with Section 5 still reserved. Mobile and tablet refinement are complete. Homepage editorial production now closes one section at a time: every eligible story card in the section must be written, metadata-complete, canonically routed and live-verified in the same implementation step. The current content checkpoint is the Recommended for teachers section; do not begin the next homepage section until this section receives explicit live approval.
 
 Homepage content production is now the immediate product priority. Sections are completed one at a time under the editorial and story-management gates. After the homepage is fully completed, live-verified and explicitly approved section-by-section, proceed to the navbar/destination page build governed by `docs/navbar-architecture.md`. Analytics work remains a separate track and must not displace webpage completion.
 
@@ -220,7 +220,7 @@ Full-length homepage production also now requires authentic, attributable eviden
 
 The previous bottom-of-article provenance/disclaimer blocks are removed from the reader-facing article experience. Transparency and verification are handled through accurate bylines, sourcing, editorial metadata and the publication's future AI & Editorial Policy page.
 
-**Current live checkpoint:** Homepage Section 2 has been expanded to full-length article bodies under the new voice/evidence/source-rotation/opening-collision system. The four Section 2 stories are live and route-verified. Stop here for live editorial approval of Section 2 before Section 3 begins.
+**Current live checkpoint:** Homepage Section 3 — “Recommended for teachers” — has now been completed as one atomic content release. Every visible story card in the section has a canonical article route and a complete Staffroom-generated body, with human-written content remaining the only explicit exception. Stop here for live editorial approval of the complete Section 3 release before beginning Section 4.
 
 ## Story Management & Verification System — implementation checkpoint
 
@@ -391,22 +391,27 @@ For full-length article production, the Story Registry's byline/provenance state
 
 ### Homepage full-length production gate
 
-Homepage article expansion is now a staged editorial process rather than a batch implementation. Complete **one homepage section at a time**, then stop for live visual/content verification and explicit editorial approval before moving to the next section. Do not populate the entire homepage article set in one implementation pass.
+Homepage article expansion is an **atomic section-closure process**. Implement **one homepage section at a time**, and in that implementation step complete **every visible story card in the target section** that is eligible for Staffroom/AI drafting. Do not release a section with partially written or unroutable cards. The only exception is an explicitly human-written/editorial-designated story that the editor has asked to supply separately; that story remains a documented human-content dependency rather than an invented manuscript.
 
 For each section:
-1. Inspect the canonical Story Registry record and visible byline/provenance.
-2. Run Story Intake & Verification.
-3. Expand only eligible Staffroom/AI-designated stories to the documented format-specific length band and article model.
-4. Do not invent manuscripts for Editorial/Long Read or other human-designated stories.
-5. Wire completed stories to their canonical article routes and complete metadata, imagery, source notes and internal links.
-6. Deploy and pause for live verification/approval.
-7. Only after approval proceed to the next homepage section.
+1. Enumerate every visible story card in the target section, including stories whose primary section/ownership belongs elsewhere.
+2. Inspect the canonical Story Registry record and visible byline/provenance for each card.
+3. Run Story Intake & Verification for every target story, including duplicate concept, material overlap, placement/format mismatch and contradiction checks.
+4. Assign and record the six-voice choice plus at least two story-specific variation choices for every Staffroom-generated story.
+5. Reserve/check weekly sources and page-level opening mechanisms before drafting; no underlying source may be reused within the same editorial week unless explicitly flagged for editorial review.
+6. Expand every eligible Staffroom/AI-designated story to its documented format band; do not fabricate human/editorial manuscripts or case studies.
+7. Wire every completed story to its canonical /stories/<slug> route with metadata, imagery, source notes and required internal/related links.
+8. Verify registry → canonical URL → article body → live route for **every card**, and verify desktop/tablet/mobile navigation.
+9. Deploy the whole section as one release and stop for live editorial/content approval.
+10. Do not begin the next section/page until the preceding target section/page is explicitly approved.
+
+A story may be placed on multiple pages, but the section currently being closed is the unit of implementation and approval. A live page may contain other placeholders only outside the target closure unit and only where they are not presented as completed/live stories.
 
 After all homepage sections are approved, proceed to the next implementation step: create the reader-facing AI & Editorial Policy page, followed by the contributor Honour Code, before beginning the next page's full-length content sequence.
 
 ## Weekly editorial QA and live-card integrity — October 3, 2026
 
-The staged writing process is page-section based, but QA is also **page-wide and week-wide**. Before approving each section, run:
+The staged writing process is page-section based, and QA is also **page-wide and week-wide**. Before approving each section, run:
 - six-voice assignment and variation check;
 - weekly source-ledger check: no underlying source reused within the same editorial week;
 - opening-collision check across stories in the section and against other stories updated that week on the same page;
@@ -414,5 +419,5 @@ The staged writing process is page-section based, but QA is also **page-wide and
 - registry → canonical URL → article-body → live-route check for every live card;
 - mobile/tablet/desktop link verification.
 
-Chronological production permits other stories to remain placeholders. It does **not** permit a story already presented as live to resolve to a 404 or incomplete article. Each released story must therefore be independently complete and accessible.
+Chronological production permits placeholders **outside the target closure unit**. Within the target section/page, every visible story is either fully released or explicitly identified as awaiting separate human-written content. A story presented as live must never resolve to a 404, placeholder body or incomplete route.
 
