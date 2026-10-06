@@ -198,7 +198,7 @@ Each navbar page must use the editorial content system in docs/editorial-content
 
 Before a page receives visual approval, its visible story cards should use production-quality headlines, deks, format labels and realistic metadata rather than abbreviated placeholders.
 
-After the page family is structurally approved, priority stories can move through the full article-body stage using the format-specific length bands and SEO/editorial requirements.
+After the page family is structurally approved, the **entire visible story set for that page** moves through the full article-body stage as one closure unit. Every eligible Staffroom/AI story must be completed in the same implementation step; an explicitly human-written story is the only permitted separately supplied manuscript.
 
 The dedicated newsletter and blog destinations are already scaffolded at /newsletter and /blog. They sit within the specialist-content layer and should not be allowed to become accidental variants of the seven primary page families.
 
@@ -235,4 +235,8 @@ Full-length stories use the shared canonical article route /stories/<story-slug>
 
 The article page is shared infrastructure rather than an additional navbar page family. Its typography, reading width, imagery treatment, metadata and related-reading pattern form a common public reading surface while individual story formats can add supported content blocks as required.
 
-Full-length content production happens one page at a time, beginning with the homepage story set, then following the approved navbar sequence.
+Full-length content production happens one complete page/section at a time. The closure unit is every visible story card on the target page/section, including cross-posted stories whose primary section is elsewhere.
+
+## Page content closure rule — October 6, 2026
+
+A navbar page is not content-complete when only its “priority” stories are written. The page-level approval gate applies to **every visible story card on that page**. Each card must have a canonical Story ID, truthful authorship/provenance, complete article body or an explicitly separate human-copy dependency, canonical route, metadata, imagery/source information and successful responsive live verification. This rule also applies to stories cross-posted from another primary section. No page advances to the next navbar destination until the complete visible content set for the current page is closed and approved.
