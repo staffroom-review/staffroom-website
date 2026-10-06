@@ -648,6 +648,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The aim is not to eliminate judgement. Teaching requires judgement. The aim is to make the judgement revisable when new evidence arrives. That is what keeps a difficult pattern from becoming a permanent identity." },
       { type: "paragraph", text: "When the label changes, the adult's expectations can change with it. A teacher who expects difficulty may notice disruption first. A teacher who expects a learner to be capable of improvement may start noticing the conditions in which the learner succeeds. That shift can alter what happens next without pretending the original problem never existed." },
       { type: "paragraph", text: "A school that keeps this question open can still make quick decisions. The difference is that the decision is attached to evidence that can be revisited. That makes behaviour support less dependent on reputation and more dependent on what the student and adults actually observe." },
+      { type: "paragraph", text: "The value of the question is not that it produces instant certainty. It produces a better basis for the next decision." },
     ],
     sources: [
       { label: "Education Endowment Foundation — Understanding how school policies and practices shape school behaviour", url: "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/understanding-the-use-of-school-behavioural-policies-that-aim-to-enable-an-authoritative-school-climate" },
@@ -703,6 +704,7 @@ export const storyArticles = {
       { type: "paragraph", text: "That is why the phrase 'stopped measuring everything' should not be read as an act of withdrawal. It is an act of selection. The leader is choosing which signals deserve scarce attention and accepting that some uncertainty will remain." },
       { type: "paragraph", text: "When uncertainty remains, the school can say so. A result may be suggestive rather than conclusive. A change may be associated with an intervention without proving that the intervention caused it. A subgroup may move in one direction while the overall average does something else. These are not failures of measurement. They are the reality that measurement is supposed to help people reason about." },
       { type: "paragraph", text: "The discipline also protects the principal from confusing activity with improvement. A school can be extremely busy collecting evidence, attending meetings and producing reports. None of that guarantees that students or teachers are experiencing better conditions. The useful measure is the one that helps the institution notice a meaningful change." },
+      { type: "paragraph", text: "The measure earns its place when the school can explain what decision it helps people make." },
     ],
     sources: [
       { label: "OECD — Empowering schools’ improvement: Insights from PISA for Schools case studies (2026)", url: "https://www.oecd.org/en/publications/empowering-schools-improvement_50f6b0e5-en.html" },
@@ -759,6 +761,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The school's responsibility is therefore not to make marks disappear. It is to prevent the convenience of marks from shrinking the conversation. A number can travel quickly through a school. Meaning takes longer, but meaning is what turns assessment into action." },
       { type: "paragraph", text: "This is particularly important when assessment is used to compare groups. Aggregated results can reveal inequity and should not be dismissed. But the aggregate is the beginning of an investigation, not the explanation. A school still needs to ask which learners are affected, which tasks create the difference and what response is justified." },
       { type: "paragraph", text: "That is the larger lesson of moving beyond marks. Better assessment is not assessment without numbers. It is assessment in which numbers, observations and professional judgement are allowed to do different jobs—and in which the learner remains more important than the summary." },
+      { type: "paragraph", text: "The point is not to replace the number but to put the number back inside the learning it was meant to describe." },
     ],
     sources: [
       { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
@@ -804,6 +807,7 @@ export const storyArticles = {
       { type: "paragraph", text: "Revising the timetable can be politically difficult because every gain has a trade-off. Protecting collaboration may require moving a lesson. Giving a subject a longer block may reduce flexibility elsewhere. The answer is not to avoid the trade-offs but to make the educational reason for them explicit." },
       { type: "paragraph", text: "A timetable is therefore a form of school memory. It records what a school has repeatedly chosen to make possible. When leaders revisit it with evidence rather than habit, the schedule becomes capable of learning too." },
       { type: "paragraph", text: "A review can therefore begin with three questions: what does the current timetable protect, what does it repeatedly make difficult, and what evidence would justify changing it? Those questions are simple enough to ask each term and concrete enough to prevent the schedule becoming invisible simply because everyone is used to it." },
+      { type: "paragraph", text: "The review becomes useful when the grid becomes a question rather than a fixed answer." },
     ],
     sources: [
       { label: "OECD — Curriculum and instruction time", url: "https://www.oecd.org/en/topics/curriculum-and-instruction-time.html" },
