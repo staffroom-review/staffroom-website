@@ -429,7 +429,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The most interesting fifth-year shift may be smaller. A teacher starts asking why a routine exists before automatically preserving it. They stop treating every piece of feedback as a verdict. They become more willing to reuse a successful explanation and more willing to abandon one that keeps failing. The classroom becomes less like a performance that has to be perfected and more like a place where decisions can be tested." },
       { type: "paragraph", text: "That does not mean lowering standards. It can mean placing standards where they belong. A teacher can care deeply about whether students understand a concept without believing every lesson must look impressive. They can care about parents without answering every message immediately. They can care about colleagues without becoming the person who absorbs every problem." },
       { type: "heading", level: 2, text: "A profession needs room to become a profession" },
-      { type: "paragraph", text: "India's recent education-policy direction also matters here. The National Curriculum Framework and PARAKH increasingly describe assessment as evidence to guide teaching rather than a single score that defines a learner. A similar principle applies to teachers: professional growth is easier when evidence helps people improve rather than simply ranking them." },
+      { type: "paragraph", text: "India's recent education-policy direction also matters here. The more general lesson is that professional growth is easier when evidence helps people improve rather than simply ranking them. The Australian study is the specific evidence used in this article; it should not be stretched into a claim about Indian retention." },
       { type: "paragraph", text: "The fifth-year teacher, then, is not necessarily the teacher who knows everything. It may be the teacher who has learned what needs to be known, what can be learned later and what should not be carried alone." },
       { type: "quote", text: "Experience becomes useful when it creates more choices, not just more routines.", attribution: "Staffroom Review" },
       { type: "paragraph", text: "A school that wants teachers to stay cannot manufacture a five-year identity with a retention programme alone. It has to make the years worth staying for: enough autonomy to exercise judgement, enough support to keep learning, and enough time for teaching to remain the centre of the job." },
@@ -444,8 +444,6 @@ export const storyArticles = {
 
     sources: [
       { label: "When ‘quality’ collides: why do committed early career teachers leave? (Taylor & Francis, 2026)", url: "https://www.tandfonline.com/doi/full/10.1080/14681366.2026.2639575" },
-      { label: "PARAKH — Learning Assessment Cell", url: "https://parakh.ncert.gov.in/index.php/learning-assessment" },
-      { label: "OECD — Results from TALIS 2024: The demands of teaching", url: "https://www.oecd.org/en/publications/results-from-talis-2024_90df6235-en/full-report/the-demands-of-teaching_0e941e2f.html" },
     ],
   },
 
@@ -483,9 +481,8 @@ export const storyArticles = {
       { type: "paragraph", text: "The result may be smaller homework, more purposeful homework or sometimes no homework at all. The point is not to defend the assignment as a tradition. It is to make the learning worth the student's time." },
 
     sources: [
-      { label: "Turós, Nagy & Szűts — Computers and Education: Artificial Intelligence (2025)", url: "https://doi.org/10.1016/j.caeai.2025.100394" },
+      { label: "Turós, Nagy & Szűts — What percentage of secondary school students do their homework with the help of artificial intelligence? (Computers and Education: Artificial Intelligence, 2025)", url: "https://www.sciencedirect.com/science/article/pii/S2666920X25000347" },
       { label: "UNESCO — Guidance for generative AI in education and research", url: "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_d4cbd94e-e183-448f-90a9-ea9bb3b74db2?_=386693eng&from=1&to=48" },
-      { label: "OECD — PISA 2025: Students’ use of artificial intelligence for schoolwork", url: "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/student-school-life-and-beyond_861e5904.html" },
     ],
   },
 
@@ -524,9 +521,8 @@ export const storyArticles = {
       { type: "paragraph", text: "The practical choice is therefore not between coverage and caring less. It is between treating every minute as interchangeable and using professional judgement to decide what the next minute should buy." },
 
     sources: [
-      { label: "NCERT Journal of Indian Education — How do Children Learn Mathematics? (2019)", url: "https://ejournals.ncert.gov.in/index.php/jie/article/view/2656" },
-      { label: "NCERT Indian Educational Review — Mathematical Thinking and Teaching Practice (2022)", url: "https://ejournals.ncert.gov.in/index.php/ier/article/view/3318" },
-      { label: "NCERT — Pedagogical Content Knowledge and Classroom Teaching of Mathematics Teachers", url: "https://ejournals.ncert.gov.in/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fejournals.ncert.gov.in%2Findex.php%2Fjie%2Farticle%2Fdownload%2F1278%2F1218%2F2317" },
+      { label: "Krishnan & Kapoor — How do Children Learn Mathematics? (Journal of Indian Education, 2019)", url: "https://ejournals.ncert.gov.in/index.php/jie/article/view/2656" },
+      { label: "NCERT — Learning Outcomes in Geometry at Secondary Stage", url: "https://ejournals.ncert.gov.in/index.php/ET/article/view/3657" },
     ],
   },
 
@@ -539,7 +535,7 @@ export const storyArticles = {
       { type: "paragraph", text: "Sending a student out can be necessary in a difficult moment. Safety matters. Other students deserve to learn. Teachers need ways to interrupt behaviour that is escalating. The harder question begins when removal becomes the routine response to the same child." },
       { type: "heading", level: 2, text: "A quiet classroom can hide a recurring problem" },
       { type: "paragraph", text: "The immediate benefit of removal is visible. The child is no longer interrupting the lesson. What is less visible is the learning time lost by the child, the relationship that may become harder to repair and the possibility that the behaviour is communicating a difficulty the school has not yet understood." },
-      { type: "paragraph", text: "A systematic review of school exclusion research found that exclusion is associated with negative educational and life outcomes and that exclusionary discipline is disproportionately experienced by more vulnerable groups. A separate study of classroom exclusions reported that, across a sample of nearly 1,500 secondary pupils, about one-third had been asked to leave a classroom during the previous year." },
+      { type: "paragraph", text: "Research on behaviour is strongest at showing patterns and intervention effects, not diagnosing an individual student. That is why the useful response is to combine a clear boundary with disciplined observation of what happens before and after the incident." },
       { type: "paragraph", text: "Those findings concern broader systems and cannot be used to explain one particular child. They do, however, change the question a teacher or school leader might ask: not only 'How do we stop this behaviour?' but 'What happens to this child when this becomes the way we respond?'" },
       { type: "heading", level: 2, text: "The label arrives quickly" },
       { type: "paragraph", text: "Once a child becomes known as difficult, the label can start doing work. Adults anticipate trouble. The child's ordinary behaviour is interpreted through the previous incident. A request can sound defiant. A joke can sound disruptive. A mistake can become evidence that the child is not trying." },
@@ -563,9 +559,8 @@ export const storyArticles = {
       { type: "paragraph", text: "Belonging is not a reward for perfect behaviour. It is part of the condition under which behaviour can change. A student who knows there is a path back to the room has a different incentive from a student who has learned that one incident can become a permanent identity." },
 
     sources: [
-      { label: "School-based interventions for reducing disciplinary school exclusion — systematic review (PMC)", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8533648/" },
-      { label: "Classroom exclusions: patterns, practices, and pupil perceptions", url: "https://www.tandfonline.com/doi/full/10.1080/13603116.2022.2121434" },
-      { label: "Caste and control in schools: a systematic review of exclusion", url: "https://www.sciencedirect.com/science/article/pii/S019074091830464X" },
+      { label: "Education Endowment Foundation — Behaviour interventions", url: "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/behaviour-interventions" },
+      { label: "UNICEF India — Quality education", url: "https://www.unicef.org/india/what-we-do/quality-education" },
     ],
   },
 
@@ -582,7 +577,7 @@ export const storyArticles = {
       { type: "paragraph", text: "None of these possibilities should be assumed. They should be tested." },
       { type: "heading", level: 2, text: "What happens before the behaviour?" },
       { type: "paragraph", text: "A useful school-level investigation is often almost boring: record what happened immediately before, what the student did, how adults responded and what happened next. Patterns emerge when the same question is asked repeatedly." },
-      { type: "paragraph", text: "This is consistent with a broader evidence base on exclusion and behaviour. Research does not support the idea that removing students is a universally effective response. School-based interventions that combine mentoring, monitoring, academic support or teacher skills can reduce exclusion in the short term, although effects vary and should be interpreted cautiously." },
+      { type: "paragraph", text: "The evidence is also a warning against assuming that a written behaviour policy automatically determines what students experience. What matters is the climate produced by the ordinary practices that follow the policy." },
       { type: "heading", level: 2, text: "The child is not the only variable" },
       { type: "paragraph", text: "Classroom behaviour is produced in a relationship between a learner and an environment. That environment includes the task, the teacher's instructions, peer dynamics, the physical room, the timetable, transitions and the consequences attached to different actions." },
       { type: "paragraph", text: "This does not remove responsibility from the student. It makes responsibility more precise. A school can hold a student accountable for hitting another child while also asking why the pattern keeps occurring and what adults need to change." },
@@ -605,8 +600,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The adult's question can therefore change from 'Why is this child like this?' to 'What keeps happening, under what conditions, and what response changes the pattern?' That question is harder. It is also more useful." },
 
     sources: [
-      { label: "School-based interventions for reducing disciplinary school exclusion — systematic review", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8533648/" },
-      { label: "Classroom exclusions: patterns, practices, and pupil perceptions", url: "https://www.tandfonline.com/doi/full/10.1080/13603116.2022.2121434" },
+      { label: "Education Endowment Foundation — Understanding how school policies and practices shape school behaviour", url: "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/understanding-the-use-of-school-behavioural-policies-that-aim-to-enable-an-authoritative-school-climate" },
     ],
   },
 
@@ -619,17 +613,17 @@ export const storyArticles = {
       { type: "paragraph", text: "The problem is not measurement itself. A school without evidence is forced to rely on memory, anecdote and whoever speaks most confidently in the room. The problem begins when collecting a number becomes easier to defend than deciding what the number is for." },
       { type: "heading", level: 2, text: "Not every number answers the same question" },
       { type: "paragraph", text: "An attendance rate can tell a leader how often students were present. It cannot, by itself, tell them why a student was absent or whether a particular intervention will work. A test score can show performance on a defined assessment. It cannot become a complete description of a learner." },
-      { type: "paragraph", text: "NCERT's assessment guidance makes a similar distinction. Assessment is valuable when information about learning is interpreted and used to guide teaching. The National Curriculum Framework for School Education calls for a shift from primarily summative, rote-oriented assessment towards regular, formative and competency-based assessment." },
+      { type: "paragraph", text: "School leaders therefore need to distinguish useful evidence from compliance evidence. A measure can be technically accurate and still be a poor guide to action if nobody knows what decision it is meant to inform." },
       { type: "heading", level: 2, text: "The principal's job is partly deciding what not to measure" },
       { type: "paragraph", text: "A leader who removes a report is not necessarily becoming less accountable. They may be protecting attention for a better question. If a weekly spreadsheet is never discussed in a meeting, never changes a decision and cannot be traced to an action, it deserves scrutiny." },
-      { type: "paragraph", text: "India's emerging assessment architecture offers a useful counterexample to measurement for measurement's sake. CBSE's SAFAL describes school-level assessment as a way to identify learning gaps, adjust curriculum and teaching, target support and inform longer-term planning. PARAKH similarly emphasises diagnostic use and warns against treating a single score as a judgement of a student's performance." },
+      { type: "paragraph", text: "A measure becomes valuable when it changes what a school does. That means the principal has to define the decision first and then ask which evidence is actually necessary." },
       { type: "heading", level: 2, text: "Measurement can still be uncomfortable" },
       { type: "paragraph", text: "Good data sometimes makes a school change its mind. A programme that everyone likes may not be helping the students it was intended to help. A class may be completing work but misunderstanding the concept. A subgroup may be improving while the overall average looks unchanged." },
       { type: "paragraph", text: "That is why leaders need to distinguish signal from noise. They need enough context to interpret a result and enough humility to say when the evidence is insufficient." },
       { type: "heading", level: 2, text: "A school needs a small set of live questions" },
       { type: "paragraph", text: "One practical discipline is to begin with decisions rather than dashboards. What are we trying to improve? What would tell us whether the change is helping? How often will we look? Who will act on the information? What would make us stop the intervention?" },
       { type: "paragraph", text: "This makes measurement smaller and more consequential. It also changes the relationship between leaders and teachers. Data becomes something used with professionals rather than something collected about them." },
-      { type: "paragraph", text: "UNESCO's India education profile notes that school leaders are assessed through a mixture of academic, administrative, safety, infrastructure and inclusion expectations. That breadth makes it even more important for leaders to distinguish useful evidence from compliance noise." },
+      { type: "paragraph", text: "The wider the set of responsibilities, the more important it is to protect attention for the evidence that can actually change a decision." },
       { type: "quote", text: "The most mature measurement system is not the one with the most numbers. It is the one that changes a decision for a reason people can explain.", attribution: "Staffroom Review" },
       { type: "paragraph", text: "The principal who stops measuring everything has not stopped caring about evidence. The opposite may be true. They have decided that numbers deserve a purpose before they deserve a place in the school." },
     ],
@@ -643,10 +637,7 @@ export const storyArticles = {
       { type: "paragraph", text: "A good measurement culture leaves room for uncertainty. Sometimes the evidence is too small. Sometimes the indicator is noisy. Sometimes two signals point in different directions. A mature school can say so without immediately inventing a third metric to make the discomfort disappear." },
 
     sources: [
-      { label: "NCERT — National Curriculum Framework for School Education: Approach to Assessment", url: "https://ncf.ncert.gov.in/webadmin/assets/b27f04eb-65af-467f-af12-105275251546The" },
-      { label: "CBSE — SAFAL: Structured Assessment for Analysing Learning", url: "https://cbseacademic.nic.in/safal/index.html" },
-      { label: "PARAKH — Census Based Assessment", url: "https://www.parakh.ncert.gov.in/census-based-assessment" },
-      { label: "UNESCO GEM — India: School leadership", url: "https://gem-report-education-profiles.unesco.org/central-and-southern-asia/india/_school-leadership.html" },
+      { label: "OECD — Empowering schools’ improvement: Insights from PISA for Schools case studies (2026)", url: "https://www.oecd.org/en/publications/empowering-schools-improvement_50f6b0e5-en.html" },
     ],
   },
 
@@ -659,7 +650,7 @@ export const storyArticles = {
       { type: "paragraph", text: "What the number cannot easily carry is the story underneath it: what the student understands, what they are still learning, how confidently they can apply an idea, where the error came from and what should happen next." },
       { type: "heading", level: 2, text: "Marks are useful precisely because they are simple" },
       { type: "paragraph", text: "The simplicity is not a flaw. Families need ways to understand progress. Teachers need assessment information. Schools need to communicate. The problem begins when a convenient summary becomes the only language available." },
-      { type: "paragraph", text: "NCERT's assessment source book asks a deceptively difficult question: what do marks or grades actually tell us about a child's learning or progress? Its example shows how a low test score can become a social event for a child without necessarily telling adults what the child needs to learn next." },
+      { type: "paragraph", text: "A mark can be useful for reporting while still being incomplete for teaching. The school should be explicit about that difference rather than expecting one number to do both jobs." },
       { type: "heading", level: 2, text: "India's assessment reform is trying to widen the conversation" },
       { type: "paragraph", text: "The National Curriculum Framework for School Education describes a move from assessment centred on rote memorisation towards regular, formative and competency-based assessment. It also describes a holistic progress card that can combine teacher assessment with self-assessment, peer assessment, projects, portfolios and other evidence." },
       { type: "paragraph", text: "CBSE's SAFAL framework similarly describes assessment as diagnostic information that schools can use to identify learning gaps, adjust teaching and target support. The point is not to abolish marks. It is to stop asking marks to answer questions they cannot answer alone." },
@@ -684,9 +675,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The family deserves that richer information because the purpose of the report is not simply to produce a ranking. It is to help adults decide what to do next. The number starts the conversation. It should not end it." },
 
     sources: [
-      { label: "NCERT — Source Book on Assessment for Classes I–V", url: "https://n20.ncert.org.in/pdf/publication/otherpublications/health-n-physical-1-4.pdf" },
-      { label: "NCERT — National Curriculum Framework for School Education: Approach to Assessment", url: "https://ncf.ncert.gov.in/webadmin/assets/b27f04eb-65af-467f-af12-105275251546The" },
-      { label: "CBSE — SAFAL: Structured Assessment for Analysing Learning", url: "https://cbseacademic.nic.in/safal/index.html" },
+      { label: "PARAKH — When the Progress Card Reads the Classroom: AI in the Preparatory Stage (2026)", url: "https://parakh.ncert.gov.in/blog/when-progress-card-reads-classroom-ai-preparatory-stage" },
     ],
   },
 
@@ -699,7 +688,7 @@ export const storyArticles = {
       { type: "paragraph", text: "But a timetable is one of the most concrete statements a school makes about what matters. It decides not only what students study, but when they study it, how often they encounter it, whether teachers have time to prepare together and what kinds of activities can survive a crowded week." },
       { type: "heading", level: 2, text: "Time is a curriculum decision" },
       { type: "paragraph", text: "If a school gives a subject three periods a week, that is not merely an administrative fact. It is a curriculum allocation. If collaborative planning repeatedly loses its slot to urgent meetings, the school has made another choice, even if nobody wrote it down." },
-      { type: "paragraph", text: "Curriculum-design literature has long argued that the timetable embodies a model of learning. A timetable can be treated as a fixed chart, or as an arrangement of learning experiences that can vary in length and structure according to what students are meant to learn." },
+      { type: "paragraph", text: "The OECD's work on curriculum and instruction time makes the broader point directly: decisions about instructional time reflect priorities about what students should learn and when. At school level, those choices become more granular." },
       { type: "heading", level: 2, text: "The timetable can reveal priorities more honestly than a mission statement" },
       { type: "paragraph", text: "Schools often say that creativity, physical activity, discussion and teacher collaboration matter. The timetable reveals whether those commitments have protected time. A subject can be valued in principle while receiving the kind of slot that makes it almost impossible to teach well." },
       { type: "paragraph", text: "The reverse can also happen. A school can quietly protect a practice that its formal documents barely mention because leaders know that it matters to the day-to-day experience of students and teachers." },
@@ -725,8 +714,7 @@ export const storyArticles = {
       { type: "paragraph", text: "The grid is never only a grid. It is a record of the educational choices a school has decided to make visible through time." },
 
     sources: [
-      { label: "Secondary Curriculum Design Handbook — Timetabling and curriculum models", url: "https://dokumen.pub/the-secondary-curriculum-design-handbook-preparing-young-children-for-their-futures-9781472926746-9781441108623.html" },
-      { label: "NCERT — National Curriculum Framework for School Education", url: "https://ncf.ncert.gov.in/webadmin/assets/b27f04eb-65af-467f-af12-105275251546The" },
+      { label: "OECD — Curriculum and instruction time", url: "https://www.oecd.org/en/topics/curriculum-and-instruction-time.html" },
     ],
   },
 };
