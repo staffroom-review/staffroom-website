@@ -368,7 +368,7 @@ export const storyRegistry = [
     publishedAt: "2026-10-06",
     verification: { lastChecked: "2026-10-06", outcome: "section-3-no-close-match-found", override: false, overrideNote: "" },
     variationChoices: ["label-led opening","behaviour-before-interpretation"],
-    placements: [{ section: "Stories", url: "/stories" }, { section: "Teachers", url: "/teachers" }, { section: "Classrooms", url: "/classrooms" }],
+    placements: [{ section: "Homepage", url: "/" }, { section: "Stories", url: "/stories" }, { section: "Teachers", url: "/teachers" }, { section: "Classrooms", url: "/classrooms" }],
     sourceRefs: ["data/content.js", "data/stories.js", "data/teachers.js", "data/classrooms.js", "data/voices.js"],
   }),
   makeStory({
