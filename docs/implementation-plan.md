@@ -1,21 +1,33 @@
 # Implementation Plan
 
-## Current checkpoint
+## Current checkpoint — October 27, 2026
 
-The homepage build, footer treatment and current Lora/Archivo typography are approved as the current baseline. Sections 1–4, 6 and 7 have received screenshot-led visual fine-tuning. Section 2 retains the documented 8/4 feature-to-support architecture with a tighter support rail; Section 3 uses a denser three-column editorial composition with internal separators and a clearer image-led middle column; Section 4 uses the documented 3/6/3 central-feature composition with subtle side boundaries and a distinct feature placeholder; Section 6 uses a symmetric five-column collection with a strong vermillion section line, compact editorial titles, landscape imagery and thin story rules; Section 7 uses the documented 3/6/3 feature-chapter composition with a dominant centre feature, side story packages and mobile feature-first ordering. Section 5 remains reserved. The mobile pass is now implemented using the documented responsive rules: feature-first sequencing, single-column story flow, sequential collections, preserved image prominence, simplified section dividers and compact section headers.
+### Verified repository and production baseline
 
-The homepage structural baseline is approved through the documented visual pass, with Section 5 still reserved. Mobile and tablet refinement are complete. Homepage editorial production now closes one section at a time: every eligible story card in the section must be written, metadata-complete, canonically routed and live-verified in the same implementation step. The current content checkpoint is the Recommended for teachers section; do not begin the next homepage section until this section receives explicit live approval.
+- GitHub repository: `staffroom-review/staffroom-website`; production branch: `main`.
+- Connected Vercel project: `staffroom-website`; production domain: `www.staffroomreview.com`.
+- The latest production deployment is marked `READY` and is built from commit `c94a90d6364ad8f4fd3d17780283fc860f42b4dc` (“Close final Marks article length gate”).
+- That latest code commit updates the canonical `data/story-articles.js` store. No frontend or editorial content changes are authorised by this documentation checkpoint.
 
-Homepage content production is now the immediate product priority. Sections are completed one at a time under the editorial and story-management gates. After the homepage is fully completed, live-verified and explicitly approved section-by-section, proceed to the navbar/destination page build governed by `docs/navbar-architecture.md`. Analytics work remains a separate track and must not displace webpage completion.
+### Pending editorial approval — Homepage Section 3
+
+Homepage Section 3, **“Recommended for teachers,”** is committed and deployed as one section closure, with the latest story-length gate closed. It still requires the editor’s explicit live review and approval. A `READY` deployment confirms technical deployment status; it does not count as editorial approval.
+
+**Do not start Section 4 until the editor explicitly approves Section 3.** If review identifies changes, make only the requested corrections to Section 3, verify every visible card and canonical story route, redeploy, and return to the same approval gate.
+
+### Next implementation step — after Section 3 approval
+
+Once approval is explicit, implement **Homepage Section 4 only**. Enumerate every visible story card; verify the story registry and provenance; complete every eligible Staffroom-generated article body in the same change; preserve any explicitly human-written manuscript as a recorded dependency; check sources, distinct openings, voice assignment, metadata, imagery, internal links and canonical routes; verify the live desktop, tablet and mobile experience; then stop for Section 4 approval. Do not make unrelated design or analytics changes. Keep Section 5 reserved unless the documented reference evidence authorises it.
 
 ## Homepage sequence
 
-1. Complete and live-verify the current approved section checkpoint, then obtain explicit editorial approval.
-2. Implement the next homepage section in sequence, one section at a time.
-3. Repeat content intake, source/opening/voice QA, canonical routing, responsive verification and live approval for each section.
-4. Keep Section 5 reserved unless and until the documented reference evidence authorises its implementation.
-5. After all homepage sections are complete, perform final imagery, production/accessibility QA and side-by-side fidelity review.
-6. Only after explicit full-homepage approval, begin navbar/destination pages.
+1. Obtain explicit live editorial approval of Section 3, “Recommended for teachers.”
+2. Only after approval, implement the complete visible story set in Section 4 as one closure unit.
+3. Validate the canonical Story Registry → article body → URL → live route for every visible card, plus desktop/tablet/mobile navigation.
+4. Deploy the section and stop for editorial approval before proceeding.
+5. Continue one section at a time. Keep Section 5 reserved unless reference evidence authorises it.
+6. After all homepage sections are approved, run final production/accessibility, imagery, metadata, internal-link and fidelity QA.
+7. Follow the subsequent public-page/content sequence documented below; do not let GA4 activation block public webpage completion.
 
 ### Legacy homepage visual sequence (completed work record)
 
@@ -53,7 +65,7 @@ Analytics is a parallel product track, not a gate on public webpage completion.
 5. Ideas — Family 3: Ideas/perspective/long-form.
 6. World — Family 3: Ideas/perspective/long-form, adapted to comparative/global material.
 7. Voices — Family 3: Ideas/perspective/long-form, adapted to first-person/human stories.
-8. More — collapsible navigation for Newsletters, Visual Essays, Learning, Podcast and Events.
+8. More — collapsible menu containing Podcasts, Learning, Visual Essays and Blog. Newsletter and Events remain direct top-level links.
 9. Site-wide navigation verification.
 
 Each navbar page requires implementation, responsive verification, visual review and explicit approval before the next page begins.
@@ -337,13 +349,11 @@ Private analytics access is now implemented with Clerk for Next.js 16, including
 
 **Approval gate:** once private access is verified, build the analytics dashboard shell and visualisation system. Do not proceed to editorial intelligence until the shell is visually approved.
 
-## Current state — October 2, 2026
+## Current public-site and analytics state — verified October 27, 2026
 
-The public editorial page architecture is substantially implemented. The homepage plus Stories, Teachers, Classrooms, Schools, Ideas, World and Voices are built, and the current specialist destinations include Newsletter, Blog, Events and Podcasts.
+The public editorial architecture includes the homepage, Stories, Teachers, Classrooms, Schools, Ideas, World, Voices, Newsletter, Blog, Events and Podcasts. Live checks on October 27, 2026 confirmed successful responses from `/events` and `/podcasts`. The dedicated `/learning` and `/visual-essays` routes currently return 404 and remain unbuilt; do not represent either as complete or point either to a misleading placeholder destination.
 
-Clerk private analytics access has been verified in production and the analytics dashboard shell is now implemented. The shell deliberately shows unavailable states until the reporting/data layer is connected; no performance values are fabricated.
-
-Learning and Visual Essays remain the only dedicated More destinations not yet built. They remain staged rather than silently pointing to completed destinations.
+Clerk-protected private analytics access and the dashboard shell are implemented. Live GA4 activation remains deferred; missing GA4 configuration does not block public webpage or story-content work. Dashboard values must remain explicitly unavailable/insufficient until real data is connected, and no test values may be presented as production measurements.
 
 ### Shared article-page system — implementation checkpoint
 
