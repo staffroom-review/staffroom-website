@@ -4,10 +4,10 @@
 
 - **GitHub source:** `staffroom-review/staffroom-website`, branch `main`.
 - **Vercel project:** `staffroom-website`; production domain: `www.staffroomreview.com`.
-- **Latest verified deployment before Section 4 work:** production `READY`, commit `4c27b0223b8c18af09f0239029f9a91d0630fc3f` (“Reconcile specialist destinations and analytics sequencing”).
+- **Latest verified baseline before Section 4 content changes:** deployment `READY`, commit `4c27b0223b8c18af09f0239029f9a91d0630fc3f`. A newer Section 4 deployment is being built; its final status must be verified after documentation/content commits settle.
 - **Privacy:** Vercel Authentication is enabled for **All Deployments**. The editor confirmed that an unauthenticated Incognito visit to the custom domain requests Vercel login.
 - **Section 3 status — NOT VERIFIED / NOT APPROVED:** “Recommended for teachers” is deployed and technically checked, but the editor has not completed visual/editorial review. On October 27 the editor explicitly instructed that its approval be deferred until several further builds are completed and authorised proceeding with Section 4 in the meantime. This is a documented, editor-authorised deferral, not an approval of Section 3.
-- **Next build:** Section 4, “The School Behind the School.” Complete every visible card, canonical article body, route and link in one closure unit. Defer the combined visual/editorial review of Sections 3 and 4 until the editor requests it after additional builds.
+- **Section 4:** code and canonical content are committed. Verify its production deployment and all five article routes when the latest build is Ready. Section 3 and Section 4 remain **unverified / not approved** until the editor’s deferred review after several builds. After Section 4 route checks pass, Section 6 (the five-column collection) is next; Section 5 remains reserved.
 - **Known unfinished destinations:** `/learning` and `/visual-essays` returned 404 on the last live route check; do not represent them as completed.
 - **Analytics:** GA4 activation remains deferred and does not block public content/page work.
 
