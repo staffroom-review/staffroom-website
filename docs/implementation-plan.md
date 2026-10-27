@@ -14,26 +14,27 @@
 
 Homepage Section 3, **“Recommended for teachers,”** is deployed and technically checked, but **not visually/editorially verified or approved** by the editor. On October 27, the editor explicitly instructed that review and approval be deferred until several further builds are complete, and authorised Section 4 to proceed in the meantime. This is a recorded one-off override of the usual stop gate for this sequence; it must not be described as Section 3 approval.
 
-### Section 4 — current build target
+### Section 4 — implementation complete; production verification pending
 
-Implement Homepage Section 4, **“The School Behind the School,”** as one complete closure unit. The visible stories are:
-1. “The invisible architecture of a good school”
-2. “The administrator who remembers every child's name”
-3. “When Marks Become the Only Language Parents Understand”
-4. “A parent meeting is never only a parent meeting”
-5. “The timetable is a map of priorities”
+Homepage Section 4, **“The School Behind the School,”** is implemented in source and committed to `main`. It contains five visible story cards:
+1. “The invisible architecture of a good school” — new canonical Story ID `SR-2026-0076`; complete 1,200+ word essay with a source note.
+2. “The administrator who remembers every child's name” — new canonical Story ID `SR-2026-0077`; complete 1,500+ word profile anchored in published reporting about Christ Church School, Byculla.
+3. “When Marks Become the Only Language Parents Understand” — reuses existing canonical story `SR-2026-0075`.
+4. “A parent meeting is never only a parent meeting” — preserves existing Story ID `SR-2026-0012`; completed article body and canonical route.
+5. “The timetable is a map of priorities” — reuses existing canonical story `SR-2026-0005` and its alias.
 
-Complete eligible Staffroom-generated bodies, registry/provenance records, metadata, imagery, source notes, related/internal links and canonical routes for every card. Reuse existing canonical articles where they already match the visible story; do not create duplicate story records. Record any reviewed concept overlap. Verify each route and the live desktop/tablet/mobile behaviour. Defer the visual/editorial approval of Section 3 and Section 4 until the editor asks to review after more builds. Section 5 remains reserved.
+The canonical article bodies for the three missing items are in `data/story-articles.js`. All five Section 4 cards now carry canonical-route and story-analytics wiring in `app/page.js`; the page composition, artwork selection and responsive layout were otherwise left unchanged. New concepts were checked against closely related registry and held stories. The Section 4 pieces use distinct source URLs; no source from the existing canonical article store was reused for these new story bodies.
 
-## Homepage sequence
+**Production verification still pending:** the latest Vercel deployment for the refined article store is building. After the final resulting deployment is Ready, check the homepage and all five canonical routes for successful response and correct title/body. The editor has deferred the visual/editorial review of Sections 3 and 4 until after several builds; both must remain explicitly marked **unverified / not approved** until then. This is an explicit authorisation to continue, not approval of either section.
 
-1. Section 3 review remains deferred; its status is unverified, not approved.
-2. Close all five visible stories in Section 4 atomically and verify every canonical route.
-3. Preserve approved desktop/mobile/tablet design and all protected story wording; no unrelated redesign or analytics work.
-4. Record deployment/build verification and keep the deferred review checkpoint explicit.
-5. Keep Section 5 reserved unless the screenshot-led specification authorises it.
-6. Continue within the editor's explicit requested build scope; the editor plans to review and approve after several additional builds.
-7. Once all homepage sections are complete and approved, run final production/accessibility, imagery, metadata, internal-link and fidelity QA.
+### Homepage sequence and current deferred-review instruction
+
+1. Section 3, “Recommended for teachers,” remains unverified and unapproved.
+2. Finish production verification of Section 4, including every canonical route.
+3. After Section 4’s deployed routes pass technical checks, the next homepage build target is **Section 6 — the five-column collection**. Section 5 remains reserved unless the screenshot-led specification authorises it.
+4. The editor has instructed that several additional builds should be completed before the combined visual/editorial review of Sections 3 and 4. Continue one section per build, keeping every completed section’s verification status explicit.
+5. Preserve approved desktop/tablet/mobile design, protected content and existing functionality; no unrelated redesign or analytics work.
+6. After the editor’s deferred review, implement requested revisions before treating the relevant sections as approved. Finish final production/accessibility, imagery, metadata, internal-link and fidelity QA after all homepage sections are complete and approved.
 
 ### Legacy homepage visual sequence (completed work record)
 
