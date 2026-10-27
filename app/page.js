@@ -161,12 +161,16 @@ export default function HomePage() {
                   eyebrow="School life"
                   title={content.schoolInvisible.title}
                   dek={content.schoolInvisible.dek}
+                  href={storyHref(content.schoolInvisible.title)}
+                  analyticsId={storyMeta(content.schoolInvisible.title)?.id}
                   variant="side"
                 />
                 <Story
                   eyebrow="Profile"
                   title={content.administrator.title}
                   dek={content.administrator.dek}
+                  href={storyHref(content.administrator.title)}
+                  analyticsId={storyMeta(content.administrator.title)?.id}
                   art={imagery.school}
                 />
               </div>
@@ -175,6 +179,8 @@ export default function HomePage() {
                 art={imagery.schoolFeature}
                 eyebrow="Schools · Feature"
                 title={content.marksParents.title}
+                href={storyHref(content.marksParents.title)}
+                analyticsId={storyMeta(content.marksParents.title)?.id}
                 dek={content.marksParents.dek}
                 centered
                 elevated
@@ -185,12 +191,16 @@ export default function HomePage() {
                   eyebrow="Relationships"
                   title={content.parentMeeting.title}
                   dek={content.parentMeeting.dek}
+                  href={storyHref(content.parentMeeting.title)}
+                  analyticsId={storyMeta(content.parentMeeting.title)?.id}
                   variant="side"
                 />
                 <Story
                   eyebrow="Field Note"
                   title={content.timetable.title}
                   dek={content.timetable.dek}
+                  href={storyHref(content.timetable.title)}
+                  analyticsId={storyMeta(content.timetable.title)?.id}
                   art={imagery.storyD}
                 />
               </div>
