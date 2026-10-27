@@ -14,27 +14,27 @@
 
 Homepage Section 3, **“Recommended for teachers,”** is deployed and technically checked, but **not visually/editorially verified or approved** by the editor. On October 27, the editor explicitly instructed that review and approval be deferred until several further builds are complete, and authorised Section 4 to proceed in the meantime. This is a recorded one-off override of the usual stop gate for this sequence; it must not be described as Section 3 approval.
 
-### Section 4 — implementation complete; production verification pending
+### Section 4 — implementation and technical route verification complete; editorial review deferred
 
-Homepage Section 4, **“The School Behind the School,”** is implemented in source and committed to `main`. It contains five visible story cards:
-1. “The invisible architecture of a good school” — new canonical Story ID `SR-2026-0076`; complete 1,200+ word essay with a source note.
-2. “The administrator who remembers every child's name” — new canonical Story ID `SR-2026-0077`; complete 1,500+ word profile anchored in published reporting about Christ Church School, Byculla.
-3. “When Marks Become the Only Language Parents Understand” — reuses existing canonical story `SR-2026-0075`.
-4. “A parent meeting is never only a parent meeting” — preserves existing Story ID `SR-2026-0012`; completed article body and canonical route.
-5. “The timetable is a map of priorities” — reuses existing canonical story `SR-2026-0005` and its alias.
+Homepage Section 4, **“The School Behind the School,”** is implemented, committed and technically checked on the production domain. Section 4 code commit `1c28d4b9e31a91e049d33571c45239fe22a06ebd` is deployed and marked **READY**. Live checks returned successful HTTP 200 responses and matching article titles for the homepage and all five canonical story routes:
+1. “The invisible architecture of a good school” — `/stories/the-invisible-architecture-of-a-good-school`; Story ID `SR-2026-0076`; complete 1,200+ word essay with its PARAKH NCERT source note.
+2. “The administrator who remembers every child's name” — `/stories/the-administrator-who-remembers-every-childs-name`; Story ID `SR-2026-0077`; complete 1,500+ word profile based on published reporting about Christ Church School, Byculla.
+3. “When Marks Become the Only Language Parents Understand” — reuses canonical Story ID `SR-2026-0075`.
+4. “A parent meeting is never only a parent meeting” — preserves Story ID `SR-2026-0012`; completed article body and canonical route.
+5. “The timetable is a map of priorities” — reuses canonical Story ID `SR-2026-0005` and its established title alias.
 
-The canonical article bodies for the three missing items are in `data/story-articles.js`. All five Section 4 cards now carry canonical-route and story-analytics wiring in `app/page.js`; the page composition, artwork selection and responsive layout were otherwise left unchanged. New concepts were checked against closely related registry and held stories. The Section 4 pieces use distinct source URLs; no source from the existing canonical article store was reused for these new story bodies.
+The canonical bodies are in `data/story-articles.js`; all five cards have canonical-route and story-analytics wiring in `app/page.js`. The approved section composition, selected artwork and responsive layout were otherwise left unchanged. The human-readable index in `docs/story-mastercopy.md`, canonical registry and source provenance were updated. New angles were compared with related and held stories. Each new article uses a distinct cited source set; no source from the existing article store was reused for these new bodies.
 
-**Production verification still pending:** the latest Vercel deployment for the refined article store is building. After the final resulting deployment is Ready, check the homepage and all five canonical routes for successful response and correct title/body. The editor has deferred the visual/editorial review of Sections 3 and 4 until after several builds; both must remain explicitly marked **unverified / not approved** until then. This is an explicit authorisation to continue, not approval of either section.
+**Editorial status:** Section 3 (“Recommended for teachers”) and Section 4 remain **UNVERIFIED / NOT APPROVED** by the editor. The editor expressly deferred the combined visual/editorial review until after several more builds. Technical route checks and a Ready deployment are not editorial approval. Continue under this explicit deferral.
 
 ### Homepage sequence and current deferred-review instruction
 
 1. Section 3, “Recommended for teachers,” remains unverified and unapproved.
-2. Finish production verification of Section 4, including every canonical route.
-3. After Section 4’s deployed routes pass technical checks, the next homepage build target is **Section 6 — the five-column collection**. Section 5 remains reserved unless the screenshot-led specification authorises it.
-4. The editor has instructed that several additional builds should be completed before the combined visual/editorial review of Sections 3 and 4. Continue one section per build, keeping every completed section’s verification status explicit.
+2. Section 4 has passed production response/title checks for all five canonical story routes; its editorial approval remains deferred.
+3. **Next build: Section 6 — the five-column collection.** Section 5 remains reserved unless the screenshot-led homepage specification expressly authorises it.
+4. The editor has instructed that several additional builds should be completed before the combined visual/editorial review of Sections 3 and 4. Continue one section per build, keeping verification status explicit.
 5. Preserve approved desktop/tablet/mobile design, protected content and existing functionality; no unrelated redesign or analytics work.
-6. After the editor’s deferred review, implement requested revisions before treating the relevant sections as approved. Finish final production/accessibility, imagery, metadata, internal-link and fidelity QA after all homepage sections are complete and approved.
+6. After the editor’s deferred review, implement requested revisions before treating the relevant sections as approved. Complete final production/accessibility, imagery, metadata, internal-link and fidelity QA after the homepage is finished.
 
 ### Legacy homepage visual sequence (completed work record)
 
