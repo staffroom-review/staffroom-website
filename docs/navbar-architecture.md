@@ -24,7 +24,7 @@ The **More** item uses a collapsible menu containing:
 - Visual Essays
 - Blog
 
-Newsletter and Events are direct top-level navigation items. Newsletter resolves to /newsletter. Events resolves to /events. Blog resolves to /blog. Podcasts, Learning and Visual Essays remain staged at / until their dedicated destinations are built.
+Newsletter and Events are direct top-level navigation items. Newsletter resolves to `/newsletter`; Events resolves to `/events`; Blog resolves to `/blog`; Podcasts resolves to `/podcasts` and is implemented. Learning and Visual Essays remain unbuilt; do not route either to `/` or present either as a completed destination.
 
 ## Design principle
 
@@ -163,11 +163,12 @@ Homepage anchor changes should be limited to what is needed for functional navig
 5. Freeze before continuing.
 
 ### Phase 8 — More
-1. Implement the collapsible More menu.
-2. Verify Newsletter and Events top-level navigation treatment.
-3. Add specialist destinations as their pages are built.
-4. Verify desktop/mobile behaviour.
-5. Obtain approval.
+
+1. Keep the More menu collapsible and confirm its items are Podcasts, Learning, Visual Essays and Blog.
+2. Verify that Podcasts resolves to `/podcasts` and Blog resolves to `/blog`.
+3. Keep Learning and Visual Essays explicitly unfinished until their dedicated pages are built; do not link either to a misleading placeholder.
+4. Verify desktop, tablet and mobile behaviour.
+5. Obtain approval before advancing to any further navigation changes.
 
 ### Phase 9 — Site-wide navigation pass
 1. Verify all primary navbar links.
@@ -216,16 +217,23 @@ When a new article is prepared for upload, the full Story Intake and Verificatio
 
 Events is now implemented at `/events` as a specialist programme hub. It is intentionally distinct from the seven editorial page families: the page presents a lead event series, proposed upcoming programme, programme principles and event formats rather than another story grid.
 
-The Events header link now resolves to `/events`, and the footer includes Events. The remaining More destinations stay staged until their dedicated phases.
+The Events header link resolves to `/events`, and the footer includes Events. Podcasts was subsequently implemented at `/podcasts`. Learning and Visual Essays are the only remaining unbuilt More destinations.
 
-**Approval gate:** Events implementation is complete. Stop here for visual review and approval before continuing with the remaining specialist destinations.
+**Implementation checkpoint:** Events is implemented. Its route, like Podcasts, has since been verified live; see the current specialist-destination status below. This historical note does not supersede the current homepage-content approval gate in `docs/implementation-plan.md`.
 
 
-## Analytics prerequisite before remaining specialist destinations
+## Current specialist destination status — verified October 27, 2026
 
-Before the remaining More destinations are implemented, the approved private analytics phase will proceed as a separate, staged product build. Its authoritative specification is `docs/analytics-architecture.md`.
+- `/events` — implemented; live route returned a successful response.
+- `/podcasts` — implemented; live route returned a successful response.
+- `/newsletter` and `/blog` — dedicated landing pages are implemented.
+- `/learning` and `/visual-essays` — not yet built; live checks returned 404.
 
-The analytics phase does not change the public navigation taxonomy. It adds a private `/analytics` destination and proceeds through measurement, collection, authentication, dashboard and editorial-intelligence checkpoints. The next public specialist destination may resume only after the analytics phase has reached its documented approval gate.
+These route checks describe implementation status, not editorial approval. The immediate build order is controlled by `docs/implementation-plan.md`: Section 3 (“Recommended for teachers”) awaits explicit live editorial approval; after approval, Section 4 is next.
+
+## Analytics relationship to public-page work
+
+Analytics is a parallel product track, not a prerequisite for public-page completion. Private access and the dashboard shell are implemented; live GA4 activation remains deferred until the editor is ready for the provider setup. Missing GA4 configuration must not block the homepage section sequence or the implementation of public destinations. Keep real-data states truthful and follow `docs/analytics-architecture.md` for all analytics work.
 
 ## Shared article system
 
