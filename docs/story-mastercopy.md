@@ -41,7 +41,7 @@ These alerts are part of the story records and are not publication decisions. Th
 | SR-2026-0009 | Teachers | The Five-Year Teacher | Profile | placeholder | teacher identity; classroom practice |
 | SR-2026-0010 | Classrooms | The Student Who Changes the Question | Classroom Story | placeholder | teacher identity; classroom practice |
 | SR-2026-0011 | Ideas | The Homework Problem AI Didn't Create | Analysis | placeholder | ai; teacher identity; school culture |
-| SR-2026-0012 | Schools | A Parent Meeting Is Never Only a Parent Meeting | School Life | placeholder | teacher identity; school culture; relationships; school day |
+| SR-2026-0012 | Schools | A Parent Meeting Is Never Only a Parent Meeting | School Life | published | teacher identity; school culture; relationships; school day |
 | SR-2026-0013 | Voices | The Teacher Who Stopped Calling It a Difficult Child | First Person Profile | placeholder | teacher identity; classroom practice; school culture; belonging |
 | SR-2026-0014 | Schools | What Makes a School Feel Like a Place People Belong To | Reported Feature | placeholder | teacher identity; school culture; belonging |
 | SR-2026-0015 | Schools | The Things a Principal Notices Before the First Meeting | Profile | placeholder | teacher identity; school culture; leadership; school day |
@@ -100,3 +100,5 @@ These alerts are part of the story records and are not publication decisions. Th
 | SR-2026-0070 | Newsletter | The Children a Timetable Forgets | Newsletter Edition | placeholder | teacher identity; school culture; belonging; school systems; school day |
 | SR-2026-0071 | Blog | What I Wish Someone Had Told Me About the Staffroom | Blog / Staffroom Note | placeholder | teacher identity; relationships |
 | SR-2026-0074 | Voices | The Staffroom Conversation I Still Remember | First Person | placeholder | teacher identity; relationships |
+| SR-2026-0076 | Schools | The Invisible Architecture of a Good School | Essay | published | school culture; leadership; school systems; curriculum; relationships |
+| SR-2026-0077 | Schools | The Administrator Who Remembers Every Child's Name | Profile | published | teacher identity; school culture; leadership; relationships; school day |
