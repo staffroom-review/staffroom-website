@@ -1,5 +1,15 @@
 # Staffroom Review — Active Documentation Map
 
+## Current verified checkpoint — October 27, 2026
+
+- **GitHub source:** `staffroom-review/staffroom-website`, branch `main`.
+- **Vercel project:** `staffroom-website`; production domain: `www.staffroomreview.com`.
+- **Latest verified production deployment:** `READY`, built from commit `c94a90d6364ad8f4fd3d17780283fc860f42b4dc` (“Close final Marks article length gate”), which updates the canonical article-body store.
+- **Current editorial gate:** Homepage Section 3, “Recommended for teachers”, is committed and deployed, but still awaits the editor’s explicit live approval. A successful deployment is not editorial sign-off. Do not begin Section 4 until Section 3 is explicitly approved.
+- **Specialist destinations checked live:** `/events` and `/podcasts` return successful responses. `/learning` and `/visual-essays` currently return 404 and remain unbuilt.
+- **Next build step:** review and explicitly approve the live Section 3 release; only then close Homepage Section 4 as one complete, verified implementation unit. Section 5 remains reserved by the screenshot-led homepage specification.
+- **Analytics:** live GA4 activation remains deferred and does not block public webpage work.
+
 ## Homepage specification
 
 The active homepage specification is governed by this repository's screenshot-led process.
@@ -28,7 +38,7 @@ Story expansion is deliberately separated from the visual placeholder phase.
 
 1. Content system stage — define format, headline/dek, length, SEO, authorship, linking and publication-status rules.
 2. Page-build stage — before each navbar page receives visual approval, replace short placeholders with production-quality headlines, deks, format labels and realistic metadata.
-3. Article-body stage — after the page family is structurally approved, expand priority stories into full article bodies using the format-specific editorial bands.
+3. Article-body stage — after the approved page family is structurally approved, complete every visible eligible story in the target page/section as one closure unit, following the format-specific editorial bands.
 4. Publication QA stage — complete copy editing, fact/source checks where relevant, accessibility, image rights, metadata, canonical/indexing and internal-link checks.
 
 This means realistic final headlines are introduced before page-level visual freeze, while full-length article bodies are expanded later without forcing premature copy production across the entire site.
@@ -48,7 +58,7 @@ Held editorial-team features are also represented in the content system with sta
 
 Plan → approval → implement → verify → live-site review → approval.
 
-The homepage is now complete through the documented fidelity checkpoint. The next build sequence must use the editorial content standards before individual navbar pages are visually frozen.
+The homepage visual baseline is complete, but full story-body production remains section-by-section. Follow the Current verified checkpoint and `docs/implementation-plan.md`: the live approval of Section 3 is pending, and Section 4 must not begin until that approval is explicit.
 
 ## Story management and verification
 
@@ -58,14 +68,6 @@ Every new story—whether written by Staffroom Review/AI, supplied by a human co
 
 The detailed operating rules are in `docs/story-management-system.md`; the reusable overlap/retrieval utility is `lib/story-verification.js`.
 
-## Story management and verification
-
-The canonical story index is `data/story-registry.js`, with the human-readable inventory in `docs/story-mastercopy.md` and removed-story history in `docs/story-archive.md`.
-
-Every new story—whether AI-written, human-written or collaborative—uses the same Story Intake process. Before upload or publication, related stories are retrieved and checked for duplicate concepts, substantial overlap, placement/format mismatch and possible contradictions. The result is advisory; the editor has final authority and may explicitly override it, with the override recorded.
-
-Detailed rules: `docs/story-management-system.md`. Verification utility: `lib/story-verification.js`.
-
 ## Newsletter system
 
 The Staffroom Letter is now a first-class weekly product. The canonical story registry supplies eligible weekly stories; `data/newsletter-workflow.js` stores the current issue and approval state; Resend provides the subscriber/contact and Broadcast layer; Vercel Cron provides the weekly scheduler.
@@ -74,9 +76,9 @@ The complete operating rules are in `docs/newsletter-system.md`, with product/co
 
 ## Events specialist destination
 
-The Events phase is now implemented at `/events`. Its specification is governed by `docs/events-architecture.md`. Events is a specialist programme surface, not an additional editorial story family.
+The Events phase is implemented at `/events`, and Podcasts is implemented at `/podcasts`. Both routes were checked on the live site on October 27, 2026. Events is a specialist programme surface, not an additional editorial story family; Podcasts is a More-menu destination. Their page specifications and content models remain governed by their dedicated docs/data files.
 
 
 ## Analytics system
 
-`docs/analytics-architecture.md` is the authoritative analytics measurement framework. The analytics build is intentionally staged before the remaining specialist destinations: measurement contract → collection foundation → private access → dashboard shell → editorial intelligence → verification/approval. The dashboard is private and uses real measured data only; recommendations are explicitly distinguished from measured facts. The initial provider strategy is GA4 + Search Console, with Vercel Web Analytics as an optional reference and a future server-side normalization layer.
+`docs/analytics-architecture.md` is the authoritative analytics measurement framework. The private access and dashboard-shell stages are implemented; live GA4 activation remains deferred until the editor is ready for provider setup. Analytics is a parallel product track and must not block public page or story completion. The dashboard must use real measured data only; recommendations must be distinguished from measured facts. The initial provider strategy is GA4 + Search Console, with Vercel Web Analytics as an optional reference and a future server-side normalization layer.
