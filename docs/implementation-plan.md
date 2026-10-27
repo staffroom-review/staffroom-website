@@ -6,28 +6,34 @@
 
 - GitHub repository: `staffroom-review/staffroom-website`; production branch: `main`.
 - Connected Vercel project: `staffroom-website`; production domain: `www.staffroomreview.com`.
-- The latest production deployment is marked `READY` and is built from commit `c94a90d6364ad8f4fd3d17780283fc860f42b4dc` (“Close final Marks article length gate”).
-- That latest code commit updates the canonical `data/story-articles.js` store. No frontend or editorial content changes are authorised by this documentation checkpoint.
+- The last verified production deployment before Section 4 work was marked `READY` at commit `4c27b0223b8c18af09f0239029f9a91d0630fc3f`.
+- Vercel Authentication is enabled for **All Deployments**; the editor confirmed that a signed-out Incognito visit requests Vercel login.
+- GA4 activation remains deferred and does not block public content work.
 
-### Pending editorial approval — Homepage Section 3
+### Section 3 — explicit deferred review, not approval
 
-Homepage Section 3, **“Recommended for teachers,”** is committed and deployed as one section closure, with the latest story-length gate closed. It still requires the editor’s explicit live review and approval. A `READY` deployment confirms technical deployment status; it does not count as editorial approval.
+Homepage Section 3, **“Recommended for teachers,”** is deployed and technically checked, but **not visually/editorially verified or approved** by the editor. On October 27, the editor explicitly instructed that review and approval be deferred until several further builds are complete, and authorised Section 4 to proceed in the meantime. This is a recorded one-off override of the usual stop gate for this sequence; it must not be described as Section 3 approval.
 
-**Do not start Section 4 until the editor explicitly approves Section 3.** If review identifies changes, make only the requested corrections to Section 3, verify every visible card and canonical story route, redeploy, and return to the same approval gate.
+### Section 4 — current build target
 
-### Next implementation step — after Section 3 approval
+Implement Homepage Section 4, **“The School Behind the School,”** as one complete closure unit. The visible stories are:
+1. “The invisible architecture of a good school”
+2. “The administrator who remembers every child's name”
+3. “When Marks Become the Only Language Parents Understand”
+4. “A parent meeting is never only a parent meeting”
+5. “The timetable is a map of priorities”
 
-Once approval is explicit, implement **Homepage Section 4 only**. Enumerate every visible story card; verify the story registry and provenance; complete every eligible Staffroom-generated article body in the same change; preserve any explicitly human-written manuscript as a recorded dependency; check sources, distinct openings, voice assignment, metadata, imagery, internal links and canonical routes; verify the live desktop, tablet and mobile experience; then stop for Section 4 approval. Do not make unrelated design or analytics changes. Keep Section 5 reserved unless the documented reference evidence authorises it.
+Complete eligible Staffroom-generated bodies, registry/provenance records, metadata, imagery, source notes, related/internal links and canonical routes for every card. Reuse existing canonical articles where they already match the visible story; do not create duplicate story records. Record any reviewed concept overlap. Verify each route and the live desktop/tablet/mobile behaviour. Defer the visual/editorial approval of Section 3 and Section 4 until the editor asks to review after more builds. Section 5 remains reserved.
 
 ## Homepage sequence
 
-1. Obtain explicit live editorial approval of Section 3, “Recommended for teachers.”
-2. Only after approval, implement the complete visible story set in Section 4 as one closure unit.
-3. Validate the canonical Story Registry → article body → URL → live route for every visible card, plus desktop/tablet/mobile navigation.
-4. Deploy the section and stop for editorial approval before proceeding.
-5. Continue one section at a time. Keep Section 5 reserved unless reference evidence authorises it.
-6. After all homepage sections are approved, run final production/accessibility, imagery, metadata, internal-link and fidelity QA.
-7. Follow the subsequent public-page/content sequence documented below; do not let GA4 activation block public webpage completion.
+1. Section 3 review remains deferred; its status is unverified, not approved.
+2. Close all five visible stories in Section 4 atomically and verify every canonical route.
+3. Preserve approved desktop/mobile/tablet design and all protected story wording; no unrelated redesign or analytics work.
+4. Record deployment/build verification and keep the deferred review checkpoint explicit.
+5. Keep Section 5 reserved unless the screenshot-led specification authorises it.
+6. Continue within the editor's explicit requested build scope; the editor plans to review and approve after several additional builds.
+7. Once all homepage sections are complete and approved, run final production/accessibility, imagery, metadata, internal-link and fidelity QA.
 
 ### Legacy homepage visual sequence (completed work record)
 
