@@ -4,11 +4,14 @@
 
 - **GitHub source:** `staffroom-review/staffroom-website`, branch `main`.
 - **Vercel project:** `staffroom-website`; production domain: `www.staffroomreview.com`.
-- **Latest verified production deployment:** `READY`, built from commit `c94a90d6364ad8f4fd3d17780283fc860f42b4dc` (“Close final Marks article length gate”), which updates the canonical article-body store.
-- **Current editorial gate:** Homepage Section 3, “Recommended for teachers”, is committed and deployed, but still awaits the editor’s explicit live approval. A successful deployment is not editorial sign-off. Do not begin Section 4 until Section 3 is explicitly approved.
-- **Specialist destinations checked live:** `/events` and `/podcasts` return successful responses. `/learning` and `/visual-essays` currently return 404 and remain unbuilt.
-- **Next build step:** review and explicitly approve the live Section 3 release; only then close Homepage Section 4 as one complete, verified implementation unit. Section 5 remains reserved by the screenshot-led homepage specification.
-- **Analytics:** live GA4 activation remains deferred and does not block public webpage work.
+- **Latest verified deployment before Section 4 work:** production `READY`, commit `4c27b0223b8c18af09f0239029f9a91d0630fc3f` (“Reconcile specialist destinations and analytics sequencing”).
+- **Privacy:** Vercel Authentication is enabled for **All Deployments**. The editor confirmed that an unauthenticated Incognito visit to the custom domain requests Vercel login.
+- **Section 3 status — NOT VERIFIED / NOT APPROVED:** “Recommended for teachers” is deployed and technically checked, but the editor has not completed visual/editorial review. On October 27 the editor explicitly instructed that its approval be deferred until several further builds are completed and authorised proceeding with Section 4 in the meantime. This is a documented, editor-authorised deferral, not an approval of Section 3.
+- **Next build:** Section 4, “The School Behind the School.” Complete every visible card, canonical article body, route and link in one closure unit. Defer the combined visual/editorial review of Sections 3 and 4 until the editor requests it after additional builds.
+- **Known unfinished destinations:** `/learning` and `/visual-essays` returned 404 on the last live route check; do not represent them as completed.
+- **Analytics:** GA4 activation remains deferred and does not block public content/page work.
+
+
 
 ## Homepage specification
 
